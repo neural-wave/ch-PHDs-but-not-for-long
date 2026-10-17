@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 12,
+    "family": "fixed_frequencies",
+    "width": 10,
+    "state": 16,
+    "lr": 0.001,
+    "seed": 17
+  },
+  "validation_mae": 5.270449352895647,
+  "selection_ratio": 0.7866792808926293,
+  "best_epoch": 296,
+  "parameters": 1264,
+  "seconds": 12.827587126987055
+}

@@ -1,0 +1,112 @@
+{
+  "by_group": {
+    "raw_0": {
+      "config": {
+        "id": 0,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.735578894615173,
+      "best_epoch": 355,
+      "epochs": 415,
+      "seconds": 22.28424810618162,
+      "parameters": 4608,
+      "point_parameters": 3860,
+      "september_mae": 5.462843825384081,
+      "by_zone": [
+        4.28657034533119,
+        7.182706538286886,
+        5.576696557757496,
+        4.805401860160753
+      ],
+      "hourly_mean_error": 5.684341886080802e-14
+    },
+    "raw_1": {
+      "config": {
+        "id": 9,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.7336554527282715,
+      "best_epoch": 235,
+      "epochs": 295,
+      "seconds": 13.993111565010622,
+      "parameters": 4608,
+      "point_parameters": 3860,
+      "september_mae": 5.427656680603007,
+      "by_zone": [
+        4.312083847680904,
+        7.194445945699697,
+        5.527449395047604,
+        4.676647533983821
+      ],
+      "hourly_mean_error": 5.684341886080802e-14
+    },
+    "analog90_0": {
+      "config": {
+        "id": 13,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.509062469005585,
+      "best_epoch": 205,
+      "epochs": 265,
+      "seconds": 12.594578676857054,
+      "parameters": 5696,
+      "point_parameters": 4948,
+      "september_mae": 5.336198180744609,
+      "by_zone": [
+        4.147096742342601,
+        7.102557779993914,
+        5.551253421276498,
+        4.543884779365424
+      ],
+      "hourly_mean_error": 5.684341886080802e-14
+    },
+    "analog90_1": {
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.519094824790955,
+      "best_epoch": 78,
+      "epochs": 138,
+      "seconds": 5.9253217179793864,
+      "parameters": 5696,
+      "point_parameters": 4948,
+      "september_mae": 5.216650727743593,
+      "by_zone": [
+        4.047082786562128,
+        6.813750320844972,
+        5.4898481216069515,
+        4.515921681960321
+      ],
+      "hourly_mean_error": 5.684341886080802e-14
+    }
+  },
+  "selected_group": "analog90_0",
+  "quantile_group": "analog90_1",
+  "interpolation_september_mae": 7.090321234809027,
+  "caveat": "August1-15 selection; August16-31 reserved calibration; September developmental."
+}

@@ -1,0 +1,3052 @@
+{
+  "smoke": false,
+  "quantiles": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.25,
+    0.5,
+    0.75,
+    0.8,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "objective": "median MAE + mean pinball over11 quarter quantiles + L2 regularization; selection by unregularized joint validation loss",
+  "folds": [
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "validation": "2026-01",
+      "test": "2026-02",
+      "training_months": 3,
+      "train_days": 91,
+      "test_days": 28,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 4.27640494835328,
+          "best_epoch": 15,
+          "epochs_run": 40,
+          "seconds": 1.5863302038051188
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 4.278920211481277,
+          "best_epoch": 15,
+          "epochs_run": 40,
+          "seconds": 0.614584332332015
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 4.352491651296905,
+          "best_epoch": 9,
+          "epochs_run": 34,
+          "seconds": 0.5326486770063639
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 4.387703260100084,
+          "best_epoch": 9,
+          "epochs_run": 34,
+          "seconds": 0.6142137497663498
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 4.27640494835328,
+        "best_epoch": 15,
+        "epochs_run": 40,
+        "seconds": 1.5863302038051188
+      },
+      "test_metrics": {
+        "mae": 3.087666015649316,
+        "by_zone": [
+          2.0842920798497504,
+          2.887578842985514,
+          2.1712176070078235,
+          5.207575532754175
+        ],
+        "half_hour_mae": 2.4024228618172767
+      },
+      "raw_crossing_rate": 0.040541137005649715,
+      "pinball_by_quantile": [
+        0.42051389121760974,
+        0.6190526554365627,
+        0.888121878222253,
+        1.178051938091038,
+        1.2755494189016214,
+        1.5438330078246563,
+        1.3095164721127721,
+        1.2041171982223868,
+        0.858922306868505,
+        0.6235577410475778,
+        0.4369745218395441
+      ],
+      "raw_pinball_by_quantile": [
+        0.4209989978371796,
+        0.619474625945152,
+        0.889747776949374,
+        1.179714642389173,
+        1.277500041204807,
+        1.5438330078246563,
+        1.3107374822656954,
+        1.2071904568121166,
+        0.859182906530904,
+        0.6236571121377589,
+        0.4370966715841429
+      ],
+      "quantile_coverage": [
+        0.01097470238095238,
+        0.025948660714285716,
+        0.06389508928571429,
+        0.166015625,
+        0.22340029761904762,
+        0.48595610119047616,
+        0.7856212797619048,
+        0.8364955357142857,
+        0.9388950892857143,
+        0.9839099702380952,
+        0.9931175595238095
+      ],
+      "serialized_replay_max_error": 3.552713678800501e-14,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5622209821428571,
+          "mean_width": 4.913025690896121
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5271577380952381,
+          "mean_width": 4.230732995469305
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5717075892857143,
+          "mean_width": 4.970823745717378
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5171130952380952,
+          "mean_width": 3.2452457641601136
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9579613095238095,
+          "mean_width": 21.439435266356753
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9149925595238095,
+          "mean_width": 15.232866428060301
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9603794642857143,
+          "mean_width": 21.633857882772823
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9170386904761905,
+          "mean_width": 11.893134050559997
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9821428571428571,
+          "mean_width": 31.24215701466214
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9555431547619048,
+          "mean_width": 22.802807757180737
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9829799107142857,
+          "mean_width": 31.51197138220639
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9613095238095238,
+          "mean_width": 18.2308423460165
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "validation": "2026-02",
+      "test": "2026-03",
+      "training_months": 4,
+      "train_days": 122,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 13,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 3.563896658564076,
+          "best_epoch": 32,
+          "epochs_run": 57,
+          "seconds": 1.1959759811870754
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 3.561375454457952,
+          "best_epoch": 32,
+          "epochs_run": 57,
+          "seconds": 1.2353371093049645
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 3.578586008642304,
+          "best_epoch": 23,
+          "epochs_run": 48,
+          "seconds": 0.852534556761384
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 3.5708532424338877,
+          "best_epoch": 21,
+          "epochs_run": 46,
+          "seconds": 0.8212426230311394
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 3.561375454457952,
+        "best_epoch": 32,
+        "epochs_run": 57,
+        "seconds": 1.2353371093049645
+      },
+      "test_metrics": {
+        "mae": 4.73500582567973,
+        "by_zone": [
+          4.053092349211836,
+          5.538309162517113,
+          3.6550995426889106,
+          5.693522248301061
+        ],
+        "half_hour_mae": 3.735138198936215
+      },
+      "raw_crossing_rate": 0.025529813218390804,
+      "pinball_by_quantile": [
+        0.5473387784750356,
+        0.8396298796375642,
+        1.257322560948591,
+        1.795440689157964,
+        1.9895099138865577,
+        2.3675029128398712,
+        2.011622971119002,
+        1.8324479013261827,
+        1.2823381610722773,
+        0.8489394135247936,
+        0.5593181394546631
+      ],
+      "raw_pinball_by_quantile": [
+        0.5515261623203026,
+        0.8432760004801765,
+        1.2583937862552965,
+        1.79580050617459,
+        1.9882270268835638,
+        2.3675029128398712,
+        2.009924918158298,
+        1.8325267744542395,
+        1.2834135938021138,
+        0.8483845888339961,
+        0.566648548016713
+      ],
+      "quantile_coverage": [
+        0.021006944444444446,
+        0.044444444444444446,
+        0.09114583333333333,
+        0.1875,
+        0.22387152777777777,
+        0.5112847222222222,
+        0.7763888888888889,
+        0.82265625,
+        0.9118923611111112,
+        0.9613715277777778,
+        0.9822916666666667
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5525173611111112,
+          "mean_width": 7.977034436710159
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.3846354166666667,
+          "mean_width": 4.252814994513172
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5854166666666667,
+          "mean_width": 8.592646097317601
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4045138888888889,
+          "mean_width": 3.6283791944358628
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9169270833333333,
+          "mean_width": 25.707493568761006
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.7910590277777778,
+          "mean_width": 15.263136565833891
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9235243055555555,
+          "mean_width": 26.636216823444595
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.7809027777777777,
+          "mean_width": 11.651251719169975
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9612847222222223,
+          "mean_width": 36.01017068076764
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.8748263888888889,
+          "mean_width": 21.0961775406665
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9663194444444444,
+          "mean_width": 37.44876026962756
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.8614583333333333,
+          "mean_width": 15.534604680792922
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "validation": "2026-03",
+      "test": "2026-04",
+      "training_months": 5,
+      "train_days": 150,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 15,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 6.366480158112746,
+          "best_epoch": 31,
+          "epochs_run": 56,
+          "seconds": 1.3293240568600595
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 6.357293742537793,
+          "best_epoch": 30,
+          "epochs_run": 55,
+          "seconds": 1.2720401640981436
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 6.500691620856473,
+          "best_epoch": 13,
+          "epochs_run": 38,
+          "seconds": 0.9304960160516202
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 6.488679393046635,
+          "best_epoch": 13,
+          "epochs_run": 38,
+          "seconds": 0.9211766212247312
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 6.357293742537793,
+        "best_epoch": 30,
+        "epochs_run": 55,
+        "seconds": 1.2720401640981436
+      },
+      "test_metrics": {
+        "mae": 4.661692023813772,
+        "by_zone": [
+          3.922745899223248,
+          5.142039702205482,
+          4.0401259044618545,
+          5.541856589364506
+        ],
+        "half_hour_mae": 3.690173218307058
+      },
+      "raw_crossing_rate": 0.071484375,
+      "pinball_by_quantile": [
+        0.5594929098755276,
+        0.887977719420002,
+        1.307299509497194,
+        1.8923455949529973,
+        2.04346471618832,
+        2.330846011906892,
+        2.008860967586493,
+        1.8408204799499266,
+        1.3438825263741765,
+        0.882477263359736,
+        0.549954001588002
+      ],
+      "raw_pinball_by_quantile": [
+        0.5633330036345695,
+        0.9019229505902857,
+        1.3171767576939741,
+        1.895389325199531,
+        2.0453347196992966,
+        2.330846011906892,
+        2.0067430094566387,
+        1.8456405651219496,
+        1.3609700798896274,
+        0.908083937882238,
+        0.5669684901158415
+      ],
+      "quantile_coverage": [
+        0.01875,
+        0.04010416666666667,
+        0.07256944444444445,
+        0.1388888888888889,
+        0.18862847222222223,
+        0.5223958333333333,
+        0.8103298611111112,
+        0.86171875,
+        0.9345486111111111,
+        0.9684895833333333,
+        0.9828993055555556
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.6217013888888889,
+          "mean_width": 9.417048807331916
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.49973958333333335,
+          "mean_width": 5.921867386462923
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.6217013888888889,
+          "mean_width": 9.417048807331916
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.509375,
+          "mean_width": 4.7477942581123465
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9283854166666666,
+          "mean_width": 27.966984060451868
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8876736111111111,
+          "mean_width": 20.942344087810454
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9296006944444445,
+          "mean_width": 28.013913979023922
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8868055555555555,
+          "mean_width": 16.736974909482186
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9641493055555556,
+          "mean_width": 36.07241704987285
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9401041666666666,
+          "mean_width": 29.068919745733456
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9645833333333333,
+          "mean_width": 36.139004587132696
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9350694444444444,
+          "mean_width": 21.775104239550775
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "validation": "2026-04",
+      "test": "2026-05",
+      "training_months": 6,
+      "train_days": 180,
+      "test_days": 31,
+      "selection_days": 15,
+      "calibration_days": 15,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.766469062926179,
+          "best_epoch": 39,
+          "epochs_run": 64,
+          "seconds": 1.7344685792922974
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.755613674296432,
+          "best_epoch": 39,
+          "epochs_run": 64,
+          "seconds": 1.6160764726810157
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 5.798992690468498,
+          "best_epoch": 18,
+          "epochs_run": 43,
+          "seconds": 1.1683837282471359
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.81102894532197,
+          "best_epoch": 23,
+          "epochs_run": 48,
+          "seconds": 1.3278169860132039
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 5.755613674296432,
+        "best_epoch": 39,
+        "epochs_run": 64,
+        "seconds": 1.6160764726810157
+      },
+      "test_metrics": {
+        "mae": 4.120400804443784,
+        "by_zone": [
+          3.418967472703326,
+          4.485269415105209,
+          3.9712761277129083,
+          4.6060902022536885
+        ],
+        "half_hour_mae": 3.268355762058622
+      },
+      "raw_crossing_rate": 0.0415770150273224,
+      "pinball_by_quantile": [
+        0.4998352115822306,
+        0.7642802426111899,
+        1.1500857973634155,
+        1.604965581706072,
+        1.767735872270999,
+        2.0602004022218887,
+        1.7595037888759497,
+        1.5988538428678682,
+        1.1455499429080065,
+        0.7766778648178997,
+        0.5064878700367669
+      ],
+      "raw_pinball_by_quantile": [
+        0.5038665824455809,
+        0.7814073753788974,
+        1.1533355876718685,
+        1.6094137326172497,
+        1.7702700635394266,
+        2.0602004022218887,
+        1.7588852050604016,
+        1.6032157835965062,
+        1.1509219934701589,
+        0.7879192744571708,
+        0.5189132958873397
+      ],
+      "quantile_coverage": [
+        0.024613575268817203,
+        0.050319220430107524,
+        0.08308131720430108,
+        0.17170698924731181,
+        0.21858198924731181,
+        0.5080645161290323,
+        0.7767137096774194,
+        0.8306451612903226,
+        0.9211189516129032,
+        0.9566532258064516,
+        0.9799227150537635
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5581317204301075,
+          "mean_width": 7.116337265731419
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5287298387096774,
+          "mean_width": 5.267418549948596
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.571236559139785,
+          "mean_width": 7.263980338965177
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5110887096774194,
+          "mean_width": 4.018309218271096
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9063340053763441,
+          "mean_width": 21.90197939569753
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9161626344086021,
+          "mean_width": 21.028825845123396
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9206989247311828,
+          "mean_width": 23.17065534842126
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9116263440860215,
+          "mean_width": 16.410230961130267
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9553091397849462,
+          "mean_width": 32.07990146255177
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9598454301075269,
+          "mean_width": 30.32236171796281
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9633736559139785,
+          "mean_width": 33.29153980736493
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9616935483870968,
+          "mean_width": 24.340364356792463
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "validation": "2026-05",
+      "test": "2026-06",
+      "training_months": 7,
+      "train_days": 210,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.712283634887452,
+          "best_epoch": 51,
+          "epochs_run": 76,
+          "seconds": 2.3078376608900726
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.701879382223607,
+          "best_epoch": 51,
+          "epochs_run": 76,
+          "seconds": 2.1658906866796315
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 5.742200784050482,
+          "best_epoch": 41,
+          "epochs_run": 66,
+          "seconds": 1.8940679328516126
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.727492935706544,
+          "best_epoch": 42,
+          "epochs_run": 67,
+          "seconds": 2.05273392284289
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 5.701879382223607,
+        "best_epoch": 51,
+        "epochs_run": 76,
+        "seconds": 2.1658906866796315
+      },
+      "test_metrics": {
+        "mae": 4.049987975348525,
+        "by_zone": [
+          3.4920768247677483,
+          4.114356053517191,
+          3.827154965853343,
+          4.76636405725582
+        ],
+        "half_hour_mae": 3.2661037981301915
+      },
+      "raw_crossing_rate": 0.04734460382513661,
+      "pinball_by_quantile": [
+        0.4697645955848457,
+        0.7401735050184529,
+        1.122432722380556,
+        1.578417847575208,
+        1.7390594694223653,
+        2.02499398767426,
+        1.7407709015340322,
+        1.5875126106227675,
+        1.129745148107299,
+        0.7430786158808568,
+        0.47644640198375604
+      ],
+      "raw_pinball_by_quantile": [
+        0.5272646607083119,
+        0.743759238115034,
+        1.1293237577360373,
+        1.5866870489152056,
+        1.7330834466217848,
+        2.02499398767426,
+        1.753328811449317,
+        1.601704356699788,
+        1.1317611340611617,
+        0.7426370790378753,
+        0.5738285947855396
+      ],
+      "quantile_coverage": [
+        0.030555555555555555,
+        0.04739583333333333,
+        0.07890625,
+        0.16519097222222223,
+        0.2115451388888889,
+        0.48246527777777776,
+        0.7706597222222222,
+        0.8233506944444444,
+        0.9131944444444444,
+        0.9546875,
+        0.9719618055555556
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5591145833333333,
+          "mean_width": 7.072900833672971
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.46475694444444443,
+          "mean_width": 4.365864807516869
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5811631944444444,
+          "mean_width": 7.327753155497093
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4736111111111111,
+          "mean_width": 3.6742389779422067
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9072916666666667,
+          "mean_width": 21.718596744782882
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8967013888888888,
+          "mean_width": 17.756489922831936
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9214409722222222,
+          "mean_width": 22.32041120166446
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8923611111111112,
+          "mean_width": 13.880978978178682
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.94140625,
+          "mean_width": 27.714082192939568
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9435763888888888,
+          "mean_width": 24.99245915908239
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9542534722222222,
+          "mean_width": 28.718616180735506
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9381944444444444,
+          "mean_width": 19.589232370852642
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "validation": "2026-06",
+      "test": "2026-07",
+      "training_months": 8,
+      "train_days": 241,
+      "test_days": 31,
+      "selection_days": 15,
+      "calibration_days": 15,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 4.684345450159507,
+          "best_epoch": 57,
+          "epochs_run": 82,
+          "seconds": 2.908808418083936
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 4.686802763089811,
+          "best_epoch": 31,
+          "epochs_run": 56,
+          "seconds": 1.9030705839395523
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 4.726201911042428,
+          "best_epoch": 7,
+          "epochs_run": 32,
+          "seconds": 1.1862501497380435
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 4.729990722639022,
+          "best_epoch": 7,
+          "epochs_run": 32,
+          "seconds": 1.173772090114653
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 4.684345450159507,
+        "best_epoch": 57,
+        "epochs_run": 82,
+        "seconds": 2.908808418083936
+      },
+      "test_metrics": {
+        "mae": 3.8477895687430546,
+        "by_zone": [
+          2.638426900481336,
+          4.353993372928948,
+          4.263223756609439,
+          4.1355142449524935
+        ],
+        "half_hour_mae": 3.000820316256482
+      },
+      "raw_crossing_rate": 0.033931010928961745,
+      "pinball_by_quantile": [
+        0.43670787320064686,
+        0.6716248629748157,
+        1.0165712788918206,
+        1.4728804949906888,
+        1.6163429345093312,
+        1.9238947843715226,
+        1.6346729667938633,
+        1.4849607368448248,
+        1.0321284008730855,
+        0.6787238998494672,
+        0.4315918350435837
+      ],
+      "raw_pinball_by_quantile": [
+        0.4413421261620182,
+        0.6796094960534151,
+        1.0164623066294145,
+        1.4740478546041222,
+        1.617842105153823,
+        1.9238947843715226,
+        1.6357151441465008,
+        1.4856417858788786,
+        1.0339210938752978,
+        0.681907356595103,
+        0.4327241922492186
+      ],
+      "quantile_coverage": [
+        0.027133736559139785,
+        0.050319220430107524,
+        0.08425739247311828,
+        0.17347110215053763,
+        0.2283266129032258,
+        0.49437163978494625,
+        0.7655409946236559,
+        0.8121639784946236,
+        0.8986055107526881,
+        0.944388440860215,
+        0.9787466397849462
+      ],
+      "serialized_replay_max_error": 5.684341886080802e-14,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5372143817204301,
+          "mean_width": 6.480027539438863
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.47748655913978494,
+          "mean_width": 4.588468872531084
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5531754032258065,
+          "mean_width": 6.654920708136625
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.45698924731182794,
+          "mean_width": 3.5063739150484565
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.8940692204301075,
+          "mean_width": 18.892279618756035
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9182627688172043,
+          "mean_width": 20.496277202584153
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9054099462365591,
+          "mean_width": 19.304557206606265
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9324596774193549,
+          "mean_width": 16.96164532834821
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9516129032258065,
+          "mean_width": 26.84260206776708
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9700100806451613,
+          "mean_width": 32.1578855896874
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9602654569892473,
+          "mean_width": 27.840447568562222
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9842069892473119,
+          "mean_width": 28.871703839558663
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "validation": "2026-07",
+      "test": "2026-08",
+      "training_months": 9,
+      "train_days": 271,
+      "test_days": 31,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 4.645232928802901,
+          "best_epoch": 18,
+          "epochs_run": 43,
+          "seconds": 1.7198252249509096
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 4.643364757817761,
+          "best_epoch": 18,
+          "epochs_run": 43,
+          "seconds": 1.6667257780209184
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 4.69807409837647,
+          "best_epoch": 47,
+          "epochs_run": 72,
+          "seconds": 2.71628669090569
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 4.704474686473466,
+          "best_epoch": 9,
+          "epochs_run": 34,
+          "seconds": 1.3787174089811742
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 4.643364757817761,
+        "best_epoch": 18,
+        "epochs_run": 43,
+        "seconds": 1.6667257780209184
+      },
+      "test_metrics": {
+        "mae": 4.435832395566491,
+        "by_zone": [
+          3.1078315468876796,
+          5.0804514308249376,
+          5.1372142841266335,
+          4.41783232042671
+        ],
+        "half_hour_mae": 3.5159466494760423
+      },
+      "raw_crossing_rate": 0.04299815188172043,
+      "pinball_by_quantile": [
+        0.534459541225241,
+        0.7917718822241856,
+        1.1943290499559152,
+        1.700493139242847,
+        1.873579871441354,
+        2.2179161977832536,
+        1.8864002944857898,
+        1.7193889165972274,
+        1.2119801503044945,
+        0.808048394702765,
+        0.5494617470061951
+      ],
+      "raw_pinball_by_quantile": [
+        0.5459244726681783,
+        0.7949382890805886,
+        1.1967020597570623,
+        1.7017695983354144,
+        1.873354155207685,
+        2.2179161977832536,
+        1.8870452971661718,
+        1.7223400109907077,
+        1.2094216875698223,
+        0.8140478024638756,
+        0.5513233313175585
+      ],
+      "quantile_coverage": [
+        0.027385752688172043,
+        0.05897177419354839,
+        0.10357862903225806,
+        0.19564852150537634,
+        0.24672379032258066,
+        0.49605174731182794,
+        0.7639448924731183,
+        0.8075436827956989,
+        0.9142305107526881,
+        0.9484206989247311,
+        0.977570564516129
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5172211021505376,
+          "mean_width": 6.723652179279643
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.46102150537634407,
+          "mean_width": 4.954241592586595
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5452788978494624,
+          "mean_width": 7.159606228371964
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4831989247311828,
+          "mean_width": 4.155724644892921
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.8894489247311828,
+          "mean_width": 20.940031384124836
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8865087365591398,
+          "mean_width": 19.30251319093355
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.914986559139785,
+          "mean_width": 22.18855746214194
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8877688172043011,
+          "mean_width": 15.499358952035735
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.950184811827957,
+          "mean_width": 33.36956763003214
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9362399193548387,
+          "mean_width": 25.731646975580688
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9674899193548387,
+          "mean_width": 34.67773339638472
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9327956989247311,
+          "mean_width": 20.449415468372127
+        }
+      ]
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "train_days": 302,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.946228573993068,
+          "best_epoch": 67,
+          "epochs_run": 92,
+          "seconds": 4.038947260007262
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.947527503855569,
+          "best_epoch": 67,
+          "epochs_run": 92,
+          "seconds": 3.957155209966004
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 6.030645664344165,
+          "best_epoch": 37,
+          "epochs_run": 62,
+          "seconds": 2.9017951716668904
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 6.027270505708189,
+          "best_epoch": 16,
+          "epochs_run": 41,
+          "seconds": 1.9286441658623517
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 5.946228573993068,
+        "best_epoch": 67,
+        "epochs_run": 92,
+        "seconds": 4.038947260007262
+      },
+      "test_metrics": {
+        "mae": 5.2261054787271854,
+        "by_zone": [
+          3.9567244702280226,
+          6.845434347583571,
+          5.6023407999035015,
+          4.499922297193647
+        ],
+        "half_hour_mae": 4.133983273592517
+      },
+      "raw_crossing_rate": 0.052096140710382516,
+      "pinball_by_quantile": [
+        0.5556257025545739,
+        0.8901750699705357,
+        1.3855313360425494,
+        1.958223815798464,
+        2.1732460970548577,
+        2.613052739363602,
+        2.1849839332771364,
+        1.977913823899516,
+        1.370554726531473,
+        0.8867981488424124,
+        0.5648480566491869
+      ],
+      "raw_pinball_by_quantile": [
+        0.5622710586430143,
+        0.8889141655390916,
+        1.3882637482393816,
+        1.9575980622292528,
+        2.175366469977416,
+        2.613052739363602,
+        2.186076336900217,
+        1.978473278891737,
+        1.3705729453217177,
+        0.8869967984716077,
+        0.5743076520406134
+      ],
+      "quantile_coverage": [
+        0.02361111111111111,
+        0.04366319444444444,
+        0.07126736111111111,
+        0.17265625,
+        0.23862847222222222,
+        0.49583333333333335,
+        0.7672743055555555,
+        0.8202256944444445,
+        0.9092013888888889,
+        0.9526909722222222,
+        0.9736979166666667
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5286458333333334,
+          "mean_width": 8.67886282556981
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.42508680555555556,
+          "mean_width": 5.446199977554632
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5461805555555556,
+          "mean_width": 8.960410756971395
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.43368055555555557,
+          "mean_width": 4.425210212060488
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9090277777777778,
+          "mean_width": 25.91655449316721
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8599826388888889,
+          "mean_width": 20.108346465678007
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9338541666666667,
+          "mean_width": 27.900812774239167
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8572916666666667,
+          "mean_width": 15.456283191974345
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9500868055555556,
+          "mean_width": 33.997653864495206
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9248263888888889,
+          "mean_width": 27.66177392325678
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9680555555555556,
+          "mean_width": 36.74994230013828
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9305555555555556,
+          "mean_width": 22.080957312417063
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-05",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 3,
+      "train_days": 92,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 6.006725485398393,
+          "best_epoch": 82,
+          "epochs_run": 107,
+          "seconds": 1.7392818997614086
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 6.008694551893857,
+          "best_epoch": 82,
+          "epochs_run": 107,
+          "seconds": 1.60276551079005
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 6.015102411783411,
+          "best_epoch": 28,
+          "epochs_run": 53,
+          "seconds": 0.7667439579963684
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 6.0145995194221005,
+          "best_epoch": 33,
+          "epochs_run": 58,
+          "seconds": 0.8392870449461043
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 6.006725485398393,
+        "best_epoch": 82,
+        "epochs_run": 107,
+        "seconds": 1.7392818997614086
+      },
+      "test_metrics": {
+        "mae": 5.377900470402163,
+        "by_zone": [
+          4.17846377088599,
+          6.905662129704836,
+          5.7297108817632,
+          4.697765099254623
+        ],
+        "half_hour_mae": 4.278417918566824
+      },
+      "raw_crossing_rate": 0.036099726775956284,
+      "pinball_by_quantile": [
+        0.624283849067091,
+        0.9430710741195262,
+        1.4299569008186237,
+        2.042290957621583,
+        2.238150225165572,
+        2.6889502352010717,
+        2.2396252704744968,
+        2.0289049699727855,
+        1.4103813438661421,
+        0.9706759573658219,
+        0.6813798237798581
+      ],
+      "raw_pinball_by_quantile": [
+        0.6274626156317743,
+        0.9506344898915812,
+        1.4417877281986295,
+        2.042739645056981,
+        2.241278917396071,
+        2.6889502352010717,
+        2.2346687809748667,
+        2.0330662941290325,
+        1.4126596075465343,
+        0.969865074074642,
+        0.689579184254433
+      ],
+      "quantile_coverage": [
+        0.01875,
+        0.0421875,
+        0.07395833333333333,
+        0.15659722222222222,
+        0.22760416666666666,
+        0.49887152777777777,
+        0.7783854166666667,
+        0.8335069444444444,
+        0.9258680555555555,
+        0.97265625,
+        0.9868055555555556
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.55078125,
+          "mean_width": 9.178636495763158
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4162326388888889,
+          "mean_width": 5.808468207120616
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5618923611111111,
+          "mean_width": 9.3757839498607
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4215277777777778,
+          "mean_width": 4.669492106357751
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.93046875,
+          "mean_width": 29.462712504319992
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.86015625,
+          "mean_width": 20.386122729017025
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.94375,
+          "mean_width": 31.129678191971323
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8625,
+          "mean_width": 15.952287084179837
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9680555555555556,
+          "mean_width": 44.11329663059054
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9282986111111111,
+          "mean_width": 28.33791208337339
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9763888888888889,
+          "mean_width": 45.577514335571585
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9302083333333333,
+          "mean_width": 22.95731902941494
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-04",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 4,
+      "train_days": 122,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.984571437241804,
+          "best_epoch": 58,
+          "epochs_run": 83,
+          "seconds": 1.4258306068368256
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.9830723469366545,
+          "best_epoch": 58,
+          "epochs_run": 83,
+          "seconds": 1.4294839734211564
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 6.00742445339983,
+          "best_epoch": 29,
+          "epochs_run": 54,
+          "seconds": 0.9358346979133785
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.9985323802969015,
+          "best_epoch": 42,
+          "epochs_run": 67,
+          "seconds": 1.1459343931637704
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 5.9830723469366545,
+        "best_epoch": 58,
+        "epochs_run": 83,
+        "seconds": 1.4294839734211564
+      },
+      "test_metrics": {
+        "mae": 5.279862391804542,
+        "by_zone": [
+          4.065884544949681,
+          6.828147927529975,
+          5.668707528616193,
+          4.556709566122319
+        ],
+        "half_hour_mae": 4.224331778213369
+      },
+      "raw_crossing_rate": 0.038955771857923496,
+      "pinball_by_quantile": [
+        0.5694889990920784,
+        0.9058646237582864,
+        1.3717339508562965,
+        2.0076505565072256,
+        2.1995450788045474,
+        2.6399311959022778,
+        2.218162317968118,
+        1.9878989795028588,
+        1.3741836137660275,
+        0.9517156249968176,
+        0.5959247592686633
+      ],
+      "raw_pinball_by_quantile": [
+        0.5806118258384073,
+        0.9110102188012889,
+        1.3750244066687465,
+        2.0099300072825694,
+        2.2012679737185246,
+        2.6399311959022778,
+        2.219432757173171,
+        1.9885569583869287,
+        1.3755066406297856,
+        0.9533629100283291,
+        0.5978251041308412
+      ],
+      "quantile_coverage": [
+        0.02265625,
+        0.039496527777777776,
+        0.08003472222222222,
+        0.1488715277777778,
+        0.20625,
+        0.5005208333333333,
+        0.7719618055555556,
+        0.8139756944444444,
+        0.9190104166666667,
+        0.9715277777777778,
+        0.9833333333333333
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5657118055555556,
+          "mean_width": 9.127432761602206
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4227430555555556,
+          "mean_width": 5.5601746422478096
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5756944444444444,
+          "mean_width": 9.347510520384906
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.42291666666666666,
+          "mean_width": 4.520101621544768
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.93203125,
+          "mean_width": 28.991262462213335
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8616319444444445,
+          "mean_width": 20.26243087860623
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9426215277777777,
+          "mean_width": 29.830392547320166
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8618055555555556,
+          "mean_width": 16.03023302423569
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9606770833333333,
+          "mean_width": 36.6739185323643
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9270833333333334,
+          "mean_width": 28.115731185914026
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9699652777777777,
+          "mean_width": 38.33297837804197
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9302083333333333,
+          "mean_width": 23.322702626012767
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-03",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 5,
+      "train_days": 152,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.960897610953582,
+          "best_epoch": 58,
+          "epochs_run": 83,
+          "seconds": 1.8867841218598187
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.9586688258274565,
+          "best_epoch": 81,
+          "epochs_run": 106,
+          "seconds": 3.4296342050656676
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 6.024804214873813,
+          "best_epoch": 35,
+          "epochs_run": 60,
+          "seconds": 4.020789041183889
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 6.013940148103723,
+          "best_epoch": 40,
+          "epochs_run": 65,
+          "seconds": 4.289137837011367
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 5.9586688258274565,
+        "best_epoch": 81,
+        "epochs_run": 106,
+        "seconds": 3.4296342050656676
+      },
+      "test_metrics": {
+        "mae": 5.322368913873167,
+        "by_zone": [
+          4.074743828671078,
+          6.889921766649847,
+          5.738662786083671,
+          4.586147274088071
+        ],
+        "half_hour_mae": 4.2092046547803506
+      },
+      "raw_crossing_rate": 0.053679986338797815,
+      "pinball_by_quantile": [
+        0.5530587689069889,
+        0.8840124415636321,
+        1.3576088003199667,
+        1.9743294154833184,
+        2.1840922271681587,
+        2.6611844569365757,
+        2.2119022791774268,
+        1.9693517006443777,
+        1.3625556511955155,
+        0.9051136016778598,
+        0.5740209598263987
+      ],
+      "raw_pinball_by_quantile": [
+        0.5661528151134604,
+        0.8853970974895363,
+        1.3635804736128274,
+        1.975474942573096,
+        2.1830097605865455,
+        2.6611844569365757,
+        2.212487079537557,
+        1.9703714704112703,
+        1.363696012071581,
+        0.9103067898856011,
+        0.5738979806013325
+      ],
+      "quantile_coverage": [
+        0.025347222222222222,
+        0.04748263888888889,
+        0.09722222222222222,
+        0.17421875,
+        0.21944444444444444,
+        0.5025173611111111,
+        0.7454861111111111,
+        0.80703125,
+        0.9196180555555555,
+        0.9647569444444445,
+        0.9826388888888888
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5260416666666666,
+          "mean_width": 8.24266608008083
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.42682291666666666,
+          "mean_width": 5.648969358370132
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5547743055555555,
+          "mean_width": 8.774235737050024
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.440625,
+          "mean_width": 4.590696463811035
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9172743055555556,
+          "mean_width": 26.218446625573538
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8572048611111112,
+          "mean_width": 20.163138862581203
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9329861111111111,
+          "mean_width": 27.895694065229296
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8586805555555556,
+          "mean_width": 15.879971156781963
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9572916666666667,
+          "mean_width": 34.4664363572307
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9228298611111111,
+          "mean_width": 27.538947473324665
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9689236111111111,
+          "mean_width": 36.92309738273235
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.928125,
+          "mean_width": 22.77775513044964
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-02",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 6,
+      "train_days": 180,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.940453972336445,
+          "best_epoch": 53,
+          "epochs_run": 78,
+          "seconds": 2.110553898382932
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.946200803584732,
+          "best_epoch": 41,
+          "epochs_run": 66,
+          "seconds": 1.8828669688664377
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 5.996380994680126,
+          "best_epoch": 21,
+          "epochs_run": 46,
+          "seconds": 1.4185293377377093
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.96854358273534,
+          "best_epoch": 26,
+          "epochs_run": 51,
+          "seconds": 1.4499003128148615
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 5.940453972336445,
+        "best_epoch": 53,
+        "epochs_run": 78,
+        "seconds": 2.110553898382932
+      },
+      "test_metrics": {
+        "mae": 5.200704861465737,
+        "by_zone": [
+          3.9220889732458515,
+          6.80699712043534,
+          5.615795456569818,
+          4.457937895611938
+        ],
+        "half_hour_mae": 4.113729523273025
+      },
+      "raw_crossing_rate": 0.03044313524590164,
+      "pinball_by_quantile": [
+        0.5682360931817905,
+        0.8931452453947983,
+        1.367162752350028,
+        1.9727972054586487,
+        2.1720401915351424,
+        2.600352430732863,
+        2.1788859558639784,
+        1.9713328391451863,
+        1.352049516946834,
+        0.9030177009836772,
+        0.593374454201261
+      ],
+      "raw_pinball_by_quantile": [
+        0.5770599551801665,
+        0.896184724691836,
+        1.3686456526731074,
+        1.9728608661231914,
+        2.172281504749721,
+        2.600352430732863,
+        2.1797477665011638,
+        1.972502083394547,
+        1.3525392233347926,
+        0.9053164466409063,
+        0.5946898184193768
+      ],
+      "quantile_coverage": [
+        0.023871527777777776,
+        0.0484375,
+        0.08003472222222222,
+        0.16336805555555556,
+        0.20755208333333333,
+        0.5011284722222222,
+        0.7361111111111112,
+        0.8009548611111111,
+        0.9100694444444445,
+        0.9597222222222223,
+        0.9811631944444444
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5285590277777777,
+          "mean_width": 8.220433914131599
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.43411458333333336,
+          "mean_width": 5.490648987568085
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5578125,
+          "mean_width": 8.749532885049002
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4371527777777778,
+          "mean_width": 4.389488687816172
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9112847222222222,
+          "mean_width": 26.13702357594403
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8588541666666667,
+          "mean_width": 20.064943937537418
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.934375,
+          "mean_width": 28.284387466658483
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8670138888888889,
+          "mean_width": 16.050489481215045
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9572916666666667,
+          "mean_width": 36.964483089453836
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9267361111111111,
+          "mean_width": 27.75888698105246
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9719618055555556,
+          "mean_width": 39.55135478357088
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9315972222222222,
+          "mean_width": 22.63569445822457
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-01",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 7,
+      "train_days": 211,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.935598899673961,
+          "best_epoch": 58,
+          "epochs_run": 83,
+          "seconds": 2.653740149922669
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.930066605395327,
+          "best_epoch": 58,
+          "epochs_run": 83,
+          "seconds": 2.9854686870239675
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 5.981450342155958,
+          "best_epoch": 28,
+          "epochs_run": 53,
+          "seconds": 1.8406725549139082
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.990528466944978,
+          "best_epoch": 8,
+          "epochs_run": 33,
+          "seconds": 0.9434593389742076
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 5.930066605395327,
+        "best_epoch": 58,
+        "epochs_run": 83,
+        "seconds": 2.9854686870239675
+      },
+      "test_metrics": {
+        "mae": 5.1994172601417805,
+        "by_zone": [
+          3.928595646274859,
+          6.797070916806361,
+          5.6134645046710565,
+          4.45853797281485
+        ],
+        "half_hour_mae": 4.1147809850769
+      },
+      "raw_crossing_rate": 0.027796277322404372,
+      "pinball_by_quantile": [
+        0.5481611140785917,
+        0.8917512160539552,
+        1.3703347610609513,
+        1.9818477536361405,
+        2.178325684758524,
+        2.5997086300708836,
+        2.1778304687706567,
+        1.9823366928571773,
+        1.3598060318181975,
+        0.8956728973692265,
+        0.56825187412996
+      ],
+      "raw_pinball_by_quantile": [
+        0.5492058989793733,
+        0.8920954913194367,
+        1.3712859869797673,
+        1.9847100890935194,
+        2.1791696194471286,
+        2.5997086300708836,
+        2.178343381426081,
+        1.9828360830149507,
+        1.3622177843890486,
+        0.8963935402085669,
+        0.5685541265771513
+      ],
+      "quantile_coverage": [
+        0.02048611111111111,
+        0.03697916666666667,
+        0.071875,
+        0.15850694444444444,
+        0.2111111111111111,
+        0.4939236111111111,
+        0.7611979166666667,
+        0.8265625,
+        0.9229166666666667,
+        0.9665798611111112,
+        0.9830729166666666
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5500868055555556,
+          "mean_width": 8.751567858337365
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4309027777777778,
+          "mean_width": 5.496168055097288
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5743055555555555,
+          "mean_width": 9.134647176187263
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.43993055555555555,
+          "mean_width": 4.415370063345902
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9296006944444445,
+          "mean_width": 27.37572185014549
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8598958333333333,
+          "mean_width": 20.17803674882586
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9433159722222222,
+          "mean_width": 28.76805295538247
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8652777777777778,
+          "mean_width": 15.934753016414643
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9625868055555555,
+          "mean_width": 35.64713323820607
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9272569444444444,
+          "mean_width": 27.93849623590736
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9723958333333333,
+          "mean_width": 37.67197293466404
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9326388888888889,
+          "mean_width": 23.02790202534829
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-12",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 8,
+      "train_days": 242,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.934011997970102,
+          "best_epoch": 56,
+          "epochs_run": 81,
+          "seconds": 2.786991277243942
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.9241575336576435,
+          "best_epoch": 56,
+          "epochs_run": 81,
+          "seconds": 2.7656882060691714
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 5.971381527330035,
+          "best_epoch": 11,
+          "epochs_run": 36,
+          "seconds": 1.224432208109647
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.970758180904918,
+          "best_epoch": 13,
+          "epochs_run": 38,
+          "seconds": 1.2800209783017635
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.01
+        },
+        "selection_joint": 5.9241575336576435,
+        "best_epoch": 56,
+        "epochs_run": 81,
+        "seconds": 2.7656882060691714
+      },
+      "test_metrics": {
+        "mae": 5.188030039352352,
+        "by_zone": [
+          3.891553133075348,
+          6.806000030068473,
+          5.616165628544939,
+          4.4384013657206465
+        ],
+        "half_hour_mae": 4.117119497384655
+      },
+      "raw_crossing_rate": 0.039967554644808743,
+      "pinball_by_quantile": [
+        0.5588074379500514,
+        0.8928111886207601,
+        1.396233032600739,
+        1.9841532972324565,
+        2.168322709004097,
+        2.5940150196761698,
+        2.1630283875370524,
+        1.95443189464008,
+        1.3776755391949902,
+        0.9063235869830512,
+        0.5689912053122622
+      ],
+      "raw_pinball_by_quantile": [
+        0.5590113062329986,
+        0.8949865105070081,
+        1.3985174342688205,
+        1.9826743549161363,
+        2.1715179714989548,
+        2.5940150196761698,
+        2.16512598678573,
+        1.9548565578180106,
+        1.3788224048114004,
+        0.907982716144768,
+        0.5727309454059805
+      ],
+      "quantile_coverage": [
+        0.01953125,
+        0.03671875,
+        0.06397569444444444,
+        0.14678819444444444,
+        0.21414930555555556,
+        0.5011284722222222,
+        0.7645833333333333,
+        0.8126736111111111,
+        0.9328993055555556,
+        0.9652777777777778,
+        0.9783854166666667
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5504340277777777,
+          "mean_width": 8.57014620813444
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.42977430555555557,
+          "mean_width": 5.481951911110801
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5715277777777777,
+          "mean_width": 8.909850115423364
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.43680555555555556,
+          "mean_width": 4.380169038300088
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9285590277777778,
+          "mean_width": 27.404738499841187
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8602430555555556,
+          "mean_width": 20.141691251469844
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9419270833333333,
+          "mean_width": 28.892517247313997
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8590277777777777,
+          "mean_width": 15.734008332236874
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9588541666666667,
+          "mean_width": 35.29444995526724
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9262152777777778,
+          "mean_width": 27.724254375623524
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9713541666666666,
+          "mean_width": 37.52593669476266
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9322916666666666,
+          "mean_width": 22.491160743741688
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-11",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 9,
+      "train_days": 272,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.9403014666540175,
+          "best_epoch": 25,
+          "epochs_run": 50,
+          "seconds": 1.8407239089719951
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.940857748203592,
+          "best_epoch": 25,
+          "epochs_run": 50,
+          "seconds": 1.833924979902804
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 5.973858807654779,
+          "best_epoch": 11,
+          "epochs_run": 36,
+          "seconds": 1.4902193923480809
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 5.98724099813489,
+          "best_epoch": 11,
+          "epochs_run": 36,
+          "seconds": 1.4720655586570501
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 5.9403014666540175,
+        "best_epoch": 25,
+        "epochs_run": 50,
+        "seconds": 1.8407239089719951
+      },
+      "test_metrics": {
+        "mae": 5.185205865076735,
+        "by_zone": [
+          3.918930525935208,
+          6.801379569712622,
+          5.58643145187628,
+          4.434081912782829
+        ],
+        "half_hour_mae": 4.11819701711494
+      },
+      "raw_crossing_rate": 0.04824538934426229,
+      "pinball_by_quantile": [
+        0.5836657929357597,
+        0.9108063493530055,
+        1.3818239606425673,
+        1.9784008792703764,
+        2.1855152713138124,
+        2.5926029325383797,
+        2.184130750766287,
+        1.9689585789695478,
+        1.3647035533903225,
+        0.9313881355386098,
+        0.6058150345226961
+      ],
+      "raw_pinball_by_quantile": [
+        0.5846391711787372,
+        0.9110446265096582,
+        1.3829170931320867,
+        1.9779661737799268,
+        2.1871370585167247,
+        2.5926029325383797,
+        2.1861749903696737,
+        1.9694447018117842,
+        1.3651976242790327,
+        0.9339505822496899,
+        0.6095223276715326
+      ],
+      "quantile_coverage": [
+        0.01484375,
+        0.03602430555555555,
+        0.07152777777777777,
+        0.15243055555555557,
+        0.19001736111111112,
+        0.4942708333333333,
+        0.7918402777777778,
+        0.8305555555555556,
+        0.9212673611111111,
+        0.9696180555555556,
+        0.9845486111111111
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.6018229166666667,
+          "mean_width": 9.456447028438745
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.4342013888888889,
+          "mean_width": 5.491305837570547
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.6110243055555555,
+          "mean_width": 9.615896267484455
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.44131944444444443,
+          "mean_width": 4.427749222538949
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.93359375,
+          "mean_width": 29.085298505554864
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8622395833333333,
+          "mean_width": 20.15136238226149
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9481770833333333,
+          "mean_width": 30.55660166265357
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8645833333333334,
+          "mean_width": 15.905883442760437
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9697048611111111,
+          "mean_width": 40.236445469075505
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9252604166666667,
+          "mean_width": 27.89875541383312
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9780381944444444,
+          "mean_width": 42.03703102719283
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.93125,
+          "mean_width": 23.049755476074175
+        }
+      ]
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "train_days": 302,
+      "test_days": 30,
+      "selection_days": 15,
+      "calibration_days": 16,
+      "candidates": [
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.001
+          },
+          "selection_joint": 5.946228573993068,
+          "best_epoch": 67,
+          "epochs_run": 92,
+          "seconds": 4.3706046170555055
+        },
+        {
+          "config": {
+            "lr": 0.001,
+            "l2": 0.01
+          },
+          "selection_joint": 5.947527503855569,
+          "best_epoch": 67,
+          "epochs_run": 92,
+          "seconds": 4.355707293376327
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.001
+          },
+          "selection_joint": 6.030645664344165,
+          "best_epoch": 37,
+          "epochs_run": 62,
+          "seconds": 2.798432356212288
+        },
+        {
+          "config": {
+            "lr": 0.003,
+            "l2": 0.01
+          },
+          "selection_joint": 6.027270505708189,
+          "best_epoch": 16,
+          "epochs_run": 41,
+          "seconds": 1.8302636099979281
+        }
+      ],
+      "selected": {
+        "config": {
+          "lr": 0.001,
+          "l2": 0.001
+        },
+        "selection_joint": 5.946228573993068,
+        "best_epoch": 67,
+        "epochs_run": 92,
+        "seconds": 4.3706046170555055
+      },
+      "test_metrics": {
+        "mae": 5.2261054787271854,
+        "by_zone": [
+          3.9567244702280226,
+          6.845434347583571,
+          5.6023407999035015,
+          4.499922297193647
+        ],
+        "half_hour_mae": 4.133983273592517
+      },
+      "raw_crossing_rate": 0.052096140710382516,
+      "pinball_by_quantile": [
+        0.5556257025545739,
+        0.8901750699705357,
+        1.3855313360425494,
+        1.958223815798464,
+        2.1732460970548577,
+        2.613052739363602,
+        2.1849839332771364,
+        1.977913823899516,
+        1.370554726531473,
+        0.8867981488424124,
+        0.5648480566491869
+      ],
+      "raw_pinball_by_quantile": [
+        0.5622710586430143,
+        0.8889141655390916,
+        1.3882637482393816,
+        1.9575980622292528,
+        2.175366469977416,
+        2.613052739363602,
+        2.186076336900217,
+        1.978473278891737,
+        1.3705729453217177,
+        0.8869967984716077,
+        0.5743076520406134
+      ],
+      "quantile_coverage": [
+        0.02361111111111111,
+        0.04366319444444444,
+        0.07126736111111111,
+        0.17265625,
+        0.23862847222222222,
+        0.49583333333333335,
+        0.7672743055555555,
+        0.8202256944444445,
+        0.9092013888888889,
+        0.9526909722222222,
+        0.9736979166666667
+      ],
+      "serialized_replay_max_error": 1.1368683772161603e-13,
+      "conformal": [
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.5,
+          "coverage": 0.5286458333333334,
+          "mean_width": 8.67886282556981
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.42508680555555556,
+          "mean_width": 5.446199977554632
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.5,
+          "coverage": 0.5461805555555556,
+          "mean_width": 8.960410756971395
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.5,
+          "coverage": 0.43368055555555557,
+          "mean_width": 4.425210212060488
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.9,
+          "coverage": 0.9090277777777778,
+          "mean_width": 25.91655449316721
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8599826388888889,
+          "mean_width": 20.108346465678007
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.9,
+          "coverage": 0.9338541666666667,
+          "mean_width": 27.900812774239167
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.9,
+          "coverage": 0.8572916666666667,
+          "mean_width": 15.456283191974345
+        },
+        {
+          "method": "raw_quantiles",
+          "nominal": 0.95,
+          "coverage": 0.9500868055555556,
+          "mean_width": 33.997653864495206
+        },
+        {
+          "method": "median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9248263888888889,
+          "mean_width": 27.66177392325678
+        },
+        {
+          "method": "quantile_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9680555555555556,
+          "mean_width": 36.74994230013828
+        },
+        {
+          "method": "halfhour_median_conformal",
+          "nominal": 0.95,
+          "coverage": 0.9305555555555556,
+          "mean_width": 22.080957312417063
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Offline fitting; no online parameter updates.",
+    "Mean constraint applies to median point forecast, not each marginal quantile.",
+    "Nonmedian crossing corrected around fixed median; coefficients explain raw linear quantiles.",
+    "CQR correction is nonnegative/widen-only.",
+    "Conformal temporal coverage is empirical, not guaranteed.",
+    "No half-hour marginal quantiles inferred by summing quarter quantiles."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "linear_rich": {
+    "fixed_relative_gain_pct": 1.0232825896660414,
+    "paired_wins": 31,
+    "paired_count": 32,
+    "monthly_wins": 8
+  },
+  "linear_compact": {
+    "fixed_relative_gain_pct": 0.705608761076082,
+    "paired_wins": 31,
+    "paired_count": 32,
+    "monthly_wins": 8
+  },
+  "additive_compact": {
+    "fixed_relative_gain_pct": 0.9311199854476815,
+    "paired_wins": 29,
+    "paired_count": 32,
+    "monthly_wins": 7
+  },
+  "mlp_compact": {
+    "fixed_relative_gain_pct": 1.5490987641800569,
+    "paired_wins": 28,
+    "paired_count": 32,
+    "monthly_wins": 8
+  },
+  "cnn_rich": {
+    "fixed_relative_gain_pct": 3.874306834490715,
+    "paired_wins": 30,
+    "paired_count": 32,
+    "monthly_wins": 7
+  },
+  "cnn2d_analog": {
+    "fixed_relative_gain_pct": 1.2040718490352709,
+    "paired_wins": 19,
+    "paired_count": 32,
+    "monthly_wins": 6
+  },
+  "blend__fixed": {
+    "mean_monthly_ratio": 0.7103591550594415,
+    "relative_gain_pct": 1.4066675436803733,
+    "monthly_wins": 7,
+    "pooled_mae": 4.1183453072065985,
+    "coverage90": 0.9002312413554633,
+    "width90": 18.16155694765198,
+    "width_reduction_pct": 12.480849657281768
+  },
+  "blend__mixed": {
+    "mean_monthly_ratio": 0.7083710434569991,
+    "relative_gain_pct": 1.6826047886412954,
+    "monthly_wins": 8,
+    "pooled_mae": 4.106784906028097,
+    "coverage90": 0.9034945539419087,
+    "width90": 18.34248501642948,
+    "width_reduction_pct": 11.608971167007132
+  },
+  "validation_selector": {
+    "mean_monthly_ratio": 0.7083710434569991,
+    "relative_gain_pct": 1.6826047886412954,
+    "monthly_wins": 8,
+    "pooled_mae": 4.106784906028097,
+    "coverage90": 0.9034945539419087,
+    "width90": 18.34248501642948,
+    "width_reduction_pct": 11.608971167007132
+  }
+}

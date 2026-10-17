@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 19,
+    "family": "compact",
+    "width": 32,
+    "state": 32,
+    "lr": 0.003,
+    "seed": 43
+  },
+  "validation_mae": 3.667016849626269,
+  "selection_ratio": 0.7042776669235405,
+  "best_epoch": 15,
+  "parameters": 19180,
+  "seconds": 2.171236013993621
+}

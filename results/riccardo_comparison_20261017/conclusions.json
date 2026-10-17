@@ -1,0 +1,127 @@
+{
+  "effects_vs_our_linear": [
+    {
+      "method": "riccardo_reduced",
+      "rank_by_primary_score": 9,
+      "monthly_ratio_increase_vs_our_linear_percent": 7.927748136264867,
+      "pooled_mae_increase_vs_our_linear_percent": 7.991319141773734,
+      "months_beating_our_linear": 0,
+      "months_beating_interpolation": 8
+    },
+    {
+      "method": "riccardo_raw_hourly",
+      "rank_by_primary_score": 10,
+      "monthly_ratio_increase_vs_our_linear_percent": 8.795352062270823,
+      "pooled_mae_increase_vs_our_linear_percent": 9.013371069606047,
+      "months_beating_our_linear": 0,
+      "months_beating_interpolation": 8
+    }
+  ],
+  "september": [
+    {
+      "method": "monthly_joint_blend",
+      "mae": 5.091208819992601,
+      "ratio": 0.718050515821196,
+      "selection": "Full August",
+      "scope": "September-only study; no eight-month estimate"
+    },
+    {
+      "method": "analog90_CNN",
+      "mae": 5.177024160106511,
+      "ratio": 0.730153682556803,
+      "selection": "August 1-15",
+      "scope": "September-only study; no eight-month estimate"
+    },
+    {
+      "method": "linear",
+      "mae": 5.200312772665335,
+      "ratio": 0.7334382463709913,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "quantile_campaign_analog90_1",
+      "mae": 5.216650727743593,
+      "ratio": 0.7357425079886524,
+      "selection": "August 1-15; overall/cohort choice",
+      "scope": "September-only study; no eight-month estimate"
+    },
+    {
+      "method": "linear_quantile_median",
+      "mae": 5.2261054787271854,
+      "ratio": 0.7370759808554636,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "hierarchical",
+      "mae": 5.256047004883381,
+      "ratio": 0.7412988538628531,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "ridge",
+      "mae": 5.294221569497154,
+      "ratio": 0.746682892660187,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "direct",
+      "mae": 5.314717258010569,
+      "ratio": 0.7495735499145854,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "quantile_campaign_analog90_0",
+      "mae": 5.336198180744609,
+      "ratio": 0.752603161976248,
+      "selection": "August 1-15; overall/cohort choice",
+      "scope": "September-only study; no eight-month estimate"
+    },
+    {
+      "method": "additive",
+      "mae": 5.344595086385559,
+      "ratio": 0.7537874391567693,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "mlp",
+      "mae": 5.363484080700285,
+      "ratio": 0.7564514925457742,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "riccardo_reduced",
+      "mae": 5.5430633452991,
+      "ratio": 0.781778873161083,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "riccardo_raw_hourly",
+      "mae": 5.597739867579726,
+      "ratio": 0.7894903040638463,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "cnn",
+      "mae": 5.953009787162865,
+      "ratio": 0.8395966261637516,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    },
+    {
+      "method": "interpolation",
+      "mae": 7.090321234809027,
+      "ratio": 0.9999999999999999,
+      "selection": "August 1\u201315; campaign budgets/configuration provenance differ",
+      "scope": "September from eight-fold campaign"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "status": "passed",
+  "smoke": false,
+  "model_fit_days": 363,
+  "normalization_days": 363,
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "selected_evaluation_pipeline": "monthly_joint_blend_gpu1",
+  "source_evaluation_model_sha256": "6615d87e9a07520572f58ffca75f164f8ae021140b700223c6a97df740810dcc",
+  "source_selection": {
+    "selected_by": "august_validation_mae",
+    "best_directory": "monthly_joint_blend_gpu1",
+    "validation_scores": {
+      "monthly_base_gpu1": 4.255496109814246,
+      "monthly_cat_gpu1": 4.254566191382879,
+      "monthly_graph_gpu1": 4.24743872379048,
+      "monthly_revin_gpu1": 4.246176827199958,
+      "monthly_joint_blend_gpu1": 4.245328588334859
+    },
+    "model_fit_days": 302,
+    "train_end": "2026-07-31",
+    "validation_month": "2026-08",
+    "test_month": "2026-09"
+  },
+  "frozen_settings_and_weights": true,
+  "unique_refitted_components": [
+    {
+      "name": "ridge_100",
+      "config": {
+        "alpha": 100
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "trees_5",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_18",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 21
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_28",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 20
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "cat_9",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          867,
+          172,
+          100,
+          798
+        ]
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "graph_5",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 33
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "graph_8",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 29
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "revin_7",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 46
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "ridge_1",
+      "config": {
+        "alpha": 1
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "ridge_10",
+      "config": {
+        "alpha": 10
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "boost_15_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "boost_31_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "boost_31_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "boost_63_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_17",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 20
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_19",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 8
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_25",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 25
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_26",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 25
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_27",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 15
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "net_30",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 37
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "graph_12",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 12
+      },
+      "fit_days": 363
+    },
+    {
+      "name": "graph_13",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 15
+      },
+      "fit_days": 363
+    }
+  ],
+  "tf32": false,
+  "accuracy_claim": "No held-out accuracy claim for the all-363-day deployment refit; use the preserved 302-day evaluation model for August/September scores.",
+  "offline_inference_qa": "passed; 384 finite unique exported rows and exact hourly means",
+  "max_exported_hourly_mean_error": 2.5011104298755527e-11,
+  "artifact_sha256": "2442b10b4fcafb2c0c83cf2337bb05013dab3ba0df4b4bdb79be0dbef4e73a60"
+}

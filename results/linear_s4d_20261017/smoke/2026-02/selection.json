@@ -1,0 +1,90 @@
+{
+  "by_recipe": {
+    "learned_frequencies": {
+      "config": {
+        "id": 0,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.033039547733869,
+      "selection_ratio": 0.9977512808877175,
+      "best_epoch": 2,
+      "parameters": 1104,
+      "seconds": 2.2744642610196024
+    },
+    "fixed_frequencies": {
+      "config": {
+        "id": 8,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.033162171115327,
+      "selection_ratio": 0.9977815836171153,
+      "best_epoch": 2,
+      "parameters": 1104,
+      "seconds": 2.217045929050073
+    },
+    "validation_selector": {
+      "config": {
+        "id": 0,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.033039547733869,
+      "selection_ratio": 0.9977512808877175,
+      "best_epoch": 2,
+      "parameters": 1104,
+      "seconds": 2.2744642610196024,
+      "chosen_recipe": "learned_frequencies"
+    },
+    "interpolation": {
+      "config": {
+        "id": "interpolation",
+        "family": "interpolation"
+      },
+      "selection_ratio": 1.0,
+      "validation_mae": 4.042129123263889
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "id": 8,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.033162171115327,
+      "selection_ratio": 0.9977815836171153,
+      "best_epoch": 2,
+      "parameters": 1104,
+      "seconds": 2.217045929050073
+    },
+    {
+      "config": {
+        "id": 0,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.033039547733869,
+      "selection_ratio": 0.9977512808877175,
+      "best_epoch": 2,
+      "parameters": 1104,
+      "seconds": 2.2744642610196024
+    }
+  ]
+}

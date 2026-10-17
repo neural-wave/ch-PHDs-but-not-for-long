@@ -1,0 +1,10 @@
+{
+  "flowstate": true,
+  "seed": 43,
+  "validation_mae": 4.6370720863342285,
+  "best_epoch": 94,
+  "epochs": 124,
+  "seconds": 2.7656939029693604,
+  "parameters": 9156,
+  "folder": "trials/1_43"
+}

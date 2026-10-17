@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "folds": 8,
+  "modes": 2,
+  "experts": 6,
+  "maximum_quantile_blend_reconstruction_error": 0.0,
+  "sources": {
+    "source_audit": "f30b541282a4e788395c886147e292d92fc16acdde49b59a99e01fb2d33cdcc8",
+    "analysis_code": "8b48fbf48bd769aa72c15dc3ad8edb8a714e313e9c17b08a3907487fd2f01e90"
+  },
+  "checks": "Official prediction identities, constituent MAE parity, q50 mean conservation, all-quantile weighted blend identity; curve thresholds use fitting hourly inputs only; no parameter or routing-policy fit"
+}

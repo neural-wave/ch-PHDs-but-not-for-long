@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "smoke": true,
+  "zone_folds": 8,
+  "serialized_replays": 16,
+  "train_only_weight_scores": 52,
+  "max_prediction_replay_difference": 0.0,
+  "max_hourly_mean_error": 5.684341886080802e-14,
+  "official_baseline_match": true,
+  "checks": "Official target/date identity; chronological outer splits; train-only scaler/weight ledgers and minmax; selection-only checkpoint argmin; serialized neural replay with independent feature arithmetic; finite/conserved quarters; monthly/zone/daily MAE and normalized scores",
+  "smoke_extra": "Adapter matches original reduced-feature training; perturbing calibration/test quarters leaves fitted state unchanged"
+}

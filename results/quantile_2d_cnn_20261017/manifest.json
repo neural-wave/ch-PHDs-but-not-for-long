@@ -1,0 +1,242 @@
+{
+  "sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "configs": [
+    {
+      "id": 0,
+      "pack": "raw",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 1,
+      "pack": "raw",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 2,
+      "pack": "raw",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 3,
+      "pack": "raw",
+      "quantile_weight": 0.0,
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 4,
+      "pack": "raw",
+      "quantile_weight": 0.0,
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 5,
+      "pack": "raw",
+      "quantile_weight": 0.0,
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 6,
+      "pack": "raw",
+      "quantile_weight": 1.0,
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 7,
+      "pack": "raw",
+      "quantile_weight": 1.0,
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 8,
+      "pack": "raw",
+      "quantile_weight": 1.0,
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 9,
+      "pack": "raw",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 10,
+      "pack": "raw",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 11,
+      "pack": "raw",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 12,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 13,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 14,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 15,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 16,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 17,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 18,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 19,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 20,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16
+    },
+    {
+      "id": 21,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16
+    },
+    {
+      "id": 22,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16
+    },
+    {
+      "id": 23,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16
+    }
+  ],
+  "taus": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.25,
+    0.5,
+    0.75,
+    0.8,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "train": [
+    0,
+    302
+  ],
+  "selection": [
+    302,
+    317
+  ],
+  "calibration": [
+    317,
+    333
+  ],
+  "test": [
+    333,
+    363
+  ],
+  "oof_edges": [
+    120,
+    151,
+    181,
+    212,
+    242,
+    272,
+    302
+  ],
+  "severe_day_mae_threshold": 10.0,
+  "seed_selection": "August1-15 point MAE only; choices persisted before September inference",
+  "calibration_note": "August16-31, separate from stopping and selection; no inference-time adaptation",
+  "architecture": "Conv2d paired Q/H2x8,16 filters; lag-preserving1x1 fusion16; point4 and independent11 ordered quantiles",
+  "uncertainty": "Only point decision conserves hourly means. Independent q50 need not equal constrained MAE decision.",
+  "history": "7 calendar days raw Q/H; analog90 variant also uses fixed retrieval from strictly earlier90days",
+  "caveat": "September developmental, previously examined; performance target5.2 is not a selection rule."
+}

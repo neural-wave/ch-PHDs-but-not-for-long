@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": 0,
+    "history": false,
+    "width": 8,
+    "depth": 1,
+    "kernel": [
+      2,
+      8
+    ],
+    "lr": 0.001,
+    "seed": 17
+  },
+  "validation_mae": 5.019862055778503,
+  "best_epoch": 197,
+  "epochs": 227,
+  "parameters": 940,
+  "seconds": 10.769036771031097
+}

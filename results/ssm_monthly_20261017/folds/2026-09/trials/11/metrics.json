@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 11,
+    "family": "gru",
+    "width": 32,
+    "state": 32,
+    "lr": 0.003,
+    "seed": 43
+  },
+  "validation_mae": 4.738786238606689,
+  "selection_ratio": 0.7038747074661557,
+  "best_epoch": 14,
+  "parameters": 35244,
+  "seconds": 3.591389450011775
+}

@@ -1,0 +1,40 @@
+{
+  "0": {
+    "config": {
+      "id": 2,
+      "history": false,
+      "width": 8,
+      "depth": 1,
+      "kernel": [
+        2,
+        8
+      ],
+      "lr": 0.001,
+      "seed": 71
+    },
+    "validation_mae": 4.8938485980033875,
+    "best_epoch": 189,
+    "epochs": 219,
+    "parameters": 940,
+    "seconds": 5.002706469036639
+  },
+  "1": {
+    "config": {
+      "id": 3,
+      "history": true,
+      "width": 8,
+      "depth": 1,
+      "kernel": [
+        2,
+        8
+      ],
+      "lr": 0.001,
+      "seed": 17
+    },
+    "validation_mae": 4.605012238025665,
+    "best_epoch": 251,
+    "epochs": 281,
+    "parameters": 1388,
+    "seconds": 6.423018192872405
+  }
+}

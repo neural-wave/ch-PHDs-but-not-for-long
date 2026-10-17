@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "folds": 1,
+  "weighted_recipes_per_fold": 15,
+  "replays": 15,
+  "exported_selector_quarters": 10752,
+  "maximum_quantile_replay_error": 5.684341886080802e-14,
+  "maximum_hourly_mean_error": 8.526512829121202e-14,
+  "maximum_exact_lp_gap": 9.774320863797925e-08,
+  "checks": [
+    "immutable official data/expert/source hashes",
+    "chronological fit/calibration/test dates",
+    "GPU solver success and independent exact first-fold LP checks",
+    "pretest selector parity",
+    "nonnegative simplex and all-quantile reconstruction",
+    "hourly q50 means and quantile ordering",
+    "reserved-data interval calibration replay/nesting",
+    "coverage/confidence labels",
+    "monthly ratio/pooled MAE/export identity",
+    "unchanged matched controls"
+  ]
+}

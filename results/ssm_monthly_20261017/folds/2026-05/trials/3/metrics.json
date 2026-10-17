@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 3,
+    "family": "s4d",
+    "width": 32,
+    "state": 32,
+    "lr": 0.003,
+    "seed": 43
+  },
+  "validation_mae": 4.435447283867442,
+  "selection_ratio": 0.7629850541550734,
+  "best_epoch": 13,
+  "parameters": 31020,
+  "seconds": 5.057208114070818
+}

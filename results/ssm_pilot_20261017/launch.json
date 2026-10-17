@@ -1,0 +1,15 @@
+{
+  "run_id": "259bd2a9188ede4ad8ea466b",
+  "host": "root@93.91.156.85",
+  "port": 55340,
+  "remote_root": "/workspace/HACKATON",
+  "python": "/venv/main/bin/python",
+  "gpu": "RTX 5090",
+  "worker_pid": 6908,
+  "log": "/root/.local/share/nightwatch-hackaton/259bd2a9188ede4ad8ea466b.log",
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "registered_utc": "2026-10-17T13:14:31Z",
+  "status_at_launch": "running",
+  "expected_fits": 56
+}

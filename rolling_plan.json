@@ -1,0 +1,435 @@
+{
+  "window_days": 28,
+  "fold_train_days": [
+    251,
+    279,
+    307
+  ],
+  "audit_train_days": 335,
+  "penalties": [
+    0.05,
+    0.2,
+    1.0
+  ],
+  "components": [
+    {
+      "name": "interpolation",
+      "config": {},
+      "anchor": [
+        0.04663963287390494,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "flat",
+      "config": {},
+      "anchor": [
+        0.0,
+        0.0,
+        0.0403668299823192,
+        0.013454052824770088
+      ]
+    },
+    {
+      "name": "ridge_1",
+      "config": {
+        "alpha": 1
+      },
+      "anchor": [
+        0.03205304884531663,
+        0.005409840964954383,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "ridge_1000",
+      "config": {
+        "alpha": 1000
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.05035094303460354,
+        0.0
+      ]
+    },
+    {
+      "name": "ridge_10000",
+      "config": {
+        "alpha": 10000
+      },
+      "anchor": [
+        0.0,
+        0.006253671518555396,
+        0.11279015293745069,
+        0.0
+      ]
+    },
+    {
+      "name": "trees_5",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "anchor": [
+        0.23575148457749726,
+        0.2303578349242605,
+        0.11808516617818703,
+        0.14042529244753946
+      ]
+    },
+    {
+      "name": "trees_100",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 100,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.024606080698082875,
+        0.0
+      ]
+    },
+    {
+      "name": "boost_15_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.0,
+        0.08411026587749093
+      ]
+    },
+    {
+      "name": "boost_31_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "anchor": [
+        0.20576874352813454,
+        0.13708046000405308,
+        0.1267663355899158,
+        0.29904547557407757
+      ]
+    },
+    {
+      "name": "boost_31_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.02897161774612415,
+        0.04680600115186287
+      ]
+    },
+    {
+      "name": "boost_63_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.04308786381322067,
+        0.005699974212877214
+      ]
+    },
+    {
+      "name": "net_15",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 17
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.04400713153037517,
+        0.016024285950192122
+      ]
+    },
+    {
+      "name": "net_16",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 11
+      },
+      "anchor": [
+        0.006048651973863144,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_20",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 16
+      },
+      "anchor": [
+        0.021600746861592354,
+        0.14509908675856736,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_21",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 28
+      },
+      "anchor": [
+        0.0662968758962753,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_23",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 15
+      },
+      "anchor": [
+        0.11614585008334541,
+        0.045560008179209584,
+        0.11561792077197024,
+        0.0
+      ]
+    },
+    {
+      "name": "net_24",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 16
+      },
+      "anchor": [
+        0.09723385797328062,
+        0.1372894328247911,
+        0.07977315327637598,
+        0.07150427600715886
+      ]
+    },
+    {
+      "name": "net_25",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 29
+      },
+      "anchor": [
+        0.0,
+        0.03182104450461017,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_27",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 25
+      },
+      "anchor": [
+        0.10224706155950403,
+        0.19028898641903266,
+        0.010820923272777831,
+        0.10407504159308442
+      ]
+    },
+    {
+      "name": "net_28",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 24
+      },
+      "anchor": [
+        0.0562724356853767,
+        0.0,
+        0.12087899973360351,
+        0.11299883276012673
+      ]
+    },
+    {
+      "name": "net_29",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 61
+      },
+      "anchor": [
+        0.006926899035034376,
+        0.05412270432663401,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_30",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 44
+      },
+      "anchor": [
+        0.0070147111068747875,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "cat_roll_4",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          687
+        ]
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.023947661861013284,
+        0.0
+      ]
+    },
+    {
+      "name": "cat_roll_9",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          420,
+          386,
+          132,
+          589
+        ]
+      },
+      "anchor": [
+        0.0,
+        0.01671692957533145,
+        0.05992921957397996,
+        0.009111246395851653
+      ]
+    },
+    {
+      "name": "cat_roll_10",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          280,
+          192,
+          116,
+          603
+        ]
+      },
+      "anchor": [
+        0.0,
+        0.0,
+        0.0,
+        0.0967452552049681
+      ]
+    }
+  ],
+  "caveat": "Retrospective refinement using previously selected hyperparameters; audit dates were viewed in earlier campaigns. No secret-test claim.",
+  "sources": [
+    "results/zone_search_gpu1/metrics.json",
+    "results/catboost_search_gpu1/metrics.json"
+  ]
+}

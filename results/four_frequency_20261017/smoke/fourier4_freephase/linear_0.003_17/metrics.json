@@ -1,0 +1,11 @@
+{
+  "family": "linear",
+  "lr": 0.003,
+  "seed": 17,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "parameters": 74728,
+  "validation_mae": 8.661634805094124,
+  "basis": "fourier4_freephase",
+  "outputs_per_day_zone": 8
+}

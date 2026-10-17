@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "official_source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "raw_quarter_targets": 139392,
+  "monthly_baselines_recomputed": true,
+  "corrected_baseline_max_hourly_mean_error": 1.1368683772161603e-13,
+  "saved_csv_scores_match_owner_reports": true,
+  "simple_selection_and_daily_scores_rechecked": true,
+  "simple_saved_independent_audit": {
+    "passed": true,
+    "folds": 16,
+    "candidates_recomputed": 3680,
+    "max_hourly_mean_error": 1.1368683772161603e-13,
+    "checks": "all candidate selection scores; family argmin; test MAE; unique CSV rows; corrected conformal ranks, bounds, coverage and widths; 95% day intervals correctly infinite"
+  },
+  "quantile_saved_independent_audit": {
+    "status": "passed",
+    "folds": 16,
+    "interval_cases": 192,
+    "max_hourly_mean_error": 1.1368683772161603e-13,
+    "max_metric_difference": 7.105427357601002e-15,
+    "checks": "saved test dates/truth identity,finite/order11quantiles,median identity,MAE,all saved interval coverage/widths,mean conservation"
+  },
+  "folds": 8,
+  "methods": 9,
+  "monthly_rows": 72,
+  "test_days": 241,
+  "metric": "Arithmetic mean across eight monthly MAE / corrected-interpolation-MAE ratios",
+  "note": "Quick rescore of existing saved results; no new neural prediction replay or retraining. Fixed-September history sizes excluded from CV aggregation.",
+  "sources": {
+    "train_prices_15min.csv": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+    "results/monthly_baseline_mae.csv": "27635d5d501115dafd3894c3e391419d24026b931cbd0fafa9e5323a0752c994",
+    "results/expanding_simple_5090/learning_curves.csv": "17cdce8d1b1012be074733bbad785cc785fad5f9fa2e5babdd5d26b2a88fb505",
+    "results/expanding_simple_5090/metrics.json": "3024d41cf2d7868f15314db29a6d1455da57e1fe35591b0f6ecc2b2c3ca309be",
+    "results/expanding_simple_5090/independent_audit.json": "c8f7048ccd7f177f0a3e7e114f53a236dfaf1cc7aaac99c71462d945c63d72ca",
+    "results/expanding_vast/learning_curves.csv": "87dd4d2c1fa461fbaca77bd4ad5a89e1e510159f9c4a4fd4de05e2e009290a37",
+    "results/expanding_vast/metrics.json": "9f8847112b64e2e12b43b860cee4a3f8fcf44809264cb06ff560bfe4c9a27384",
+    "results/linear_quantiles_vast/learning_curves.csv": "ee3ed315202286e472f8c3dd9f48981bf83b7f8a36eb1090e127491625d5da38",
+    "results/linear_quantiles_vast/metrics.json": "fee14a1a793bb1186977b010af4ebd13c651dedc666d6578f7a48aa6282d6a71",
+    "results/linear_quantiles_vast/independent_audit.json": "bd1108a23626db398c5a58bcbf1c1ace34aafc487525ea9f854c7defd9a27939",
+    "results/monthly_joint_blend_gpu1/metrics.json": "fb6a0c40d1dfbbe1e5c9eb3521ed54b60f0fdcce142d9c3a97bc4d8ffbedad94",
+    "results/parallel_2d_tuning_20261017/metrics.json": "9f119fbf5eb43b280bcf335dce80103111f448b9e00ee52281b8065a67b4a3dd",
+    "results/quantile_2d_cnn_20261017/metrics.json": "2b33844cc043d2404016e167667855ba2128eb1cb5c957842db034d95651e8a9"
+  }
+}

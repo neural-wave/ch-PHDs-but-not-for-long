@@ -1,0 +1,1142 @@
+{
+  "selection": "all August MAE only; no September selection",
+  "best_by_family": {
+    "boost": {
+      "name": "boost_31_10",
+      "family": "boost",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "selection15_mae": 4.52157071037106,
+      "august_mae": 4.342403813875277,
+      "september_mae": 5.251553772785148,
+      "ensemble_test_gain_absolute": 0.16034495279254735,
+      "ensemble_test_gain_percent": 3.053285936506917
+    },
+    "cat": {
+      "name": "cat_9",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          867,
+          172,
+          100,
+          798
+        ]
+      },
+      "selection15_mae": 4.498305826410473,
+      "august_mae": 4.345424699290502,
+      "september_mae": 5.1878966978415635,
+      "ensemble_test_gain_absolute": 0.0966878778489626,
+      "ensemble_test_gain_percent": 1.863720183348867
+    },
+    "graph": {
+      "name": "graph_12",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 12
+      },
+      "selection15_mae": 4.597060598222273,
+      "august_mae": 4.344804408029256,
+      "september_mae": 5.119950406569955,
+      "ensemble_test_gain_absolute": 0.028741586577353928,
+      "ensemble_test_gain_percent": 0.5613645503376855
+    },
+    "net": {
+      "name": "net_28",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 20
+      },
+      "selection15_mae": 4.449541246431961,
+      "august_mae": 4.31690854658774,
+      "september_mae": 5.234444933142018,
+      "ensemble_test_gain_absolute": 0.14323611314941687,
+      "ensemble_test_gain_percent": 2.7364145573967904
+    },
+    "revin": {
+      "name": "revin_7",
+      "family": "revin",
+      "origin": "monthly_revin_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 46
+      },
+      "selection15_mae": 4.530381681023904,
+      "august_mae": 4.349658864444875,
+      "september_mae": 5.328862991941903,
+      "ensemble_test_gain_absolute": 0.23765417194930194,
+      "ensemble_test_gain_percent": 4.4597538407099835
+    },
+    "ridge": {
+      "name": "ridge_1000",
+      "family": "ridge",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "alpha": 1000
+      },
+      "selection15_mae": 4.632956402778129,
+      "august_mae": 4.478116190597531,
+      "september_mae": 5.2942212791499275,
+      "ensemble_test_gain_absolute": 0.20301245915732657,
+      "ensemble_test_gain_percent": 3.8346047218850567
+    },
+    "trees": {
+      "name": "trees_5",
+      "family": "trees",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "selection15_mae": 4.520308636121388,
+      "august_mae": 4.340949571492784,
+      "september_mae": 5.347656732692999,
+      "ensemble_test_gain_absolute": 0.25644791270039846,
+      "ensemble_test_gain_percent": 4.795519337144423
+    }
+  },
+  "best_single": {
+    "name": "net_28",
+    "family": "net",
+    "origin": "monthly_base_gpu1",
+    "config": {
+      "width": 128,
+      "depth": 3,
+      "dropout": 0.15,
+      "lr": 0.001,
+      "seed": 43,
+      "epochs": 20
+    },
+    "selection15_mae": 4.449541246431961,
+    "august_mae": 4.31690854658774,
+    "september_mae": 5.234444933142018,
+    "ensemble_test_gain_absolute": 0.14323611314941687,
+    "ensemble_test_gain_percent": 2.7364145573967904
+  },
+  "ensemble": {
+    "august_mae": 4.245328588334859,
+    "september_mae": 5.091208819992601
+  },
+  "candidates": [
+    {
+      "name": "ridge_1",
+      "family": "ridge",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "alpha": 1
+      },
+      "selection15_mae": 4.674344918196798,
+      "august_mae": 4.53401556897152,
+      "september_mae": 5.357795754618185
+    },
+    {
+      "name": "ridge_10",
+      "family": "ridge",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "alpha": 10
+      },
+      "selection15_mae": 4.671234175631205,
+      "august_mae": 4.531020701082626,
+      "september_mae": 5.353259547276489
+    },
+    {
+      "name": "ridge_100",
+      "family": "ridge",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "alpha": 100
+      },
+      "selection15_mae": 4.655479390466425,
+      "august_mae": 4.512761625800124,
+      "september_mae": 5.330550988945666
+    },
+    {
+      "name": "ridge_1000",
+      "family": "ridge",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "alpha": 1000
+      },
+      "selection15_mae": 4.632956402778129,
+      "august_mae": 4.478116190597531,
+      "september_mae": 5.2942212791499275,
+      "ensemble_test_gain_absolute": 0.20301245915732657,
+      "ensemble_test_gain_percent": 3.8346047218850567
+    },
+    {
+      "name": "ridge_10000",
+      "family": "ridge",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "alpha": 10000
+      },
+      "selection15_mae": 4.673432087995933,
+      "august_mae": 4.4889421279501045,
+      "september_mae": 5.283461637478234
+    },
+    {
+      "name": "trees_5",
+      "family": "trees",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "selection15_mae": 4.520308636121388,
+      "august_mae": 4.340949571492784,
+      "september_mae": 5.347656732692999,
+      "ensemble_test_gain_absolute": 0.25644791270039846,
+      "ensemble_test_gain_percent": 4.795519337144423
+    },
+    {
+      "name": "trees_15",
+      "family": "trees",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 15,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "selection15_mae": 4.572165182064906,
+      "august_mae": 4.366443500192327,
+      "september_mae": 5.273476932375081
+    },
+    {
+      "name": "trees_40",
+      "family": "trees",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 40,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "selection15_mae": 4.621184053759152,
+      "august_mae": 4.393995641152001,
+      "september_mae": 5.241270713040717
+    },
+    {
+      "name": "trees_100",
+      "family": "trees",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 100,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "selection15_mae": 4.697060753457223,
+      "august_mae": 4.44844892273371,
+      "september_mae": 5.261799799433534
+    },
+    {
+      "name": "boost_15_10",
+      "family": "boost",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "selection15_mae": 4.541435903688714,
+      "august_mae": 4.3452753855890665,
+      "september_mae": 5.232108949059096
+    },
+    {
+      "name": "boost_31_10",
+      "family": "boost",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "selection15_mae": 4.52157071037106,
+      "august_mae": 4.342403813875277,
+      "september_mae": 5.251553772785148,
+      "ensemble_test_gain_absolute": 0.16034495279254735,
+      "ensemble_test_gain_percent": 3.053285936506917
+    },
+    {
+      "name": "boost_31_100",
+      "family": "boost",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "selection15_mae": 4.526269386832757,
+      "august_mae": 4.354363541447675,
+      "september_mae": 5.19674978492365
+    },
+    {
+      "name": "boost_63_100",
+      "family": "boost",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "selection15_mae": 4.51858232168405,
+      "august_mae": 4.354320344280582,
+      "september_mae": 5.178290733840242
+    },
+    {
+      "name": "net_15",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 9
+      },
+      "selection15_mae": 4.573980093856992,
+      "august_mae": 4.403150632781784,
+      "september_mae": 5.280899030359261
+    },
+    {
+      "name": "net_16",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 13
+      },
+      "selection15_mae": 4.541620626672526,
+      "august_mae": 4.394645530765877,
+      "september_mae": 5.291363623822087
+    },
+    {
+      "name": "net_17",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 20
+      },
+      "selection15_mae": 4.531507310748921,
+      "august_mae": 4.385021320323905,
+      "september_mae": 5.290383756188938
+    },
+    {
+      "name": "net_18",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 21
+      },
+      "selection15_mae": 4.540251809917014,
+      "august_mae": 4.374796355634863,
+      "september_mae": 5.252611494058561
+    },
+    {
+      "name": "net_19",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 8
+      },
+      "selection15_mae": 4.513096924091449,
+      "august_mae": 4.359030963016028,
+      "september_mae": 5.2694983337011765
+    },
+    {
+      "name": "net_20",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 6
+      },
+      "selection15_mae": 4.54290169828466,
+      "august_mae": 4.361942756985196,
+      "september_mae": 5.180250754849155
+    },
+    {
+      "name": "net_21",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 21
+      },
+      "selection15_mae": 4.508954785170371,
+      "august_mae": 4.354466497719138,
+      "september_mae": 5.2177580195263635
+    },
+    {
+      "name": "net_22",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 29
+      },
+      "selection15_mae": 4.519133784040346,
+      "august_mae": 4.354699487458119,
+      "september_mae": 5.177155011130728
+    },
+    {
+      "name": "net_23",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 9
+      },
+      "selection15_mae": 4.504741885805318,
+      "august_mae": 4.366301029512294,
+      "september_mae": 5.311583377809948
+    },
+    {
+      "name": "net_24",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 6
+      },
+      "selection15_mae": 4.548632235059167,
+      "august_mae": 4.375107356263291,
+      "september_mae": 5.250899978787872
+    },
+    {
+      "name": "net_25",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 25
+      },
+      "selection15_mae": 4.517258087704672,
+      "august_mae": 4.356770001544157,
+      "september_mae": 5.255325908132125
+    },
+    {
+      "name": "net_26",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 25
+      },
+      "selection15_mae": 4.499478865882111,
+      "august_mae": 4.359258373979854,
+      "september_mae": 5.262180460928705
+    },
+    {
+      "name": "net_27",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 15
+      },
+      "selection15_mae": 4.518407747438332,
+      "august_mae": 4.346340639987694,
+      "september_mae": 5.268245694646036
+    },
+    {
+      "name": "net_28",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 20
+      },
+      "selection15_mae": 4.449541246431961,
+      "august_mae": 4.31690854658774,
+      "september_mae": 5.234444933142018,
+      "ensemble_test_gain_absolute": 0.14323611314941687,
+      "ensemble_test_gain_percent": 2.7364145573967904
+    },
+    {
+      "name": "net_29",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 23
+      },
+      "selection15_mae": 4.5277830301435165,
+      "august_mae": 4.343421706123506,
+      "september_mae": 5.233194818852495
+    },
+    {
+      "name": "net_30",
+      "family": "net",
+      "origin": "monthly_base_gpu1",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 37
+      },
+      "selection15_mae": 4.510179715019143,
+      "august_mae": 4.334731173311447,
+      "september_mae": 5.238165211507229
+    },
+    {
+      "name": "cat_0",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          857
+        ]
+      },
+      "selection15_mae": 4.569657296611144,
+      "august_mae": 4.380151764346898,
+      "september_mae": 5.196494968355598
+    },
+    {
+      "name": "cat_1",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          1013
+        ]
+      },
+      "selection15_mae": 4.58035815502959,
+      "august_mae": 4.380781997494906,
+      "september_mae": 5.180693823861118
+    },
+    {
+      "name": "cat_2",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          380
+        ]
+      },
+      "selection15_mae": 4.607735800173026,
+      "august_mae": 4.411894498421984,
+      "september_mae": 5.182821741583455
+    },
+    {
+      "name": "cat_3",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          378
+        ]
+      },
+      "selection15_mae": 4.612196308416872,
+      "august_mae": 4.407309886362861,
+      "september_mae": 5.211422421872622
+    },
+    {
+      "name": "cat_4",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          682
+        ]
+      },
+      "selection15_mae": 4.547460040055985,
+      "august_mae": 4.355821572694871,
+      "september_mae": 5.211801968990112
+    },
+    {
+      "name": "cat_5",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          673
+        ]
+      },
+      "selection15_mae": 4.60293510906081,
+      "august_mae": 4.396433138448791,
+      "september_mae": 5.174048477107821
+    },
+    {
+      "name": "cat_6",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          189
+        ]
+      },
+      "selection15_mae": 4.6059429303337565,
+      "august_mae": 4.415678116252776,
+      "september_mae": 5.2228177484425755
+    },
+    {
+      "name": "cat_7",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          146
+        ]
+      },
+      "selection15_mae": 4.643249041437914,
+      "august_mae": 4.413079180895186,
+      "september_mae": 5.190763320931324
+    },
+    {
+      "name": "cat_8",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 10,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 43,
+        "epochs": [
+          553
+        ]
+      },
+      "selection15_mae": 4.616084320868715,
+      "august_mae": 4.3965632185865475,
+      "september_mae": 5.148743836839068
+    },
+    {
+      "name": "cat_9",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          867,
+          172,
+          100,
+          798
+        ]
+      },
+      "selection15_mae": 4.498305826410473,
+      "august_mae": 4.345424699290502,
+      "september_mae": 5.1878966978415635,
+      "ensemble_test_gain_absolute": 0.0966878778489626,
+      "ensemble_test_gain_percent": 1.863720183348867
+    },
+    {
+      "name": "cat_10",
+      "family": "cat",
+      "origin": "monthly_cat_gpu1",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          425,
+          122,
+          106,
+          509
+        ]
+      },
+      "selection15_mae": 4.529940761977626,
+      "august_mae": 4.366677383477622,
+      "september_mae": 5.1758230700237835
+    },
+    {
+      "name": "graph_0",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 37
+      },
+      "selection15_mae": 4.607332907247924,
+      "august_mae": 4.40351042116016,
+      "september_mae": 5.182915670056161
+    },
+    {
+      "name": "graph_1",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 28
+      },
+      "selection15_mae": 4.63174952732278,
+      "august_mae": 4.398704183980898,
+      "september_mae": 5.136140015543572
+    },
+    {
+      "name": "graph_2",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 76
+      },
+      "selection15_mae": 4.623639410770269,
+      "august_mae": 4.403726852874919,
+      "september_mae": 5.180904007748331
+    },
+    {
+      "name": "graph_3",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 78
+      },
+      "selection15_mae": 4.639223299349616,
+      "august_mae": 4.396207462919447,
+      "september_mae": 5.178994618645403
+    },
+    {
+      "name": "graph_4",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 14
+      },
+      "selection15_mae": 4.6461610429019435,
+      "august_mae": 4.410435861673626,
+      "september_mae": 5.179577403376172
+    },
+    {
+      "name": "graph_5",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 33
+      },
+      "selection15_mae": 4.59617044004845,
+      "august_mae": 4.378121649449639,
+      "september_mae": 5.1229155468698
+    },
+    {
+      "name": "graph_6",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 37
+      },
+      "selection15_mae": 4.6442428865535375,
+      "august_mae": 4.404395039125246,
+      "september_mae": 5.161434148613292
+    },
+    {
+      "name": "graph_7",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 50
+      },
+      "selection15_mae": 4.641774483134549,
+      "august_mae": 4.40224366685472,
+      "september_mae": 5.163395641005562
+    },
+    {
+      "name": "graph_8",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 29
+      },
+      "selection15_mae": 4.587273851599832,
+      "august_mae": 4.3685445548822965,
+      "september_mae": 5.15914846326749
+    },
+    {
+      "name": "graph_9",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 14
+      },
+      "selection15_mae": 4.643011331638342,
+      "august_mae": 4.399506895000009,
+      "september_mae": 5.163296241652007
+    },
+    {
+      "name": "graph_10",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 22
+      },
+      "selection15_mae": 4.655641760263757,
+      "august_mae": 4.404764516295033,
+      "september_mae": 5.144604322893814
+    },
+    {
+      "name": "graph_11",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 39
+      },
+      "selection15_mae": 4.598012550092231,
+      "august_mae": 4.3856454856293405,
+      "september_mae": 5.187166469033695
+    },
+    {
+      "name": "graph_12",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 12
+      },
+      "selection15_mae": 4.597060598222273,
+      "august_mae": 4.344804408029256,
+      "september_mae": 5.119950406569955,
+      "ensemble_test_gain_absolute": 0.028741586577353928,
+      "ensemble_test_gain_percent": 0.5613645503376855
+    },
+    {
+      "name": "graph_13",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 15
+      },
+      "selection15_mae": 4.595520304347475,
+      "august_mae": 4.398232998233991,
+      "september_mae": 5.185307773001596
+    },
+    {
+      "name": "graph_14",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 17
+      },
+      "selection15_mae": 4.641352095400281,
+      "august_mae": 4.402071626188273,
+      "september_mae": 5.163062432041072
+    },
+    {
+      "name": "graph_15",
+      "family": "graph",
+      "origin": "monthly_graph_gpu1",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 24
+      },
+      "selection15_mae": 4.631035347114856,
+      "august_mae": 4.402664807882405,
+      "september_mae": 5.153117930617858
+    },
+    {
+      "name": "revin_1",
+      "family": "revin",
+      "origin": "monthly_revin_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "revin": true,
+        "epochs": 49
+      },
+      "selection15_mae": 4.593396168930093,
+      "august_mae": 4.400310773044822,
+      "september_mae": 5.335212790400616
+    },
+    {
+      "name": "revin_3",
+      "family": "revin",
+      "origin": "monthly_revin_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 30
+      },
+      "selection15_mae": 4.589860055548765,
+      "august_mae": 4.393326281114586,
+      "september_mae": 5.2988261485091845
+    },
+    {
+      "name": "revin_5",
+      "family": "revin",
+      "origin": "monthly_revin_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "revin": true,
+        "epochs": 42
+      },
+      "selection15_mae": 4.625557241010646,
+      "august_mae": 4.40486348930775,
+      "september_mae": 5.470894181094962
+    },
+    {
+      "name": "revin_7",
+      "family": "revin",
+      "origin": "monthly_revin_gpu1",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 46
+      },
+      "selection15_mae": 4.530381681023904,
+      "august_mae": 4.349658864444875,
+      "september_mae": 5.328862991941903,
+      "ensemble_test_gain_absolute": 0.23765417194930194,
+      "ensemble_test_gain_percent": 4.4597538407099835
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "selection_basis": "August validation only",
+  "source_evaluation_directory": "monthly_joint_blend_gpu1",
+  "source_evaluation_model_sha256": "6615d87e9a07520572f58ffca75f164f8ae021140b700223c6a97df740810dcc",
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "feature_mode": "rich",
+  "model_fit_days": 363,
+  "normalization": "all363 training days",
+  "tf32": false,
+  "models": [
+    {
+      "name": "ridge_100",
+      "config": {
+        "alpha": 100
+      },
+      "weight": [
+        0.07181021971475654,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "trees_5",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "weight": [
+        0.10685935798310463,
+        0.3014574932094241,
+        0.13841476127033242,
+        0.2485597837197006
+      ]
+    },
+    {
+      "name": "net_18",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 21
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.0,
+        0.04238467838638841
+      ]
+    },
+    {
+      "name": "net_28",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 20
+      },
+      "weight": [
+        0.25082407539061685,
+        0.2375335619785584,
+        0.07499711311352443,
+        0.2790377602398034
+      ]
+    },
+    {
+      "name": "cat_9",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          867,
+          172,
+          100,
+          798
+        ]
+      },
+      "weight": [
+        0.08851471215802935,
+        0.011335361131039796,
+        0.09901808041047307,
+        0.029069679671490038
+      ]
+    },
+    {
+      "name": "graph_5",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 33
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.2559141185642785,
+        0.0
+      ]
+    },
+    {
+      "name": "graph_8",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 29
+      },
+      "weight": [
+        0.11887243010087155,
+        0.141868175454698,
+        0.0,
+        0.12647706931122463
+      ]
+    },
+    {
+      "name": "revin_7",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 46
+      },
+      "weight": [
+        0.03166985343271946,
+        0.12194821132870962,
+        0.11078609318069996,
+        0.0
+      ]
+    },
+    {
+      "name": "flat",
+      "config": {},
+      "weight": [
+        0.011675574787089605,
+        0.007799245427793682,
+        0.02199617928588597,
+        0.0
+      ]
+    },
+    {
+      "name": "ridge_1",
+      "config": {
+        "alpha": 1
+      },
+      "weight": [
+        0.014216837202880318,
+        0.0,
+        0.004115590843479421,
+        0.0
+      ]
+    },
+    {
+      "name": "ridge_10",
+      "config": {
+        "alpha": 10
+      },
+      "weight": [
+        0.021673515963377618,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "boost_15_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.0,
+        0.03427163938059344
+      ]
+    },
+    {
+      "name": "boost_31_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "weight": [
+        0.1142088659969401,
+        0.0,
+        0.09212470643625187,
+        0.07936435143844733
+      ]
+    },
+    {
+      "name": "boost_31_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.005283758402849451,
+        0.0
+      ]
+    },
+    {
+      "name": "boost_63_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.069613005458024,
+        0.0
+      ]
+    },
+    {
+      "name": "net_17",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 20
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.013870416563840908,
+        0.0
+      ]
+    },
+    {
+      "name": "net_19",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 8
+      },
+      "weight": [
+        0.011241054627772156,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_25",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 25
+      },
+      "weight": [
+        0.02544825656076282,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "net_26",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 25
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.029269359999962413,
+        0.0
+      ]
+    },
+    {
+      "name": "net_27",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 15
+      },
+      "weight": [
+        0.09252902210031214,
+        0.1572295627172931,
+        0.04121935965235669,
+        0.1471375316133275
+      ]
+    },
+    {
+      "name": "net_30",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 37
+      },
+      "weight": [
+        0.0,
+        0.0,
+        0.04337745681804094,
+        0.0
+      ]
+    },
+    {
+      "name": "graph_12",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 12
+      },
+      "weight": [
+        0.02155155089596946,
+        0.0,
+        0.0,
+        0.013697506239024486
+      ]
+    },
+    {
+      "name": "graph_13",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 15
+      },
+      "weight": [
+        0.018904673084797305,
+        0.02082838875248339,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "description": "Frozen effective leaf weights; flattened nested convex mixtures algebraically. Retrain learned components from scratch on official training only."
+}

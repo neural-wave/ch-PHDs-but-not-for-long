@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "no_query_target_leakage": true,
+  "missing_calendar_dates_preserved": true,
+  "full_curve_cross_zone_gradient": true,
+  "flowstate_gradient": true,
+  "frozen_checkpoint_receipt": true,
+  "two_epoch_fits": [
+    {
+      "flowstate": false,
+      "seed": 17,
+      "validation_mae": 5.666930079460144,
+      "best_epoch": 2,
+      "epochs": 2,
+      "seconds": 0.34287428855895996,
+      "parameters": 9156,
+      "folder": "smoke_fits/0_17"
+    },
+    {
+      "flowstate": true,
+      "seed": 17,
+      "validation_mae": 5.394310355186462,
+      "best_epoch": 2,
+      "epochs": 2,
+      "seconds": 0.031270503997802734,
+      "parameters": 9156,
+      "folder": "smoke_fits/1_17"
+    }
+  ]
+}

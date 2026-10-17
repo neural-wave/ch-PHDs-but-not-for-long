@@ -1,0 +1,134 @@
+{
+  "selected": {
+    "config": {
+      "id": 162,
+      "feature": "rich",
+      "anchor": "flat",
+      "family": "cnn",
+      "width": 32,
+      "depth": 3,
+      "lr": 0.003,
+      "seed": 17
+    },
+    "parameters": 40579,
+    "validation_mae": 4.3429247599061025,
+    "best_epoch": 10,
+    "epochs_run": 35,
+    "seconds": 1.0802494541276246,
+    "max_hourly_mean_error": 2.842170943040401e-14,
+    "replay_max_error": 0.0,
+    "september_mae": 5.222493662200222,
+    "by_zone": [
+      4.007189408918557,
+      6.827477998520118,
+      5.415766711983596,
+      4.639540529378611
+    ]
+  },
+  "by_family": {
+    "linear": {
+      "config": {
+        "id": 168,
+        "feature": "rich",
+        "anchor": "interpolation",
+        "family": "linear",
+        "width": 0,
+        "depth": 0,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "parameters": 1170,
+      "validation_mae": 4.424609392130859,
+      "best_epoch": 28,
+      "epochs_run": 53,
+      "seconds": 1.0994856778997928,
+      "max_hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0,
+      "september_mae": 5.20979447224552,
+      "by_zone": [
+        3.9492121774215363,
+        6.823769752535297,
+        5.601351310068353,
+        4.464844648956891
+      ]
+    },
+    "additive": {
+      "config": {
+        "id": 173,
+        "feature": "rich",
+        "anchor": "interpolation",
+        "family": "additive",
+        "width": 0,
+        "depth": 0,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "parameters": 4671,
+      "validation_mae": 4.514552277361025,
+      "best_epoch": 35,
+      "epochs_run": 60,
+      "seconds": 1.2320218058302999,
+      "max_hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0,
+      "september_mae": 5.255107001396363,
+      "by_zone": [
+        3.9901017566269696,
+        6.858154967379032,
+        5.632274679299154,
+        4.5398966022802965
+      ]
+    },
+    "mlp": {
+      "config": {
+        "id": 190,
+        "feature": "rich",
+        "anchor": "interpolation",
+        "family": "mlp",
+        "width": 32,
+        "depth": 2,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "parameters": 13635,
+      "validation_mae": 4.343256224542143,
+      "best_epoch": 18,
+      "epochs_run": 43,
+      "seconds": 1.0553144218865782,
+      "max_hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0,
+      "september_mae": 5.343946711729417,
+      "by_zone": [
+        4.122365892730058,
+        7.011176513241267,
+        5.604341413670711,
+        4.63790302727563
+      ]
+    },
+    "cnn": {
+      "config": {
+        "id": 162,
+        "feature": "rich",
+        "anchor": "flat",
+        "family": "cnn",
+        "width": 32,
+        "depth": 3,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "parameters": 40579,
+      "validation_mae": 4.3429247599061025,
+      "best_epoch": 10,
+      "epochs_run": 35,
+      "seconds": 1.0802494541276246,
+      "max_hourly_mean_error": 2.842170943040401e-14,
+      "replay_max_error": 0.0,
+      "september_mae": 5.222493662200222,
+      "by_zone": [
+        4.007189408918557,
+        6.827477998520118,
+        5.415766711983596,
+        4.639540529378611
+      ]
+    }
+  }
+}

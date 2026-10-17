@@ -1,0 +1,544 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "configs": [
+    {
+      "id": 0,
+      "family": "compact",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 1,
+      "family": "compact",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 2,
+      "family": "compact",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 3,
+      "family": "compact",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 4,
+      "family": "compact",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 5,
+      "family": "compact",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 6,
+      "family": "compact",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 7,
+      "family": "compact",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 8,
+      "family": "compact",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 9,
+      "family": "compact",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 10,
+      "family": "compact",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 11,
+      "family": "compact",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 12,
+      "family": "compact",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 13,
+      "family": "compact",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 14,
+      "family": "compact",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 15,
+      "family": "compact",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 16,
+      "family": "s4d",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 17,
+      "family": "s4d",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 18,
+      "family": "s4d",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 19,
+      "family": "s4d",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 20,
+      "family": "s4d",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 21,
+      "family": "s4d",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 22,
+      "family": "s4d",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 23,
+      "family": "s4d",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 24,
+      "family": "s4d",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 25,
+      "family": "s4d",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 26,
+      "family": "s4d",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 27,
+      "family": "s4d",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 28,
+      "family": "s4d",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 29,
+      "family": "s4d",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 30,
+      "family": "s4d",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 31,
+      "family": "s4d",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 32,
+      "family": "s5",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 33,
+      "family": "s5",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 34,
+      "family": "s5",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 35,
+      "family": "s5",
+      "mode": "fixed",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 36,
+      "family": "s5",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 37,
+      "family": "s5",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 38,
+      "family": "s5",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 39,
+      "family": "s5",
+      "mode": "standard",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 40,
+      "family": "s5",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 41,
+      "family": "s5",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 42,
+      "family": "s5",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 43,
+      "family": "s5",
+      "mode": "day_input",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 44,
+      "family": "s5",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 45,
+      "family": "s5",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 46,
+      "family": "s5",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 47,
+      "family": "s5",
+      "mode": "day_reversible",
+      "width": 32,
+      "state": 32,
+      "lr": 0.003,
+      "seed": 43
+    }
+  ],
+  "folds": [
+    {
+      "test": "2026-02",
+      "validation": "2026-01",
+      "nt": 91,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 28
+    },
+    {
+      "test": "2026-03",
+      "validation": "2026-02",
+      "nt": 122,
+      "ns": 15,
+      "nc": 13,
+      "test_days": 30
+    },
+    {
+      "test": "2026-04",
+      "validation": "2026-03",
+      "nt": 150,
+      "ns": 15,
+      "nc": 15,
+      "test_days": 30
+    },
+    {
+      "test": "2026-05",
+      "validation": "2026-04",
+      "nt": 180,
+      "ns": 15,
+      "nc": 15,
+      "test_days": 31
+    },
+    {
+      "test": "2026-06",
+      "validation": "2026-05",
+      "nt": 210,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 30
+    },
+    {
+      "test": "2026-07",
+      "validation": "2026-06",
+      "nt": 241,
+      "ns": 15,
+      "nc": 15,
+      "test_days": 31
+    },
+    {
+      "test": "2026-08",
+      "validation": "2026-07",
+      "nt": 271,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 31
+    },
+    {
+      "test": "2026-09",
+      "validation": "2026-08",
+      "nt": 302,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 30
+    }
+  ],
+  "taus": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.25,
+    0.5,
+    0.75,
+    0.8,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "code_hashes": {
+    "ssm_models.py": "02ae6960fb7cfbc00e6697bf5b47a0291e37f90e61817c476dfbaed937d80301",
+    "ssm_experiment.py": "f54173fe014cb46bc9354ed583193b7e0d5cbdd5ee5109d49453679e8f04cf98",
+    "reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "interpretable_models.py": "1e5b56c85011fe4c33817595650f68895181824d5b3991a385360f9ec4243ed1",
+    "VALIDATION_PROTOCOL.md": "57588d45eed9858c1eb27c3cd6aca8717d9c478cdd8064f1dfe8eafe14807fe6",
+    "campaigns/ssm_monthly_20261017/train.py": "033d431f85565e81cf66fa34d2e6e678b700ab07bb566d593d039182c00cb1e6",
+    "campaigns/ssm_monthly_20261017/audit.py": "3f258fdec129526f8d5597bb64d7c310dd8771c70ba94bdca6636a4a0b554bc7",
+    "campaigns/ssm_monthly_20261017/run.py": "029c2fe57df29d12e4bfbfd84b3ae86fe030265acb417e645069162e2109f6c8",
+    "campaigns/ssm_monthly_20261017/PROTOCOL.md": "455ba22f80dbe289640077452488a14f614936a60a0eccc3a84c017a7bfd1cb2",
+    "campaigns/monthly_quantiles_20261017/trainq.py": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+    "campaigns/monthly_ratio_20261017/sources/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "campaigns/monthly_ratio_20261017/sources/interpretable_models.py": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+    "campaigns/monthly_ratio_20261017/sources/interpolation_history.py": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+    "campaigns/monthly_ratio_20261017/sources/simple_search.py": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+    "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+    "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+    "campaigns/monthly_ratio_20261017/experiment.py": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+    "campaigns/monthly_ratio_20261017/audit.py": "21f6b9df3c0e7b97837a06ea4b74b23b064be16a1b9bd92bef672240ae75a661",
+    "campaigns/monthly_ratio_20261017/run.py": "214135bdc4377b89a7909cffde51c051026a25810eb13d338e3a2fc1ceedd7ca",
+    "campaigns/monthly_ratio_20261017/PROTOCOL.md": "3bb6c8b24d2586f20b00093560931f1cd3d0555fef8292bed536f321e1a6f588",
+    "campaigns/normalization_20261017/train.py": "c966b6de90fc323965692f2865da050d4ec626970c76519369cfa44a21266aef",
+    "campaigns/normalization_20261017/audit.py": "e93ee998ec5024e84492fb694b445f42944274c4f9dcb120eedbdf9afd1fac54",
+    "campaigns/normalization_20261017/run.py": "146c270718476935a082c61decf63fa9762c3b624257484dd7baff7a98bc7baa",
+    "campaigns/normalization_20261017/PROTOCOL.md": "f78414219b5363fcb03196c60cc687c2a38d15542c939a2390e6be4a8cf3b650"
+  },
+  "causal_perturbation_and_truncation": true,
+  "physical_currency_loss": true
+}

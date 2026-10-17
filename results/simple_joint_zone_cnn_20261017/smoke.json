@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "lag_values": true,
+  "missing_masks": true,
+  "cross_zone_gradient": true,
+  "profile": [
+    {
+      "workers": 2,
+      "seconds": 4.029004350071773
+    }
+  ]
+}

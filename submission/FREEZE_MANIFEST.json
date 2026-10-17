@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "model_fit_days": 363,
+  "evaluation_pipeline": "monthly_joint_blend_gpu1",
+  "sha256": {
+    "README.md": "ed4bdefed317412ad3a8371d63b90d4b1d7a35cccf1d8a060e6b27059b2e9dd9",
+    "catboost_models.py": "3cba0288dda5fb6b18c49f2cdb5be2b3117ffe165d2a919595d54b4b37c8e587",
+    "deployment_audit.json": "0b12d550d2100a99ab4a4ba4803881f8f80204d7d0a219c15d46fe175d7c5361",
+    "evaluation_audit.json": "5bcf322870f4e730a0f737e207768ebd9373921f7d93966f997ac9821b6d9f74",
+    "evaluation_metrics.json": "fb6a0c40d1dfbbe1e5c9eb3521ed54b60f0fdcce142d9c3a97bc4d8ffbedad94",
+    "frozen_recipe.json": "7b1536d99ae4ebac7eb6dc81c28a401c32600a0f3cf7865dc57f75121468315c",
+    "graph_models.py": "95038763ba6f9f49ba52ae359a82b11357da72b1269a6494830a728772c43c4b",
+    "model.pkl": "8ccb3b8346b9800d911546cdb6e2476e64fa89c26f7f250dd55f842e11d75805",
+    "predict.py": "9084c350b20275b1daae907211d75524a6f251c531c05e1e564fed56b0f6c392",
+    "reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "refit_report.json": "fffbcac3634e701b1d0198bb04717579cd525cbdd545c3f4f42b497cf47a68a2",
+    "requirements-catboost.txt": "0bca90a646f32d38151bff7e329edca4986bcffe35764f41ad3c2cc13069f2cf",
+    "requirements.txt": "9ed5ed8e9152c921747e2e4a255d5f97e2198bd9bee594e1159330f9524f2c17",
+    "revin_models.py": "cdc55f4f286983ae6fe384d29239067ffca31e8e6f1accc2d5f9b4a869d0cbef",
+    "run.py": "742fd02b9b2c2ead92deb6e2133492b4998165d3d7d227858694d02c6909dfca",
+    "train_frozen.py": "1bcce529119f7a7d1ed1e3201ce1bf2d2f916c1bce82f61f55c9934832744cb4"
+  }
+}

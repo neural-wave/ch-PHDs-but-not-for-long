@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "features": 90,
+  "added_channels": 63,
+  "calendar_days": 7,
+  "checks": [
+    "exact signed and absolute residuals",
+    "current/future perturbation",
+    "past-only equivalence",
+    "missing-calendar-date mask",
+    "empty history",
+    "unchanged compact prefix",
+    "four-family forward and zero-mean outputs",
+    "default and opt-in config grids"
+  ]
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/data.npz",
+    "sha256": "9f4cd2561a269c95c24c7ac352290f40633b4e6f2afc53ed8175ed8af6f1f6f1"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/selection.json",
+    "sha256": "1d77ffd9a457745c12d57b575d4635f5e35d03ca417fc274f08257ab7ea7bd0b"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/metrics.json",
+    "sha256": "17b657ac21a1bc31edb31bcdddc01fc965cdf4cd52484bfe1a55df315793b3dc"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/0/quantiles.npy",
+    "sha256": "152fe7da6c9b20c93ac1fd7542e2b384e94373d4b540efb4e26ed593f4249948"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/10/quantiles.npy",
+    "sha256": "28d7966b6e6a5086ba3c143453f887f2648a21630b7484849f9441cd4fd979e9"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/16/quantiles.npy",
+    "sha256": "a01327ac68a9b0b6be780a05d3aa9abba6966798cbc70273856a04365646b253"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/24/quantiles.npy",
+    "sha256": "cdf9ab467bf734bc48f7890f2cbe36dd41842a77497aef7902c7f983b12ac192"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/33/quantiles.npy",
+    "sha256": "3b98a2c2640f30fb2e36e3734b1145f773f5af7f604916714287416811e34609"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/42/quantiles.npy",
+    "sha256": "2d7aa9de4b7301ebf86159dab4265006f7ee13dcbeb365e8f4ad3b10101d1be2"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/6/quantiles.npy",
+    "sha256": "103f87efb00503b9be3fac8b117126c9e48030459eff57b99bc09d46c62a066c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/14/quantiles.npy",
+    "sha256": "886691a149083f9e94d05e15bc438b092ccfb3360ed1362b1c062b31b8ef28fc"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/20/quantiles.npy",
+    "sha256": "36ba60ab667632e72880e70ae656c42bd343483475d5aec5654cf95ff5b164ba"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/30/quantiles.npy",
+    "sha256": "7f7279231a0f3297e03b87c398b8c1c11d81562892b6573a18f36e78e1bf4d23"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/37/quantiles.npy",
+    "sha256": "dc3c33fe4bae53bd9fed826c2380c24a7833f5610f7442985345544a1696ee0c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-02/trials/47/quantiles.npy",
+    "sha256": "a7a5d80f4c6611345d283258306706b97c6fdabb3c04eadcb8f6948574fc55e7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/data.npz",
+    "sha256": "bb6a6495c8db54d4a529eb45d2ace5a5ec8943cc1cf090116c65a94f31e76323"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/selection.json",
+    "sha256": "981451ddd0168191df132cc3a23b0121e6d9fe4bf41dbdfa03f8c6af23ffda05"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/metrics.json",
+    "sha256": "d8d62f272831ab62e4960848bedc2ad1debb9b71d5ab754a2e5b7a6b8064abee"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/0/quantiles.npy",
+    "sha256": "cde8e1c44b6da399a6119f3d2f016a0202c41ae6574eced465efe9545762ab6c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/11/quantiles.npy",
+    "sha256": "6a73e00ac378ef8b00ed31f038ec2b62c759ff13ac5118b423a2a73d204eafb7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/16/quantiles.npy",
+    "sha256": "f3f984dfdc1d40422b2b108476c886c6c8758d17fcc67ac3aaf59ca21ebbf666"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/26/quantiles.npy",
+    "sha256": "88361aae7ab9414fb1617a4ce6f250a251260f14795dc55ae83a5aa512425fb5"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/35/quantiles.npy",
+    "sha256": "550ea87f66ed0607492cabf65c7a2226043a2be87227ae73a450155f3a8c28a7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/42/quantiles.npy",
+    "sha256": "49dc963f8d384c962272f08d7c799ed74f12226d04a939a13354786adb9f7308"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/5/quantiles.npy",
+    "sha256": "322949a1603d04f88e97b5c471554a6f42f3d259fdac13cbc3e98ad46fcc0ceb"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/13/quantiles.npy",
+    "sha256": "aaa3f0bbd238b92ef386aba6adccfdd7d8a206d3ce0a19f9506f7a8abc06fd35"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/21/quantiles.npy",
+    "sha256": "4be236d20f65d3e059adbdc1404f39c7279dd47fe612bf56e1254a28d341beb5"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/30/quantiles.npy",
+    "sha256": "cdf701fe2f2bc26d27fbb9e487102015f2b5988a9989ca66059ee979e77fa2ac"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/38/quantiles.npy",
+    "sha256": "fe5850591dffa9023f668dd5fe41ead7ba232d34c723316c32f6223331e7f01d"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-03/trials/44/quantiles.npy",
+    "sha256": "f9490ae36d69d9d0fa4c665212468ad3b30328e1094dd45c216b60d37e5772e1"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/data.npz",
+    "sha256": "a230bd09072ecf8393a57e977a874bb3b63e112359d8c85c1c8b4a71373b7a99"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/selection.json",
+    "sha256": "7eb4f582dcbc63525c0339804f8ba250369fec167a4d169b68541fd10ea4e82c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/metrics.json",
+    "sha256": "68f1643febb2bffe84274112fa840d652a09fd41079967e1e9f925ea2d1adcbe"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/2/quantiles.npy",
+    "sha256": "c0a17f540dc085630513b62da2eacf0fec7458f64ea529f3c880548c724cbab7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/11/quantiles.npy",
+    "sha256": "291a1251b68cfe8e0c47137d2ec3982c311c69ec2a48c724f1e631c5a2324989"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/16/quantiles.npy",
+    "sha256": "ed7c00406684527792a3741e2e2a54479f5cb16a7f94e0481358b39ca821c51a"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/26/quantiles.npy",
+    "sha256": "903dceed3b6c7ce670eda05ed63c752209dcc5d3e0d0ac74e363aa87d4a511b2"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/33/quantiles.npy",
+    "sha256": "e82a7f2c5a6a0936198f10fb512707abc756fd550f0e740d01de194f63905342"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/40/quantiles.npy",
+    "sha256": "6790ba7155db2c24f2718b0f0e0eedd44a126fe753eb7c98c799ac5b53801fc1"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/5/quantiles.npy",
+    "sha256": "ac9be32393975901343074f73fc71610bc5f2793de3d3e3b994835f56f1837c7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/13/quantiles.npy",
+    "sha256": "cea4552716ef76c531302ffae1207d6f5a7fa947ab882bf242c04ba98556ef74"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/21/quantiles.npy",
+    "sha256": "d38d7575fe8fe0f49f7b61cebb031d9c2601bb3ba4113b81b2b2cb08e665cd79"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/30/quantiles.npy",
+    "sha256": "4500217c5f1deaa9938528f9496154bb3de57cf7a985b7e562298eb796bc0e68"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/39/quantiles.npy",
+    "sha256": "6f049f4aae86b996c357d672f5c61b67b822183a4bec5ec165491dcaa2a9711d"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-04/trials/47/quantiles.npy",
+    "sha256": "667fc6b49c3213483ca3d15cf4d1eec23a48099783b6828f363a19108f494cfb"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/data.npz",
+    "sha256": "0594e3a2d2dfc03405b9f955ae9c51a1ce95c77b4ac8f43e80b8f4244304e14c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/selection.json",
+    "sha256": "f58a6cb12008137b30058bc19ef48be0c81c5d32c32b86191ce9f9d8a55a04f2"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/metrics.json",
+    "sha256": "1933d5aec6f4a7b22d3c37c8ffb7f1edacd03d411546777b21341558c5b7e7ec"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/0/quantiles.npy",
+    "sha256": "f335d93aed5a6c1b304b80bc370a8cf8816f41b627b2142c27999213c99097c0"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/9/quantiles.npy",
+    "sha256": "de63619083a80ffd9dd10f4d6947a7d60a2803f0f2f3a4628633126ff07654c8"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/17/quantiles.npy",
+    "sha256": "dc88392cec91df1506fef6f5c6502fd3cdcf3d8af41676d2f1e8563a87686093"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/26/quantiles.npy",
+    "sha256": "d83bf1a853069a4368a3596d35f8a6c2da5a6696ad5075bda5600932e4ca4007"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/35/quantiles.npy",
+    "sha256": "8a3864d0bc8b803cb1521f394a2bcf39d773eb39dce4143c53f22cdf1d73a383"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/43/quantiles.npy",
+    "sha256": "75ea2e414bf502b93fbb3c625452d2b4f2c9860cc4ce49ca60f28d7a9a09eb48"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/4/quantiles.npy",
+    "sha256": "3de1591c762c093295bc527a07ca0d99cafa62080c4a4a8626ba19dd70bcd4d5"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/12/quantiles.npy",
+    "sha256": "c86bc67556e7ba994d68f625d96dcef907141629d1be8dc970008033d1debe9d"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/20/quantiles.npy",
+    "sha256": "05b969db0d512f0829159ad4ca8709e5b19668d32fcc83692ffae22a67b085da"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/28/quantiles.npy",
+    "sha256": "3de4d1585b856e7efc127e44b15c6e21ceadbc1b74458fe062fcb9098d3e2969"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/37/quantiles.npy",
+    "sha256": "1e63de30c36044737941235530e5ae82b75c796fb46f8ee5f4e73a5bb15dbdfe"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-05/trials/46/quantiles.npy",
+    "sha256": "5d87298c62df340e76d115474500cfd571040d7fd2fa3bb66b7846d5af12d494"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/data.npz",
+    "sha256": "a694f55486aa99b003c909ea0f4abc9fc6fa21c1404c6cdd378246be04bb8ade"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/selection.json",
+    "sha256": "88775fde5ec733e6838a13c3600134f703da6ae71317e16a4e7632600059d284"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/metrics.json",
+    "sha256": "e53910c8218cbf8ecbea9392569982f2e78896230d41827152d6b61bf81b705b"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/1/quantiles.npy",
+    "sha256": "de9cc7a167cd2a7dedd9e580eba907a50ad12ec63dd90b668bc3b80db072d435"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/9/quantiles.npy",
+    "sha256": "713c6ef18477ce9dea984e3c7cf59dfb0c5c382efeb2bc5c9e0f3195fe8991cb"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/16/quantiles.npy",
+    "sha256": "cc0b20f0aa1cd7a288f4bbb4f78cb10f31e632967530bc50b653b2a5f4a84eaf"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/24/quantiles.npy",
+    "sha256": "39021493145f590de8b10b486d938555b9105af48d8373271f053d296d27f29b"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/35/quantiles.npy",
+    "sha256": "64fe4822f8764c6447dd69ce485e93f952653f91ebb812bd3214fa99924b31b9"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/40/quantiles.npy",
+    "sha256": "ee4bcf83e73e2390e15600c7d985d79cc80e79226f28c1d9216f580a55211d98"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/5/quantiles.npy",
+    "sha256": "5404a054f2685f7668eb85a8808b88a65b3e278b1fb0daf0d770856c79e0d8fa"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/13/quantiles.npy",
+    "sha256": "77126c721681058aec80900fc276c0ac48d9ba0510686497b9e8db7211d23a80"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/20/quantiles.npy",
+    "sha256": "999fb1767ce2bd50901355e215e0083af961c4210fe4e66607f5adc713ba8111"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/30/quantiles.npy",
+    "sha256": "d312901cd5f43d0f1cb4df109dfde9a84945f0a2fa16a72177da501b622e6579"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/36/quantiles.npy",
+    "sha256": "d7d54e5fb5413123075ba16868396613d50a919a736079cd0c7fee3870670c35"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-06/trials/44/quantiles.npy",
+    "sha256": "915ee808b861ff2bb0d8bf0702e2026cae63ba64ddc9d24294de887fcaec0c15"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/data.npz",
+    "sha256": "37c4cfa8694f76a577cbd3a15f09c639fb5ea205fcda6c34159c5c70aede045f"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/selection.json",
+    "sha256": "06e11073da9dbe1699fcf5bea1245fbaf149b9af7f5a89c9c2185f8e860e2559"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/metrics.json",
+    "sha256": "162aa9107571a84646733addf2910776688f217826c1f8bea3f30fa22b932323"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/1/quantiles.npy",
+    "sha256": "fe5e3c71787b870748714cbe82c8e85637323d78b0a132f5f29909202848aec9"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/9/quantiles.npy",
+    "sha256": "007b5ba5ac10b57c63f4dd5b770d680d396a60232a92c55e9f446c4b824af4b3"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/17/quantiles.npy",
+    "sha256": "50c204f07dba76fd24d22dea48018c729b84e274117cc19c36d09e03c9e1bed6"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/26/quantiles.npy",
+    "sha256": "37a6da8efb650e75ad4507005a290d409bd6bfefe13688e78d2bc50e2d11ae1f"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/34/quantiles.npy",
+    "sha256": "2f7a593cca86af5f53c4c3dcd10f2dfb36f4f6bcab35c04272e504219a7ae86f"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/42/quantiles.npy",
+    "sha256": "3f4f53e489c1edf618a24186969c884275e4bd0019a1c20418b4fe9c908308be"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/5/quantiles.npy",
+    "sha256": "1d1a8ddd4a1efe1a02de9ec9a934969352461a82f33661eacf83e6d3d2e4d766"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/13/quantiles.npy",
+    "sha256": "dc7d7e1ca3d5ccece086a66e44eb332b85eac0e9e5c4b6d6240186b927b94ba7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/21/quantiles.npy",
+    "sha256": "7c4802fc0c6f75856005b8a922120bf367c8e0f59bf86c349a6899c7bbd5373f"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/30/quantiles.npy",
+    "sha256": "dcdde74841235755c7c03aa13b772c2683758e550200ff9e23598c14586e68d8"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/36/quantiles.npy",
+    "sha256": "40bd7778c2bf856dd4ae03d041bfda5bcbe7d474ba9a9410ab6a93365a2d801b"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-07/trials/45/quantiles.npy",
+    "sha256": "6edfb010107de3e049c69bee6a2ac1c1ad31d30e2059eb2e49c43d3daba80540"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/data.npz",
+    "sha256": "55e5297a20607628b9926f928c0eed2150f97301b8d78de14a07d2ddf46bd27c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/selection.json",
+    "sha256": "6a3389bb892cb2c71fec8a67a4db1f1836a3dd1f8a9561b4873c910a1ad94907"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/metrics.json",
+    "sha256": "852d7a235622da81916068399854237c2aba8b6ac76a4f172ceef8061bdaaf11"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/1/quantiles.npy",
+    "sha256": "3e87800647792945709f3da8595287a5ffec84765633c3fad8382eb91ec0f4d1"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/9/quantiles.npy",
+    "sha256": "be4e07f0a87027860f899899a2b550bc535cfd01d6302e85b53b8f1059afafc6"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/16/quantiles.npy",
+    "sha256": "cfb20e4589870bf67a2984c6b7614a5d30ae22fc8be5f8ef6afa601c45cee1f9"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/25/quantiles.npy",
+    "sha256": "229b5572c245ca2bf3a7f6ec559152846926011f07391c3f17ef4fa510cd654a"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/35/quantiles.npy",
+    "sha256": "ab8b5c23b2ffc13e504766a33e2abf29b5d35885a29a363cebafcbc742e62899"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/43/quantiles.npy",
+    "sha256": "acd18d6415bdb5c217cbdc456e737904a07b133fefe5fca1e8f22327e31020db"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/5/quantiles.npy",
+    "sha256": "0d62c099120fe645444a2437342de7cf711a8e35f02f146a211849ea10a2fc31"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/13/quantiles.npy",
+    "sha256": "0dcb6efa340b666d793cf6564ea787f5647df0fe479511dbe156f99c64c5183a"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/20/quantiles.npy",
+    "sha256": "b8f4c7aed37331bf636ed330f49d1fbbef5d56ab91fa13b579709fffbe443dca"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/31/quantiles.npy",
+    "sha256": "b20d9701668da84c2941d894002a29c7d6ad694817f66a1bad9b65a5b356bd4d"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/36/quantiles.npy",
+    "sha256": "efd5baf931c7038a19c0a162b0ebd921e4e44cda8d1181735fea95dd56cd9fbf"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-08/trials/47/quantiles.npy",
+    "sha256": "911f99616efc37d88c38a2d06444409e1d7b7b7815ad73ed4aa3d79e8349d94c"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/data.npz",
+    "sha256": "223d90ffd8cc1203e8913b506351eefc047ff3e7d8a6c9605497b58f3be8e8a4"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/selection.json",
+    "sha256": "8fe07334369679242d7dd20ba1ef82c96680b43e5f59c611973447d6e18f6b13"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/metrics.json",
+    "sha256": "94ea34835068c8b04d863969328f184faab909313b1bb00274a278bbf02264cc"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/0/quantiles.npy",
+    "sha256": "6ce3f3ad6987504049d71c812d8100c7d019edc37ef270881312dd10b586149b"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/8/quantiles.npy",
+    "sha256": "b2de46ef421ab15aebab07757a9f0b9325c152ad81333c694bd6115ed4e453ad"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/16/quantiles.npy",
+    "sha256": "7c8398a23ffe4b4f7f7809fdd9612e900a83aefb666c33abfbd7642322d63b5a"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/26/quantiles.npy",
+    "sha256": "e38431d4a24d85a81ad346989aa482aa7a9238d4bcb81b8d28559d787ab801c6"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/34/quantiles.npy",
+    "sha256": "f875fd09b1ad4f111c8a0ac82dddfab1784883bd64d995bcd6d118ccbbba83aa"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/43/quantiles.npy",
+    "sha256": "ef1ef7aeda201dcec876330e6d8c094eb9d7358d99e787451adb2f10eade0712"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/4/quantiles.npy",
+    "sha256": "1002ed7f4a21f193b6fe48fee5592342caa4097bd4fce8236aaef94b32e25f06"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/12/quantiles.npy",
+    "sha256": "c3dfe36be586e7c79463be30943bb368da3fb15319bd25efee6ad340ca036a03"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/20/quantiles.npy",
+    "sha256": "e0b5518f2ef4d6f493b3929348d10702affb705330a80cb57b576489d9389d16"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/28/quantiles.npy",
+    "sha256": "39c49dece4913e336829de74292cee82c1cbd67d27f4bdbf37eed15c02ed94c7"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/36/quantiles.npy",
+    "sha256": "0dac39c8912ce6cebca85812c83a853529f0a95b6a14e541666e0621ef14f2c0"
+  },
+  {
+    "path": "results/monthly_quantiles_20261017/folds/2026-09/trials/44/quantiles.npy",
+    "sha256": "fd063cc405b8fdab7b0a10afa03d5f2a572f733e328faea6b7569674d146e755"
+  }
+]

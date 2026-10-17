@@ -1,0 +1,1412 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "smoke": false,
+  "folds": [
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "validation": "2026-01",
+      "test": "2026-02",
+      "training_months": 3
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "validation": "2026-02",
+      "test": "2026-03",
+      "training_months": 4
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "validation": "2026-03",
+      "test": "2026-04",
+      "training_months": 5
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "validation": "2026-04",
+      "test": "2026-05",
+      "training_months": 6
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "validation": "2026-05",
+      "test": "2026-06",
+      "training_months": 7
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "validation": "2026-06",
+      "test": "2026-07",
+      "training_months": 8
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "validation": "2026-07",
+      "test": "2026-08",
+      "training_months": 9
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-05",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 3
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-04",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 4
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-03",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 5
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-02",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 6
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-01",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 7
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-12",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 8
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-11",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 9
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10
+    }
+  ],
+  "summary": [
+    {
+      "plan": "expanding",
+      "family": "direct",
+      "weighted_test_mae": 4.433215470888227,
+      "mean_month_mae": 4.4245836506541965
+    },
+    {
+      "plan": "expanding",
+      "family": "hierarchical",
+      "weighted_test_mae": 4.419718506102966,
+      "mean_month_mae": 4.410928655728638
+    },
+    {
+      "plan": "expanding",
+      "family": "interpolation",
+      "weighted_test_mae": 5.814817120774982,
+      "mean_month_mae": 5.799189376182575
+    },
+    {
+      "plan": "expanding",
+      "family": "ridge",
+      "weighted_test_mae": 4.373205069117845,
+      "mean_month_mae": 4.363728268567358
+    },
+    {
+      "plan": "fixed_september",
+      "family": "direct",
+      "weighted_test_mae": 5.419467796864357,
+      "mean_month_mae": 5.419467796864357
+    },
+    {
+      "plan": "fixed_september",
+      "family": "hierarchical",
+      "weighted_test_mae": 5.439637730889225,
+      "mean_month_mae": 5.439637730889224
+    },
+    {
+      "plan": "fixed_september",
+      "family": "interpolation",
+      "weighted_test_mae": 7.090321234809027,
+      "mean_month_mae": 7.090321234809027
+    },
+    {
+      "plan": "fixed_september",
+      "family": "ridge",
+      "weighted_test_mae": 5.292537812599497,
+      "mean_month_mae": 5.292537812599497
+    }
+  ],
+  "matched_pairs": [
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "validation": "2026-01",
+      "test": "2026-02",
+      "training_months": 3,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.2462089328853048,
+      "hierarchical_mae": 3.3255752297952306,
+      "delta_hierarchy_minus_direct": 0.0793662969099258
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "validation": "2026-01",
+      "test": "2026-02",
+      "training_months": 3,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.1272275405657277,
+      "hierarchical_mae": 3.166027923997646,
+      "delta_hierarchy_minus_direct": 0.038800383431918384
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "validation": "2026-01",
+      "test": "2026-02",
+      "training_months": 3,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.0656332038094636,
+      "hierarchical_mae": 3.134255328211256,
+      "delta_hierarchy_minus_direct": 0.06862212440179238
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "validation": "2026-01",
+      "test": "2026-02",
+      "training_months": 3,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.106798409244629,
+      "hierarchical_mae": 3.090720515657797,
+      "delta_hierarchy_minus_direct": -0.01607789358683176
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "validation": "2026-02",
+      "test": "2026-03",
+      "training_months": 4,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.00931655576797,
+      "hierarchical_mae": 5.070596790536634,
+      "delta_hierarchy_minus_direct": 0.06128023476866318
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "validation": "2026-02",
+      "test": "2026-03",
+      "training_months": 4,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.006870285209569,
+      "hierarchical_mae": 5.0018264906542225,
+      "delta_hierarchy_minus_direct": -0.005043794555346537
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "validation": "2026-02",
+      "test": "2026-03",
+      "training_months": 4,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.89243698697238,
+      "hierarchical_mae": 5.004263347092432,
+      "delta_hierarchy_minus_direct": 0.11182636012005176
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "validation": "2026-02",
+      "test": "2026-03",
+      "training_months": 4,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.099500710728566,
+      "hierarchical_mae": 4.864522928140324,
+      "delta_hierarchy_minus_direct": -0.23497778258824198
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "validation": "2026-03",
+      "test": "2026-04",
+      "training_months": 5,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.642550373918968,
+      "hierarchical_mae": 4.670028342314485,
+      "delta_hierarchy_minus_direct": 0.02747796839551686
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "validation": "2026-03",
+      "test": "2026-04",
+      "training_months": 5,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.906717284068494,
+      "hierarchical_mae": 4.834477545542836,
+      "delta_hierarchy_minus_direct": -0.07223973852565724
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "validation": "2026-03",
+      "test": "2026-04",
+      "training_months": 5,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.686829763430693,
+      "hierarchical_mae": 4.695225815063407,
+      "delta_hierarchy_minus_direct": 0.008396051632713508
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "validation": "2026-03",
+      "test": "2026-04",
+      "training_months": 5,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.691759999934439,
+      "hierarchical_mae": 4.701764430290256,
+      "delta_hierarchy_minus_direct": 0.010004430355817107
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "validation": "2026-04",
+      "test": "2026-05",
+      "training_months": 6,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.3774559747048,
+      "hierarchical_mae": 4.407148294977616,
+      "delta_hierarchy_minus_direct": 0.029692320272816097
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "validation": "2026-04",
+      "test": "2026-05",
+      "training_months": 6,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.463391149303155,
+      "hierarchical_mae": 4.475119411587447,
+      "delta_hierarchy_minus_direct": 0.011728262284291802
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "validation": "2026-04",
+      "test": "2026-05",
+      "training_months": 6,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.359716027486087,
+      "hierarchical_mae": 4.394606620457971,
+      "delta_hierarchy_minus_direct": 0.034890592971883905
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "validation": "2026-04",
+      "test": "2026-05",
+      "training_months": 6,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.391928066178071,
+      "hierarchical_mae": 4.405207260076402,
+      "delta_hierarchy_minus_direct": 0.013279193898330988
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "validation": "2026-05",
+      "test": "2026-06",
+      "training_months": 7,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.591054619094512,
+      "hierarchical_mae": 4.591825921405094,
+      "delta_hierarchy_minus_direct": 0.0007713023105813122
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "validation": "2026-05",
+      "test": "2026-06",
+      "training_months": 7,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.599994201334028,
+      "hierarchical_mae": 4.582363991996047,
+      "delta_hierarchy_minus_direct": -0.017630209337981206
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "validation": "2026-05",
+      "test": "2026-06",
+      "training_months": 7,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.4580358289587565,
+      "hierarchical_mae": 4.378943245727048,
+      "delta_hierarchy_minus_direct": -0.07909258323170842
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "validation": "2026-05",
+      "test": "2026-06",
+      "training_months": 7,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.563004343793456,
+      "hierarchical_mae": 4.523910320647643,
+      "delta_hierarchy_minus_direct": -0.039094023145812784
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "validation": "2026-06",
+      "test": "2026-07",
+      "training_months": 8,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.8831671478162675,
+      "hierarchical_mae": 4.030441142098535,
+      "delta_hierarchy_minus_direct": 0.14727399428226784
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "validation": "2026-06",
+      "test": "2026-07",
+      "training_months": 8,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.851312191568419,
+      "hierarchical_mae": 3.856045836036773,
+      "delta_hierarchy_minus_direct": 0.0047336444683541146
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "validation": "2026-06",
+      "test": "2026-07",
+      "training_months": 8,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.8424251652135126,
+      "hierarchical_mae": 3.7997230379379845,
+      "delta_hierarchy_minus_direct": -0.042702127275528134
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "validation": "2026-06",
+      "test": "2026-07",
+      "training_months": 8,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 3.9057802851580683,
+      "hierarchical_mae": 3.8644343609178735,
+      "delta_hierarchy_minus_direct": -0.04134592424019479
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "validation": "2026-07",
+      "test": "2026-08",
+      "training_months": 9,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.512299086563536,
+      "hierarchical_mae": 4.462096499876111,
+      "delta_hierarchy_minus_direct": -0.05020258668742539
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "validation": "2026-07",
+      "test": "2026-08",
+      "training_months": 9,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.460985346344123,
+      "hierarchical_mae": 4.498906131126675,
+      "delta_hierarchy_minus_direct": 0.037920784782551564
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "validation": "2026-07",
+      "test": "2026-08",
+      "training_months": 9,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.518349035523167,
+      "hierarchical_mae": 4.516393968861635,
+      "delta_hierarchy_minus_direct": -0.001955066661532001
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "validation": "2026-07",
+      "test": "2026-08",
+      "training_months": 9,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 4.484095914153071,
+      "hierarchical_mae": 4.486673346208907,
+      "delta_hierarchy_minus_direct": 0.0025774320558351604
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.314717258010569,
+      "hierarchical_mae": 5.312712763146445,
+      "delta_hierarchy_minus_direct": -0.00200449486412424
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.303786721041115,
+      "hierarchical_mae": 5.256047004883381,
+      "delta_hierarchy_minus_direct": -0.04773971615773398
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.302361144988712,
+      "hierarchical_mae": 5.330583498984792,
+      "delta_hierarchy_minus_direct": 0.028222353996079974
+    },
+    {
+      "plan": "expanding",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.299533470348826,
+      "hierarchical_mae": 5.344806897787109,
+      "delta_hierarchy_minus_direct": 0.04527342743828289
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-05",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 3,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.601357154208025,
+      "hierarchical_mae": 5.6115077001643225,
+      "delta_hierarchy_minus_direct": 0.010150545956297385
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-05",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 3,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.715908722680918,
+      "hierarchical_mae": 5.702830058276619,
+      "delta_hierarchy_minus_direct": -0.013078664404299722
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-05",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 3,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.585154501723644,
+      "hierarchical_mae": 5.580036534031827,
+      "delta_hierarchy_minus_direct": -0.005117967691816716
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-05",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 3,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.565339978068156,
+      "hierarchical_mae": 5.715159105764126,
+      "delta_hierarchy_minus_direct": 0.14981912769597017
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-04",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 4,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.578027735771891,
+      "hierarchical_mae": 5.504920698616884,
+      "delta_hierarchy_minus_direct": -0.07310703715500733
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-04",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 4,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.578716159846816,
+      "hierarchical_mae": 5.5831134351692695,
+      "delta_hierarchy_minus_direct": 0.004397275322453709
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-04",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 4,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.483698374166714,
+      "hierarchical_mae": 5.461089123499646,
+      "delta_hierarchy_minus_direct": -0.02260925066706765
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-04",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 4,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.557155768639941,
+      "hierarchical_mae": 5.634572978589311,
+      "delta_hierarchy_minus_direct": 0.0774172099493704
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-03",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 5,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.466331456977025,
+      "hierarchical_mae": 5.4637299686459695,
+      "delta_hierarchy_minus_direct": -0.00260148833105589
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-03",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 5,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.512794441143862,
+      "hierarchical_mae": 5.518729637862018,
+      "delta_hierarchy_minus_direct": 0.0059351967181555665
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-03",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 5,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.4941462933168355,
+      "hierarchical_mae": 5.5284331441558185,
+      "delta_hierarchy_minus_direct": 0.034286850838983085
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-03",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 5,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.449215029386389,
+      "hierarchical_mae": 5.503959738052123,
+      "delta_hierarchy_minus_direct": 0.054744708665733555
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-02",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 6,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.407548747579248,
+      "hierarchical_mae": 5.450789157923308,
+      "delta_hierarchy_minus_direct": 0.04324041034406001
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-02",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 6,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.450152576906821,
+      "hierarchical_mae": 5.442373011993897,
+      "delta_hierarchy_minus_direct": -0.007779564912923753
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-02",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 6,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.406387617683594,
+      "hierarchical_mae": 5.47555750105919,
+      "delta_hierarchy_minus_direct": 0.06916988337559626
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-02",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 6,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.417214606769298,
+      "hierarchical_mae": 5.446962308262543,
+      "delta_hierarchy_minus_direct": 0.02974770149324435
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-01",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 7,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.399890488685307,
+      "hierarchical_mae": 5.467854089320212,
+      "delta_hierarchy_minus_direct": 0.06796360063490425
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-01",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 7,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.355822037535007,
+      "hierarchical_mae": 5.3850341550218515,
+      "delta_hierarchy_minus_direct": 0.02921211748684449
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-01",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 7,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.371328315325573,
+      "hierarchical_mae": 5.4157546721154874,
+      "delta_hierarchy_minus_direct": 0.04442635678991458
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2026-01",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 7,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.4325890538235155,
+      "hierarchical_mae": 5.422728495675138,
+      "delta_hierarchy_minus_direct": -0.00986055814837794
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-12",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 8,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.4050591942273165,
+      "hierarchical_mae": 5.413159368250649,
+      "delta_hierarchy_minus_direct": 0.008100174023332407
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-12",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 8,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.35786935638871,
+      "hierarchical_mae": 5.342856413283652,
+      "delta_hierarchy_minus_direct": -0.01501294310505763
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-12",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 8,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.373484699263863,
+      "hierarchical_mae": 5.343508798684685,
+      "delta_hierarchy_minus_direct": -0.02997590057917776
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-12",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 8,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.400632625241032,
+      "hierarchical_mae": 5.40323994915675,
+      "delta_hierarchy_minus_direct": 0.0026073239157176076
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-11",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 9,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.3802625033840075,
+      "hierarchical_mae": 5.362225737290152,
+      "delta_hierarchy_minus_direct": -0.018036766093855405
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-11",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 9,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.3449556366502655,
+      "hierarchical_mae": 5.322892171202593,
+      "delta_hierarchy_minus_direct": -0.02206346544767257
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-11",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 9,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.368523555403977,
+      "hierarchical_mae": 5.40219802395894,
+      "delta_hierarchy_minus_direct": 0.033674468554963255
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-11",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 9,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.365860599845573,
+      "hierarchical_mae": 5.401987145434379,
+      "delta_hierarchy_minus_direct": 0.03612654558880646
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 32,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.33316278895149,
+      "hierarchical_mae": 5.327696998200049,
+      "delta_hierarchy_minus_direct": -0.00546579075144038
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 32,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.34255315940604,
+      "hierarchical_mae": 5.254707330632243,
+      "delta_hierarchy_minus_direct": -0.08784582877379687
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 64,
+        "seed": 17,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.29753116833673,
+      "hierarchical_mae": 5.319799406137064,
+      "delta_hierarchy_minus_direct": 0.02226823780033449
+    },
+    {
+      "plan": "fixed_september",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "validation": "2026-08",
+      "test": "2026-09",
+      "training_months": 10,
+      "config": {
+        "width": 64,
+        "seed": 43,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "batch_size": 32
+      },
+      "direct_mae": 5.279612805743342,
+      "hierarchical_mae": 5.346073548461311,
+      "delta_hierarchy_minus_direct": 0.06646074271796909
+    }
+  ],
+  "audits": "passed: strict fold boundaries/train-only normalization/causal features/finite predictions/exact means/selected serialized replay",
+  "caveats": [
+    "All outcomes developmental; data have been used in previous development.",
+    "Expanding folds change test season as well as training size.",
+    "Fixed September comparison holds train end July, validation August and test September fixed; adds older training months.",
+    "Validation days1-15 select model/epoch;16-end calibrate intervals; no validation refit.",
+    "Prior-day observed history is available causally during validation/test; no online parameter fitting.",
+    "Conformal coverage empirical under dependence/drift.",
+    "Head packages have different parameter counts despite same encoder, seeds and quarter-MAE loss."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checked": [
+    "global8",
+    "noon",
+    "constant",
+    "seasonal"
+  ],
+  "checks": "eight coefficient shape; NumPy basis and sinusoidal boundary replay; hourly means; recomputed MAEs; L1 oracle bounds"
+}

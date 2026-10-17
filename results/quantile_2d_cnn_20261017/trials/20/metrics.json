@@ -1,0 +1,18 @@
+{
+  "config": {
+    "id": 20,
+    "pack": "analog90",
+    "quantile_weight": 1.0,
+    "lr": 0.001,
+    "seed": 71,
+    "width": 16
+  },
+  "fit_end": 302,
+  "val_end": 317,
+  "validation_mae": 4.589142799377441,
+  "best_epoch": 199,
+  "epochs": 259,
+  "seconds": 12.101673200028017,
+  "parameters": 5696,
+  "point_parameters": 4948
+}

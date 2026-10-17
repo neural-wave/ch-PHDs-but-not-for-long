@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "smoke": true,
+  "folds": 2,
+  "candidate_predictions_recomputed": 44,
+  "selected_neural_models_replayed": 24,
+  "max_replay_error": 0.0,
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "checks": "official data/source hashes, interpolation, chronology, train-only month weights/normalization/knots, candidate validation scores, family argmins, every blend candidate, recipe choice, test ratios, per-zone/daily/aggregate scores, selected serialization"
+}

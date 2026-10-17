@@ -1,0 +1,108 @@
+{
+  "device": "mps",
+  "architecture": "one CNN per zone; same selected width/depth/dropout/optimizer config",
+  "input": "24 raw hourly prices in EUR/MWh, supplied as one unnormalized channel",
+  "input_normalization": false,
+  "derived_profile_features": false,
+  "calendar_embeddings": false,
+  "training_period": [
+    "2025-10-01",
+    "2026-07-31"
+  ],
+  "validation_period": [
+    "2026-08-01",
+    "2026-09-30"
+  ],
+  "loss": "Q1/Q4-weighted MAE; quarter weights 1.5,1,1,1.5; revised month weights with strength 0.5",
+  "month_weights_source": "experiments/month_difficulty_no_month_embedding_aug_sep/monthly_training_weights.csv",
+  "validation_checkpoint_selection": "plain unweighted MAE",
+  "configs": {
+    "ZONE_0": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 64
+    },
+    "ZONE_1": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.0003,
+      "wd": 0.001,
+      "width": 96
+    },
+    "ZONE_2": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.0,
+      "lr": 0.0003,
+      "wd": 0.001,
+      "width": 96
+    },
+    "ZONE_3": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "width": 64
+    }
+  },
+  "models": {
+    "ZONE_0": {
+      "checkpoint": "experiments/raw_hourly_only_zonal_cnn/models/ZONE_0_raw_hourly_cnn.pt",
+      "parameter_count": 12868,
+      "best_epoch": 90,
+      "validation_metrics": {
+        "mae": 3.739840130668281,
+        "qweighted_mae": 3.9275185512497615,
+        "q1_mae": 4.48675275559858,
+        "q2_mae": 2.9259319770678918,
+        "q3_mae": 2.6769640784538624,
+        "q4_mae": 4.869711711552789
+      }
+    },
+    "ZONE_1": {
+      "checkpoint": "experiments/raw_hourly_only_zonal_cnn/models/ZONE_1_raw_hourly_cnn.pt",
+      "parameter_count": 28516,
+      "best_epoch": 87,
+      "validation_metrics": {
+        "mae": 6.364080029189376,
+        "qweighted_mae": 6.6999427227316914,
+        "q1_mae": 7.884940253276737,
+        "q2_mae": 4.830087467269663,
+        "q3_mae": 4.539445655685939,
+        "q4_mae": 8.201846740525168
+      }
+    },
+    "ZONE_2": {
+      "checkpoint": "experiments/raw_hourly_only_zonal_cnn/models/ZONE_2_raw_hourly_cnn.pt",
+      "parameter_count": 28516,
+      "best_epoch": 23,
+      "validation_metrics": {
+        "mae": 5.766843044688186,
+        "qweighted_mae": 6.001469460268452,
+        "q1_mae": 6.8429879699878144,
+        "q2_mae": 4.62835810107049,
+        "q3_mae": 4.559063832503204,
+        "q4_mae": 7.036962275191231
+      }
+    },
+    "ZONE_3": {
+      "checkpoint": "experiments/raw_hourly_only_zonal_cnn/models/ZONE_3_raw_hourly_cnn.pt",
+      "parameter_count": 12868,
+      "best_epoch": 65,
+      "validation_metrics": {
+        "mae": 4.581398611886281,
+        "qweighted_mae": 4.809297974619135,
+        "q1_mae": 5.638048766526235,
+        "q2_mae": 3.434745033336121,
+        "q3_mae": 3.449058563107905,
+        "q4_mae": 5.803742084574863
+      }
+    }
+  },
+  "note": "The model still scales its predicted residual by a train-only residual target scale; the 24 hourly input values themselves are passed unchanged."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "folds": 16,
+  "interval_cases": 192,
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "max_metric_difference": 7.105427357601002e-15,
+  "checks": "saved test dates/truth identity,finite/order11quantiles,median identity,MAE,all saved interval coverage/widths,mean conservation"
+}

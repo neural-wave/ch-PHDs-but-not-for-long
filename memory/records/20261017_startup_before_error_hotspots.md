@@ -1,0 +1,11 @@
+# HACKATON project memory
+
+Objective: reconstruct four-zone quarter-hour prices from official inputs, preserving hourly means within 0.0001 EUR/MWh. No external/pretrained/October prices; history strictly earlier. Fit October–July (302 days), select August (31), evaluate September (30, developmental, not blind). Zones anonymized.
+
+Verified 2026-10-17: monthly_joint_blend_gpu1 September MAE 5.091209 versus interpolation 7.090321. Offline 363-day refit audited; no external submission: DEPLOYMENT_REFIT.md, results/COMPLETION_AUDIT.md. Simple search linear/additive/MLP/CNN: 5.209794/5.255107/5.343947/5.222494; August selected CNN. results/simple_5090. Hierarchy HPO 5.282777; lag HPO retained parent.
+
+Four-frequency study completed 2026-10-17: September predictor/oracle MAE Fourier4 6.210906/5.788496; free-phase8 5.977431/4.903183; PCA4 5.827434/4.989501; PCA8 5.887884/4.402627; PCA16 5.887545/3.487367. Four outputs per day/zone, fixed train-only bases; oracle target-derived diagnostic only. Numerical audit passed, no deployment. FOUR_FREQUENCY_PROTOCOL.md; results/four_frequency_20261017. Remote root@93.91.156.85:55340 /workspace/HACKATON; Nightwatch dcae73b185fbc7a157711e13 completed exit0; log /root/.local/share/nightwatch-hackaton/dcae73b185fbc7a157711e13.log.
+
+Other evidence: feature_importance_20261017 favors analog residual history; ordered seven-day inputs implemented, ablation pending. INTERPOLATION_HISTORY_PROTOCOL.md. Quantile16-fold median MAE5.226105; results/linear_quantiles_vast. Expanding16-fold complete; expanding/conformal campaign034d5133ebc5e076af6aed88 requires fresh final audit (last recorded active). EXPANDING_SIMPLE_PROTOCOL.md.
+
+User prioritizes interpretability, analog residuals, difficult-day robustness. INTERPRETABLE_ROBUSTNESS_PLAN.md; SSM proposal remains untested. Full prior context preserved: memory/records/20261017_startup_before_frequency_results.md. Next audit outstanding expanding results. Proposed frequency extension: two four-weight segments with annual sinusoidal boundary (offset, sine, cosine), training/blocked validation only; untested. See latest seasonal-boundary design record. Frequency model remains a diagnostic, not selected solution.

@@ -1,0 +1,9 @@
+{
+  "id": "a6689a6ede6fcf6102ea8476",
+  "status": "completed",
+  "exit_code": 0,
+  "ended_at": 1792253199.3864331,
+  "host": "local-mac",
+  "worker_pid": 13491,
+  "observed_source": "Nightwatch API terminal state inspected in this goal turn"
+}

@@ -1,0 +1,371 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-07-31"
+    ],
+    "validation": [
+      "2026-08-01",
+      "2026-08-31"
+    ],
+    "test": [
+      "2026-09-01",
+      "2026-09-30"
+    ]
+  },
+  "split_counts": {
+    "train": 302,
+    "validation": 31,
+    "test": 30
+  },
+  "parent": "monthly_cat_gpu1",
+  "calendar_split": true,
+  "model_fit_days": 302,
+  "final_refit_deferred": true,
+  "graph_nodes": 4,
+  "graph_hours": 24,
+  "candidates": [
+    {
+      "name": "parent_ensemble",
+      "config": {}
+    },
+    {
+      "name": "interpolation",
+      "config": {}
+    },
+    {
+      "name": "graph_0",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 37
+      },
+      "validation_mae": 4.40351042116016
+    },
+    {
+      "name": "graph_1",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 28
+      },
+      "validation_mae": 4.398704183980898
+    },
+    {
+      "name": "graph_2",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 76
+      },
+      "validation_mae": 4.40372685287492
+    },
+    {
+      "name": "graph_3",
+      "config": {
+        "width": 32,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 78
+      },
+      "validation_mae": 4.396207462919447
+    },
+    {
+      "name": "graph_4",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 14
+      },
+      "validation_mae": 4.410435861673627
+    },
+    {
+      "name": "graph_5",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 33
+      },
+      "validation_mae": 4.378121649449639
+    },
+    {
+      "name": "graph_6",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 37
+      },
+      "validation_mae": 4.404395039125246
+    },
+    {
+      "name": "graph_7",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 50
+      },
+      "validation_mae": 4.402243666854719
+    },
+    {
+      "name": "graph_8",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 29
+      },
+      "validation_mae": 4.3685445548822965
+    },
+    {
+      "name": "graph_9",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 14
+      },
+      "validation_mae": 4.399506895000009
+    },
+    {
+      "name": "graph_10",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 22
+      },
+      "validation_mae": 4.404764516295033
+    },
+    {
+      "name": "graph_11",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 39
+      },
+      "validation_mae": 4.3856454856293405
+    },
+    {
+      "name": "graph_12",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 12
+      },
+      "validation_mae": 4.344804408029256
+    },
+    {
+      "name": "graph_13",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 15
+      },
+      "validation_mae": 4.398232998233991
+    },
+    {
+      "name": "graph_14",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 17
+      },
+      "validation_mae": 4.402071626188273
+    },
+    {
+      "name": "graph_15",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 24
+      },
+      "validation_mae": 4.402664807882405
+    }
+  ],
+  "weights": [
+    [
+      0.8215868526709682,
+      0.8166733995696813,
+      0.7490309958726151,
+      0.8550950949263714
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.25096900412738493,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.13311104965513532,
+      0.15848829532093583,
+      0.0,
+      0.13074516295548838
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.02413301014393525,
+      0.0,
+      0.0,
+      0.014159742118140126
+    ],
+    [
+      0.021169087529961283,
+      0.024838305109382865,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "validation": {
+    "mae": 4.24743872379048,
+    "mae_by_zone": [
+      2.9659914843663855,
+      4.844435336617357,
+      4.963284241272887,
+      4.216043832905289
+    ]
+  },
+  "test": {
+    "mae": 5.09226969906224,
+    "mae_by_zone": [
+      3.8785240374481247,
+      6.731936072950738,
+      5.393790552315313,
+      4.364828133534785
+    ]
+  },
+  "test_baseline": {
+    "mae": 7.090321234809027,
+    "mae_by_zone": [
+      5.990385850694443,
+      9.227021050347224,
+      6.902530164930555,
+      6.241347873263887
+    ]
+  },
+  "max_hourly_mean_error": 2.2737367544323206e-13,
+  "smoke": false,
+  "device": "NVIDIA RTX A5000",
+  "offline_inference_qa": "passed; ensemble and graph-only exported CSVs preserve finite unique four-quarter hourly means"
+}

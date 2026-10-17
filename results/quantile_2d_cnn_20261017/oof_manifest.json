@@ -1,0 +1,131 @@
+{
+  "folds": [
+    {
+      "fold": 0,
+      "prediction_start": 120,
+      "prediction_end": 151,
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 105,
+      "val_end": 120,
+      "validation_mae": 3.569192886352539,
+      "best_epoch": 36,
+      "epochs": 96,
+      "seconds": 3.579633651068434,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "fold": 1,
+      "prediction_start": 151,
+      "prediction_end": 181,
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 136,
+      "val_end": 151,
+      "validation_mae": 3.1624481081962585,
+      "best_epoch": 36,
+      "epochs": 96,
+      "seconds": 4.334113380871713,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "fold": 2,
+      "prediction_start": 181,
+      "prediction_end": 212,
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 166,
+      "val_end": 181,
+      "validation_mae": 4.396931231021881,
+      "best_epoch": 27,
+      "epochs": 87,
+      "seconds": 4.683288953034207,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "fold": 3,
+      "prediction_start": 212,
+      "prediction_end": 242,
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 197,
+      "val_end": 212,
+      "validation_mae": 4.832372069358826,
+      "best_epoch": 24,
+      "epochs": 84,
+      "seconds": 2.7099268359597772,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "fold": 4,
+      "prediction_start": 242,
+      "prediction_end": 272,
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 227,
+      "val_end": 242,
+      "validation_mae": 3.7574201822280884,
+      "best_epoch": 52,
+      "epochs": 112,
+      "seconds": 4.065389328170568,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "fold": 5,
+      "prediction_start": 272,
+      "prediction_end": 302,
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 257,
+      "val_end": 272,
+      "validation_mae": 4.415228962898254,
+      "best_epoch": 18,
+      "epochs": 78,
+      "seconds": 3.2387022378388792,
+      "parameters": 5696,
+      "point_parameters": 4948
+    }
+  ],
+  "note": "Each checkpoint fits before its15day stopping block, predicts only later days. Main hyperparameters selected August1-15; not a nested historical model-selection benchmark."
+}

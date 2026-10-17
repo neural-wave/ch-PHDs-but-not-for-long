@@ -1,0 +1,97 @@
+month,mode,family,label,weight
+2026-02,uniform,linear_rich,Rich linear,0.0
+2026-02,uniform,linear_compact,Compact linear,0.0
+2026-02,uniform,additive_compact,Additive,0.3333333333333333
+2026-02,uniform,mlp_compact,MLP,0.3333333333333333
+2026-02,uniform,cnn_rich,Temporal CNN,0.3333333333333333
+2026-02,uniform,cnn2d_analog,Analog 2D CNN,0.0
+2026-02,ratio,linear_rich,Rich linear,0.0
+2026-02,ratio,linear_compact,Compact linear,0.3333333333333333
+2026-02,ratio,additive_compact,Additive,0.0
+2026-02,ratio,mlp_compact,MLP,0.3333333333333333
+2026-02,ratio,cnn_rich,Temporal CNN,0.3333333333333333
+2026-02,ratio,cnn2d_analog,Analog 2D CNN,0.0
+2026-03,uniform,linear_rich,Rich linear,0.5
+2026-03,uniform,linear_compact,Compact linear,0.0
+2026-03,uniform,additive_compact,Additive,0.0
+2026-03,uniform,mlp_compact,MLP,0.5
+2026-03,uniform,cnn_rich,Temporal CNN,0.0
+2026-03,uniform,cnn2d_analog,Analog 2D CNN,0.0
+2026-03,ratio,linear_rich,Rich linear,0.5
+2026-03,ratio,linear_compact,Compact linear,0.0
+2026-03,ratio,additive_compact,Additive,0.0
+2026-03,ratio,mlp_compact,MLP,0.0
+2026-03,ratio,cnn_rich,Temporal CNN,0.5
+2026-03,ratio,cnn2d_analog,Analog 2D CNN,0.0
+2026-04,uniform,linear_rich,Rich linear,0.0
+2026-04,uniform,linear_compact,Compact linear,0.0
+2026-04,uniform,additive_compact,Additive,0.0
+2026-04,uniform,mlp_compact,MLP,0.3333333333333333
+2026-04,uniform,cnn_rich,Temporal CNN,0.3333333333333333
+2026-04,uniform,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-04,ratio,linear_rich,Rich linear,0.0
+2026-04,ratio,linear_compact,Compact linear,0.0
+2026-04,ratio,additive_compact,Additive,0.0
+2026-04,ratio,mlp_compact,MLP,0.3333333333333333
+2026-04,ratio,cnn_rich,Temporal CNN,0.3333333333333333
+2026-04,ratio,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-05,uniform,linear_rich,Rich linear,0.3333333333333333
+2026-05,uniform,linear_compact,Compact linear,0.0
+2026-05,uniform,additive_compact,Additive,0.0
+2026-05,uniform,mlp_compact,MLP,0.3333333333333333
+2026-05,uniform,cnn_rich,Temporal CNN,0.3333333333333333
+2026-05,uniform,cnn2d_analog,Analog 2D CNN,0.0
+2026-05,ratio,linear_rich,Rich linear,0.3333333333333333
+2026-05,ratio,linear_compact,Compact linear,0.0
+2026-05,ratio,additive_compact,Additive,0.0
+2026-05,ratio,mlp_compact,MLP,0.3333333333333333
+2026-05,ratio,cnn_rich,Temporal CNN,0.3333333333333333
+2026-05,ratio,cnn2d_analog,Analog 2D CNN,0.0
+2026-06,uniform,linear_rich,Rich linear,0.0
+2026-06,uniform,linear_compact,Compact linear,0.3333333333333333
+2026-06,uniform,additive_compact,Additive,0.0
+2026-06,uniform,mlp_compact,MLP,0.0
+2026-06,uniform,cnn_rich,Temporal CNN,0.3333333333333333
+2026-06,uniform,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-06,ratio,linear_rich,Rich linear,0.0
+2026-06,ratio,linear_compact,Compact linear,0.3333333333333333
+2026-06,ratio,additive_compact,Additive,0.0
+2026-06,ratio,mlp_compact,MLP,0.0
+2026-06,ratio,cnn_rich,Temporal CNN,0.3333333333333333
+2026-06,ratio,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-07,uniform,linear_rich,Rich linear,0.0
+2026-07,uniform,linear_compact,Compact linear,0.0
+2026-07,uniform,additive_compact,Additive,0.0
+2026-07,uniform,mlp_compact,MLP,0.3333333333333333
+2026-07,uniform,cnn_rich,Temporal CNN,0.3333333333333333
+2026-07,uniform,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-07,ratio,linear_rich,Rich linear,0.0
+2026-07,ratio,linear_compact,Compact linear,0.0
+2026-07,ratio,additive_compact,Additive,0.0
+2026-07,ratio,mlp_compact,MLP,0.3333333333333333
+2026-07,ratio,cnn_rich,Temporal CNN,0.3333333333333333
+2026-07,ratio,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-08,uniform,linear_rich,Rich linear,0.3333333333333333
+2026-08,uniform,linear_compact,Compact linear,0.0
+2026-08,uniform,additive_compact,Additive,0.0
+2026-08,uniform,mlp_compact,MLP,0.0
+2026-08,uniform,cnn_rich,Temporal CNN,0.3333333333333333
+2026-08,uniform,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-08,ratio,linear_rich,Rich linear,0.3333333333333333
+2026-08,ratio,linear_compact,Compact linear,0.0
+2026-08,ratio,additive_compact,Additive,0.0
+2026-08,ratio,mlp_compact,MLP,0.0
+2026-08,ratio,cnn_rich,Temporal CNN,0.3333333333333333
+2026-08,ratio,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-09,uniform,linear_rich,Rich linear,0.3333333333333333
+2026-09,uniform,linear_compact,Compact linear,0.0
+2026-09,uniform,additive_compact,Additive,0.0
+2026-09,uniform,mlp_compact,MLP,0.3333333333333333
+2026-09,uniform,cnn_rich,Temporal CNN,0.0
+2026-09,uniform,cnn2d_analog,Analog 2D CNN,0.3333333333333333
+2026-09,ratio,linear_rich,Rich linear,0.3333333333333333
+2026-09,ratio,linear_compact,Compact linear,0.0
+2026-09,ratio,additive_compact,Additive,0.0
+2026-09,ratio,mlp_compact,MLP,0.3333333333333333
+2026-09,ratio,cnn_rich,Temporal CNN,0.0
+2026-09,ratio,cnn2d_analog,Analog 2D CNN,0.3333333333333333

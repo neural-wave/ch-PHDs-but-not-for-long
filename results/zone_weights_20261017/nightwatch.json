@@ -1,0 +1,15 @@
+{
+  "id": "3b0716f2e5242db0fb5b1e04",
+  "status": "completed",
+  "exit_code": 0,
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "started_at_utc": "2026-10-17 14:47:27",
+  "ended_at_utc": "2026-10-17 14:48:22",
+  "host": "root@93.91.156.85:55340",
+  "cwd": "/workspace/HACKATON",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "gpu_uuid": "GPU-0bd8ea24-b611-23b4-3e0a-66d00e3ae3a9",
+  "log": "/root/.local/share/nightwatch-hackaton/3b0716f2e5242db0fb5b1e04.log",
+  "dashboard": "https://api.miguelnogales.com/nightwatch/"
+}

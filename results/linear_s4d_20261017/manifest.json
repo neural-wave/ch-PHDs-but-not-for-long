@@ -1,0 +1,236 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "folds": [
+    {
+      "test": "2026-02",
+      "validation": "2026-01",
+      "nt": 91,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 28
+    },
+    {
+      "test": "2026-03",
+      "validation": "2026-02",
+      "nt": 122,
+      "ns": 15,
+      "nc": 13,
+      "test_days": 30
+    },
+    {
+      "test": "2026-04",
+      "validation": "2026-03",
+      "nt": 150,
+      "ns": 15,
+      "nc": 15,
+      "test_days": 30
+    },
+    {
+      "test": "2026-05",
+      "validation": "2026-04",
+      "nt": 180,
+      "ns": 15,
+      "nc": 15,
+      "test_days": 31
+    },
+    {
+      "test": "2026-06",
+      "validation": "2026-05",
+      "nt": 210,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 30
+    },
+    {
+      "test": "2026-07",
+      "validation": "2026-06",
+      "nt": 241,
+      "ns": 15,
+      "nc": 15,
+      "test_days": 31
+    },
+    {
+      "test": "2026-08",
+      "validation": "2026-07",
+      "nt": 271,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 31
+    },
+    {
+      "test": "2026-09",
+      "validation": "2026-08",
+      "nt": 302,
+      "ns": 15,
+      "nc": 16,
+      "test_days": 30
+    }
+  ],
+  "configs": [
+    {
+      "id": 0,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 1,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 2,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 3,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 4,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 5,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 6,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 7,
+      "family": "learned_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 8,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 9,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 10,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 11,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 8,
+      "lr": 0.003,
+      "seed": 43
+    },
+    {
+      "id": 12,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 13,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 14,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.003,
+      "seed": 17
+    },
+    {
+      "id": 15,
+      "family": "fixed_frequencies",
+      "width": 10,
+      "state": 16,
+      "lr": 0.003,
+      "seed": 43
+    }
+  ],
+  "taus": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.25,
+    0.5,
+    0.75,
+    0.8,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "code_hashes": {
+    "ssm_models.py": "02ae6960fb7cfbc00e6697bf5b47a0291e37f90e61817c476dfbaed937d80301",
+    "ssm_experiment.py": "f54173fe014cb46bc9354ed583193b7e0d5cbdd5ee5109d49453679e8f04cf98",
+    "reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "interpretable_models.py": "1e5b56c85011fe4c33817595650f68895181824d5b3991a385360f9ec4243ed1",
+    "VALIDATION_PROTOCOL.md": "57588d45eed9858c1eb27c3cd6aca8717d9c478cdd8064f1dfe8eafe14807fe6",
+    "campaigns/linear_s4d_20261017/train.py": "3ed1adf778c3f46eb42db26488680d1e0d9256f74302acd6b65ebd5212a1c4a6",
+    "campaigns/linear_s4d_20261017/audit.py": "d7ace6934c0f818ccccffe89f8a485dbffc4b89c46ea910ec04c4f52062e582d",
+    "campaigns/linear_s4d_20261017/run.py": "75a8d09bcdfc14d355c3a1ea53a1f453a492d1562573de6e53d6b4e981e182d2",
+    "campaigns/linear_s4d_20261017/PROTOCOL.md": "9f74b9aa82c475f6a843f50d8fb5bbc059a54a9debe012a5661dae487971da91",
+    "campaigns/linear_s4d_20261017/interpret.py": "31f4ae463aba34682b5bb367b633e6e083b248fd0e76919f68c1b51cff171a55",
+    "campaigns/monthly_quantiles_20261017/trainq.py": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+    "campaigns/monthly_ratio_20261017/sources/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "campaigns/monthly_ratio_20261017/sources/interpretable_models.py": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+    "campaigns/monthly_ratio_20261017/sources/interpolation_history.py": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+    "campaigns/monthly_ratio_20261017/sources/simple_search.py": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+    "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+    "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+    "campaigns/monthly_ratio_20261017/experiment.py": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+    "campaigns/monthly_ratio_20261017/audit.py": "21f6b9df3c0e7b97837a06ea4b74b23b064be16a1b9bd92bef672240ae75a661",
+    "campaigns/monthly_ratio_20261017/run.py": "214135bdc4377b89a7909cffde51c051026a25810eb13d338e3a2fc1ceedd7ca",
+    "campaigns/monthly_ratio_20261017/PROTOCOL.md": "3bb6c8b24d2586f20b00093560931f1cd3d0555fef8292bed536f321e1a6f588"
+  },
+  "causality_passed": true
+}

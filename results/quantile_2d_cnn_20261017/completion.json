@@ -1,0 +1,11 @@
+{
+  "initial_run": "74129e6183143d5346163a8b",
+  "initial_status": "crashed",
+  "initial_failure": "NumPy bool JSON reporting; all training completed and preserved",
+  "recovery_run": "2859d80fce9e2fbe5ef622a6",
+  "recovery_status": "completed",
+  "recovery_exit_code": 0,
+  "audit_passed": true,
+  "training_repeated": false,
+  "continuous_confidence_audited": true
+}

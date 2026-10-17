@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "checks": {
+    "raw": {
+      "causality": true,
+      "mask": true,
+      "query_hourly": true,
+      "conservation": true,
+      "ordered_quantiles": true,
+      "independent_q50": true,
+      "cross_zone_gradient": true,
+      "two_epoch_fit": {
+        "config": {
+          "id": 6,
+          "pack": "raw",
+          "quantile_weight": 1.0,
+          "lr": 0.001,
+          "seed": 17,
+          "width": 16
+        },
+        "fit_end": 302,
+        "val_end": 317,
+        "validation_mae": 6.481260657310486,
+        "best_epoch": 2,
+        "epochs": 2,
+        "seconds": 1.260885232128203,
+        "parameters": 4608,
+        "point_parameters": 3860
+      }
+    },
+    "analog90": {
+      "causality": true,
+      "mask": true,
+      "query_hourly": true,
+      "conservation": true,
+      "ordered_quantiles": true,
+      "independent_q50": true,
+      "cross_zone_gradient": true,
+      "two_epoch_fit": {
+        "config": {
+          "id": 18,
+          "pack": "analog90",
+          "quantile_weight": 1.0,
+          "lr": 0.001,
+          "seed": 17,
+          "width": 16
+        },
+        "fit_end": 302,
+        "val_end": 317,
+        "validation_mae": 5.650346875190735,
+        "best_epoch": 2,
+        "epochs": 2,
+        "seconds": 0.13395090494304895,
+        "parameters": 5696,
+        "point_parameters": 4948
+      }
+    }
+  }
+}

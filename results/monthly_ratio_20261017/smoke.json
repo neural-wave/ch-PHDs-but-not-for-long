@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "folds": 2,
+  "neural_fits": 24,
+  "objectives": [
+    "uniform",
+    "ratio"
+  ],
+  "monthly_weight_fixture": true,
+  "causal_features": true,
+  "full_hourly_conditioning_gradient": true
+}

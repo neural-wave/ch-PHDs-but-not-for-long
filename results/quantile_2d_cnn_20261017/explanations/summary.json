@@ -1,0 +1,119 @@
+{
+  "cases": [
+    {
+      "date": "2026-09-01",
+      "zone": 1,
+      "hour": 17,
+      "quarter": 1,
+      "day_mae": 3.834465400717843,
+      "randomization_local_map_correlation": -0.37026507636367584
+    },
+    {
+      "date": "2026-09-05",
+      "zone": 1,
+      "hour": 17,
+      "quarter": 4,
+      "day_mae": 7.243370723418582,
+      "randomization_local_map_correlation": -0.33612863739321697
+    }
+  ],
+  "ablations": [
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 1,
+      "point_change": 1.0820765673027684,
+      "day_mae": 3.8132573955226703
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 2,
+      "point_change": 0.7739594527326213,
+      "day_mae": 3.8671096702905685
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 3,
+      "point_change": 0.6669587947544642,
+      "day_mae": 3.7857216527739865
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 4,
+      "point_change": 0.43269511331648874,
+      "day_mae": 3.823572268594678
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 5,
+      "point_change": 0.7970570769975893,
+      "day_mae": 4.020425438741999
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 6,
+      "point_change": 0.44039452467889834,
+      "day_mae": 3.8247176354300865
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": 7,
+      "point_change": 0.4211178004819279,
+      "day_mae": 3.8476863478729513
+    },
+    {
+      "date": "2026-09-01",
+      "removed_calendar_lag": "all7",
+      "point_change": 2.2862929239636287,
+      "day_mae": 3.894574318313971
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 1,
+      "point_change": 0.6554521849223723,
+      "day_mae": 7.308750950026636
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 2,
+      "point_change": 0.4565772305553159,
+      "day_mae": 7.2514154679467895
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 3,
+      "point_change": 0.4401982617370474,
+      "day_mae": 7.314310134732319
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 4,
+      "point_change": 0.39500104923111695,
+      "day_mae": 7.291980880627719
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 5,
+      "point_change": 0.34056618586570647,
+      "day_mae": 7.279922493864627
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 6,
+      "point_change": 0.5201948886193956,
+      "day_mae": 7.307265907578791
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": 7,
+      "point_change": 0.4999688238603994,
+      "day_mae": 7.392875061441834
+    },
+    {
+      "date": "2026-09-05",
+      "removed_calendar_lag": "all7",
+      "point_change": 1.814598795923909,
+      "day_mae": 7.858539656595677
+    }
+  ],
+  "caveat": "Posthoc diagnostic examples: first day, worst actual MAE, highest predicted risk. Explanations do not select models. Masks and analog retrieval recomputed consistently for ablations. Grad-CAM targets point correction and90% width, never a fixed day sum."
+}

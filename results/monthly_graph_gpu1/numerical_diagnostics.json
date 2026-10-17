@@ -1,0 +1,7 @@
+{
+  "max_difference": 0.0018328161095269024,
+  "mean_absolute_difference": 0.0001096913284205832,
+  "recomputed_mae": 5.092269863919437,
+  "cached_mae": 5.09226969906224,
+  "percentile99_difference": 0.0006689550066136002
+}

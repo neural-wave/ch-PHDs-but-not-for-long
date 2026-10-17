@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checked": [
+    "fourier4",
+    "fourier4_freephase",
+    "pca4",
+    "pca8",
+    "pca16"
+  ],
+  "checks": "recomputed MAEs, hourly means, rank-four output budget, basis-span reconstruction, L1 oracle bounds, full-rank capacity"
+}

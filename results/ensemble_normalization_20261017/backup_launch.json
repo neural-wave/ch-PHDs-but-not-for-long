@@ -1,0 +1,15 @@
+{
+  "id": "4a3b428fe17b9775beee963f",
+  "host": "local-mac",
+  "worker_pid": 12285,
+  "log": "/Users/miguelnogales/Documents/Codex/.nightwatch/workers/4a3b428fe17b9775beee963f.log",
+  "status_at_last_check": "running",
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "heartbeat_at_last_check": 1792253046.0836682,
+  "started_at": 1792252864.5681953,
+  "due_at": 1792253284.5681953,
+  "expected_bytes": 1555212494,
+  "expected_sha256": "6acd7597146beaa22bcda64620f1af914ba42335f5b491641afe0bf368c35657",
+  "scientific_audit_passed": true
+}

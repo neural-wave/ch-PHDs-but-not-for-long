@@ -1,0 +1,72 @@
+[
+  {
+    "recipe": "blend_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.7204941118854624",
+    "pooled_mae": "4.1764877276085945",
+    "mean_monthly_pinball_ratio": "0.21163080136650247",
+    "coverage90": "0.9230095954356846",
+    "width90": "20.751523382634232",
+    "worst_ratio": "0.7770905210184348"
+  },
+  {
+    "recipe": "linear_compact_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.7308637258897496",
+    "pooled_mae": "4.237331463715827",
+    "mean_monthly_pinball_ratio": "0.21912902000309617",
+    "coverage90": "0.9139112206085754",
+    "width90": "21.33748082065463",
+    "worst_ratio": "0.774075606749323"
+  },
+  {
+    "recipe": "linear_rich_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.7355466334847166",
+    "pooled_mae": "4.260376643969585",
+    "mean_monthly_pinball_ratio": "0.2273928198711615",
+    "coverage90": "0.9485433955739971",
+    "width90": "27.27894841800524",
+    "worst_ratio": "0.7884257497193627"
+  },
+  {
+    "recipe": "cnn2d_analog_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.736777522445069",
+    "pooled_mae": "4.269358750219705",
+    "mean_monthly_pinball_ratio": "0.2266466391465719",
+    "coverage90": "0.8999286825726142",
+    "width90": "21.26942715408331",
+    "worst_ratio": "0.7876347576192351"
+  },
+  {
+    "recipe": "additive_compact_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.7370041005662029",
+    "pooled_mae": "4.275942818161793",
+    "mean_monthly_pinball_ratio": "0.21642822648198132",
+    "coverage90": "0.9031919951590596",
+    "width90": "20.33918088191088",
+    "worst_ratio": "0.8033576202844172"
+  },
+  {
+    "recipe": "mlp_compact_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.7465334525481104",
+    "pooled_mae": "4.333533035062766",
+    "mean_monthly_pinball_ratio": "0.22280771051904796",
+    "coverage90": "0.8997125691562933",
+    "width90": "19.829933639806654",
+    "worst_ratio": "0.7905607642455185"
+  },
+  {
+    "recipe": "cnn_rich_uniform",
+    "folds": "8",
+    "mean_monthly_ratio": "0.7687622011050035",
+    "pooled_mae": "4.454864396598942",
+    "mean_monthly_pinball_ratio": "0.23129707056262586",
+    "coverage90": "0.8922782676348547",
+    "width90": "20.282647196903714",
+    "worst_ratio": "0.873898419518496"
+  }
+]

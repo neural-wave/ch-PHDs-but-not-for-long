@@ -1,0 +1,16 @@
+{
+  "uniform": {
+    "mean_blend_ratio": 0.7204941118854624,
+    "hindsight_oracle_whole_hour_ratio": 0.5569259581094569,
+    "mean_weighted_member_ratio": 0.7474992765170948,
+    "mean_cancellation_gain": 0.027005164631632363,
+    "blend_beats_every_expert_hours_percent": 5.419666858678955
+  },
+  "ratio": {
+    "mean_blend_ratio": 0.7216795826329767,
+    "hindsight_oracle_whole_hour_ratio": 0.5605275747370294,
+    "mean_weighted_member_ratio": 0.7474357938664877,
+    "mean_cancellation_gain": 0.02575621123351105,
+    "blend_beats_every_expert_hours_percent": 5.523073476702509
+  }
+}

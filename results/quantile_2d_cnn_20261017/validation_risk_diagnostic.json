@@ -1,0 +1,54 @@
+{
+  "model_trial": 23,
+  "primary_event": "joint four-zone dailyMAE>10EUR/MWh",
+  "continuous_probe": "inputs_uncertainty",
+  "rank_convention": "1 is highest predicted daily MAE",
+  "by_period": {
+    "August1-15_selection": {
+      "days": 15,
+      "mean_mae": 4.519094419468415,
+      "max_day_mae": 6.444905565570033,
+      "worst_date": "2026-08-12",
+      "catastrophic_days": 0,
+      "primary_probability_min": 0.009370388978493644,
+      "primary_probability_max": 0.009370388978493644,
+      "worst_day_predicted_mae": 5.44635097074871,
+      "worst_day_predicted_rank": 2,
+      "top10percent_actual_mae": 6.247084133371635,
+      "interval_width90_actual_mae_pearson": 0.8558177389987548,
+      "maximum_zone_day_mae": 8.004490538264317,
+      "maximum_quarter_absolute_error": 95.85618822097774
+    },
+    "August16-31_calibration": {
+      "days": 16,
+      "mean_mae": 4.258318690298596,
+      "max_day_mae": 6.025224847088684,
+      "worst_date": "2026-08-31",
+      "catastrophic_days": 0,
+      "primary_probability_min": 0.009370388978493644,
+      "primary_probability_max": 0.009370388978493644,
+      "worst_day_predicted_mae": 5.498386521210705,
+      "worst_day_predicted_rank": 1,
+      "top10percent_actual_mae": 5.889324447165322,
+      "interval_width90_actual_mae_pearson": 0.7875206416644422,
+      "maximum_zone_day_mae": 9.066487961846093,
+      "maximum_quarter_absolute_error": 62.29892552375792
+    },
+    "September_development": {
+      "days": 30,
+      "mean_mae": 5.216650727743592,
+      "max_day_mae": 7.243370723418582,
+      "worst_date": "2026-09-05",
+      "catastrophic_days": 0,
+      "primary_probability_min": 0.009370388978493644,
+      "primary_probability_max": 0.009370388978493644,
+      "worst_day_predicted_mae": 4.807540696709248,
+      "worst_day_predicted_rank": 28,
+      "top10percent_actual_mae": 6.28691190519784,
+      "interval_width90_actual_mae_pearson": 0.4114662475361125,
+      "maximum_zone_day_mae": 15.37897571201126,
+      "maximum_quarter_absolute_error": 111.5088414001466
+    }
+  },
+  "caveat": "August1-15 selects the CNN; August16-31 calibrates the probes. Their rankings are diagnostic, not independent evidence of generalization. September worst-day ranking demonstrates a miss. No thresholds or forecasts changed."
+}

@@ -1,0 +1,130 @@
+{
+  "commit": "1ed1423c5fa05586457347ab34e69b9bcfb23031",
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "methods": [
+    "riccardo_reduced",
+    "riccardo_raw_hourly"
+  ],
+  "folds": [
+    {
+      "months": 3,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12"
+      ],
+      "validation": "2026-01",
+      "test": "2026-02"
+    },
+    {
+      "months": 4,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01"
+      ],
+      "validation": "2026-02",
+      "test": "2026-03"
+    },
+    {
+      "months": 5,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02"
+      ],
+      "validation": "2026-03",
+      "test": "2026-04"
+    },
+    {
+      "months": 6,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03"
+      ],
+      "validation": "2026-04",
+      "test": "2026-05"
+    },
+    {
+      "months": 7,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04"
+      ],
+      "validation": "2026-05",
+      "test": "2026-06"
+    },
+    {
+      "months": 8,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05"
+      ],
+      "validation": "2026-06",
+      "test": "2026-07"
+    },
+    {
+      "months": 9,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "validation": "2026-07",
+      "test": "2026-08"
+    },
+    {
+      "months": 10,
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07"
+      ],
+      "validation": "2026-08",
+      "test": "2026-09"
+    }
+  ],
+  "smoke": false,
+  "workers": 4,
+  "max_epochs": 150,
+  "patience": 16,
+  "config_policy": "Freeze upstream selected per-zone configs; new first-15-day epoch selection",
+  "weighting": "Fresh MAE LOMO scoring entirely within each outer training block; no cached upstream scores",
+  "calibration": "Days 16-end unused for fitting or selection; no intervals requested",
+  "source_hashes": {
+    "compare_riccardo.py": "8e596d0b9a6ae564913a8ae3aa36b263d6d5390b041da3119a90636d64fa0eae",
+    "audit_riccardo_comparison.py": "6b158e727b27351f1d3b0bbabf41273caefdb1727f2b9a8872f9e071f7adec2e",
+    "VALIDATION_PROTOCOL.md": "57588d45eed9858c1eb27c3cd6aca8717d9c478cdd8064f1dfe8eafe14807fe6"
+  }
+}

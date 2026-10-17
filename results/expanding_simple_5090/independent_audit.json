@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "folds": 16,
+  "candidates_recomputed": 3680,
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "checks": "all candidate selection scores; family argmin; test MAE; unique CSV rows; corrected conformal ranks, bounds, coverage and widths; 95% day intervals correctly infinite"
+}

@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/neural-wave/ch-PHDs-but-not-for-long",
+  "branch": "riccardo",
+  "commit": "1ed1423c5fa05586457347ab34e69b9bcfb23031",
+  "official_data_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "files": {
+    "README.md": "4ff7f46af1996146df476469c0e28f678f6cbd7ad0f9d6b4ed83391ee6ea8442",
+    "requirements.txt": "0ae9030b3cfe27b96b45192af9e2e576ecdb7706ea863fc09ab4a5bdc8654d30",
+    "scripts/refit_month_difficulty_no_month_embedding.py": "b095fb86304495992130b5b267a7eaa0be02115b8740ecfb17ba9e9c1970575f",
+    "scripts/validate_aug_sep.py": "985ffcea00982a7a9acb07be16081723bd38f0f554af84461ac0e885287d9fbd",
+    "scripts/train_raw_hourly_only_zonal_cnn.py": "4ad8c20d471b3d3434b89000c0eb59e5e19dcbecacbe93deb4baca0b2f006129",
+    "scripts/feature_ablation_per_zone.py": "410a7aef22cc2b6758424a25b8838ccf48c288a9136642c73f6317e6879ec191",
+    "experiments/raw_hourly_only_zonal_cnn/run_info.json": "75ccb54435c7839cc26227fa9096777f45cc8fd92674ad96a2ebdf28f3df3c53",
+    "experiments/raw_hourly_only_zonal_cnn/validation_metrics.csv": "dee29cc55675b7a3e6c50c6a725671c6fc077ea5fcbaa2293168c1d2a3a7710c",
+    "experiments/raw_hourly_only_zonal_cnn/models/ZONE_2_raw_hourly_cnn.pt": "6d4eb0aedd93a97358721d812c21ecca3a8b18d6a2d91a55d302278f7dafb894",
+    "experiments/raw_hourly_only_zonal_cnn/models/ZONE_3_raw_hourly_cnn.pt": "6e54df0e84d67f766f690155e7f1cb64f2bb857d4f0a64eff92b210231b74181",
+    "experiments/raw_hourly_only_zonal_cnn/models/ZONE_0_raw_hourly_cnn.pt": "1edb2fa89c7e2218e7f308093e255003c266ec5cc91884bb92e124e50327cef5",
+    "experiments/raw_hourly_only_zonal_cnn/models/ZONE_1_raw_hourly_cnn.pt": "deae4d7fd17cd70aceb0a861140463f9b3133782ade55a3ba747da1900b78913",
+    "experiments/month_difficulty_lomo_aug_sep/monthly_training_weights.csv": "bb50c8e0e4d4e3d773c784e2f451885f009aefdbe16dfb226675e05d4f0b6ce3",
+    "experiments/selected_feature_composition_ablation/ablation_summary.csv": "6149039eff1c3acd61e434245caf1553ec08ff063c8b21a84369add679a4560e",
+    "experiments/selected_reduced_features_per_zone/run_info.json": "66fd8339d2bac2e76b4887e91370cc9497eecfc5e6018d8134f7d175ee5ab4be",
+    "experiments/selected_reduced_features_per_zone/validation_metrics.csv": "a77e806dab9799c3cd9de72609567f5bec5982abcdc8f8ce38f97c7b1af61b71",
+    "experiments/month_difficulty_no_month_embedding_aug_sep/aug_sep_metrics.csv": "daa47d83b264731cdad3558e820627e20f06868b538aaa1bee6ef7c9d5ce8cd2",
+    "experiments/month_difficulty_no_month_embedding_aug_sep/monthly_training_weights.csv": "137091ed97c1ce97ad97cce2bddcf8180e58dc3c5a3f76d4a800e4e264d9be15",
+    "experiments/month_difficulty_no_month_embedding_aug_sep/run_info.json": "ca24dde95caebe1c2169b666121fafd88ed65f93246b406255ba14699b57ec2d",
+    "experiments/month_difficulty_no_month_embedding_aug_sep/monthly_oof_difficulty.csv": "7ab6b30c6ba29a383ce5d16b3baeedbb13b3c1e4c8053db178a67c74edc99680"
+  },
+  "excluded": "External zone-identification and October price files were not copied or used."
+}

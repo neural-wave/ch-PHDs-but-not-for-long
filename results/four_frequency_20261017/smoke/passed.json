@@ -1,0 +1,21 @@
+{
+  "smoke": "passed",
+  "basis_labels": [
+    {
+      "cycles_per_day": 2,
+      "phase": "sin"
+    },
+    {
+      "cycles_per_day": 1,
+      "phase": "cos"
+    },
+    {
+      "cycles_per_day": 4,
+      "phase": "sin"
+    },
+    {
+      "cycles_per_day": 3,
+      "phase": "sin"
+    }
+  ]
+}

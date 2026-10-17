@@ -1,0 +1,65 @@
+{
+  "sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "train": 302,
+  "validation": 31,
+  "test": 30,
+  "configs": [
+    {
+      "id": 0,
+      "history": false,
+      "width": 16,
+      "depth": 1,
+      "kernel": 5,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 1,
+      "history": false,
+      "width": 16,
+      "depth": 1,
+      "kernel": 5,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 2,
+      "history": false,
+      "width": 16,
+      "depth": 1,
+      "kernel": 5,
+      "lr": 0.001,
+      "seed": 71
+    },
+    {
+      "id": 3,
+      "history": true,
+      "width": 16,
+      "depth": 1,
+      "kernel": 5,
+      "lr": 0.001,
+      "seed": 17
+    },
+    {
+      "id": 4,
+      "history": true,
+      "width": 16,
+      "depth": 1,
+      "kernel": 5,
+      "lr": 0.001,
+      "seed": 43
+    },
+    {
+      "id": 5,
+      "history": true,
+      "width": 16,
+      "depth": 1,
+      "kernel": 5,
+      "lr": 0.001,
+      "seed": 71
+    }
+  ],
+  "selection": "August only; September is previously inspected development data",
+  "architecture": "Conv1d(input,16,5), ReLU, Conv1d(16,4,1)",
+  "history": "calendar lags 1..7; raw quarter prices and repeated hourly means, missing-date masks"
+}

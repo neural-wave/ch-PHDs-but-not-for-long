@@ -1,0 +1,7 @@
+{
+  "selected_by": "frozen_august_pipeline_refit_all_official_days",
+  "best_directory": "deployment_all363_gpu1",
+  "model_fit_days": 363,
+  "evaluation_selection": "monthly_best.json",
+  "source_evaluation_directory": "monthly_joint_blend_gpu1"
+}

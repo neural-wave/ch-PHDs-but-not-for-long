@@ -1,0 +1,298 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "smoke": false,
+  "device": "NVIDIA RTX PRO 4000 Blackwell",
+  "train_days": 302,
+  "selection_days": 15,
+  "calibration_days": 16,
+  "test_days": 30,
+  "selected": "candidate_7",
+  "candidates": [
+    {
+      "name": "interpolation",
+      "selection_mae": 6.732429036458332,
+      "august_mae": 6.238029023857527,
+      "september_mae": 7.090321234809027,
+      "september_halfhour_mae": 6.263786458333334
+    },
+    {
+      "name": "candidate_0",
+      "config": {
+        "hierarchical": true,
+        "width": 32,
+        "seed": 17
+      },
+      "epochs": 32,
+      "selection_mae": 4.577437483909307,
+      "august_mae": 4.381670869095256,
+      "september_mae": 5.296314386123161,
+      "september_halfhour_mae": 4.233794087734261
+    },
+    {
+      "name": "candidate_1",
+      "config": {
+        "hierarchical": true,
+        "width": 32,
+        "seed": 43
+      },
+      "epochs": 61,
+      "selection_mae": 4.580928829184908,
+      "august_mae": 4.3949244619063,
+      "september_mae": 5.312734377842787,
+      "september_halfhour_mae": 4.296529103666893
+    },
+    {
+      "name": "candidate_2",
+      "config": {
+        "hierarchical": true,
+        "width": 64,
+        "seed": 17
+      },
+      "epochs": 53,
+      "selection_mae": 4.601052618795048,
+      "august_mae": 4.4573614522092555,
+      "september_mae": 5.431241505967652,
+      "september_halfhour_mae": 4.381306331517084
+    },
+    {
+      "name": "candidate_3",
+      "config": {
+        "hierarchical": true,
+        "width": 64,
+        "seed": 43
+      },
+      "epochs": 40,
+      "selection_mae": 4.579818821021367,
+      "august_mae": 4.41711645770885,
+      "september_mae": 5.29836803825326,
+      "september_halfhour_mae": 4.225825986367689
+    },
+    {
+      "name": "candidate_4",
+      "config": {
+        "hierarchical": false,
+        "width": 32,
+        "seed": 17
+      },
+      "epochs": 63,
+      "selection_mae": 4.5980339919266475,
+      "august_mae": 4.440765288103483,
+      "september_mae": 5.3315269857559375,
+      "september_halfhour_mae": 4.300982671309728
+    },
+    {
+      "name": "candidate_5",
+      "config": {
+        "hierarchical": false,
+        "width": 32,
+        "seed": 43
+      },
+      "epochs": 68,
+      "selection_mae": 4.551559774358954,
+      "august_mae": 4.393501300063894,
+      "september_mae": 5.296911162392673,
+      "september_halfhour_mae": 4.276384218526086
+    },
+    {
+      "name": "candidate_6",
+      "config": {
+        "hierarchical": false,
+        "width": 64,
+        "seed": 17
+      },
+      "epochs": 44,
+      "selection_mae": 4.556569951232574,
+      "august_mae": 4.418057896632546,
+      "september_mae": 5.3407923001039475,
+      "september_halfhour_mae": 4.307025418522088
+    },
+    {
+      "name": "candidate_7",
+      "config": {
+        "hierarchical": false,
+        "width": 64,
+        "seed": 43
+      },
+      "epochs": 34,
+      "selection_mae": 4.5505071356103715,
+      "august_mae": 4.396002418664924,
+      "september_mae": 5.352399540946592,
+      "september_halfhour_mae": 4.3412854187319265
+    }
+  ],
+  "coverage_caveat": "Time dependence/drift violate exchangeability; coverage is empirical, not unconditional guaranteed.",
+  "max_hourly_mean_error": 5.684341886080802e-14,
+  "serialized_replay": "passed for every neural candidate",
+  "conformal": [
+    {
+      "kind": "marginal",
+      "nominal": 0.9,
+      "radius": [
+        8.619209588766068,
+        4.882408077716825,
+        5.519562682509445,
+        8.069920463562,
+        13.997262552380562,
+        9.240643607378018,
+        9.076822369098664,
+        15.140628569126108,
+        13.0528653037548,
+        8.3605488073826,
+        8.346823263093853,
+        12.753817272186268,
+        15.289467060565954,
+        7.997978589534739,
+        8.940783846378324,
+        14.475160317420958
+      ],
+      "coverage": 0.8574652777777778,
+      "coverage_by_zone": [
+        0.8291666666666667,
+        0.8326388888888889,
+        0.8555555555555555,
+        0.9125
+      ],
+      "hour_joint_coverage": 0.7065972222222222,
+      "mean_width": 20.4704877963569
+    },
+    {
+      "kind": "hour_joint",
+      "nominal": 0.9,
+      "radius": [
+        10.160967582464195,
+        18.004422242641425,
+        15.375052692592135,
+        18.882612679004666
+      ],
+      "coverage": 0.934375,
+      "coverage_by_zone": [
+        0.9149305555555556,
+        0.9204861111111111,
+        0.9322916666666666,
+        0.9697916666666667
+      ],
+      "hour_joint_coverage": 0.8461805555555556,
+      "mean_width": 31.21152759835121
+    },
+    {
+      "kind": "marginal",
+      "nominal": 0.95,
+      "radius": [
+        11.046969247460368,
+        7.024781088829059,
+        8.350262567996978,
+        10.000060012340555,
+        18.500797457695,
+        13.918657728433601,
+        11.544042673632475,
+        19.33701056241989,
+        16.550912154912936,
+        11.762856725305312,
+        11.68845667123793,
+        16.17538076400757,
+        23.299294581413278,
+        11.895859328508394,
+        11.941388747692102,
+        21.232257236242276
+      ],
+      "coverage": 0.9212673611111111,
+      "coverage_by_zone": [
+        0.8996527777777777,
+        0.9013888888888889,
+        0.9211805555555556,
+        0.9628472222222222
+      ],
+      "hour_joint_coverage": 0.8260416666666667,
+      "mean_width": 28.033623443515964
+    },
+    {
+      "kind": "hour_joint",
+      "nominal": 0.95,
+      "radius": [
+        12.767664633989341,
+        23.082879444956774,
+        19.929033280611037,
+        27.00260457158089
+      ],
+      "coverage": 0.9635416666666666,
+      "coverage_by_zone": [
+        0.9475694444444445,
+        0.9486111111111111,
+        0.9690972222222223,
+        0.9888888888888889
+      ],
+      "hour_joint_coverage": 0.9111111111111111,
+      "mean_width": 41.39109096556902
+    },
+    {
+      "kind": "day_joint",
+      "nominal": 0.9,
+      "calibration_blocks": 16,
+      "radius": 72.8536769247055,
+      "day_joint_coverage": 0.7666666666666667,
+      "mean_width": 145.707353849411
+    },
+    {
+      "kind": "marginal",
+      "nominal": 0.5,
+      "radius": [
+        2.4791232490539556,
+        1.458755229413498,
+        1.454783880710579,
+        2.681575697064403,
+        4.094503804892298,
+        2.047157692909252,
+        2.2418304622173366,
+        3.7815055245161204,
+        3.9016718165948987,
+        2.3765814355015635,
+        2.8451082992553722,
+        4.106897938698552,
+        2.8704855988919746,
+        1.8300119805336124,
+        1.593165407180777,
+        2.7830018079280876
+      ],
+      "coverage": 0.42526041666666664,
+      "coverage_by_zone": [
+        0.44722222222222224,
+        0.39479166666666665,
+        0.4305555555555556,
+        0.4284722222222222
+      ],
+      "hour_joint_coverage": 0.17326388888888888,
+      "mean_width": 5.318269978170285
+    },
+    {
+      "kind": "hour_joint",
+      "nominal": 0.5,
+      "radius": [
+        4.043149697184562,
+        5.688217691183041,
+        6.137982864677895,
+        4.615368731692431
+      ],
+      "coverage": 0.66015625,
+      "coverage_by_zone": [
+        0.68125,
+        0.6138888888888889,
+        0.6760416666666667,
+        0.6694444444444444
+      ],
+      "hour_joint_coverage": 0.3951388888888889,
+      "mean_width": 10.242359492368966
+    },
+    {
+      "kind": "day_joint",
+      "nominal": 0.5,
+      "calibration_blocks": 16,
+      "radius": 39.31874293565747,
+      "day_joint_coverage": 0.43333333333333335,
+      "mean_width": 78.63748587131494
+    }
+  ],
+  "test_mae": 5.352399540946592,
+  "csv_audit": "passed: 11520 finite unique rows and hourly means",
+  "offline_point_and_interval_replay_max_error": 2.130866050720215e-05,
+  "added_50_percent": "held-out calibration absolute-error 0.5 quantile; point predictions unchanged"
+}

@@ -1,0 +1,10 @@
+method,aug_sep_pooled_mae,scope
+additive,4.921156135074858,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+cnn,5.192262272359453,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+direct,4.892598214410857,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+hierarchical,4.8801577570690515,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+interpolation,6.657189127604166,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+linear,4.817344452546829,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+linear_quantile_median,4.82449128892421,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+mlp,4.940567469446851,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores
+ridge,4.885644417799131,Held-out tests from two different chronological fits; descriptive only against upstream jointly-selected scores

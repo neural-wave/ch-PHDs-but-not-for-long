@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "smoke": false,
+  "zone_folds": 32,
+  "serialized_replays": 64,
+  "train_only_weight_scores": 208,
+  "max_prediction_replay_difference": 0.0,
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "official_baseline_match": true,
+  "checks": "Official target/date identity; chronological outer splits; train-only scaler/weight ledgers and minmax; selection-only checkpoint argmin; serialized neural replay with independent feature arithmetic; finite/conserved quarters; monthly/zone/daily MAE and normalized scores",
+  "smoke_extra": null
+}

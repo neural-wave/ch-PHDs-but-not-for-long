@@ -1,0 +1,50 @@
+{
+  "compact": {
+    "fixed_relative_ratio_reduction_pct": 3.523797145994434,
+    "fixed_selected_month_wins": 7,
+    "fixed_paired_configuration_wins": 30,
+    "paired_configuration_count": 32,
+    "fixed_allconfig_relative_mean_ratio_reduction_pct": 3.92070269853646,
+    "day_input_selected_month_wins_vs_standard": 3,
+    "day_reversible_selected_month_wins_vs_standard": 1,
+    "reversible_width_increase_vs_standard_pct": 11.512493653796053,
+    "fixed_pinball_ratio_reduction_vs_standard_pct": 4.262649618024206,
+    "fixed_pooled_mae": 4.4586609300440685,
+    "paired_seed_relative_reduction_pct": {
+      "17": 2.8038591328188756,
+      "43": 5.021465570973271
+    }
+  },
+  "s4d": {
+    "fixed_relative_ratio_reduction_pct": 2.430730523075386,
+    "fixed_selected_month_wins": 7,
+    "fixed_paired_configuration_wins": 30,
+    "paired_configuration_count": 32,
+    "fixed_allconfig_relative_mean_ratio_reduction_pct": 3.1760930725763914,
+    "day_input_selected_month_wins_vs_standard": 2,
+    "day_reversible_selected_month_wins_vs_standard": 2,
+    "reversible_width_increase_vs_standard_pct": 23.714435012319733,
+    "fixed_pinball_ratio_reduction_vs_standard_pct": 3.5101998183987515,
+    "fixed_pooled_mae": 4.430357659017071,
+    "paired_seed_relative_reduction_pct": {
+      "17": 3.2088136797190914,
+      "43": 3.1435219536805947
+    }
+  },
+  "s5": {
+    "fixed_relative_ratio_reduction_pct": 3.410398846547402,
+    "fixed_selected_month_wins": 7,
+    "fixed_paired_configuration_wins": 28,
+    "paired_configuration_count": 32,
+    "fixed_allconfig_relative_mean_ratio_reduction_pct": 3.373760335562326,
+    "day_input_selected_month_wins_vs_standard": 4,
+    "day_reversible_selected_month_wins_vs_standard": 3,
+    "reversible_width_increase_vs_standard_pct": 10.578500545527625,
+    "fixed_pinball_ratio_reduction_vs_standard_pct": 4.622585220593867,
+    "fixed_pooled_mae": 4.422713129340535,
+    "paired_seed_relative_reduction_pct": {
+      "17": 3.2180348468232034,
+      "43": 3.529307542888871
+    }
+  }
+}

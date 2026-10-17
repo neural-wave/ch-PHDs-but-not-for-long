@@ -1,0 +1,23 @@
+{
+  "completed": 6,
+  "total": 6,
+  "latest": {
+    "config": {
+      "id": 4,
+      "history": true,
+      "width": 8,
+      "depth": 1,
+      "kernel": [
+        2,
+        8
+      ],
+      "lr": 0.001,
+      "seed": 43
+    },
+    "validation_mae": 4.618000388145447,
+    "best_epoch": 289,
+    "epochs": 300,
+    "parameters": 1388,
+    "seconds": 6.871311247115955
+  }
+}

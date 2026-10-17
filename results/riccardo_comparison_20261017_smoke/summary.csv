@@ -1,0 +1,3 @@
+method,pooled_mae,mean_monthly_ratio,worst_monthly_ratio,pooled_mae_over_pooled_interpolation_mae,folds
+riccardo_reduced,7.788208690313516,1.3820468254541949,1.4659001802061984,1.4095045831287931,2
+riccardo_raw_hourly,13.761890080757423,2.5749926237974536,2.832666821082765,2.4906172796149635,2

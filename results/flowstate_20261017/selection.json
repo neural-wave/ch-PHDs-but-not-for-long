@@ -1,0 +1,88 @@
+{
+  "by_arm": {
+    "0": {
+      "flowstate": false,
+      "seed": 71,
+      "validation_mae": 4.6412646770477295,
+      "best_epoch": 106,
+      "epochs": 136,
+      "seconds": 2.899549961090088,
+      "parameters": 9156,
+      "folder": "trials/0_71"
+    },
+    "1": {
+      "flowstate": true,
+      "seed": 17,
+      "validation_mae": 4.629788100719452,
+      "best_epoch": 88,
+      "epochs": 118,
+      "seconds": 2.563476085662842,
+      "parameters": 9156,
+      "folder": "trials/1_17"
+    }
+  },
+  "candidates": [
+    {
+      "flowstate": false,
+      "seed": 17,
+      "validation_mae": 4.667051434516907,
+      "best_epoch": 86,
+      "epochs": 116,
+      "seconds": 3.344334125518799,
+      "parameters": 9156,
+      "folder": "trials/0_17"
+    },
+    {
+      "flowstate": false,
+      "seed": 43,
+      "validation_mae": 4.678837060928345,
+      "best_epoch": 54,
+      "epochs": 84,
+      "seconds": 1.8867535591125488,
+      "parameters": 9156,
+      "folder": "trials/0_43"
+    },
+    {
+      "flowstate": false,
+      "seed": 71,
+      "validation_mae": 4.6412646770477295,
+      "best_epoch": 106,
+      "epochs": 136,
+      "seconds": 2.899549961090088,
+      "parameters": 9156,
+      "folder": "trials/0_71"
+    },
+    {
+      "flowstate": true,
+      "seed": 17,
+      "validation_mae": 4.629788100719452,
+      "best_epoch": 88,
+      "epochs": 118,
+      "seconds": 2.563476085662842,
+      "parameters": 9156,
+      "folder": "trials/1_17"
+    },
+    {
+      "flowstate": true,
+      "seed": 43,
+      "validation_mae": 4.6370720863342285,
+      "best_epoch": 94,
+      "epochs": 124,
+      "seconds": 2.7656939029693604,
+      "parameters": 9156,
+      "folder": "trials/1_43"
+    },
+    {
+      "flowstate": true,
+      "seed": 71,
+      "validation_mae": 4.67086136341095,
+      "best_epoch": 71,
+      "epochs": 101,
+      "seconds": 2.237818717956543,
+      "parameters": 9156,
+      "folder": "trials/1_71"
+    }
+  ],
+  "selection": "August only; persisted before September FlowState inference or scoring",
+  "frozen_at_unix": 1792243017.9881299
+}

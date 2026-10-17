@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "actual_flowstate_median_shape": [
+    4,
+    96
+  ],
+  "causal_context": true,
+  "causal_head": true,
+  "full_curve_gradient": true,
+  "flowstate_gradient": true,
+  "two_optimizer_steps": true,
+  "head_parameters": 9156,
+  "channels": 94,
+  "versions": {
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "transformers": "4.50.3",
+    "huggingface-hub": "0.30.2",
+    "datasets": "3.5.1",
+    "accelerate": "1.6.0"
+  }
+}

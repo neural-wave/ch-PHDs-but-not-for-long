@@ -1,0 +1,482 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-07-31"
+    ],
+    "validation": [
+      "2026-08-01",
+      "2026-08-31"
+    ],
+    "test": [
+      "2026-09-01",
+      "2026-09-30"
+    ]
+  },
+  "split_counts": {
+    "train": 302,
+    "validation": 31,
+    "test": 30
+  },
+  "parent": "monthly_revin_gpu1",
+  "calendar_split": true,
+  "model_fit_days": 302,
+  "final_refit_deferred": true,
+  "graph_nodes": 4,
+  "graph_hours": 24,
+  "candidates": [
+    {
+      "name": "flat",
+      "config": {},
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "ridge_1",
+      "config": {
+        "alpha": 1
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "ridge_10",
+      "config": {
+        "alpha": 10
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "ridge_100",
+      "config": {
+        "alpha": 100
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "trees_5",
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "boost_15_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "boost_31_10",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "boost_31_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "boost_63_100",
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_17",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 20
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_18",
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 21
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_19",
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 8
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_25",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 25
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_26",
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 25
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_27",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 15
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_28",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 20
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "net_30",
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 37
+      },
+      "origin": "monthly_base_gpu1"
+    },
+    {
+      "name": "cat_9",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          867,
+          172,
+          100,
+          798
+        ]
+      },
+      "origin": "monthly_cat_gpu1"
+    },
+    {
+      "name": "graph_5",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 33
+      },
+      "origin": "monthly_graph_gpu1"
+    },
+    {
+      "name": "graph_8",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 29
+      },
+      "origin": "monthly_graph_gpu1"
+    },
+    {
+      "name": "graph_12",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 12
+      },
+      "origin": "monthly_graph_gpu1"
+    },
+    {
+      "name": "graph_13",
+      "config": {
+        "width": 128,
+        "blocks": 2,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 15
+      },
+      "origin": "monthly_graph_gpu1"
+    },
+    {
+      "name": "revin_7",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 46
+      },
+      "origin": "monthly_revin_gpu1"
+    },
+    {
+      "name": "parent_ensemble",
+      "config": {},
+      "origin": "monthly_revin_gpu1"
+    }
+  ],
+  "weights": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.03066714446625983,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.030526248608430822,
+      0.0,
+      0.026383527025119476
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0062608442677351385
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.01828451349700743,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.026346464524519025,
+      0.0,
+      0.03797014874513345,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.05644401975848596,
+      0.0
+    ],
+    [
+      0.0,
+      0.008966360571368976,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.021906927296343488,
+      0.015507267304445172,
+      0.0
+    ],
+    [
+      0.9247018775122138,
+      0.9386004635238567,
+      0.8900785641919354,
+      0.9673556287071453
+    ]
+  ],
+  "validation": {
+    "mae": 4.245328588334859,
+    "mae_by_zone": [
+      2.965041742102988,
+      4.840882724650088,
+      4.959546810801584,
+      4.215843075784775
+    ]
+  },
+  "test": {
+    "mae": 5.091208819992601,
+    "mae_by_zone": [
+      3.8730960660262044,
+      6.733088737775783,
+      5.39336031509013,
+      4.365290161078287
+    ]
+  },
+  "test_baseline": {
+    "mae": 7.090321234809027,
+    "mae_by_zone": [
+      5.990385850694443,
+      9.227021050347224,
+      6.902530164930555,
+      6.241347873263887
+    ]
+  },
+  "max_hourly_mean_error": 2.2737367544323206e-13,
+  "smoke": false,
+  "device": "NVIDIA RTX A5000",
+  "normalization": "Paired reversible input-hourly normalization vs matched fixed-scale control; rich side features retained",
+  "tf32": false,
+  "offline_inference_qa": "passed; exported 384 unique finite rows and exact hourly means",
+  "method": "Joint convex reweighting of existing selected components; August only; fixed 0.05 zone shrinkage; frozen parent fallback"
+}

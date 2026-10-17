@@ -1,0 +1,41 @@
+{
+  "pairs": [
+    {
+      "blocks": 1,
+      "seed": 17,
+      "control_august_mae": 4.4029412140224595,
+      "revin_august_mae": 4.400310773044821,
+      "revin_minus_control": -0.0026304409776383153
+    },
+    {
+      "blocks": 1,
+      "seed": 43,
+      "control_august_mae": 4.385855067301929,
+      "revin_august_mae": 4.393326281114586,
+      "revin_minus_control": 0.00747121381265714
+    },
+    {
+      "blocks": 2,
+      "seed": 17,
+      "control_august_mae": 4.389066661650863,
+      "revin_august_mae": 4.40486348930775,
+      "revin_minus_control": 0.015796827656886947
+    },
+    {
+      "blocks": 2,
+      "seed": 43,
+      "control_august_mae": 4.396865228974278,
+      "revin_august_mae": 4.349658864444875,
+      "revin_minus_control": -0.04720636452940319
+    }
+  ],
+  "matched_pairs_won_by_revin": 2,
+  "paired_difference_mean": -0.006642191009374354,
+  "selected_revin_component": "revin_7",
+  "ensemble_september_mae_difference": -0.001183451054028265,
+  "ensemble_september_day_bootstrap_95pct": [
+    -0.0070201819669479144,
+    0.0042053903381862445
+  ],
+  "interpretation": "Small ensemble gain with mixed matched-control results. Day-bootstrap interval is descriptive, not valid post-selection significance; September previously viewed."
+}

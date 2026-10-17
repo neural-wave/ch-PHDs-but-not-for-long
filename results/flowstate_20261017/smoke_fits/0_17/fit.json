@@ -1,0 +1,10 @@
+{
+  "flowstate": false,
+  "seed": 17,
+  "validation_mae": 5.666930079460144,
+  "best_epoch": 2,
+  "epochs": 2,
+  "seconds": 0.34287428855895996,
+  "parameters": 9156,
+  "folder": "smoke_fits/0_17"
+}

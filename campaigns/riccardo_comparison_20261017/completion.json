@@ -1,0 +1,12 @@
+{
+  "id": "74e4190bed4235d2126ac27b",
+  "title": "Riccardo CNNs: clean eight-month comparison and audits",
+  "status": "completed",
+  "host": "7952e03ac43d",
+  "started_at": 1792245616.341856,
+  "ended_at": 1792245765.7468295,
+  "exit_code": 0,
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "note": "Command completed successfully."
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-16",
+  "status_at_launch_verification": "running",
+  "run_id": "d663a92035ce2527ea276864",
+  "host": "ando",
+  "gpu": 1,
+  "worker_pid": 2112795,
+  "training_pid": 2112796,
+  "remote_root": "/home/mnogales/Projects/HACKATON",
+  "remote_outputs": "/home/mnogales/Projects/HACKATON/results/search_gpu1",
+  "worker_log": "/home/mnogales/.local/share/nightwatch-worker-bitsvsdims/d663a92035ce2527ea276864.log",
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "estimated_duration_seconds": 3600,
+  "started_at": 1792176602.0381997,
+  "estimated_finish_at": 1792180202.0381997,
+  "dashboard": "https://api.miguelnogales.com/nightwatch/"
+}

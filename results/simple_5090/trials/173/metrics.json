@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": 173,
+    "feature": "rich",
+    "anchor": "interpolation",
+    "family": "additive",
+    "width": 0,
+    "depth": 0,
+    "lr": 0.001,
+    "seed": 43
+  },
+  "parameters": 4671,
+  "validation_mae": 4.514552277361025,
+  "best_epoch": 35,
+  "epochs_run": 60,
+  "seconds": 1.2320218058302999,
+  "max_hourly_mean_error": 5.684341886080802e-14,
+  "replay_max_error": 0.0
+}

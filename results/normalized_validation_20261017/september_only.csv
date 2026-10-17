@@ -1,0 +1,5 @@
+method,mae,interpolation_mae,mae_over_interpolation_mae,selection,scope,source
+monthly_joint_blend,5.091208819992601,7.090321234809028,0.718050515821196,Full August,September only; no multi-month estimate,results/monthly_joint_blend_gpu1/metrics.json
+analog90_CNN,5.177024160106511,7.090321234809028,0.730153682556803,August 1-15,September only; no multi-month estimate,results/parallel_2d_tuning_20261017/metrics.json
+quantile_campaign_analog90_1,5.216650727743593,7.090321234809028,0.7357425079886524,August 1-15; overall/cohort choice,September only; no multi-month estimate,results/quantile_2d_cnn_20261017/metrics.json
+quantile_campaign_analog90_0,5.336198180744609,7.090321234809028,0.752603161976248,August 1-15; overall/cohort choice,September only; no multi-month estimate,results/quantile_2d_cnn_20261017/metrics.json

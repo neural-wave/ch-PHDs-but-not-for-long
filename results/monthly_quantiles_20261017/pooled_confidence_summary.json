@@ -1,0 +1,95 @@
+{
+  "aggregation": "Target-count-weighted means across held-out months; bin ratio is pooled error / pooled interpolation error, not mean monthly ratio",
+  "bins": [
+    {
+      "recipe": "blend_uniform",
+      "label": "narrow",
+      "n": 22845,
+      "mae": 2.3065405462380975,
+      "interpolation_mae": 2.699006620704749,
+      "coverage90": 0.9348216239877435,
+      "width90": 13.625860927555136,
+      "mae_over_interpolation_mae": 0.8545886951680862
+    },
+    {
+      "recipe": "blend_uniform",
+      "label": "middle",
+      "n": 41383,
+      "mae": 3.6020388903432465,
+      "interpolation_mae": 4.755577297743034,
+      "coverage90": 0.9250658482951937,
+      "width90": 18.54218210378256,
+      "mae_over_interpolation_mae": 0.7574346214607321
+    },
+    {
+      "recipe": "blend_uniform",
+      "label": "wide",
+      "n": 28316,
+      "mae": 6.5246781355391255,
+      "interpolation_mae": 9.876662454531006,
+      "coverage90": 0.9104746433112021,
+      "width90": 29.729307283220493,
+      "mae_over_interpolation_mae": 0.6606156852658128
+    },
+    {
+      "recipe": "validation_selector",
+      "label": "narrow",
+      "n": 23099,
+      "mae": 2.331792994290445,
+      "interpolation_mae": 2.742204654422269,
+      "coverage90": 0.9334170310403048,
+      "width90": 13.846675395609997,
+      "mae_over_interpolation_mae": 0.8503351456755915
+    },
+    {
+      "recipe": "validation_selector",
+      "label": "middle",
+      "n": 40824,
+      "mae": 3.599794590831449,
+      "interpolation_mae": 4.753564164155888,
+      "coverage90": 0.9277140897511268,
+      "width90": 18.962351788502254,
+      "mae_over_interpolation_mae": 0.7572832650446996
+    },
+    {
+      "recipe": "validation_selector",
+      "label": "wide",
+      "n": 28621,
+      "mae": 6.5029966955909595,
+      "interpolation_mae": 9.808348655707348,
+      "coverage90": 0.9168792145627337,
+      "width90": 31.25803177459691,
+      "mae_over_interpolation_mae": 0.6630062739263405
+    },
+    {
+      "recipe": "blend_ratio",
+      "label": "narrow",
+      "n": 22411,
+      "mae": 2.40855172569277,
+      "interpolation_mae": 2.8302535306322785,
+      "coverage90": 0.9296773905671322,
+      "width90": 14.314626251125318,
+      "mae_over_interpolation_mae": 0.8510021097490512
+    },
+    {
+      "recipe": "blend_ratio",
+      "label": "middle",
+      "n": 41428,
+      "mae": 3.514599767786449,
+      "interpolation_mae": 4.69407796357536,
+      "coverage90": 0.932654243506807,
+      "width90": 19.230983207786664,
+      "mae_over_interpolation_mae": 0.7487305909826576
+    },
+    {
+      "recipe": "blend_ratio",
+      "label": "wide",
+      "n": 28705,
+      "mae": 6.532775566536676,
+      "interpolation_mae": 9.762458173663124,
+      "coverage90": 0.9177146838529873,
+      "width90": 31.879115689146346,
+      "mae_over_interpolation_mae": 0.6691732195238089
+    }
+  ]
+}

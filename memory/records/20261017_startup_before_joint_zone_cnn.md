@@ -1,0 +1,11 @@
+# HACKATON project memory
+
+Objective: official-input four-zone quarter-hour reconstruction; hourly means within0.0001 EUR/MWh. No external/pretrained/October prices; strictly earlier history. Fit302 days throughJuly, August31 selection, September30 developmental evaluation, not blind. Zones anonymized.
+
+Verified2026-10-17: monthly_joint_blend_gpu1 SeptemberMAE5.091209 versus interpolation7.090321. Offline363-day refit audited, no external submission: DEPLOYMENT_REFIT.md; results/COMPLETION_AUDIT.md. Simple linear/additive/MLP/CNN MAE5.209794/5.255107/5.343947/5.222494; August selectedCNN. results/simple_5090. Hierarchy5.282777; lagHPO retained parent.
+
+Four-frequency completed/audited: September predictor/oracle Fourier4 6.210906/5.788496; freephase8 5.977431/4.903183; PCA4 5.827434/4.989501; PCA8 5.887884/4.402627; PCA16 5.887545/3.487367. Four/eight coefficients per day/zone; oracle target-derived diagnostic only. FOUR_FREQUENCY_PROTOCOL.md; results/four_frequency_20261017. Nightwatchdcae73b185fbc7a157711e13 completed. Local report/audit/figure verified; full checkpoint backup not established.
+
+Active2026-10-17: segmented-frequency64fit comparison, global8/noon4+4/constant4+4/seasonal4+4. Eight daily coefficients; seasonal boundary has three shared parameters. Smoke/gradient/replay passed; full results pending. root@93.91.156.85:55340,/workspace/HACKATON; worker4101; Nightwatch270e46a91311c053123bd97a; log/root/.local/share/nightwatch-hackaton/270e46a91311c053123bd97a.log. SEGMENTED_FREQUENCY_PROTOCOL.md; results/segmented_frequency_20261017. Training-only boundary fitting, August stopping;0.5h smooth overlap, exact hourly conservation. Next retrieve/audit/inspect final results.
+
+Other context: analog residual history dominates feature reliance; ordered seven-day inputs implemented, ablation pending. INTERPOLATION_HISTORY_PROTOCOL.md. Quantile16fold medianMAE5.226105; results/linear_quantiles_vast. Expanding16fold complete; expanding/conformal034d5133ebc5e076af6aed88 final audit outstanding. EXPANDING_SIMPLE_PROTOCOL.md. User prioritizes interpretability, analogs, difficult-day robustness: INTERPRETABLE_ROBUSTNESS_PLAN.md. SSM untested. Full earlier context: memory/records/20261017_startup_before_segmented_run.md. No frequency deployment/refit.
