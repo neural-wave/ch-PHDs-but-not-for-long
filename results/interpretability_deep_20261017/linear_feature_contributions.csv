@@ -1,0 +1,390 @@
+feature,group,mean_abs_contribution
+interpolation_error_analog90_nearest10_quarter4,Similar-day residuals,1.5506275504235194
+interpolation_error_analog90_nearest10_quarter1,Similar-day residuals,1.5104940898346169
+local_zone0_offset-2_minus_target_price,Local and cross-zone prices,0.6609081822179198
+local_zone0_offset-2_price,Local and cross-zone prices,0.658487311026395
+today_zone1_hour04_price,Full hourly curves,0.6126319180603024
+today_zone3_hour06_price,Full hourly curves,0.521065607261565
+local_zone0_offset+2_price,Local and cross-zone prices,0.49621329790373075
+interpolation_error_median56_quarter1,Lagged interpolation residuals,0.4871577744232949
+slope_sum_zone0,Hourly slopes and curvature,0.47469096378526837
+today_zone2_hour01_price,Full hourly curves,0.46989820132924365
+left_slope_zone0,Hourly slopes and curvature,0.46006121641647835
+local_zone0_offset+2_minus_target_price,Local and cross-zone prices,0.4457731543464805
+right_slope_zone0,Hourly slopes and curvature,0.4331045695739954
+interpolation_error_analog90_nearest10_quarter2,Similar-day residuals,0.4299202347428587
+today_zone2_hour24_price,Full hourly curves,0.426752261372818
+today_zone2_hour07_price,Full hourly curves,0.41891173527397696
+today_zone1_hour01_price,Full hourly curves,0.4157286824729207
+absolute_slope_sum_zone0,Hourly slopes and curvature,0.41545030357888973
+local_zone3_offset-3_price,Local and cross-zone prices,0.41187376306485507
+local_zone0_offset-1_price,Local and cross-zone prices,0.3992427963089302
+today_zone2_hour03_price,Full hourly curves,0.3695867093567902
+today_zone2_hour20_price,Full hourly curves,0.3647417090400614
+today_zone0_hour03_price,Full hourly curves,0.35345700551014325
+interpolation_error_analog90_nearest10_quarter3,Similar-day residuals,0.34977456906668447
+local_zone0_offset+1_price,Local and cross-zone prices,0.3495750686157858
+today_zone1_hour03_price,Full hourly curves,0.34910724229275214
+today_zone1_hour05_price,Full hourly curves,0.3443531788845411
+local_zone2_offset+2_price,Local and cross-zone prices,0.3429428917364077
+today_zone2_hour21_price,Full hourly curves,0.34104012669382633
+local_zone0_offset-3_price,Local and cross-zone prices,0.3407659175186562
+local_zone0_offset-1_minus_target_price,Local and cross-zone prices,0.33667554080515905
+today_zone2_hour08_price,Full hourly curves,0.3276939214961938
+today_zone0_hour24_price,Full hourly curves,0.3206216275604609
+local_zone0_offset+1_minus_target_price,Local and cross-zone prices,0.30259113566765455
+today_zone0_hour19_price,Full hourly curves,0.2866513679164061
+local_zone0_offset-3_minus_target_price,Local and cross-zone prices,0.2835169808534545
+local_zone3_offset-1_price,Local and cross-zone prices,0.28043180773441667
+today_zone0_hour06_price,Full hourly curves,0.2785308839543776
+absolute_left_slope_zone0,Hourly slopes and curvature,0.2751806992927399
+today_zone2_hour06_price,Full hourly curves,0.2652796345181527
+today_zone0_hour02_price,Full hourly curves,0.2585981013265537
+today_zone1_hour20_price,Full hourly curves,0.25369924320769294
+today_zone2_hour18_price,Full hourly curves,0.2506709893933733
+today_zone3_hour01_price,Full hourly curves,0.25042408202640537
+today_zone0_hour08_price,Full hourly curves,0.24970167462761164
+shape_mean28_quarter3,Lagged quarter shapes,0.24479672235321945
+today_zone2_hour05_price,Full hourly curves,0.24406451038586346
+day_q75,Daily price statistics,0.24295975033820377
+interpolation_error_median56_quarter4,Lagged interpolation residuals,0.23423666494124984
+today_zone0_hour05_price,Full hourly curves,0.23009340365680353
+today_zone2_hour12_price,Full hourly curves,0.22839402148222032
+interpolation_error_lag1_quarter4,Lagged interpolation residuals,0.22720783147974116
+today_zone3_hour05_price,Full hourly curves,0.2217021829471512
+today_zone2_hour22_price,Full hourly curves,0.2090514855918316
+absolute_right_slope_zone0,Hourly slopes and curvature,0.2052771294651445
+shape_mean7_quarter4,Lagged quarter shapes,0.20181448001611296
+shape_mean28_quarter4,Lagged quarter shapes,0.19884787404410473
+today_zone3_hour02_price,Full hourly curves,0.19803659815854832
+left_slope_zone3,Hourly slopes and curvature,0.19589904222845636
+today_zone2_hour04_price,Full hourly curves,0.19556842369526864
+absolute_right_slope_zone1,Hourly slopes and curvature,0.19449454443102926
+shape_mean7_quarter1,Lagged quarter shapes,0.19447846426779286
+local_zone3_offset-3_minus_target_price,Local and cross-zone prices,0.188731385675887
+today_zone1_hour08_price,Full hourly curves,0.18849134264716372
+interpolation_error_lag1_quarter1,Lagged interpolation residuals,0.18755445982383653
+day_max,Daily price statistics,0.18524387060104772
+today_zone3_hour04_price,Full hourly curves,0.18453213449050085
+today_zone2_hour19_price,Full hourly curves,0.18374255555089514
+interpolation_error_median7_quarter1,Lagged interpolation residuals,0.18279283367738444
+interpolation_error_median56_quarter2,Lagged interpolation residuals,0.18193636017177126
+today_zone2_hour23_price,Full hourly curves,0.1818589952525088
+today_zone0_hour20_price,Full hourly curves,0.18020723247996348
+today_zone2_hour09_price,Full hourly curves,0.17915096606235384
+today_zone0_hour01_price,Full hourly curves,0.17388864270221718
+today_zone3_hour22_price,Full hourly curves,0.17211785573256638
+today_zone0_hour15_minus_target_price,Full hourly curves,0.1702620505599089
+local_zone3_offset+0_price,Local and cross-zone prices,0.1684359675050185
+absolute_left_slope_zone1,Hourly slopes and curvature,0.16668116265965396
+today_zone2_hour11_price,Full hourly curves,0.16640109569488984
+today_zone3_hour19_price,Full hourly curves,0.16639229328833785
+interpolation_error_median14_quarter3,Lagged interpolation residuals,0.1655403257402268
+today_zone1_hour14_minus_target_price,Full hourly curves,0.1651803136299314
+today_zone2_hour17_price,Full hourly curves,0.16503691362190595
+slope_sum_zone3,Hourly slopes and curvature,0.16335675045387013
+shape_mean28_quarter2,Lagged quarter shapes,0.1595727923091991
+today_zone0_hour21_price,Full hourly curves,0.159061638702191
+local_zone1_offset+2_price,Local and cross-zone prices,0.15751208321191068
+day_std,Daily price statistics,0.15684489726925
+shape_mean7_quarter3,Lagged quarter shapes,0.15512502536092404
+today_zone2_hour02_price,Full hourly curves,0.15393148232976456
+interpolation_error_lag1_quarter2,Lagged interpolation residuals,0.15361455155840578
+today_zone3_hour20_price,Full hourly curves,0.15232266621799076
+local_zone1_offset-1_price,Local and cross-zone prices,0.15212554672998413
+interpolation_error_median14_quarter1,Lagged interpolation residuals,0.15205353982065434
+today_zone3_hour06_minus_target_price,Full hourly curves,0.1499234362325392
+interpolation_error_median28_quarter2,Lagged interpolation residuals,0.14961581696116022
+today_zone3_hour11_price,Full hourly curves,0.14923608535555247
+today_zone1_hour09_price,Full hourly curves,0.14673373406841697
+interpolation_error_median7_quarter4,Lagged interpolation residuals,0.1449030491787553
+today_zone0_hour13_minus_target_price,Full hourly curves,0.14367990347015622
+today_zone3_hour07_price,Full hourly curves,0.14232448011629334
+local_zone3_offset-1_minus_target_price,Local and cross-zone prices,0.1396962077566486
+day_q25,Daily price statistics,0.13947442988074493
+local_zone2_offset+1_price,Local and cross-zone prices,0.13929907498014768
+today_zone1_hour23_price,Full hourly curves,0.13866103798940685
+absolute_slope_sum_zone1,Hourly slopes and curvature,0.1378097022588182
+today_zone1_hour14_price,Full hourly curves,0.13526007498351567
+today_zone3_hour17_price,Full hourly curves,0.13422373006142127
+today_zone1_hour24_price,Full hourly curves,0.1328408736352774
+day_min,Daily price statistics,0.1323564301593749
+today_zone1_hour07_price,Full hourly curves,0.13171873259842123
+today_zone1_hour02_price,Full hourly curves,0.13150295102262105
+shape_lag2_quarter2,Lagged quarter shapes,0.13065420072970488
+local_zone3_offset+3_price,Local and cross-zone prices,0.12982248789457934
+local_zone3_offset-2_price,Local and cross-zone prices,0.12879646592848115
+today_zone1_hour13_minus_target_price,Full hourly curves,0.12875887541405617
+local_zone2_offset-3_price,Local and cross-zone prices,0.1285116241433449
+today_zone3_hour13_minus_target_price,Full hourly curves,0.12755849532887314
+local_zone0_offset+3_price,Local and cross-zone prices,0.12721984996895877
+today_zone1_hour22_price,Full hourly curves,0.12253688072696281
+today_zone2_hour10_price,Full hourly curves,0.1219994975121486
+slope_curvature_zone0,Hourly slopes and curvature,0.11964309552519592
+shape_mean7_quarter2,Lagged quarter shapes,0.11794567600921355
+local_zone3_offset+1_price,Local and cross-zone prices,0.11291441268757865
+interpolation_error_median28_quarter4,Lagged interpolation residuals,0.11260521887592216
+local_zone1_offset+1_price,Local and cross-zone prices,0.11176689338281152
+today_zone1_hour13_price,Full hourly curves,0.111552773475427
+shape_lag1_quarter2,Lagged quarter shapes,0.11100930561121099
+today_zone1_hour19_price,Full hourly curves,0.10912289646319996
+interpolation_error_lag1_quarter3,Lagged interpolation residuals,0.10672596019235955
+right_slope_zone3,Hourly slopes and curvature,0.10502973950368948
+local_zone1_offset-2_price,Local and cross-zone prices,0.10468793978945477
+local_zone1_offset+2_minus_target_price,Local and cross-zone prices,0.10450042921519645
+today_zone1_hour06_price,Full hourly curves,0.1041696383892241
+today_zone2_hour15_price,Full hourly curves,0.10397916076409319
+today_zone3_hour23_price,Full hourly curves,0.10321293686693134
+today_zone0_hour13_price,Full hourly curves,0.10229872008999455
+today_zone0_hour18_price,Full hourly curves,0.1016271362728048
+absolute_slope_sum_zone3,Hourly slopes and curvature,0.10160614373938183
+day_mean,Daily price statistics,0.1001966030620621
+today_zone0_hour19_minus_target_price,Full hourly curves,0.09884184073590249
+today_zone3_hour14_minus_target_price,Full hourly curves,0.09854294430027334
+shape_lag1_quarter3,Lagged quarter shapes,0.09787879137662749
+today_zone3_hour13_price,Full hourly curves,0.09721305700431317
+local_zone1_offset+3_price,Local and cross-zone prices,0.09694271160355383
+interpolation_error_median14_quarter4,Lagged interpolation residuals,0.09633870466688406
+interpolation_error_median7_quarter2,Lagged interpolation residuals,0.09587610596018567
+interpolation_error_lag2_quarter2,Lagged interpolation residuals,0.09577168652365341
+today_zone3_hour24_price,Full hourly curves,0.09539638122161508
+interpolation_error_median28_quarter1,Lagged interpolation residuals,0.09464097134056983
+local_zone3_offset-2_minus_target_price,Local and cross-zone prices,0.09442281513446656
+today_zone0_hour15_price,Full hourly curves,0.09402849480181218
+today_zone1_hour16_minus_target_price,Full hourly curves,0.09399567846336664
+right_slope_zone1,Hourly slopes and curvature,0.09353118904551283
+local_zone2_offset+2_minus_target_price,Local and cross-zone prices,0.09338652826659175
+slope_sum_zone1,Hourly slopes and curvature,0.09145834423362989
+shape_mean28_quarter1,Lagged quarter shapes,0.09107724861244161
+today_zone3_hour03_price,Full hourly curves,0.09090825425908639
+local_zone3_offset+0_minus_target_price,Local and cross-zone prices,0.09047274437107955
+current_zone3_minus_target_price,Local and cross-zone prices,0.09047256749519554
+today_zone3_hour18_price,Full hourly curves,0.08951391700090715
+local_zone1_offset-2_minus_target_price,Local and cross-zone prices,0.08858632845611554
+today_zone3_hour16_price,Full hourly curves,0.08728791540249173
+today_zone3_hour12_minus_target_price,Full hourly curves,0.08663272656326068
+today_zone3_hour10_price,Full hourly curves,0.08596777023411291
+today_zone3_hour12_price,Full hourly curves,0.08561744761569759
+interpolation_error_median28_quarter3,Lagged interpolation residuals,0.08549163356869209
+interpolation_error_lag7_quarter1,Lagged interpolation residuals,0.08447724285320622
+today_zone2_hour16_price,Full hourly curves,0.08400059036974546
+local_zone2_offset+3_price,Local and cross-zone prices,0.08386694825858226
+left_slope_zone1,Hourly slopes and curvature,0.08373321725257857
+local_zone0_offset+3_minus_target_price,Local and cross-zone prices,0.08309452186450518
+interpolation_error_lag2_quarter4,Lagged interpolation residuals,0.08274190059589284
+today_zone2_hour13_price,Full hourly curves,0.08253327738034115
+today_zone0_hour09_price,Full hourly curves,0.08179559845840602
+absolute_slope_curvature_zone3,Hourly slopes and curvature,0.08050971392042314
+today_zone1_hour15_minus_target_price,Full hourly curves,0.07988012565029215
+local_zone1_offset-3_price,Local and cross-zone prices,0.07961627784997391
+interpolation_error_lag7_quarter4,Lagged interpolation residuals,0.07755373481381342
+today_zone0_hour08_minus_target_price,Full hourly curves,0.07747614781786188
+interpolation_error_median14_quarter2,Lagged interpolation residuals,0.07720955692603218
+local_zone1_offset-1_minus_target_price,Local and cross-zone prices,0.07691825251061588
+shape_lag2_quarter3,Lagged quarter shapes,0.07691473500696025
+local_zone1_offset+1_minus_target_price,Local and cross-zone prices,0.07626165528873058
+today_zone0_hour24_minus_target_price,Full hourly curves,0.07613665097403519
+local_zone3_offset+2_price,Local and cross-zone prices,0.0754447246389151
+today_zone2_hour12_minus_target_price,Full hourly curves,0.07486155574426125
+today_zone0_hour11_price,Full hourly curves,0.0746617134887187
+today_zone0_hour18_minus_target_price,Full hourly curves,0.0746080250976003
+today_zone1_hour10_price,Full hourly curves,0.07452066619082516
+local_zone2_offset-2_price,Local and cross-zone prices,0.07379997067535242
+local_zone2_offset+0_price,Local and cross-zone prices,0.07369176183312552
+today_zone3_hour05_minus_target_price,Full hourly curves,0.07332634614763935
+today_zone0_hour04_price,Full hourly curves,0.07307974357720459
+slope_curvature_zone2,Hourly slopes and curvature,0.07279592043698183
+today_zone0_hour17_price,Full hourly curves,0.07271563996755476
+today_zone1_hour04_minus_target_price,Full hourly curves,0.07132647396294557
+today_zone2_hour14_price,Full hourly curves,0.07005737403361391
+today_zone0_hour16_minus_target_price,Full hourly curves,0.06969915401344488
+local_zone1_offset+3_minus_target_price,Local and cross-zone prices,0.06932834035824989
+today_zone1_hour16_price,Full hourly curves,0.06909098544648401
+interpolation_error_lag14_quarter3,Lagged interpolation residuals,0.06894837573731022
+today_zone0_hour06_minus_target_price,Full hourly curves,0.0681278226943199
+today_zone3_hour20_minus_target_price,Full hourly curves,0.0676820978388876
+year_sin,Calendar and hour,0.06738245250851803
+today_zone3_hour21_price,Full hourly curves,0.06723516818101333
+today_zone0_hour23_price,Full hourly curves,0.0671170092067071
+today_zone3_hour16_minus_target_price,Full hourly curves,0.06704494555893664
+today_zone0_hour05_minus_target_price,Full hourly curves,0.0659239452351443
+today_zone0_hour20_minus_target_price,Full hourly curves,0.06543986764643814
+today_zone0_hour03_minus_target_price,Full hourly curves,0.06456117173806321
+absolute_left_slope_zone3,Hourly slopes and curvature,0.06363809220212405
+shape_lag7_quarter3,Lagged quarter shapes,0.06063487529557351
+target_hour21,Calendar and hour,0.059639144881209735
+shape_lag1_quarter4,Lagged quarter shapes,0.05934264298682645
+today_zone3_hour11_minus_target_price,Full hourly curves,0.05921437208147073
+slope_curvature_zone3,Hourly slopes and curvature,0.0581029688860607
+today_zone1_hour09_minus_target_price,Full hourly curves,0.057857163757029845
+today_zone0_hour21_minus_target_price,Full hourly curves,0.057635737183652856
+absolute_slope_sum_zone2,Hourly slopes and curvature,0.055637385719548335
+today_zone0_hour01_minus_target_price,Full hourly curves,0.05555927758252884
+today_zone3_hour17_minus_target_price,Full hourly curves,0.05367189876965033
+interpolation_error_lag2_quarter3,Lagged interpolation residuals,0.053389473943270635
+today_zone3_hour19_minus_target_price,Full hourly curves,0.05238333961120635
+today_zone1_hour01_minus_target_price,Full hourly curves,0.05191768661561534
+local_zone3_offset+3_minus_target_price,Local and cross-zone prices,0.05149329492539924
+today_zone3_hour09_price,Full hourly curves,0.05112780646238112
+today_zone3_hour10_minus_target_price,Full hourly curves,0.05086130834690473
+today_zone0_hour16_price,Full hourly curves,0.0506127547666419
+absolute_slope_curvature_zone0,Hourly slopes and curvature,0.0505284330860548
+today_zone1_hour18_price,Full hourly curves,0.04949287165935864
+today_zone2_hour20_minus_target_price,Full hourly curves,0.04921332629372467
+today_zone1_hour15_price,Full hourly curves,0.04892878502157884
+shape_lag7_quarter2,Lagged quarter shapes,0.048745649156815576
+absolute_slope_curvature_zone1,Hourly slopes and curvature,0.04858384177818058
+today_zone0_hour22_price,Full hourly curves,0.047533065304912525
+local_zone0_offset+0_price,Local and cross-zone prices,0.04751732302780068
+today_zone2_hour14_minus_target_price,Full hourly curves,0.047264668788844215
+today_zone1_hour12_price,Full hourly curves,0.046532876636903205
+local_zone2_offset+1_minus_target_price,Local and cross-zone prices,0.04629235599009825
+local_zone3_offset+2_minus_target_price,Local and cross-zone prices,0.046123819850882875
+year_cos,Calendar and hour,0.045694684924451126
+today_zone2_hour21_minus_target_price,Full hourly curves,0.045477346124864364
+today_zone3_hour18_minus_target_price,Full hourly curves,0.04542704568941759
+today_zone1_hour03_minus_target_price,Full hourly curves,0.04530348793811557
+today_zone3_hour02_minus_target_price,Full hourly curves,0.0452949131533064
+today_zone0_hour12_price,Full hourly curves,0.04506839036207211
+today_zone1_hour20_minus_target_price,Full hourly curves,0.045050115633861854
+today_zone0_hour14_minus_target_price,Full hourly curves,0.044740390483231064
+today_zone1_hour22_minus_target_price,Full hourly curves,0.04443288845837674
+absolute_right_slope_zone2,Hourly slopes and curvature,0.04430024942395075
+today_zone2_hour17_minus_target_price,Full hourly curves,0.04347541639870995
+interpolation_error_median7_quarter3,Lagged interpolation residuals,0.043195424082818734
+today_zone2_hour01_minus_target_price,Full hourly curves,0.042868388814107906
+local_zone0_offset+0_minus_target_price,Local and cross-zone prices,0.04263792212911621
+current_zone0_minus_target_price,Local and cross-zone prices,0.04263787998173462
+today_zone2_hour03_minus_target_price,Full hourly curves,0.04251361730180982
+today_zone2_hour24_minus_target_price,Full hourly curves,0.04205862459443343
+today_zone1_hour10_minus_target_price,Full hourly curves,0.041767164455603245
+left_slope_zone2,Hourly slopes and curvature,0.04160962871013363
+today_zone3_hour01_minus_target_price,Full hourly curves,0.04126130051848555
+today_zone0_hour02_minus_target_price,Full hourly curves,0.04097938931218603
+today_zone1_hour11_price,Full hourly curves,0.04056243302001818
+slope_sum_zone2,Hourly slopes and curvature,0.040203427735192386
+interpolation_error_lag7_quarter2,Lagged interpolation residuals,0.0401255887581032
+interpolation_error_lag2_quarter1,Lagged interpolation residuals,0.03976647382905914
+today_zone0_hour17_minus_target_price,Full hourly curves,0.03965016596016238
+hour_sin,Calendar and hour,0.03899578191439662
+target_hour07,Calendar and hour,0.038982082686804344
+today_zone3_hour14_price,Full hourly curves,0.03854849480167574
+today_zone3_hour07_minus_target_price,Full hourly curves,0.03850421668297051
+absolute_slope_curvature_zone2,Hourly slopes and curvature,0.038451410216753495
+interpolation_error_median56_quarter3,Lagged interpolation residuals,0.03831350373067773
+local_zone1_offset+0_price,Local and cross-zone prices,0.038173130355673615
+today_zone0_hour11_minus_target_price,Full hourly curves,0.03798347313304038
+today_zone1_hour19_minus_target_price,Full hourly curves,0.0378572450190392
+shape_lag7_quarter1,Lagged quarter shapes,0.037736452152022704
+today_zone1_hour05_minus_target_price,Full hourly curves,0.037361636899177125
+today_zone3_hour22_minus_target_price,Full hourly curves,0.037252497987428496
+current_zone1_minus_target_price,Local and cross-zone prices,0.03701234842736254
+local_zone1_offset+0_minus_target_price,Local and cross-zone prices,0.037012307919352255
+today_zone0_hour07_price,Full hourly curves,0.036886180370066454
+target_hour20,Calendar and hour,0.03678147917487846
+today_zone2_hour08_minus_target_price,Full hourly curves,0.03639127417622755
+absolute_right_slope_zone3,Hourly slopes and curvature,0.035955215677468365
+today_zone3_hour15_price,Full hourly curves,0.035692447995880235
+today_zone3_hour15_minus_target_price,Full hourly curves,0.035414804445983376
+today_zone2_hour13_minus_target_price,Full hourly curves,0.035346670651770586
+target_zone1,Zone identity,0.034907763539123074
+shape_lag1_quarter1,Lagged quarter shapes,0.034433351520869473
+local_zone2_offset-3_minus_target_price,Local and cross-zone prices,0.034364138877487085
+today_zone2_hour11_minus_target_price,Full hourly curves,0.034151652273654985
+today_zone0_hour14_price,Full hourly curves,0.03389882655450384
+today_zone0_hour09_minus_target_price,Full hourly curves,0.033204711377791345
+today_zone1_hour12_minus_target_price,Full hourly curves,0.03302102112288303
+absolute_left_slope_zone2,Hourly slopes and curvature,0.03300333505679013
+right_slope_zone2,Hourly slopes and curvature,0.03300034727733096
+today_zone1_hour07_minus_target_price,Full hourly curves,0.03289884167121116
+today_zone3_hour04_minus_target_price,Full hourly curves,0.03279615257536406
+hour_linear,Calendar and hour,0.03253100073357278
+shape_lag7_quarter4,Lagged quarter shapes,0.0322981419265241
+today_zone1_hour11_minus_target_price,Full hourly curves,0.03222083555466713
+today_zone1_hour08_minus_target_price,Full hourly curves,0.031837171318634026
+today_zone3_hour21_minus_target_price,Full hourly curves,0.031726141882572174
+target_hour08,Calendar and hour,0.03143591719764706
+shape_lag2_quarter4,Lagged quarter shapes,0.031317539804165906
+target_hour10,Calendar and hour,0.03109937884904945
+today_zone3_hour24_minus_target_price,Full hourly curves,0.030913660651856686
+today_zone2_hour16_minus_target_price,Full hourly curves,0.030684454376871187
+local_zone3_offset+1_minus_target_price,Local and cross-zone prices,0.030298814995560964
+today_zone2_hour07_minus_target_price,Full hourly curves,0.0302445396108936
+slope_curvature_zone1,Hourly slopes and curvature,0.02999256263044405
+interpolation_error_lag7_quarter3,Lagged interpolation residuals,0.029943976503314786
+today_zone0_hour12_minus_target_price,Full hourly curves,0.029738015607570157
+today_zone1_hour17_price,Full hourly curves,0.029663469389290393
+today_zone1_hour21_price,Full hourly curves,0.02938586353504702
+today_zone1_hour18_minus_target_price,Full hourly curves,0.028714857214509337
+target_hour24,Calendar and hour,0.028269782560765445
+today_zone3_hour23_minus_target_price,Full hourly curves,0.028212740433589328
+today_zone2_hour18_minus_target_price,Full hourly curves,0.028189226996351645
+shape_lag2_quarter1,Lagged quarter shapes,0.02779763027235314
+today_zone3_hour03_minus_target_price,Full hourly curves,0.027213126875079017
+interpolation_error_lag14_quarter4,Lagged interpolation residuals,0.027103058561654014
+today_zone2_hour15_minus_target_price,Full hourly curves,0.026479252981360384
+target_zone2,Zone identity,0.02621974425775405
+today_zone1_hour24_minus_target_price,Full hourly curves,0.026214594757583524
+today_zone2_hour23_minus_target_price,Full hourly curves,0.025925456641418945
+hour_cos,Calendar and hour,0.025838053816127422
+current_zone2_minus_target_price,Local and cross-zone prices,0.02557976592583664
+local_zone2_offset+0_minus_target_price,Local and cross-zone prices,0.02557963351972243
+today_zone0_hour22_minus_target_price,Full hourly curves,0.02536042828315512
+target_hour02,Calendar and hour,0.025234496046880404
+today_zone2_hour06_minus_target_price,Full hourly curves,0.02431160180891366
+month_linear,Calendar and hour,0.024195989376048513
+today_zone3_hour08_price,Full hourly curves,0.023745837579851593
+target_hour01,Calendar and hour,0.023685362494512974
+local_zone2_offset-1_price,Local and cross-zone prices,0.023447404009350404
+today_zone0_hour23_minus_target_price,Full hourly curves,0.023443768474266626
+today_zone2_hour22_minus_target_price,Full hourly curves,0.021663381167425614
+today_zone1_hour02_minus_target_price,Full hourly curves,0.02143011422953843
+today_zone2_hour19_minus_target_price,Full hourly curves,0.020849125384316856
+local_zone1_offset-3_minus_target_price,Local and cross-zone prices,0.02074832147630838
+today_zone2_hour02_minus_target_price,Full hourly curves,0.02037939166392072
+local_zone2_offset-2_minus_target_price,Local and cross-zone prices,0.01986949722293075
+today_zone3_hour09_minus_target_price,Full hourly curves,0.01960677379576427
+target_hour11,Calendar and hour,0.01950656395171977
+target_zone0,Zone identity,0.01908983627679836
+weekend,Calendar and hour,0.01892530637780029
+today_zone2_hour04_minus_target_price,Full hourly curves,0.018843030073754784
+today_zone1_hour17_minus_target_price,Full hourly curves,0.01826469389584617
+target_hour03,Calendar and hour,0.01776383446337582
+weekday3,Calendar and hour,0.017627661156132204
+today_zone1_hour23_minus_target_price,Full hourly curves,0.017505081218893073
+today_zone1_hour21_minus_target_price,Full hourly curves,0.017338243248606618
+target_hour13,Calendar and hour,0.017309438047586462
+target_hour05,Calendar and hour,0.016787258759057275
+today_zone1_hour06_minus_target_price,Full hourly curves,0.016779521443415324
+weekday0,Calendar and hour,0.016650610590126857
+interpolation_error_lag14_quarter1,Lagged interpolation residuals,0.01640937125844731
+today_zone0_hour10_minus_target_price,Full hourly curves,0.016242318645776646
+target_hour09,Calendar and hour,0.015498901122887147
+today_zone2_hour05_minus_target_price,Full hourly curves,0.015319373499243137
+interpolation_error_lag14_quarter2,Lagged interpolation residuals,0.015140598144294977
+today_zone0_hour10_price,Full hourly curves,0.015057270570227366
+weekday4,Calendar and hour,0.014997616750089402
+target_hour04,Calendar and hour,0.014189016795950263
+target_hour23,Calendar and hour,0.014086032741519776
+weekday2,Calendar and hour,0.013966337549872478
+today_zone2_hour09_minus_target_price,Full hourly curves,0.013247514819963658
+local_zone2_offset+3_minus_target_price,Local and cross-zone prices,0.012690973367029361
+target_zone3,Zone identity,0.012241547084625496
+today_zone0_hour04_minus_target_price,Full hourly curves,0.012226201991984088
+today_zone2_hour10_minus_target_price,Full hourly curves,0.011972689966799184
+weekday1,Calendar and hour,0.011706356684314904
+target_hour06,Calendar and hour,0.011700752070608599
+target_hour22,Calendar and hour,0.011683120934773281
+weekday_linear,Calendar and hour,0.011363221111430498
+weekday5,Calendar and hour,0.011239362831827786
+target_hour19,Calendar and hour,0.009883300780245725
+target_hour15,Calendar and hour,0.008451155005441087
+local_zone2_offset-1_minus_target_price,Local and cross-zone prices,0.007805121359514646
+today_zone3_hour08_minus_target_price,Full hourly curves,0.006662998973826462
+target_hour17,Calendar and hour,0.006658766270166357
+target_hour16,Calendar and hour,0.00628460593919802
+target_hour12,Calendar and hour,0.005998582739331863
+target_hour14,Calendar and hour,0.005256433684489687
+today_zone0_hour07_minus_target_price,Full hourly curves,0.0044401450283073265
+weekday6,Calendar and hour,0.004242928645644229
+target_hour18,Calendar and hour,0.003544523919461251

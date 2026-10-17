@@ -1,0 +1,46 @@
+group,zone,mean_abs_net_contribution
+Calendar and hour,ALL,0.26737849292408516
+Calendar and hour,ZONE_0,0.26737849292408516
+Calendar and hour,ZONE_1,0.26737849292408516
+Calendar and hour,ZONE_2,0.26737849292408516
+Calendar and hour,ZONE_3,0.26737849292408516
+Daily price statistics,ALL,0.32193709538249554
+Daily price statistics,ZONE_0,0.30163118817947976
+Daily price statistics,ZONE_1,0.3413137867831789
+Daily price statistics,ZONE_2,0.3977459578679265
+Daily price statistics,ZONE_3,0.2470574486993972
+Full hourly curves,ALL,0.6493029551246333
+Full hourly curves,ZONE_0,0.6589763381022629
+Full hourly curves,ZONE_1,0.6513800065699794
+Full hourly curves,ZONE_2,0.636289718831752
+Full hourly curves,ZONE_3,0.6505657569945384
+Hourly slopes and curvature,ALL,2.0547646115747207
+Hourly slopes and curvature,ZONE_0,2.0547646115747207
+Hourly slopes and curvature,ZONE_1,2.0547646115747207
+Hourly slopes and curvature,ZONE_2,2.0547646115747207
+Hourly slopes and curvature,ZONE_3,2.0547646115747207
+Lagged interpolation residuals,ALL,0.8190175408710014
+Lagged interpolation residuals,ZONE_0,0.6626957849462569
+Lagged interpolation residuals,ZONE_1,1.0425161355713517
+Lagged interpolation residuals,ZONE_2,0.8630573674492947
+Lagged interpolation residuals,ZONE_3,0.7078008755171022
+Lagged quarter shapes,ALL,0.42571483749087313
+Lagged quarter shapes,ZONE_0,0.38589956530131453
+Lagged quarter shapes,ZONE_1,0.5375932110062817
+Lagged quarter shapes,ZONE_2,0.3934473783144827
+Lagged quarter shapes,ZONE_3,0.38591919534141367
+Local and cross-zone prices,ALL,0.8385122989288954
+Local and cross-zone prices,ZONE_0,0.8072669539488783
+Local and cross-zone prices,ZONE_1,0.8307060526282173
+Local and cross-zone prices,ZONE_2,0.9146193120985793
+Local and cross-zone prices,ZONE_3,0.8014568770399069
+Similar-day residuals,ALL,3.4099288292743704
+Similar-day residuals,ZONE_0,3.30997034401167
+Similar-day residuals,ZONE_1,4.466956845226691
+Similar-day residuals,ZONE_2,2.467659619491576
+Similar-day residuals,ZONE_3,3.3951285083675455
+Zone identity,ALL,0.039208749507341385
+Zone identity,ZONE_0,0.00650138300472828
+Zone identity,ZONE_1,0.04777017144495702
+Zone identity,ZONE_2,0.024602120027979405
+Zone identity,ZONE_3,0.07796132355170082

@@ -4,13 +4,30 @@
   "deadline_source": "User-provided organizer guidelines; Sunday resolved from 2026-10-17, confirm any organizer updates",
   "repository": "https://github.com/neural-wave/ch-PHDs-but-not-for-long",
   "branch": "el_bicho/hackaton-research",
-  "team_members": [],
-  "team_members_status": "to_be_completed_later_at_user_request",
+  "team_members": [
+    {
+      "name": "Daniel S. Vega",
+      "role": "Paladin"
+    },
+    {
+      "name": "Valentina Moretti",
+      "role": "Qween"
+    },
+    {
+      "name": "Riccardo Ghetti",
+      "role": "Margrave"
+    },
+    {
+      "name": "Miguel Nogales",
+      "role": "Bard"
+    }
+  ],
+  "team_members_status": "complete",
   "research_model": "minimize_expanding_20261017/fixed_blend_ratio",
   "preserved_bundle": "submission/FREEZE_MANIFEST.json",
-  "final_bundle_manifest": null,
+  "final_bundle_manifest": "results/submission_champion_20261017/champion_submission/MANIFEST.json",
   "final_artifact_delivery": null,
-  "clean_environment_audit": null,
+  "clean_environment_audit": "results/submission_champion_20261017/champion_submission/audit.json",
   "report_path": "delivery/report/report.pdf",
   "report_build_receipt": "results/submission_organization_20261017/report_build.json",
   "report_reviewed": false,
@@ -19,5 +36,6 @@
   "swisstransfer_url": null,
   "license_path": null,
   "final_publication_verified": false,
-  "handoff_completed": false
+  "handoff_completed": false,
+  "team_name": "PhDs but not for long"
 }

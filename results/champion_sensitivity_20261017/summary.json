@@ -1,0 +1,38 @@
+[
+  {
+    "intervention": "history_residual_half",
+    "kind": "history",
+    "months": 8,
+    "forecast_change": 1.172685819509197,
+    "baseline_change": 0.0,
+    "correction_change": 1.172685819509197,
+    "mae_change": 0.13349989133536921
+  },
+  {
+    "intervention": "history_residual_zero",
+    "kind": "history",
+    "months": 8,
+    "forecast_change": 2.3554540447646604,
+    "baseline_change": 0.0,
+    "correction_change": 2.3554540447646604,
+    "mae_change": 0.6483565499106129
+  },
+  {
+    "intervention": "current_curve_90pct",
+    "kind": "curve",
+    "months": 8,
+    "forecast_change": 3.424364805568643,
+    "baseline_change": 3.3658552890353732,
+    "correction_change": 0.31632397354761566,
+    "mae_change": null
+  },
+  {
+    "intervention": "current_curve_110pct",
+    "kind": "curve",
+    "months": 8,
+    "forecast_change": 3.421136927235778,
+    "baseline_change": 3.365855289035377,
+    "correction_change": 0.308631373981597,
+    "mae_change": null
+  }
+]

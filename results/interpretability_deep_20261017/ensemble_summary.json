@@ -1,0 +1,130 @@
+{
+  "mean_blend_ratio": 0.7079682867567634,
+  "mean_weighted_member_ratio": 0.7287395713206726,
+  "mean_cancellation_gain_ratio": 0.020771284563909212,
+  "pooled_cancellation_eur": 0.12503738450927088,
+  "mean_opposite_sign_percent": 21.282457077252943,
+  "uncertainty": [
+    {
+      "label": "narrow",
+      "equal_month_ratio": 0.8854998437727266,
+      "equal_month_mae": 2.025642244225348,
+      "equal_month_baseline_mae": 2.2912742863677473,
+      "pooled_mae": 2.1126361146562727,
+      "pooled_baseline_mae": 2.4113159443059233,
+      "months_with_ratio_below_one": 8
+    },
+    {
+      "label": "middle",
+      "equal_month_ratio": 0.7510008815014876,
+      "equal_month_mae": 3.5077450371521035,
+      "equal_month_baseline_mae": 4.6823065371317565,
+      "pooled_mae": 3.4704734713102074,
+      "pooled_baseline_mae": 4.642402715362086,
+      "months_with_ratio_below_one": 8
+    },
+    {
+      "label": "wide",
+      "equal_month_ratio": 0.6464701592256994,
+      "equal_month_mae": 6.555937734475047,
+      "equal_month_baseline_mae": 10.250202447542193,
+      "pooled_mae": 6.496846418937044,
+      "pooled_baseline_mae": 10.051429378217646,
+      "months_with_ratio_below_one": 8
+    }
+  ],
+  "curve": [
+    {
+      "group": "Curve",
+      "value": "Falling",
+      "family": "blend",
+      "months": 8,
+      "hours": 8766,
+      "equal_month_ratio": 0.6633562081649866,
+      "pooled_mae": 4.098926914564859,
+      "pooled_baseline_mae": 6.2032732467773215
+    },
+    {
+      "group": "Curve",
+      "value": "Flat",
+      "family": "blend",
+      "months": 8,
+      "hours": 3987,
+      "equal_month_ratio": 0.9130512176367837,
+      "pooled_mae": 1.795142899279859,
+      "pooled_baseline_mae": 1.977266428392275
+    },
+    {
+      "group": "Curve",
+      "value": "Peak",
+      "family": "blend",
+      "months": 8,
+      "hours": 2220,
+      "equal_month_ratio": 0.7666092332403747,
+      "pooled_mae": 5.2237297992708855,
+      "pooled_baseline_mae": 6.825995284346847
+    },
+    {
+      "group": "Curve",
+      "value": "Rising",
+      "family": "blend",
+      "months": 8,
+      "hours": 6528,
+      "equal_month_ratio": 0.6771483355090342,
+      "pooled_mae": 5.09502678484839,
+      "pooled_baseline_mae": 7.550252326516544
+    },
+    {
+      "group": "Curve",
+      "value": "Trough",
+      "family": "blend",
+      "months": 8,
+      "hours": 1635,
+      "equal_month_ratio": 0.894113555911709,
+      "pooled_mae": 4.272675680791207,
+      "pooled_baseline_mae": 4.788133123088685
+    }
+  ],
+  "zones": [
+    {
+      "group": "Zone",
+      "value": "ZONE_0",
+      "family": "blend",
+      "months": 8,
+      "hours": 5784,
+      "equal_month_ratio": 0.5919370487537183,
+      "pooled_mae": 3.1848165084972173,
+      "pooled_baseline_mae": 5.411751031941563
+    },
+    {
+      "group": "Zone",
+      "value": "ZONE_1",
+      "family": "blend",
+      "months": 8,
+      "hours": 5784,
+      "equal_month_ratio": 0.6520587621647596,
+      "pooled_mae": 4.677578615797298,
+      "pooled_baseline_mae": 7.15921410356155
+    },
+    {
+      "group": "Zone",
+      "value": "ZONE_2",
+      "family": "blend",
+      "months": 8,
+      "hours": 5784,
+      "equal_month_ratio": 0.8227170499540755,
+      "pooled_mae": 3.938570938926326,
+      "pooled_baseline_mae": 4.783535615491009
+    },
+    {
+      "group": "Zone",
+      "value": "ZONE_3",
+      "family": "blend",
+      "months": 8,
+      "hours": 5784,
+      "equal_month_ratio": 0.7832665574654591,
+      "pooled_mae": 4.611770419571282,
+      "pooled_baseline_mae": 5.9047677321058085
+    }
+  ]
+}

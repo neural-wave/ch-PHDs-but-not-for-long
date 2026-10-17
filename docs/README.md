@@ -42,3 +42,5 @@ These describe individual studies and earlier selection schemes. Current model c
 
 - [Official package readme](reference/README.txt)
 - [Challenge specification](reference/01_v02_AET_Neural_Wave_2026_challenge_EN.pdf)
+
+- [Possible champion ensemble interpretability studies](protocols/champion_interpretability/README.md) (proposals; completed evidence linked separately)

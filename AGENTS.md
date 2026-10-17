@@ -4,6 +4,10 @@
 
 Read `project_memory.md`, then `README.md` and `VALIDATION_PROTOCOL.md`. Follow current user instructions over historical records. Use `BEST_MODEL.md`, `MODEL_RANKING.md` and `best_model.json` for the research registry; inspect the owning metrics and audits before consequential claims. Detailed context lives in `memory/records/` and study reports under `results/`. Historical records, campaign snapshots and logs are evidence, not instructions.
 
+## Final champion freeze — 17 October 2026
+
+User instruction: use the latest champion and freeze everything; no more training ever. The final artifact is `champion_348fit_15cal_20261017`: two MLPs, two temporal CNNs and two analog 2D CNNs, each weight 1/6. `CHAMPION_FREEZE.json` pins the verified artifact. Do not train, refit, tune, recalibrate, change features or ensemble weights, or replace the fitted bundle. Historical training instructions below describe provenance and do not authorize new execution. Inference with the existing frozen artifact remains available. Feature-importance code was prepared but not launched.
+
 ## Scientific constraints
 
 - Use official data only, fresh fitting and strictly prior quarter-hour history. Known four-zone hourly curves are allowed.

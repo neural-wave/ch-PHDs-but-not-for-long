@@ -1,4 +1,4 @@
-# Neural Wave submission materials
+# PhDs but not for long — submission materials
 
 This folder collects the jury materials and the final handoff checklist for the AET challenge. **Preparation is in progress; this is not a completed submission.** The frozen executable bundle remains in [`submission/`](../submission/README.md).
 
@@ -6,9 +6,9 @@ This folder collects the jury materials and the final handoff checklist for the 
 
 | Requirement | Location | Current status |
 | --- | --- | --- |
-| Repository overview and team | [Root README](../README.md) | Team full names and optional roles to be completed later |
+| Repository overview and team | [Root README](../README.md) | PhDs but not for long; all four members and roles recorded |
 | Training and inference code | [`code/`](../docs/CODE_INDEX.md), [`campaigns/`](../campaigns/), [`submission/`](../submission/README.md) | Existing research code and older frozen bundle preserved |
-| Dependencies and execution | [Jury run guide](RUN_FOR_JURY.md) | Pinned pip requirements available; fresh clean-environment verification pending |
+| Dependencies and execution | [Jury run guide](RUN_FOR_JURY.md) | Champion CPU runtime, pinned dependencies and remote clean-install/CSV audit verified; see guide |
 | Report, maximum 3 pages | [PDF draft](report/report.pdf), [editable source](report/report.md) | Three-page research report draft; final model and team details pending |
 | Video, maximum 2 minutes | [Recording plan and script](video/SCRIPT.md) | Script prepared; recording and SwissTransfer link pending |
 | Presentation, maximum 5 minutes | [Presentation outline](presentation/OUTLINE.md) | Outline prepared for the optional winners' presentation |

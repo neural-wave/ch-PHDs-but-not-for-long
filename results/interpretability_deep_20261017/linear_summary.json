@@ -1,0 +1,114 @@
+{
+  "model_sha256": "c0c5f5b27391f99a8647074be9d092d34c8defce9f722df80278856583e8b0d5",
+  "mae": 5.2261054787271854,
+  "baseline_mae": 7.090321234809027,
+  "top_features": [
+    {
+      "feature": "interpolation_error_analog90_nearest10_quarter4",
+      "group": "Similar-day residuals",
+      "mean_abs_contribution": 1.5506275504235194
+    },
+    {
+      "feature": "interpolation_error_analog90_nearest10_quarter1",
+      "group": "Similar-day residuals",
+      "mean_abs_contribution": 1.5104940898346169
+    },
+    {
+      "feature": "local_zone0_offset-2_minus_target_price",
+      "group": "Local and cross-zone prices",
+      "mean_abs_contribution": 0.6609081822179198
+    },
+    {
+      "feature": "local_zone0_offset-2_price",
+      "group": "Local and cross-zone prices",
+      "mean_abs_contribution": 0.658487311026395
+    },
+    {
+      "feature": "today_zone1_hour04_price",
+      "group": "Full hourly curves",
+      "mean_abs_contribution": 0.6126319180603024
+    },
+    {
+      "feature": "today_zone3_hour06_price",
+      "group": "Full hourly curves",
+      "mean_abs_contribution": 0.521065607261565
+    },
+    {
+      "feature": "local_zone0_offset+2_price",
+      "group": "Local and cross-zone prices",
+      "mean_abs_contribution": 0.49621329790373075
+    },
+    {
+      "feature": "interpolation_error_median56_quarter1",
+      "group": "Lagged interpolation residuals",
+      "mean_abs_contribution": 0.4871577744232949
+    },
+    {
+      "feature": "slope_sum_zone0",
+      "group": "Hourly slopes and curvature",
+      "mean_abs_contribution": 0.47469096378526837
+    },
+    {
+      "feature": "today_zone2_hour01_price",
+      "group": "Full hourly curves",
+      "mean_abs_contribution": 0.46989820132924365
+    },
+    {
+      "feature": "left_slope_zone0",
+      "group": "Hourly slopes and curvature",
+      "mean_abs_contribution": 0.46006121641647835
+    },
+    {
+      "feature": "local_zone0_offset+2_minus_target_price",
+      "group": "Local and cross-zone prices",
+      "mean_abs_contribution": 0.4457731543464805
+    }
+  ],
+  "groups": [
+    {
+      "group": "Similar-day residuals",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 3.4099288292743704
+    },
+    {
+      "group": "Hourly slopes and curvature",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 2.0547646115747207
+    },
+    {
+      "group": "Local and cross-zone prices",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.8385122989288954
+    },
+    {
+      "group": "Lagged interpolation residuals",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.8190175408710014
+    },
+    {
+      "group": "Full hourly curves",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.6493029551246333
+    },
+    {
+      "group": "Lagged quarter shapes",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.42571483749087313
+    },
+    {
+      "group": "Daily price statistics",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.32193709538249554
+    },
+    {
+      "group": "Calendar and hour",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.26737849292408516
+    },
+    {
+      "group": "Zone identity",
+      "zone": "ALL",
+      "mean_abs_net_contribution": 0.039208749507341385
+    }
+  ]
+}

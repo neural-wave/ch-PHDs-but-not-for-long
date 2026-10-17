@@ -1,0 +1,11 @@
+# HACKATON project memory
+
+Objective: minimize equal-month MAE/interpolation-MAE over eight expanding February–September developmental folds. Official data, fresh fitting, strictly prior quarters, known four-zone hourly curves, frozen parameters, q50 hourly means within 0.0001 EUR/MWh, eleven quantiles and calibrated 50/80/90/95% intervals. September is not blind; classifier paused; RevIN rejected.
+
+Verified 2026-10-17: research champion `minimize_expanding_20261017/fixed_blend_ratio`, score 0.707968, pooled MAE 4.103184; evidence BEST_MODEL.md, best_model.json, results/model_ranking_20261017/. Aggregate developmental 90.59% coverage is not a deployment guarantee.
+
+Submission: approved September 16–30 calibration and fresh 348-day fit, latest-fold MLP/temporal-CNN/analog-CNN equal weights, two seeds/family. Campaign campaigns/submission_champion_20261017/, artifacts results/submission_champion_20261017/. Nightwatch 2b509aeec0a930d6a9979619 reports success; completion audits/recovery/deployment replacement still need local verification. Host root@93.91.156.85:55340, /workspace/HACKATON; logs /root/.local/share/nightwatch-hackaton/. Historical submission/ and 16 hashes preserved.
+
+Interpretability: audited results/interpretability_deep_20261017/; four annotated graphs results/interpretability_explained_20261017/. Champion coherent-input sensitivity completed under Nightwatch 005ba052519b64fb44c2a9f1 on same host; all eight checkpoint replays/audits passed. Protocol/code campaigns/champion_sensitivity_20261017/; results/champion_sensitivity_20261017/. Samples 32 fixed test dates, no fitting; history residual removal raised sampled equal-month MAE by 0.648 EUR/MWh.
+
+Delivery: PhDs but not for long; four members/roles in README and credits. Champion archive recovered locally and all manifest hashes verified; remote receipts confirm Python 3.12 CPU clean-install/replay/CSV audit. Guide delivery/RUN_FOR_JURY.md updated. Team handling report/video; license, distribution and handoff pending. Working deadline October 18 11:00 Zurich. Publication only neural-wave/ch-PHDs-but-not-for-long, el_bicho/hackaton-research; last verified 30089bc. Previous startup preserved in memory/records/20261017_startup_before_champion_sensitivity_summary.md. Next: finalize submission checks.

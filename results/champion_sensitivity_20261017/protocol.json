@@ -1,0 +1,36 @@
+{
+  "sample_days": [
+    3,
+    10,
+    17,
+    24
+  ],
+  "sampling": "whole dates/all zones and hours; fixed before outcomes",
+  "interventions": [
+    [
+      "history_residual_half",
+      "history",
+      0.5
+    ],
+    [
+      "history_residual_zero",
+      "history",
+      0.0
+    ],
+    [
+      "current_curve_90pct",
+      "curve",
+      0.9
+    ],
+    [
+      "current_curve_110pct",
+      "curve",
+      1.1
+    ]
+  ],
+  "history_reference": "same historical hourly curves, mean-corrected interpolation",
+  "curve_reference": "same-day per-zone mean; 0.9/1.1 deviations, historical observations unchanged",
+  "source_manifest_sha256": "5671920b1b4006b7323b7542be094366cf2031c8c594c1a3b90efc5f3bc7145f",
+  "training": false,
+  "caveats": "Fixed-checkpoint sensitivity, not retrained ablation or causality. Intervention magnitudes are not comparable feature importance. Only history interventions retain original-target MAE meaning, with distribution-shift caveat."
+}

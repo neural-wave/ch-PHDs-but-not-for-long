@@ -7,7 +7,7 @@ Status on 17 October 2026. Checked items describe preparation completed in this 
 - [x] Keep clear folders for shared code, studies, documentation, results and jury materials.
 - [x] Provide a root README, pip dependency files and documented training/inference commands.
 - [x] Preserve the existing frozen `submission/` files with `FREEZE_MANIFEST.json`.
-- [ ] **Complete the team full names and optional roles later**, as requested by the user.
+- [x] Add the confirmed team name, all four full names and supplied roles to the README and credits.
 - [ ] Implement and audit the current research champion's all-history refit on an authorized research server, following [the refit plan](../docs/SUBMISSION_REFIT_PLAN.md). Freeze configuration before fitting; resolve calibration transfer separately.
 - [ ] Package the fitted artifact with all required source files, configuration, seeds and checksums. Verify it can be regenerated from the official input.
 - [ ] Make the root quick start, jury run guide and report name the actual final artifact and recipe consistently.

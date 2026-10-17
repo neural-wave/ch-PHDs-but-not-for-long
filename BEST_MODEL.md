@@ -14,6 +14,6 @@ The best observed recipe was identified after reporting the developmental test a
 
 Canonical registry: [best_model.json](best_model.json). Full ranking: [MODEL_RANKING.md](MODEL_RANKING.md). Exact per-fold configurations, weights and checkpoint hashes: [champion_per_fold.json](results/model_ranking_20261017/champion_per_fold.json). Audit: [campaign audit](results/minimize_expanding_20261017/audit.json). Artifacts: [verified recovery archive](results/minimize_expanding_20261017_completed.tar.gz), [checksum receipt](results/minimize_expanding_20261017/backup_verification.json).
 
-This registry promotes the research recipe. The existing 363-day inference bundle still belongs to the earlier frozen pipeline. The new recipe has no all-history deployment refit; the registry does not label an evaluation checkpoint as such a refit.
+Final deployment frozen by the user on 17 October 2026: **`champion_348fit_15cal_20261017`**, fitted on 348 dates with 15 separate calibration dates. Two seeds each of MLP, temporal CNN and analog 2D CNN, each fitted model weight 1/6. All 17 bundle manifest hashes were reverified locally. [Freeze receipt](CHAMPION_FREEZE.json). No further training, refitting, tuning, recalibration or model/feature/weight changes are authorized. Historical `submission/` remains an older artifact. The developmental scores above belong to the eight-fold research backtest, not a held-out test of the final refit.
 
-Every future comparison and promotion must follow [VALIDATION_PROTOCOL.md](VALIDATION_PROTOCOL.md).
+The historical evaluation protocol remains in [VALIDATION_PROTOCOL.md](VALIDATION_PROTOCOL.md); it does not authorize further training after this freeze.

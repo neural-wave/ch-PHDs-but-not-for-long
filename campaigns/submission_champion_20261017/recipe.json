@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "research_model_id": "minimize_expanding_20261017/fixed_blend_ratio",
+  "deployment_id": "champion_348fit_15cal_20261017",
+  "official_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "calibration_start": "2026-09-16",
+  "training_start": "2025-10-01",
+  "training_end": "2026-09-15",
+  "calibration_end": "2026-09-30",
+  "training_days": 348,
+  "calibration_days": 15,
+  "family_weights": {
+    "fixed_mlp_compact_ratio": 0.3333333333333333,
+    "fixed_cnn_rich_ratio": 0.3333333333333333,
+    "fixed_cnn2d_analog_ratio": 0.3333333333333333
+  },
+  "leaves": [
+    {
+      "family": "fixed_mlp_compact_ratio",
+      "weight": 0.16666666666666666,
+      "config": {
+        "id": 30,
+        "family": "mlp_compact",
+        "objective": "ratio",
+        "lr": 0.003,
+        "seed": 17,
+        "quantile_weight": 1.0,
+        "preprocessing": "fixed_physical"
+      },
+      "best_epoch": 112,
+      "parameters": 8715,
+      "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/30/model.pt",
+      "model_sha256": "b962c6188c00ac94661a36ef84d4fb7b2613da3d4a8e430dcc591641fc06541c"
+    },
+    {
+      "family": "fixed_mlp_compact_ratio",
+      "weight": 0.16666666666666666,
+      "config": {
+        "id": 31,
+        "family": "mlp_compact",
+        "objective": "ratio",
+        "lr": 0.003,
+        "seed": 43,
+        "quantile_weight": 1.0,
+        "preprocessing": "fixed_physical"
+      },
+      "best_epoch": 134,
+      "parameters": 8715,
+      "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/31/model.pt",
+      "model_sha256": "02a4ea0c938c2daf60136701f6878a34deea71333dd70265a3bf7516c2d9fc19"
+    },
+    {
+      "family": "fixed_cnn_rich_ratio",
+      "weight": 0.16666666666666666,
+      "config": {
+        "id": 39,
+        "family": "cnn_rich",
+        "objective": "ratio",
+        "lr": 0.003,
+        "seed": 43,
+        "quantile_weight": 1.0,
+        "preprocessing": "fixed_physical"
+      },
+      "best_epoch": 33,
+      "parameters": 33163,
+      "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/39/model.pt",
+      "model_sha256": "b93679cfe65b6135a167bb5a02bbbba679515ae0c3dc8599989a58f14a0ef540"
+    },
+    {
+      "family": "fixed_cnn_rich_ratio",
+      "weight": 0.16666666666666666,
+      "config": {
+        "id": 38,
+        "family": "cnn_rich",
+        "objective": "ratio",
+        "lr": 0.003,
+        "seed": 17,
+        "quantile_weight": 1.0,
+        "preprocessing": "fixed_physical"
+      },
+      "best_epoch": 54,
+      "parameters": 33163,
+      "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/38/model.pt",
+      "model_sha256": "3c698796439aa4d3645d5313ece8eec8bddd6560c4f07e0907012507de7fb638"
+    },
+    {
+      "family": "fixed_cnn2d_analog_ratio",
+      "weight": 0.16666666666666666,
+      "config": {
+        "id": 44,
+        "family": "cnn2d_analog",
+        "objective": "ratio",
+        "lr": 0.001,
+        "seed": 17,
+        "quantile_weight": 1.0,
+        "preprocessing": "fixed_physical"
+      },
+      "best_epoch": 199,
+      "parameters": 17356,
+      "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/44/model.pt",
+      "model_sha256": "75d3f60726ebecc4511e5db33e2d47002c0dd273b23aa14a52fc5582d793f2cb"
+    },
+    {
+      "family": "fixed_cnn2d_analog_ratio",
+      "weight": 0.16666666666666666,
+      "config": {
+        "id": 45,
+        "family": "cnn2d_analog",
+        "objective": "ratio",
+        "lr": 0.001,
+        "seed": 43,
+        "quantile_weight": 1.0,
+        "preprocessing": "fixed_physical"
+      },
+      "best_epoch": 176,
+      "parameters": 17356,
+      "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/45/model.pt",
+      "model_sha256": "9ed2721fafc7f322a40ff7bf7a6e4eb571f5b280315075283f9b6190f808c87e"
+    }
+  ],
+  "runtime_sources": [
+    "campaigns/monthly_quantiles_20261017/trainq.py",
+    "campaigns/monthly_ratio_20261017/experiment.py",
+    "campaigns/monthly_ratio_20261017/sources/reconstruction.py",
+    "campaigns/monthly_ratio_20261017/sources/interpretable_models.py",
+    "campaigns/monthly_ratio_20261017/sources/interpolation_history.py",
+    "campaigns/monthly_ratio_20261017/sources/simple_search.py",
+    "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py",
+    "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py"
+  ],
+  "source_hashes": {
+    "campaigns/monthly_quantiles_20261017/trainq.py": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+    "campaigns/monthly_ratio_20261017/experiment.py": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+    "campaigns/monthly_ratio_20261017/sources/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "campaigns/monthly_ratio_20261017/sources/interpretable_models.py": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+    "campaigns/monthly_ratio_20261017/sources/interpolation_history.py": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+    "campaigns/monthly_ratio_20261017/sources/simple_search.py": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+    "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+    "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14"
+  },
+  "budget_rule": "Fixed latest-fold selected epoch per component, no new early stopping or selection on calibration dates",
+  "selection_provenance": "Latest September fold settings selected on August 1-15; campaign chosen developmentally",
+  "history_rule": "Only strictly earlier observed days, including earlier calibration days when supplied; never predicted quarters as observed history"
+}

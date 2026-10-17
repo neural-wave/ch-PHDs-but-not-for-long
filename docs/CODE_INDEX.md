@@ -138,6 +138,11 @@ Run `python run.py <script-name> [args]` from the repository root. This index cl
 - [train_rolling.py](../code/train_rolling.py)
 - [train_search.py](../code/train_search.py)
 - [tune_parallel_cnn.py](../code/tune_parallel_cnn.py)
+# Interpretability
+
+`campaigns/interpretability_20261017/analyze.py`: metadata-only linear coefficient decomposition and champion conditional-score summary; report in `results/interpretability_20261017/REPORT.md`.
+
+`campaigns/interpretability_deep_20261017/analyze.py`: remote exact standalone linear contributions and champion forecast/zone/curve/uncertainty/cancellation diagnostics. `summarize.py` processes the exported conditional metadata. Results and visual examples: `results/interpretability_deep_20261017/REPORT.md`. Submission requirement: `docs/SUBMISSION_REFIT_PLAN.md`.
 
 ## Quantiles and RevIN
 
@@ -147,3 +152,15 @@ Run `python run.py <script-name> [args]` from the repository root. This index cl
 - [Matched compact CNN RevIN trial](../campaigns/revin_quantiles_20261017/PROTOCOL.md)
 - [Champion ensemble RevIN refits](../campaigns/champion_revin_20261017/PROTOCOL.md)
 - [Standalone linear-compact RevIN refits](../campaigns/linear_compact_revin_20261017/PROTOCOL.md)
+
+- [Illustrative original-champion calm/volatile bands](../campaigns/illustrative_quantile_bands_20261017/plot.py): saved-output plotting only; no model or band changes.
+
+- `code/plot_problem_main.py`: reproducible neon problem overview from saved illustrative predictions; outputs `results/problem_main_figure_20261017/`.
+# Submission champion refit
+
+`campaigns/submission_champion_20261017/refit.py` fits the frozen latest champion recipe on 348 dates and calibrates on September 16–30. `runtime.py` becomes the standalone bundle's inference entry point. `recipe.json` freezes seeds, epochs, weights and source hashes; `SPECIFICATION_CARD.md` documents inputs, architecture, validation and limitations. Launch through the root `run.py` on the authorized research server. Generated outputs and receipts live in `results/submission_champion_20261017/`.
+
+
+`campaigns/champion_sensitivity_20261017/analyze.py`: frozen eight-fold champion coherent-history/current-curve sensitivity on four prespecified dates per month; rebuilds dependent features and audits exact checkpoint replay. Run on research GPU. Protocol alongside script; results in `results/champion_sensitivity_20261017/`.
+
+`campaigns/champion_sensitivity_20261017/lag_importance.py`: prepared but unlaunched diagnostic for temporal-CNN lag-group permutation and ensemble reliance. User subsequently froze the champion; no execution or results claimed.

@@ -1,0 +1,17 @@
+{
+  "source_csv_sha256": "d30ae600b6eb364b4b2528263896084a7207b893260d86ced5bf179a2707845b",
+  "reference_svg_sha256": "753c985b59cdd6c3b28534b0c676e6c7d29bd7e5953889e8038bfd0ec2ffe16f",
+  "width_px": 1920,
+  "height_px": 1080,
+  "background": "#000000",
+  "axis_band_color": "#25FF00",
+  "observed_color": "#28A9E2",
+  "median_color": "#FF3854",
+  "annotation_color": "#FFD43B",
+  "font": "Arial (reference specifies Lato with Arial fallback)",
+  "unchanged_data": true,
+  "calm_width90": 8.45644285695421,
+  "noisy_width90": 201.05210430092282,
+  "width_ratio": 23.775020738842496,
+  "displayed_band": "Original saved calibrated90% interval; omitted raw quantile lines/50% fill to match single-band reference style"
+}

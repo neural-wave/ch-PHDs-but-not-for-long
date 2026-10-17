@@ -1,0 +1,25 @@
+# Model interpretation, 17 October 2026
+
+Metadata-only analysis; no fitting, inference, routing, or model changes. Reproduce with `python run.py campaigns/interpretability_20261017/analyze.py`. Outputs: `summary.json`, `linear_effects.csv`. Sources: standalone `results/linear_quantiles_vast/fixed_september_10m/model.json`, `code/linear_quantile_model.py`, `code/reconstruction.py`; champion `results/minimize_expanding_20261017/monthly_zone_scores.csv` and `confidence_bins.csv`; ensemble architecture `campaigns/monthly_quantiles_20261017/trainq.py` and exact champion composition `results/model_ranking_20261017/champion_per_fold.json`.
+
+## Linear model
+
+The standalone model maps 389 engineered inputs through one linear layer to 43 outputs. Three outputs control its median correction: `(a+u,a-u,-a+v,-a-v)`, scaled by 20 EUR/MWh and added to mean-corrected interpolation. Thus a raises the first half-hour and lowers the second; u redistributes the first half between its quarters; v redistributes the second half. All feature contributions sum to zero within the hour. The other 40 outputs describe ten nonmedian quantiles for each quarter; sorting/clamping and calibration mean final interval endpoints are not globally linear.
+
+Inputs include known four-zone hourly curves, ramps/curvature, calendar, prior quarter shapes and prior interpolation errors. The analogous-history feature retrieves up to ten similar prior days within 90 days using local five-hour curve shape and price level, and averages their interpolation residuals with inverse-distance weights. This is an engineered nonlinear retrieval followed by linear prediction.
+
+In the saved ten-month fixed-September standalone checkpoint, a's coefficients for analogous first/fourth-quarter residuals are +1.758/-1.773 EUR/MWh per training standard deviation. Corresponding u coefficients are +1.276/-1.075; v +1.080/-1.269. These indicate a learned dependence on past edge-quarter error structure. Local slopes, curvature and longer historical residual summaries also appear among large coefficients. These are conditional algebraic sensitivities, not measured feature importance or causal effects: correlated/redundant inputs can redistribute weights, clipping limits sensitivity, and this checkpoint is not the champion's linear expert. `linear_effects.csv` gives all 389 effects on a/u/v and each quarter; its zero-sum identity is checked.
+
+## Ensemble
+
+Six candidate families: rich/compact linear, compact piecewise-additive, compact MLP, temporal CNN and analog-grid 2D CNN. The MLP can learn interactions; temporal CNNs can learn local sequence patterns; the 2D CNN can combine patterns across its analog grid. These are architectural capabilities, not proven learned mechanisms. Quantile forecasts are averaged with nonnegative weights frozen for each test month; final intervals are separately calibrated. It does not dynamically choose experts by hour.
+
+Champion: February 25% rich linear/75% MLP, March equal six experts, April–September equal MLP/temporal CNN/analog CNN. Its equal-month ratio is 0.707968. Saved conditional metadata give zone ratios 0.591937/0.652059/0.822717/0.783267 (ZONE_0–3), i.e. approximately 40.8/34.8/17.7/21.7% lower MAE than same-zone interpolation. These subset metrics do not replace the primary ratio.
+
+Narrow/middle/wide interval groups have equal-month mean MAE 2.026/3.508/6.556 EUR/MWh and ratios 0.885500/0.751001/0.646470. Wide cases are harder in absolute error but benefit more relative to interpolation. Width is a relative uncertainty signal, not a correctness probability.
+
+Earlier ordinary-training ensemble analysis (`results/monthly_quantiles_20261017/ensemble_analysis/REPORT.md`, audited weighted-forecast identity) found strongest relative gains on rising/falling curves and near parity on flat curves; analog CNN was strongest individually in ZONE_2 across seven of eight months. Averaging reduced equal-month ratio from weighted member error 0.747499 to blend error 0.720494, supporting error cancellation. Those observations belong to that earlier ensemble. Update, 17 October 2026: the [deeper interpretation report](../interpretability_deep_20261017/REPORT.md) now contains separately audited champion curve, cancellation, correlation and member-removal diagnostics; use its champion-specific values.
+
+## Further interpretation
+
+For the linear model, exact per-example contributions should be grouped into hourly curve, calendar, lagged shape and residual-history groups, reported across all eight folds with sign stability and representative successes/failures. For the champion, inspect expert disagreement and signed error correlations, member removal and plausible grouped perturbations of underlying inputs (recompute dependent engineered features). Use earlier held-out data for any new selection; freeze before next-month evaluation. Avoid independently permuting correlated columns or interpreting architecture/weights as causal importance. Any substantial replay belongs on an authorized research server. All findings remain developmental; September is not blind.

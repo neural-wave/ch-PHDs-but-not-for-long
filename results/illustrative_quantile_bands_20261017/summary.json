@@ -1,0 +1,27 @@
+{
+  "model": "minimize_expanding_20261017/fixed_blend_ratio",
+  "date": "2026-06-11",
+  "zone": 3,
+  "coverage90": 0.9583333333333334,
+  "examples": [
+    {
+      "label": "Calm stretch",
+      "start_hour": 12,
+      "end_hour": 15,
+      "width90": 14.46286280392151,
+      "observed_roughness": 0.0
+    },
+    {
+      "label": "Volatile / chainsaw stretch",
+      "start_hour": 21,
+      "end_hour": 24,
+      "width90": 27.02224288819771,
+      "observed_roughness": 37.123333333333335
+    }
+  ],
+  "quantiles_modified": false,
+  "model_refitted": false,
+  "selection": "Posthoc illustrative selection using observed roughness/coverage/width association; zooms minimize/maximize observed3hour mean within-hour absolute second differences",
+  "source": "results/minimize_expanding_20261017/folds/2026-06/selected/fixed_blend_ratio/predictions.npz",
+  "source_sha256": "71d02d8757572ecc5249e43650a34dc3b49cae121e78e2d10ccaeb6ee9420a50"
+}

@@ -1,0 +1,13 @@
+# Shared study protocol
+
+Use [VALIDATION_PROTOCOL.md](../../../VALIDATION_PROTOCOL.md): eight expanding February–September developmental folds; official data; strictly prior observed quarters; known complete four-zone hourly curves allowed. Reuse each exact frozen champion checkpoint, preprocessing, selected seed averages, weights and calibration. February uses rich linear/MLP, March six families, April–September MLP/temporal CNN/analog CNN. Verify actual fold manifests rather than imposing one blend on all months.
+
+Before replay, verify source/checkpoint hashes against champion_per_fold.json and the recovery receipts. Locate binaries on the authorized research server or verified archive; report missing artifacts rather than substituting a different model. Replay original predictions first and check finite ordered quantiles, q50 hourly means within 0.0001 EUR/MWh and agreement with saved metrics.
+
+Freeze groups, perturbation budgets, plot sampling, seeds and hypotheses before analysis. Choose bins and perturbation reference distributions from training or preceding-month selection days 1–15 only. Calibration uses preceding-month days 16–end. Keep test parameters fixed. New predictive comparisons require fresh fits under the full protocol, all eleven quantiles and separately calibrated 50/80/90/95% intervals. A fixed-checkpoint intervention is a sensitivity diagnostic, not a retrained feature-ablation comparison.
+
+Report equal-month ratios to identical same-month mean-corrected interpolation targets, pooled raw MAE, monthly and zone results. For changed hourly inputs, recompute the interpolation anchor; compare forecast changes without treating original truth as the counterfactual price. For feature/history masking with unchanged target hourly inputs, MAE changes can be reported as intervention diagnostics. Explain out-of-distribution risk.
+
+Use whole-date sampling across all zones/quarters. Any date-block bootstrap is descriptive with a stated block length and sensitivity analysis; dependent expanding folds do not provide eight independent replicates. Include representative cases selected by frozen calibration-defined strata and separately labelled hindsight extremes. No causal or blind-generalization claims; classifier work stays paused.
+
+Save manifests, source hashes, date ranges, perturbations, per-fold tables, reconstruction errors and limitations under results/champion_interpretability_<study>/. Implement future campaign-specific code under campaigns/champion_interpretability_<study>/ and launch via python run.py. Substantial replay/training runs on an authorized research server; follow Nightwatch registration/reporting requirements for runs over a few minutes. These proposals launch nothing.

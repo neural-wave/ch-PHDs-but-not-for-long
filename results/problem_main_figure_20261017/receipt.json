@@ -1,0 +1,9 @@
+{
+  "source": "results/illustrative_quantile_bands_20261017/example_predictions.csv",
+  "date": "2026-06-11",
+  "zone": 3,
+  "hourly_means": "derived from official observed quarters",
+  "max_q50_hourly_mean_error": 3.552713678800501e-15,
+  "posthoc_illustration": true,
+  "predictions_modified": false
+}

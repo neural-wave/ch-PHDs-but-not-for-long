@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120"><rect width="1800" height="1120" fill="black"/><g font-family="Arial, sans-serif">
+<text x="90" y="65" fill="#25ff00" font-size="40" font-weight="bold">FROM HOURLY MEANS TO QUARTER-HOUR PRICES</text>
+<text x="90" y="108" fill="#25ff00" font-size="25" font-weight="normal">Recover the hidden within-hour shape — while preserving every supplied hourly mean.</text>
+<text x="90" y="170" fill="#25ff00" font-size="25" font-weight="bold">01  THE INPUT IS COARSE. THE TARGET OSCILLATES.</text>
+<text x="90" y="204" fill="#25ff00" font-size="20" font-weight="normal">Official example · 11 June 2026 · ZONE_3</text>
+<path d="M90.0,240 L90.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="81.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">0</text>
+<path d="M225.0,240 L225.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="216.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">2</text>
+<path d="M360.0,240 L360.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="351.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">4</text>
+<path d="M495.0,240 L495.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="486.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">6</text>
+<path d="M630.0,240 L630.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="621.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">8</text>
+<path d="M765.0,240 L765.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="756.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">10</text>
+<path d="M900.0,240 L900.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="891.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">12</text>
+<path d="M1035.0,240 L1035.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1026.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">14</text>
+<path d="M1170.0,240 L1170.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1161.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">16</text>
+<path d="M1305.0,240 L1305.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1296.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">18</text>
+<path d="M1440.0,240 L1440.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1431.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">20</text>
+<path d="M1575.0,240 L1575.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1566.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">22</text>
+<path d="M1710.0,240 L1710.0,540" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1701.0" y="569" fill="#25ff00" font-size="19" font-weight="normal">24</text>
+<path d="M90,540.0 L1710,540.0" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="546.0" fill="#25ff00" font-size="19" font-weight="normal">-10</text>
+<path d="M90,502.5 L1710,502.5" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="508.5" fill="#25ff00" font-size="19" font-weight="normal">0</text>
+<path d="M90,427.5 L1710,427.5" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="433.5" fill="#25ff00" font-size="19" font-weight="normal">20</text>
+<path d="M90,352.5 L1710,352.5" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="358.5" fill="#25ff00" font-size="19" font-weight="normal">40</text>
+<path d="M90,277.5 L1710,277.5" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="283.5" fill="#25ff00" font-size="19" font-weight="normal">60</text>
+<path d="M90,240 L90,540" stroke="#25ff00" stroke-width="2" opacity="1"/>
+<path d="M90,540 L1710,540" stroke="#25ff00" stroke-width="2" opacity="1"/>
+<polyline fill="none" stroke="#ffd43b" stroke-width="4" points="90.00,377.22 157.50,377.22 157.50,457.95 225.00,457.95 225.00,419.24 292.50,419.24 292.50,488.95 360.00,488.95 360.00,483.75 427.50,483.75 427.50,437.13 495.00,437.13 495.00,449.55 562.50,449.55 562.50,321.91 630.00,321.91 630.00,413.77 697.50,413.77 697.50,496.45 765.00,496.45 765.00,502.51 832.50,502.51 832.50,502.53 900.00,502.53 900.00,502.54 967.50,502.54 967.50,502.54 1035.00,502.54 1035.00,502.54 1102.50,502.54 1102.50,502.54 1170.00,502.54 1170.00,502.54 1237.50,502.54 1237.50,502.49 1305.00,502.49 1305.00,482.57 1372.50,482.57 1372.50,420.12 1440.00,420.12 1440.00,433.00 1507.50,433.00 1507.50,453.54 1575.00,453.54 1575.00,429.39 1642.50,429.39 1642.50,427.52 1710.00,427.52"/>
+<polyline fill="none" stroke="#28a9e2" stroke-width="2.8" points="98.44,268.35 115.31,280.20 132.19,457.80 149.06,502.54 165.94,393.68 182.81,502.50 199.69,440.40 216.56,495.23 233.44,433.91 250.31,438.71 267.19,391.88 284.06,412.46 300.94,481.69 317.81,502.50 334.69,502.50 351.56,469.12 368.44,498.00 385.31,490.69 402.19,493.05 419.06,453.26 435.94,453.71 452.81,444.30 469.69,430.76 486.56,419.74 503.44,501.98 520.31,446.21 537.19,419.59 554.06,430.43 570.94,321.41 587.81,280.43 604.69,318.34 621.56,367.46 638.44,315.00 655.31,408.75 672.19,432.60 689.06,498.75 705.94,482.21 722.81,498.75 739.69,502.35 756.56,502.50 773.44,502.50 790.31,502.50 807.19,502.50 824.06,502.54 840.94,502.50 857.81,502.54 874.69,502.54 891.56,502.54 908.44,502.54 925.31,502.54 942.19,502.54 959.06,502.54 975.94,502.54 992.81,502.54 1009.69,502.54 1026.56,502.54 1043.44,502.54 1060.31,502.54 1077.19,502.54 1094.06,502.54 1110.94,502.54 1127.81,502.54 1144.69,502.54 1161.56,502.54 1178.44,502.54 1195.31,502.54 1212.19,502.54 1229.06,502.54 1245.94,502.50 1262.81,502.50 1279.69,502.50 1296.56,502.46 1313.44,499.35 1330.31,497.10 1347.19,472.69 1364.06,461.14 1380.94,476.29 1397.81,421.20 1414.69,419.25 1431.56,363.75 1448.44,411.98 1465.31,388.95 1482.19,455.59 1499.06,475.50 1515.94,403.09 1532.81,462.82 1549.69,445.76 1566.56,502.50 1583.44,400.16 1600.31,445.61 1617.19,369.30 1634.06,502.50 1650.94,345.23 1667.81,470.89 1684.69,402.00 1701.56,491.96"/>
+<path d="M100,224 L140,224" stroke="#ffd43b" stroke-width="4" opacity="1"/>
+<text x="150" y="231" fill="#ffd43b" font-size="19" font-weight="normal">Known hourly mean</text>
+<path d="M405,224 L445,224" stroke="#28a9e2" stroke-width="3" opacity="1"/>
+<text x="455" y="231" fill="#28a9e2" font-size="19" font-weight="normal">Observed quarter-hour price (target)</text>
+<text x="760" y="598" fill="#25ff00" font-size="20" font-weight="normal">Hour of delivery day</text>
+<text x="90" y="648" fill="#25ff00" font-size="25" font-weight="bold">02  ONE MEAN, FOUR UNKNOWN PRICES</text>
+<text x="990" y="648" fill="#25ff00" font-size="25" font-weight="bold">03  RECONSTRUCT + QUANTIFY UNCERTAINTY</text>
+<path d="M90.0,700 L90.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="81.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">21</text>
+<path d="M267.5,700 L267.5,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="258.5" y="964" fill="#25ff00" font-size="19" font-weight="normal">21.25</text>
+<path d="M445.0,700 L445.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="436.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">21.5</text>
+<path d="M622.5,700 L622.5,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="613.5" y="964" fill="#25ff00" font-size="19" font-weight="normal">21.75</text>
+<path d="M800.0,700 L800.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="791.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">22</text>
+<path d="M90,908.8888888888889 L800,908.8888888888889" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="914.8888888888889" fill="#25ff00" font-size="19" font-weight="normal">0</text>
+<path d="M90,856.6666666666666 L800,856.6666666666666" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="862.6666666666666" fill="#25ff00" font-size="19" font-weight="normal">10</text>
+<path d="M90,804.4444444444445 L800,804.4444444444445" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="810.4444444444445" fill="#25ff00" font-size="19" font-weight="normal">20</text>
+<path d="M90,752.2222222222222 L800,752.2222222222222" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="758.2222222222222" fill="#25ff00" font-size="19" font-weight="normal">30</text>
+<path d="M90,700.0 L800,700.0" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="43" y="706.0" fill="#25ff00" font-size="19" font-weight="normal">40</text>
+<path d="M90,700 L90,935" stroke="#25ff00" stroke-width="2" opacity="1"/>
+<path d="M90,935 L800,935" stroke="#25ff00" stroke-width="2" opacity="1"/>
+<polyline fill="none" stroke="#ffd43b" stroke-width="4" points="90.00,840.71 800.00,840.71"/>
+<polyline fill="none" stroke="#28a9e2" stroke-width="3" points="178.75,770.45 356.25,853.64 533.75,829.88 711.25,908.89"/>
+<circle cx="178.75" cy="770.4477777777778" r="5" fill="#28a9e2"/>
+<circle cx="356.25" cy="853.6377777777777" r="5" fill="#28a9e2"/>
+<circle cx="533.75" cy="829.8766666666667" r="5" fill="#28a9e2"/>
+<circle cx="711.25" cy="908.8888888888889" r="5" fill="#28a9e2"/>
+<text x="110" y="684" fill="#25ff00" font-size="19" font-weight="normal">Zoom: 21:00–22:00</text>
+<text x="110" y="994" fill="#ffd43b" font-size="20" font-weight="normal">The average fixes the level; the shape must be inferred.</text>
+<path d="M990.0,700 L990.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="981.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">21</text>
+<path d="M1230.0,700 L1230.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1221.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">22</text>
+<path d="M1470.0,700 L1470.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1461.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">23</text>
+<path d="M1710.0,700 L1710.0,935" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="1701.0" y="964" fill="#25ff00" font-size="19" font-weight="normal">24</text>
+<path d="M990,935.0 L1710,935.0" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="943" y="941.0" fill="#25ff00" font-size="19" font-weight="normal">-20</text>
+<path d="M990,867.8571428571429 L1710,867.8571428571429" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="943" y="873.8571428571429" fill="#25ff00" font-size="19" font-weight="normal">0</text>
+<path d="M990,800.7142857142858 L1710,800.7142857142858" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="943" y="806.7142857142858" fill="#25ff00" font-size="19" font-weight="normal">20</text>
+<path d="M990,733.5714285714286 L1710,733.5714285714286" stroke="#25ff00" stroke-width="1" opacity="0.13"/>
+<text x="943" y="739.5714285714286" fill="#25ff00" font-size="19" font-weight="normal">40</text>
+<path d="M990,700 L990,935" stroke="#25ff00" stroke-width="2" opacity="1"/>
+<path d="M990,935 L1710,935" stroke="#25ff00" stroke-width="2" opacity="1"/>
+<polygon fill="#25ff00" fill-opacity=".18" stroke="#25ff00" stroke-opacity=".65" points="1020.00,741.72 1080.00,780.74 1140.00,772.89 1200.00,798.94 1260.00,767.69 1320.00,780.69 1380.00,738.00 1440.00,751.65 1500.00,746.30 1560.00,772.99 1620.00,746.64 1680.00,774.73 1680.00,858.53 1620.00,823.73 1560.00,848.74 1500.00,836.36 1440.00,840.47 1380.00,821.69 1320.00,863.41 1260.00,862.35 1200.00,905.56 1140.00,866.09 1080.00,876.21 1020.00,858.46"/>
+<polyline fill="none" stroke="#28a9e2" stroke-width="2.3" points="1020.00,778.86 1080.00,832.34 1140.00,817.06 1200.00,867.86 1260.00,776.24 1320.00,816.93 1380.00,748.61 1440.00,867.86 1500.00,727.06 1560.00,839.56 1620.00,777.89 1680.00,858.42"/>
+<polyline fill="none" stroke="#ff3854" stroke-width="3.5" points="1020.00,802.30 1080.00,826.35 1140.00,823.07 1200.00,844.41 1260.00,813.63 1320.00,816.10 1380.00,786.39 1440.00,793.51 1500.00,792.00 1560.00,806.94 1620.00,791.36 1680.00,812.63"/>
+<text x="1005" y="684" fill="#25ff00" font-size="19" font-weight="normal">Saved champion output · 21:00–24:00</text>
+<path d="M1000,985 L1035,985" stroke="#ff3854" stroke-width="4" opacity="1"/>
+<text x="1045" y="992" fill="#ff3854" font-size="19" font-weight="normal">q50</text>
+<path d="M1130,985 L1165,985" stroke="#25ff00" stroke-width="8" opacity="0.4"/>
+<text x="1175" y="992" fill="#25ff00" font-size="19" font-weight="normal">Calibrated 90% band</text>
+<text x="90" y="1050" fill="#25ff00" font-size="21" font-weight="bold">MEAN PRESERVATION</text>
+<text x="370" y="1050" fill="#ffd43b" font-size="26" font-weight="normal">(p₁ + p₂ + p₃ + p₄) / 4 = supplied hourly price</text>
+<text x="90" y="1090" fill="#25ff00" font-size="18" font-weight="normal">Known: four-zone hourly curves + strictly prior quarter-hour history.  Example selected posthoc; bands unchanged.</text>
+<text x="1440" y="204" fill="#25ff00" font-size="20" font-weight="normal">Price: EUR/MWh</text>
+<text x="590" y="684" fill="#25ff00" font-size="19" font-weight="normal">Price: EUR/MWh</text>
+<text x="1500" y="684" fill="#25ff00" font-size="19" font-weight="normal">Price: EUR/MWh</text>
+</g></svg>

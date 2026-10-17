@@ -1,0 +1,11 @@
+{
+  "linear_mean_error": 5.684341886080802e-14,
+  "linear_saved_mae_difference": 0.0,
+  "champion_replay_max_error": 1.1368683772161603e-13,
+  "passed": true,
+  "folds": 8,
+  "training": false,
+  "scope": "Posthoc existing checkpoint/forecast explanations; no new model selection",
+  "analysis_sha256": "5165581fc2f4eff4ee712eda6f914fdf593a37f0bc4bbd32b1b47b14b1e1141d",
+  "source_audit_sha256": "299a4da6e59d1493055baa5fac2eca316d52f37b6ee3b36ca3da56d6223fe779"
+}

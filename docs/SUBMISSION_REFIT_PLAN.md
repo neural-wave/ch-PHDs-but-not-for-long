@@ -1,5 +1,13 @@
 # All-month submission refit requirement
 
+## Current decision — 17 October 2026
+
+The user explicitly approved reserving **September 16–30 for calibration** while preparing the submission-ready champion. This supersedes the earlier requirement to fit on every eligible date: fit on October 1, 2025–September 15, 2026 (**348 eligible dates**) and calibrate on the remaining **15 dates**. Freeze the latest research-fold six components (equal three-family weights, two seeds each) and their selected epoch budgets before fitting. No calibration-driven early stopping or model selection. The prior all-month plan below is preserved as historical rationale.
+
+Implementation and specification card: `campaigns/submission_champion_20261017/`. Generated audited bundle: `results/submission_champion_20261017/bundle/`. Read the actual audit/completion receipts before calling the fitted artifact ready. Preserve the historical frozen `submission/` bundle.
+
+## Earlier all-month plan (superseded fitting split)
+
 User instruction, 17 October 2026: the submission model must be trained on all available official months. Current official input spans October 2025–September 2026, 363 eligible days. This is a final deployment refit, separate from the eight expanding research evaluations. Current champion has no such refit; the preserved existing 363-day deployment bundle belongs to an earlier recipe.
 
 Freeze the final architecture, feature definitions, physical scaling, objective, seeds, epochs/fit budget and convex family weights using the research selection evidence before refitting. For the current champion, the latest fold uses equal MLP/temporal-CNN/analog-CNN weights with validation-selected component configurations and possible seed means. That latest fold is useful provenance, not proof that its hyperparameters are optimal for a larger training set. Do not choose a new recipe by its September hindsight error.

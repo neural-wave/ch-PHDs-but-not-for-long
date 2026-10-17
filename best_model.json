@@ -52,6 +52,9 @@
   "execution_host": "root@93.91.156.85:55340",
   "remote_project": "/workspace/HACKATON",
   "rank_source": "results/model_ranking_20261017/primary_ranking.csv",
-  "inference_entrypoint_status": "Research champion registry; an all-history inference refit of this recipe has not been made.",
-  "existing_inference_manifest": "results/deployment_best.json"
+  "inference_entrypoint_status": "Final 348-fit/15-cal champion deployment exists and is frozen by user; see CHAMPION_FREEZE.json",
+  "existing_inference_manifest": "results/deployment_best.json",
+  "final_deployment_id": "champion_348fit_15cal_20261017",
+  "freeze_manifest": "CHAMPION_FREEZE.json",
+  "training_authorized": false
 }

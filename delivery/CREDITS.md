@@ -2,7 +2,14 @@
 
 ## Team
 
-Full names and optional roles: **to be completed later at the user's request**. The root README must contain the final member list.
+**PhDs but not for long**
+
+| Member | Role |
+| --- | --- |
+| Daniel S. Vega | Paladin |
+| Valentina Moretti | Qween |
+| Riccardo Ghetti | Margrave |
+| Miguel Nogales | Bard |
 
 ## Data and challenge
 

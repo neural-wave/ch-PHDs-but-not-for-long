@@ -1,0 +1,9 @@
+{
+  "source_csv_sha256": "0d64b334c6a445d6afc3548c1f0cdc3c402bf7d4ffb3b881bec4413f328b43f5",
+  "date": "2026-06-11",
+  "zone": 3,
+  "layout": "Original full-day curve plus two same-axis three-hour zooms",
+  "changed": "Palette/font/line/fill styling and truthful bound-to-bound width markers",
+  "data_modified": false,
+  "calibration_modified": false
+}

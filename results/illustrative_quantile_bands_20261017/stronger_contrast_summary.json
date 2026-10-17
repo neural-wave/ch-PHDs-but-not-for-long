@@ -1,0 +1,16 @@
+{
+  "date": "2026-06-23",
+  "zone": 0,
+  "calm": 1,
+  "volatile": 19,
+  "calm_width": 8.456442856954208,
+  "volatile_width": 201.0521043009228,
+  "width_ratio": 23.775020738842496,
+  "calm_rough": 1.7716666666666612,
+  "volatile_rough": 55.37500000000004,
+  "coverage": 0.9375,
+  "source": "results/minimize_expanding_20261017/folds/2026-06/selected/fixed_blend_ratio/predictions.npz",
+  "source_sha256": "71d02d8757572ecc5249e43650a34dc3b49cae121e78e2d10ccaeb6ee9420a50",
+  "quantiles_modified": false,
+  "selection": "Posthoc illustrative maximum3hour-width ratio among days with coverage>=90%, calm observed roughness<=2, noisy roughness>=8, calm width<=12 and nonoverlapping3hourwindows"
+}

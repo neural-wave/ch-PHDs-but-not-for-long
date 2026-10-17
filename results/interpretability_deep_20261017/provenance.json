@@ -1,0 +1,44 @@
+{
+  "host": "root@93.91.156.85:55340",
+  "remote_project": "/workspace/HACKATON",
+  "nightwatch_run": "9bdcaa1b892f8998f25b2959",
+  "nightwatch_terminal": {
+    "action": "finish",
+    "exit_code": 0,
+    "delivered": true
+  },
+  "source_sha256": {
+    "campaigns/interpretability_deep_20261017/analyze.py": "5165581fc2f4eff4ee712eda6f914fdf593a37f0bc4bbd32b1b47b14b1e1141d",
+    "campaigns/interpretability_deep_20261017/summarize.py": "a436c13eafe63eb0948801b08effb51ea04cd0169c353452fbb7cecf13d30181",
+    "code/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "code/linear_quantile_model.py": "576773aa6ccca7c5f4d42a2e993a5a8b31152225d3acb89d0accc973a88bb2b2",
+    "results/linear_quantiles_vast/fixed_september_10m/model.json": "c0c5f5b27391f99a8647074be9d092d34c8defce9f722df80278856583e8b0d5",
+    "results/linear_quantiles_vast/metrics.json": "fee14a1a793bb1186977b010af4ebd13c651dedc666d6578f7a48aa6282d6a71",
+    "results/model_ranking_20261017/champion_per_fold.json": "e746e5b6a418b035015b2804f1cc2c72a0e93be1b979cb7353f7fad6871b6b7a"
+  },
+  "figure_review": "All three PNG figures visually inspected",
+  "outputs_sha256": {
+    "audit.json": "0dec9dd6fe81a3570dfd57706835b6d5b9bc45d2616cb51e062c36bf595822be",
+    "ensemble_examples.svg": "8268bd3f39245f4dcf6b08d98d8806fefd623c4301cf31a280aa4e81792b8a68",
+    "ensemble_summary.json": "ed705f3c68814046e7e9bc65fe0b66035cb4c839e3462452b2882abc27abaf93",
+    "signed_error_correlations.json": "6cbd62224196b98b198a62dc80f4099b713d8b866e24f26694fafce0f367f3a2",
+    "linear_examples.csv": "d9582467ed3ca80122592458c1d4252ee385e342432328b8a6a693ac5d76d57f",
+    "REPORT.md": "3aa63005bea12f731d87600199b6443f897505adfc976322e525bb2b689ff03a",
+    "linear_group_contributions.csv": "c4b773af029d881df55579603844f12fab140038102c88a721bbc3adc6b43606",
+    "ensemble_examples.png": "2c65158b615e4379d78da966145396ba2db503de401a14f3c5e730e7b329fd0c",
+    "linear_feature_contributions.csv": "68798fafcde017315606ebf7e6f09752e7bb3019cffd47a82916b6b9622ad537",
+    "conditional_summary.csv": "ac2ba72f327f472f7dc46f7ac9c43850bd4383ab6f837edf522fa98f5b6ba2b0",
+    "conditional_monthly.csv": "2ea5321238baa6335474745e1503e20fbc45a62211b2a534c9848a758cf51ec3",
+    "zone_specialists.json": "02332e26e6c02a0af26a60c3f8f5ea3792e32f4907a52065ba95fd331d56aa1c",
+    "linear_examples.png": "48a5b9d8fa040dffa4969a3c3363758ed83989f1b5eada1ef1225a825d139674",
+    "linear_examples.json": "3aa2c5428a6ba705ee11c93a2e475530b307b2b6ee2b6cb3ef19abc9f1f15d1e",
+    "ensemble_examples.json": "0399aa6239cb2f9ee93af96382b51c5703819209df7ce5e394031419f1395aed",
+    "uncertainty_monthly.csv": "573d927091e066b25e704f57acb3167f52348cad9310e429dfb9f39addbd3c8c",
+    "zone_curve_uncertainty.png": "db2f92f4cf7607b34dcbc7282b6d4953a9422b9911e9bafe80404057801a09df",
+    "zone_curve_uncertainty.svg": "65ee6f43aa8e5a72ce16d3ecdf1c7def043f8fb58918735528cdf1c62ac71bb5",
+    "complementarity.csv": "bebe54640d5eea9167f488cacbb2c44eb5f9cd3d8bd7bff68c5c7c9e9c643796",
+    "linear_examples.svg": "0c222dc51cfcae443db0b6f91463185b03fd02f1abb43cf603aab4bed7209a86",
+    "linear_summary.json": "93ac5602267173628cdff37e9d6262c273df323fb4c6b9580af70b0fef91c7e6",
+    "member_removal.csv": "c7b7a50dd13b9fc8c8d9082e7fa8abd62cdbffae357ea6cde9176629276c3bb7"
+  }
+}

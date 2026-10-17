@@ -1,0 +1,66 @@
+[
+  {
+    "zone": "ZONE_0",
+    "best_single": "linear_compact",
+    "single_ratio": 0.6072246874039149,
+    "blend_ratio": 0.5919370487537183,
+    "best_single_month_wins": 0,
+    "equal_month_shape_standardized_ratio": 0.5990728699446526,
+    "equal_month_cancellation_eur": 0.14198202900511156,
+    "curve_mix_percent": {
+      "Flat": 17.82503457814661,
+      "Rising": 29.529737206085755,
+      "Falling": 41.61479944674966,
+      "Peak": 7.330567081604426,
+      "Trough": 3.699861687413555
+    }
+  },
+  {
+    "zone": "ZONE_1",
+    "best_single": "linear_rich",
+    "single_ratio": 0.6634685752610288,
+    "blend_ratio": 0.6520587621647596,
+    "best_single_month_wins": 3,
+    "equal_month_shape_standardized_ratio": 0.6556742494802114,
+    "equal_month_cancellation_eur": 0.1453517349098754,
+    "curve_mix_percent": {
+      "Flat": 16.35546334716459,
+      "Rising": 29.080221300138312,
+      "Falling": 39.05601659751037,
+      "Peak": 9.059474412171507,
+      "Trough": 6.448824343015215
+    }
+  },
+  {
+    "zone": "ZONE_2",
+    "best_single": "cnn2d_analog",
+    "single_ratio": 0.8233974573947973,
+    "blend_ratio": 0.8227170499540755,
+    "best_single_month_wins": 5,
+    "equal_month_shape_standardized_ratio": 0.8204001271095543,
+    "equal_month_cancellation_eur": 0.09127728879259456,
+    "curve_mix_percent": {
+      "Flat": 17.237206085753805,
+      "Rising": 26.625172890733058,
+      "Falling": 34.50899031811895,
+      "Peak": 11.549100968188105,
+      "Trough": 10.079529737206085
+    }
+  },
+  {
+    "zone": "ZONE_3",
+    "best_single": "linear_compact",
+    "single_ratio": 0.7908536799377529,
+    "blend_ratio": 0.7832665574654591,
+    "best_single_month_wins": 2,
+    "equal_month_shape_standardized_ratio": 0.7829528913246798,
+    "equal_month_cancellation_eur": 0.11871960138201071,
+    "curve_mix_percent": {
+      "Flat": 17.513831258644537,
+      "Rising": 27.627939142461965,
+      "Falling": 36.376210235131396,
+      "Peak": 10.442600276625173,
+      "Trough": 8.03941908713693
+    }
+  }
+]
