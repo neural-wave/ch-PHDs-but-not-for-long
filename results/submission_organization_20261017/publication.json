@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-17",
+  "type": "preparation_publication",
+  "repository": "https://github.com/neural-wave/ch-PHDs-but-not-for-long",
+  "branch": "el_bicho/hackaton-research",
+  "commit": "30089bc63abe4330676365011d6efef84b11a180",
+  "push_succeeded": true,
+  "remote_branch_sha_verified": true,
+  "final_event_handoff": false,
+  "team_names": "deferred_at_user_request",
+  "frozen_submission_modified": false,
+  "unrelated_work_preserved": true
+}
