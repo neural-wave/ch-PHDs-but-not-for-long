@@ -8510,7 +8510,7 @@
     "promotion_authority": "User explicitly requested promotion of the winning model and a complete ranking.",
     "validation_protocol": "VALIDATION_PROTOCOL.md",
     "validation_required_for_future_models": true,
-    "validation_protocol_sha256": "c9ac59f3f0fe688f6da98fd2efd4e28ed73c4cfbc8393e15d7fb30a9773b7358",
+    "validation_protocol_sha256": "cc98b49f21e00f7478145e56fd7add0bf62199750117a529b0a88a723e9b238a",
     "metric": "Arithmetic mean of eight monthly MAE / mean-corrected linear-interpolation MAE ratios; lower is better",
     "model_id": "minimize_expanding_20261017/fixed_blend_ratio",
     "campaign": "minimize_expanding_20261017",
