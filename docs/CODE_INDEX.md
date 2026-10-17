@@ -2,6 +2,11 @@
 
 Run `python run.py <script-name> [args]` from the repository root. This index classifies filenames for navigation; historical launchers require inspection before reuse.
 
+## Submission preparation
+
+- [check_submission.py](../code/check_submission.py): file/checksum and declared handoff-status audit; no model execution.
+- [Report builder](../campaigns/submission_materials_20261017/build_report.py): three-page draft from editable Markdown and saved monthly metrics; optional authoring dependencies in `requirements-report.txt`.
+
 ## Models and shared utilities
 
 - [add_conformal_50.py](../code/add_conformal_50.py)

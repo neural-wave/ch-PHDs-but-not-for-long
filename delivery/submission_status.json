@@ -1,0 +1,23 @@
+{
+  "status": "preparation_in_progress",
+  "working_deadline": "2026-10-18T11:00:00+02:00",
+  "deadline_source": "User-provided organizer guidelines; Sunday resolved from 2026-10-17, confirm any organizer updates",
+  "repository": "https://github.com/neural-wave/ch-PHDs-but-not-for-long",
+  "branch": "el_bicho/hackaton-research",
+  "team_members": [],
+  "team_members_status": "to_be_completed_later_at_user_request",
+  "research_model": "minimize_expanding_20261017/fixed_blend_ratio",
+  "preserved_bundle": "submission/FREEZE_MANIFEST.json",
+  "final_bundle_manifest": null,
+  "final_artifact_delivery": null,
+  "clean_environment_audit": null,
+  "report_path": "delivery/report/report.pdf",
+  "report_build_receipt": "results/submission_organization_20261017/report_build.json",
+  "report_reviewed": false,
+  "video_path": null,
+  "video_duration_seconds": null,
+  "swisstransfer_url": null,
+  "license_path": null,
+  "final_publication_verified": false,
+  "handoff_completed": false
+}

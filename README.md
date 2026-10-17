@@ -2,6 +2,23 @@
 
 Reconstruct four quarter-hour prices from each supplied hourly mean, using the official data and strictly earlier quarter-hour history. Every reconstructed hour must retain its supplied mean within **0.0001 EUR/MWh**.
 
+## Neural Wave submission
+
+**Team full names and optional roles: to be completed later.**
+
+The [submission materials](delivery/README.md) collect the [three-page report draft](delivery/report/report.pdf), [two-minute video script](delivery/video/SCRIPT.md), [five-minute presentation outline](delivery/presentation/OUTLINE.md), [credits and AI usage](delivery/CREDITS.md), and [final checklist](delivery/CHECKLIST.md).
+
+Final delivery is still in preparation: the current research champion needs an audited all-history refit, the report needs team review, and the video needs recording and a SwissTransfer link. The preserved `submission/` bundle contains an older recipe; its fitted binary is excluded from Git. See the [jury run guide](delivery/RUN_FOR_JURY.md) for its current commands and CSV contract.
+
+From the repository root, after receiving the matching fitted bundle:
+
+```sh
+python -m pip install -r submission/requirements-catboost.txt
+python run.py submission/run.py --hourly test_hourly.csv --history history_15min.csv --output predictions.csv
+```
+
+Use the documented Python 3.11 environment; fresh clean-environment verification remains pending. The command performs offline inference with the preserved bundle. Final-model training must run on an authorized research server.
+
 ## Latest RevIN and uncertainty results
 
 Eight developmental monthly folds; lower mean monthly MAE/interpolation MAE is better.
@@ -41,6 +58,7 @@ The research champion and the older all-history deployment refit are separate ar
 | `docs/reference/` | Original challenge instructions, preserved verbatim |
 | `results/` | Saved metrics, manifests, figures and evidence grouped by study |
 | `submission/` | Preserved, self-contained frozen deployment bundle |
+| `delivery/` | Jury report, video script, presentation outline, credits and handoff checklist |
 | `memory/records/` | Detailed dated project history; may contain superseded decisions |
 | `best_model.json` | Current research-model registry |
 | `frozen_recipe.json`, `rolling_plan.json` | Preserved deployment/experiment configurations |

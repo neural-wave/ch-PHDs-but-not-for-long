@@ -1,0 +1,19 @@
+{
+  "status": "draft",
+  "pages": 3,
+  "visual_review": "passed",
+  "output": "delivery/report/report.pdf",
+  "output_sha256": "2bf760899799a87c5772078192861fc568e91630a0ecf910dc0181d9a95dc05e",
+  "source": "delivery/report/report.md",
+  "source_sha256": "3ab9497eba52b5d2c3ee5561d3e3afe6a53599901bfb8f925a6ca6dad413ff7e",
+  "monthly_metrics": "results/minimize_expanding_20261017/monthly_scores.csv",
+  "monthly_sha256": "d039ba44bbff6f1ef5d19bfc7a46a3bffb3b7a238394b7d51851045041eb8b5a",
+  "registry_sha256": "c730c0f6d926950762deb8e4c0d6e66d13b66b15d126aeab6af4d4224b6d740e",
+  "model_execution": false,
+  "visual_review_method": "All three pages rendered with Poppler at 1400 pixels and inspected for clipping, overlap and legibility",
+  "reviewed_on": "2026-10-17",
+  "authoring_versions": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0"
+  }
+}

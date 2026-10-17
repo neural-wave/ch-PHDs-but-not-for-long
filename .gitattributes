@@ -1,0 +1,2 @@
+# Reports are binary artifacts; avoid text normalization and whitespace checks.
+*.pdf binary

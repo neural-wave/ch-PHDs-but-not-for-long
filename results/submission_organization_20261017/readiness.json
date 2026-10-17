@@ -1,0 +1,24 @@
+{
+  "scope": "Local file identity and declared checklist status; no installation, model execution, upload or URL-access test",
+  "frozen_bundle": {
+    "checked": 16,
+    "passed": true,
+    "failures": []
+  },
+  "missing_preparation_files": [],
+  "report_build_verified": true,
+  "pending_handoff_items": [
+    "Team full names and optional roles: to be completed later at user request",
+    "Audited all-history final-model manifest",
+    "Clean-environment offline inference audit",
+    "Team-selected repository license",
+    "Recorded summary video",
+    "Verified jury access to the fitted final artifact",
+    "Team review of final report and consistency with delivered model",
+    "Verified video duration between 0 and 120 seconds",
+    "Working SwissTransfer video link",
+    "Final authorized repository publication",
+    "Single team handoff to organizers"
+  ],
+  "declared_checklist_complete": false
+}

@@ -8,6 +8,9 @@ Start with [repository overview](../README.md), [agent instructions](../AGENTS.m
 
 ## Operating guides
 
+- [Submission materials and final checklist](../delivery/README.md)
+- [Jury execution guide and CSV contract](../delivery/RUN_FOR_JURY.md)
+- [All-history champion refit plan](SUBMISSION_REFIT_PLAN.md)
 - [DEPLOYMENT REFIT ](DEPLOYMENT_REFIT.md)
 - [RUN SOLUTION ](RUN_SOLUTION.md)
 - [SEARCH METHOD ](SEARCH_METHOD.md)
