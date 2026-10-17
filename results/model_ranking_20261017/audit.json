@@ -1,13 +1,13 @@
 {
   "passed": true,
-  "source_campaigns": 10,
-  "reported_primary_rows": 142,
-  "ranked_primary_rows": 110,
-  "alias_rows": 32,
-  "monthly_rows": 1136,
+  "source_campaigns": 13,
+  "reported_primary_rows": 154,
+  "ranked_primary_rows": 115,
+  "alias_rows": 39,
+  "monthly_rows": 1232,
   "historical_rows": 121,
   "candidate_records": 5197,
-  "campaigns_in_inventory": 43,
+  "campaigns_in_inventory": 50,
   "oracle_rows": 10,
   "expected_test_months": [
     "2026-02",
@@ -136,6 +136,36 @@
       "audit": "results/riccardo_comparison_20261017/independent_audit.json",
       "audit_sha256": "b66048e31e28bd7b481777bbaf81a83de9c3801fab407fc79f96a60287737ca2",
       "rows": 2,
+      "audit_passed": true
+    },
+    {
+      "campaign": "revin_quantiles_20261017",
+      "summary": "results/revin_quantiles_20261017/summary.csv",
+      "summary_sha256": "e9af1144587ff4a6834517d840f0677a15cb7a7cfdb5eed035e040fa894bcf32",
+      "monthly_sha256": "9e1c11c4ec6d523cece1b4e6f2db28513b591141231b3882e4a03b7e0ae1ce9a",
+      "audit": "results/revin_quantiles_20261017/audit.json",
+      "audit_sha256": "a95b6783046cacd073af8dc8b848e8e58e16a39defd70d62d8826bf5e6179d06",
+      "rows": 4,
+      "audit_passed": true
+    },
+    {
+      "campaign": "champion_revin_20261017",
+      "summary": "results/champion_revin_20261017/summary.csv",
+      "summary_sha256": "713c44705dc48d81c67e12b301e1641025a044e8d9d21c5fd24634890d732cba",
+      "monthly_sha256": "776fbc6f811c6f43cf2576006522364601a6dd0c02ffefff93afe8ec132e5a22",
+      "audit": "results/champion_revin_20261017/audit.json",
+      "audit_sha256": "171613ffbadc05281b90ce7abd50fcd76b3b6e2f11de4378b4c1f3ea333c63c5",
+      "rows": 4,
+      "audit_passed": true
+    },
+    {
+      "campaign": "linear_compact_revin_20261017",
+      "summary": "results/linear_compact_revin_20261017/summary.csv",
+      "summary_sha256": "a6db20674bae1707a97e516cb0d4e8f5ff0fcae3a614871162d082fdec01ff8a",
+      "monthly_sha256": "0c28c0eda9f25a8eea6c55ad9343a233ba2572f9640429f46a084ba12aed665f",
+      "audit": "results/linear_compact_revin_20261017/audit.json",
+      "audit_sha256": "0dc8442047359ad724b868bc3c0b5c4d840987d205c34c9bcbdd9d983afc01e3",
+      "rows": 4,
       "audit_passed": true
     }
   ],

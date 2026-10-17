@@ -2,6 +2,10 @@
 
 Start with [repository overview](../README.md), [agent instructions](../AGENTS.md), [project context](../project_memory.md) and [required validation](../VALIDATION_PROTOCOL.md).
 
+## Models and uncertainty
+
+- [Features, model explanations, RevIN results and quantile-band plots](MODELS_AND_UNCERTAINTY.md)
+
 ## Operating guides
 
 - [DEPLOYMENT REFIT ](DEPLOYMENT_REFIT.md)

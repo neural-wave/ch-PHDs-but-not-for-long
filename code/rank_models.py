@@ -19,6 +19,8 @@ SOURCES = [
     'ssm_monthly_20261017', 'normalization_20261017',
     'linear_s4d_20261017', 'ensemble_normalization_20261017',
     'minimize_expanding_20261017', 'riccardo_comparison_20261017',
+    'revin_quantiles_20261017', 'champion_revin_20261017',
+    'linear_compact_revin_20261017',
 ]
 TITLES = {
     'normalized_validation_20261017': 'Original expanding search',
@@ -31,6 +33,9 @@ TITLES = {
     'ensemble_normalization_20261017': 'Controlled six-expert normalization',
     'minimize_expanding_20261017': 'Fixed-scale ensemble with seed averaging',
     'riccardo_comparison_20261017': 'Riccardo chronological adaptation',
+    'revin_quantiles_20261017': 'Matched compact CNN learned-affine RevIN',
+    'champion_revin_20261017': 'Frozen champion ensemble with RevIN',
+    'linear_compact_revin_20261017': 'Frozen linear compact with RevIN',
 }
 
 
@@ -64,6 +69,8 @@ def digest(path):
 
 def family(campaign, recipe):
     text = recipe.lower()
+    if campaign == 'champion_revin_20261017' and recipe in ['original_champion', 'revin_champion']:
+        return 'Ensemble'
     if 'selector' in text:
         return 'Selection policy'
     if text in ['interpolation', 'interpolation_fixed', 'original_interpolation']:
@@ -80,7 +87,7 @@ def family(campaign, recipe):
         return 'GRU'
     if 'cnn2d' in text:
         return 'Analog 2D CNN'
-    if 'cnn' in text or text == 'tcn' or (campaign in ['normalization_20261017', 'ssm_monthly_20261017'] and text.startswith('compact')):
+    if 'cnn' in text or text == 'tcn' or (campaign in ['normalization_20261017', 'ssm_monthly_20261017', 'revin_quantiles_20261017'] and text.startswith('compact')):
         return 'Temporal CNN'
     if text.startswith('riccardo_'):
         return 'Riccardo zonal CNN'
@@ -105,6 +112,16 @@ def family(campaign, recipe):
 
 def alias(campaign, recipe):
     canonical = 'monthly_quantiles_20261017/'
+    if campaign == 'champion_revin_20261017':
+        if recipe == 'original_champion':
+            return 'minimize_expanding_20261017/fixed_blend_ratio'
+        if recipe == 'validation_selector':
+            return campaign+'/revin_champion'
+    if campaign == 'linear_compact_revin_20261017':
+        if recipe == 'original_linear_compact':
+            return 'minimize_expanding_20261017/fixed_linear_compact_ratio'
+        if recipe == 'validation_selector':
+            return campaign+'/linear_compact_revin'
     if recipe in ['interpolation', 'interpolation_fixed', 'original_interpolation']:
         target = 'normalized_validation_20261017/interpolation'
         return '' if campaign+'/'+recipe == target else target
@@ -162,9 +179,12 @@ def collect_primary():
                 note += ' Expert early stopping already used all selection days; internal tuning is not independently nested.'
             if recipe == 'linear_quantile_median':
                 note += ' Inner selection used joint MAE/pinball objective.'
+            forced_recipe = campaign in ['champion_revin_20261017', 'linear_compact_revin_20261017']
+            if forced_recipe:
+                note += ' Frozen source-selected lr/seeds/weights; fresh RevIN fits with prior-block epoch selection. Selector export is a fixed output alias.'
             entries.append(dict(model_id=identifier, campaign=campaign, campaign_title=TITLES[campaign],
                                 recipe=recipe, family=family(campaign, recipe),
-                                recipe_kind='pre_test_policy' if 'selector' in recipe else 'fixed_recipe',
+                                recipe_kind='pre_test_policy' if 'selector' in recipe and not forced_recipe else 'fixed_recipe',
                                 output_type='ordered_quantiles' if quantiles else 'point_only_historical',
                                 mean_monthly_ratio=mean, improvement_percent=100*(1-mean), pooled_mae=pooled,
                                 pooled_mae_ratio=pooled/(sum(baseline[m]*n for m, n in zip(MONTHS, DAYS))/241),

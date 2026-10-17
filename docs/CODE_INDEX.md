@@ -133,3 +133,12 @@ Run `python run.py <script-name> [args]` from the repository root. This index cl
 - [train_rolling.py](../code/train_rolling.py)
 - [train_search.py](../code/train_search.py)
 - [tune_parallel_cnn.py](../code/tune_parallel_cnn.py)
+
+## Quantiles and RevIN
+
+- [Features, model explanations and band plots](MODELS_AND_UNCERTAINTY.md)
+- [Saved champion quantile examples](../code/plot_quantile_examples.py)
+- [Daily-normalized display of saved predictions](../code/plot_revin_examples.py)
+- [Matched compact CNN RevIN trial](../campaigns/revin_quantiles_20261017/PROTOCOL.md)
+- [Champion ensemble RevIN refits](../campaigns/champion_revin_20261017/PROTOCOL.md)
+- [Standalone linear-compact RevIN refits](../campaigns/linear_compact_revin_20261017/PROTOCOL.md)

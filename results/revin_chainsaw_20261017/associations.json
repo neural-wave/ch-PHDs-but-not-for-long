@@ -1,0 +1,12 @@
+{
+  "compact_day_reversible": {
+    "mean_within_day_rank_correlation": 0.47268085874075405,
+    "fraction_positive": 0.9688796680497925,
+    "valid_day_zones": 964
+  },
+  "compact_fixed": {
+    "mean_within_day_rank_correlation": 0.4983510734259426,
+    "fraction_positive": 0.9854771784232366,
+    "valid_day_zones": 964
+  }
+}

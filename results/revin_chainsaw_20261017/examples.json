@@ -1,0 +1,34 @@
+[
+  {
+    "recipe": "compact_fixed",
+    "date": "2026-06-03",
+    "zone": 3,
+    "hour": 17,
+    "predicted_roughness": 0.06383191512280131,
+    "normalized_width90": 1.7674847642764753
+  },
+  {
+    "recipe": "compact_fixed",
+    "date": "2026-06-03",
+    "zone": 3,
+    "hour": 23,
+    "predicted_roughness": 2.563975691510545,
+    "normalized_width90": 3.9677335903378554
+  },
+  {
+    "recipe": "compact_day_reversible",
+    "date": "2026-06-03",
+    "zone": 3,
+    "hour": 15,
+    "predicted_roughness": 0.017944803690753363,
+    "normalized_width90": 0.561858631670475
+  },
+  {
+    "recipe": "compact_day_reversible",
+    "date": "2026-06-03",
+    "zone": 3,
+    "hour": 23,
+    "predicted_roughness": 0.7638580109924077,
+    "normalized_width90": 2.1050761938095093
+  }
+]

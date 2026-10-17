@@ -2,6 +2,24 @@
 
 Reconstruct four quarter-hour prices from each supplied hourly mean, using the official data and strictly earlier quarter-hour history. Every reconstructed hour must retain its supplied mean within **0.0001 EUR/MWh**.
 
+## Latest RevIN and uncertainty results
+
+Eight developmental monthly folds; lower mean monthly MAE/interpolation MAE is better.
+
+| Model | Original ratio | With RevIN |
+| --- | ---: | ---: |
+| Champion ensemble | **0.707968** | 0.725133 |
+| Linear compact | **0.724553** | 0.733498 |
+| Matched compact CNN | **0.768726** | 0.787509 |
+
+RevIN produced wider intervals and higher aggregate coverage, but worsened point accuracy in these trials. The original research champion remains unchanged. The ensemble and linear trials preserve their source-selected recipes; the compact CNN uses a matched candidate comparison.
+
+![Original champion versus its freshly fitted RevIN version: full-day quantile bands](results/champion_revin_20261017/full_day_normalized.png)
+
+**Left:** original champion. **Right:** the same ensemble recipe freshly fitted with RevIN. All panels share normalized axes; orange is observed price, blue is q50, and shading shows raw q25–q75 and calibrated 90% intervals. These two previously inspected days illustrate behavior, not independent confirmation.
+
+[Features, model explanations and all plots](docs/MODELS_AND_UNCERTAINTY.md) · [Champion RevIN report](results/champion_revin_20261017/REPORT.md) · [Linear compact RevIN report](results/linear_compact_revin_20261017/REPORT.md)
+
 ## Start here
 
 1. [Current project context](project_memory.md): concise status and next step.

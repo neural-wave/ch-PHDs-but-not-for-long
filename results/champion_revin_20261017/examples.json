@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-03-14",
+    "zone": 2,
+    "recipe": "original_champion",
+    "width90": 7.038885431959192,
+    "mae": 3.2785185366396665,
+    "coverage90": 0.6458333333333334,
+    "normalized_width90": 0.49802861828257516,
+    "normalized_mae": 0.231967983084787
+  },
+  {
+    "date": "2026-03-14",
+    "zone": 2,
+    "recipe": "revin_champion",
+    "width90": 9.913550576256164,
+    "mae": 3.1661940833191315,
+    "coverage90": 0.8229166666666666,
+    "normalized_width90": 0.7014223975503836,
+    "normalized_mae": 0.2240205895908427
+  },
+  {
+    "date": "2026-04-26",
+    "zone": 3,
+    "recipe": "original_champion",
+    "width90": 110.19869508138959,
+    "mae": 10.016197170013458,
+    "coverage90": 0.96875,
+    "normalized_width90": 0.787087406674547,
+    "normalized_mae": 0.0715400726793018
+  },
+  {
+    "date": "2026-04-26",
+    "zone": 3,
+    "recipe": "revin_champion",
+    "width90": 115.35133129120453,
+    "mae": 10.662571388262442,
+    "coverage90": 0.9895833333333334,
+    "normalized_width90": 0.8238897941159343,
+    "normalized_mae": 0.07615676080620866
+  }
+]

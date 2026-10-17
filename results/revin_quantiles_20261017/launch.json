@@ -1,0 +1,18 @@
+{
+  "id": "1e1315765ed2bc28e68bec9c",
+  "status_at_verification": "completed",
+  "host": "root@93.91.156.85",
+  "port": 55340,
+  "remote_project": "/workspace/HACKATON",
+  "remote_results": "/workspace/HACKATON/results/revin_quantiles_20261017",
+  "worker_pid": 14336,
+  "log": "/root/.local/share/nightwatch-hackaton/1e1315765ed2bc28e68bec9c.log",
+  "eta_seconds": 600,
+  "success_failure_reporting": "Nightwatch existing owner Telegram",
+  "dependency": null,
+  "launch_verified": true,
+  "smoke_audit_passed": true,
+  "smoke_checkpoints": 4,
+  "completed_folds_last_observed": 6,
+  "completion_verified": "2026-10-17"
+}
