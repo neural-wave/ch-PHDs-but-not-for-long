@@ -1,0 +1,12 @@
+{
+  "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:11:32) [Clang 20.1.8 ]",
+  "executable": "/private/tmp/neural-wave-jury-env/bin/python",
+  "system": "Darwin",
+  "machine": "arm64",
+  "torch": "2.14.1",
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "cuda_available": false,
+  "cuda_build": null,
+  "threads": 1
+}

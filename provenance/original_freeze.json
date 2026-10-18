@@ -1,0 +1,22 @@
+{
+  "status": "frozen_by_user",
+  "date": "2026-10-17",
+  "instruction": "Use this latest champion and freeze everything; no more training ever.",
+  "deployment_id": "champion_348fit_15cal_20261017",
+  "research_model_id": "minimize_expanding_20261017/fixed_blend_ratio",
+  "training_authorized": false,
+  "refitting_authorized": false,
+  "recalibration_authorized": false,
+  "feature_or_weight_changes_authorized": false,
+  "bundle": "results/submission_champion_20261017/champion_submission",
+  "bundle_manifest_sha256": "c378cd289139f98f769675889674e3d26b457b1a282a6c3fc12de733468f770c",
+  "model_sha256": "6ee16ba8942f3ad569ceaf1f5f578608801a0d668ea6b4d39398709d2d4e5a5d",
+  "archive_sha256": "63d96671184d92f81fec6b71d89d049cd215795fe80759e7fe5a75c6c1f5abba",
+  "verified_files": 17,
+  "family_weights": {
+    "fixed_mlp_compact_ratio": 0.3333333333333333,
+    "fixed_cnn_rich_ratio": 0.3333333333333333,
+    "fixed_cnn2d_analog_ratio": 0.3333333333333333
+  },
+  "pending_feature_importance": "Prepared locally but not launched; no new analysis run as part of freeze."
+}

@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "six_full_architectures_fitted": true,
+  "all_heads_updated": true,
+  "training_dates": [
+    "2025-10-01",
+    "2025-10-02",
+    "2025-10-03",
+    "2025-10-04"
+  ],
+  "calibration_dates": [
+    "2025-10-05",
+    "2025-10-06"
+  ],
+  "fixture_dates": [
+    "2025-10-07",
+    "2025-10-08"
+  ],
+  "causal_poison_and_truncation_probes": [
+    "2025-10-01",
+    "2025-10-04",
+    "2025-10-05",
+    "2025-10-06",
+    "2025-10-07"
+  ],
+  "checkpoint_replay_max_error": 0.0,
+  "copied_source_hashes_passed": true,
+  "imports_resolve_inside_standalone_package": {
+    "price_data": "src/price_data.py",
+    "compact_features": "src/compact_features.py",
+    "historical_errors": "src/historical_errors.py",
+    "history_grid": "src/history_grid.py",
+    "analog_cnn": "src/analog_cnn.py",
+    "feature_pipeline": "src/feature_pipeline.py",
+    "quantile_models": "src/quantile_models.py"
+  },
+  "cross_zone_grid_gradient": 8.153979433700442e-05,
+  "cross_zone_full_curve_gradient": 8.739733857510146e-06
+}

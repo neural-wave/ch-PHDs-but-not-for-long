@@ -1,0 +1,5391 @@
+{
+  "source_commit": "36c172c604d7f1e9c98b62ba6199f8ca2ee3e1e7",
+  "files_read_and_parsed": 268,
+  "method": "Static import/definition inventory; frozen recipe and bundle hash audit identify required dependency closure. Historical runners were not executed.",
+  "files": [
+    {
+      "path": "campaigns/basic/predict.py",
+      "sha256": "6083879b459ba7e78a0021bd12a0045e81ac49e3a0a41d1bc3a5c32fb2f18951",
+      "lines": 38,
+      "imports": [
+        "argparse",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/basic/reconstruction.py",
+      "sha256": "1d7a0c9c249cf349dad3a5a868eb8c462245db2009c80b33c30c72dd089f078c",
+      "lines": 71,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/basic/train_search.py",
+      "sha256": "80bad7393023c5e93d102e2109f55417231c97c9de25d73169d2251c76f83df1",
+      "lines": 148,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sklearn",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "main",
+        "pd_hourly"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/catboost/catboost_models.py",
+      "sha256": "5e9f5cdee5d19e54c1c19acc5c6f2d348e4869e8c5db3602a1927483ecaa5764",
+      "lines": 11,
+      "imports": [
+        "numpy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/catboost/predict.py",
+      "sha256": "66a9c6162aa6bf93b612f62650c6b39748240868500601c286e6a616d33a47af",
+      "lines": 50,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/catboost/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/catboost/train_catboost.py",
+      "sha256": "6c069c700eb6d1d1f36224acb04ff9b0754b147bd39a42c77f546aaad1520443",
+      "lines": 120,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/champion_revin_20261017/audit.py",
+      "sha256": "9fa38fc193ae9615a0f8fbfa7349bab2d780b2a906a1d84aeb2697c3b6ced662",
+      "lines": 83,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "close",
+        "edge_checks",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/champion_revin_20261017/report.py",
+      "sha256": "e8d05d6423ae15e7cc41a2deacecd8f63b1c655ff18a775bdf71d7478cd1f902",
+      "lines": 29,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "train"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/champion_revin_20261017/run.py",
+      "sha256": "3f3c4125d24986fe227a53a905d2182450e7825f023c2abae1b705cbd1073166",
+      "lines": 13,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/champion_revin_20261017/train.py",
+      "sha256": "040184419c4748daf5fc1de9520f0cd16084ebd83642fac444a5d2b306ad5a4f",
+      "lines": 163,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "time",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "sha",
+        "registry",
+        "config",
+        "query_features",
+        "prepare",
+        "fold_data",
+        "Quantiles",
+        "physical",
+        "predict",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/champion_sensitivity_20261017/analyze.py",
+      "sha256": "a5aca837c960cc8c26340e7126f742628afc3d5482a7d918e2ab3c118dbb4a8c",
+      "lines": 158,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "sha",
+        "write",
+        "inputs",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/champion_sensitivity_20261017/lag_importance.py",
+      "sha256": "976f658e96a05ce5fdf5a62e5254cd36b4b33128818d374ac21ef4a67238677b",
+      "lines": 118,
+      "imports": [
+        "analyze_feature_importance",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ensemble_normalization_20261017/audit.py",
+      "sha256": "155664eeb5d0d30e8bcd219bd0fc017c3246bc4e782a8faaeca343aaeb5e6065",
+      "lines": 133,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "close",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ensemble_normalization_20261017/backup.py",
+      "sha256": "33892fdc5f4eaf1141d6a1d19932722e3ffa58566c34b21aa01230a995c79805",
+      "lines": 16,
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "subprocess"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ensemble_normalization_20261017/run.py",
+      "sha256": "ebac418d441f0fc86e4412b22e955dbaeb6af1e9a2fa5df056a750dd40156b16",
+      "lines": 26,
+      "imports": [
+        "hashlib",
+        "json",
+        "nightwatch",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ensemble_normalization_20261017/train.py",
+      "sha256": "28be0c342dc051495ddb1f47dcc03831ef05dbdd173420b6e82ce89b8351e881",
+      "lines": 146,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "sha",
+        "link",
+        "configs",
+        "prepare",
+        "folder_data",
+        "fit",
+        "make_blend",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/flowstate_20261017/audit.py",
+      "sha256": "1e79cef961612bc75a781112fb262d8b636410bc06e2ea597b580a9f922f2c81",
+      "lines": 122,
+      "imports": [
+        "csv",
+        "experiment",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/flowstate_20261017/experiment.py",
+      "sha256": "2c5c6ec4dc2519ef6aaf51aa1804545d47e64703f2ae93a6a67585774ce2faaf",
+      "lines": 290,
+      "imports": [
+        "argparse",
+        "datetime",
+        "hashlib",
+        "huggingface_hub",
+        "json",
+        "numpy",
+        "pathlib",
+        "reconstruction",
+        "subprocess",
+        "sys",
+        "time",
+        "torch",
+        "tsfm_public"
+      ],
+      "definitions": [
+        "write",
+        "configure",
+        "load_data",
+        "history_context",
+        "inputs",
+        "normalize",
+        "ConditionalCNN",
+        "flowstate_features",
+        "raw_features",
+        "fit",
+        "predict",
+        "smoke",
+        "train",
+        "score"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/flowstate_20261017/preflight.py",
+      "sha256": "50d086e30d8aa9df77bea89c8d706915d237dffcb615d79703a5e1542feeca67",
+      "lines": 40,
+      "imports": [
+        "experiment",
+        "importlib",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/flowstate_20261017/run.py",
+      "sha256": "f534e6945f99902afe1bbe32232bc3957b214af0e5bf9974430a6a9befc7bba6",
+      "lines": 13,
+      "imports": [
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/graph/catboost_models.py",
+      "sha256": "3cba0288dda5fb6b18c49f2cdb5be2b3117ffe165d2a919595d54b4b37c8e587",
+      "lines": 51,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction",
+        "constrain_residual",
+        "learn_projection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/graph/graph_models.py",
+      "sha256": "95038763ba6f9f49ba52ae359a82b11357da72b1269a6494830a728772c43c4b",
+      "lines": 38,
+      "imports": [
+        "torch"
+      ],
+      "definitions": [
+        "ZoneBlock",
+        "GraphNet"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/graph/predict.py",
+      "sha256": "1a6a34b5b58f03f84124ccb7dd26ffa61d5943bb4252ce29be27ec7734f584f3",
+      "lines": 55,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "graph_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/graph/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/graph/train_graph.py",
+      "sha256": "7a008fac4439dfbf427861b59ec7677871bc0c7f942d215d185341b1407062cc",
+      "lines": 114,
+      "imports": [
+        "argparse",
+        "graph_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "blend",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/export_contrast.py",
+      "sha256": "b5ed03d98ece70d21d3f2f4d0b48a5f362913ca507897ea68b03e0ee3e2c5c4d",
+      "lines": 5,
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/plot.py",
+      "sha256": "ddcc0551345b06aa9bec30b4c1d74e4f715812c726c81f0a4ae9be507ca93539",
+      "lines": 36,
+      "imports": [
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/search.py",
+      "sha256": "9f22ed9143f20a91427a3ac68124c0c9444572ff043ffa68f7c43ffe4b501d18",
+      "lines": 13,
+      "imports": [
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/search_contrast.py",
+      "sha256": "8fd9db6c7ac91f871811ccb555a56420e01c7412fe844d0bd1d1951c92e295f9",
+      "lines": 15,
+      "imports": [
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/style_original_layout.py",
+      "sha256": "48d54a51792d3efa2238094dfc7144f1de3eb218e736119a396d8a50b801baad",
+      "lines": 35,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/style_plot.py",
+      "sha256": "7894e1b2ccd561f6d58ba78845ac7a29781ddf87fe5689073e495c4438c6b9fb",
+      "lines": 36,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/illustrative_quantile_bands_20261017/style_plot_contrast.py",
+      "sha256": "7a27850d6a841d4a6a85387086709a0c35d86e49798ebc8ed591900fe9ee30fa",
+      "lines": 37,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/interpretability_20261017/analyze.py",
+      "sha256": "166cd7c44f6ce5a16b21a1f9ae203fb43a14e8bacff9fb62eb4cf21fc2e0d7cc",
+      "lines": 37,
+      "imports": [
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/interpretability_deep_20261017/analyze.py",
+      "sha256": "5165581fc2f4eff4ee712eda6f914fdf593a37f0bc4bbd32b1b47b14b1e1141d",
+      "lines": 243,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "linear_quantile_model",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "reconstruction",
+        "sys"
+      ],
+      "definitions": [
+        "write",
+        "table",
+        "sha",
+        "group",
+        "linear",
+        "ensemble",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/interpretability_deep_20261017/summarize.py",
+      "sha256": "a436c13eafe63eb0948801b08effb51ea04cd0169c353452fbb7cecf13d30181",
+      "lines": 36,
+      "imports": [
+        "csv",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/interpretability_explained_20261017/plot.py",
+      "sha256": "c8cda3d5b5765b1f74a6a1cfc5039764205336723d6150a5af553ab2f9229804",
+      "lines": 89,
+      "imports": [
+        "PIL",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        "font",
+        "canvas",
+        "text",
+        "save"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_compact_revin_20261017/audit.py",
+      "sha256": "f026b934c70db310faf2bb2c32004340fd15d211bc009ebf456f26cc48c33f15",
+      "lines": 83,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "close",
+        "edge_checks",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_compact_revin_20261017/report.py",
+      "sha256": "58b64064491e2e350f2224feb7a701e62f7df65e9e9d49cafac4f4850837c334",
+      "lines": 29,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "train"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_compact_revin_20261017/run.py",
+      "sha256": "aa7c5e7eff2a0f1109f0fd155390aa8aabaa8f03481927f2558cd3c85e33dc8e",
+      "lines": 22,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_compact_revin_20261017/train.py",
+      "sha256": "cdef53754f735434afc6570362993fa01f51c4bd2aec55a09252b7bd55d2e765",
+      "lines": 159,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "time",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "sha",
+        "registry",
+        "config",
+        "query_features",
+        "prepare",
+        "fold_data",
+        "Quantiles",
+        "physical",
+        "predict",
+        "fit",
+        "original_predictions",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_s4d_20261017/audit.py",
+      "sha256": "d7ace6934c0f818ccccffe89f8a485dbffc4b89c46ea910ec04c4f52062e582d",
+      "lines": 98,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_s4d_20261017/interpret.py",
+      "sha256": "31f4ae463aba34682b5bb367b633e6e083b248fd0e76919f68c1b51cff171a55",
+      "lines": 82,
+      "imports": [
+        "argparse",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_s4d_20261017/run.py",
+      "sha256": "75a8d09bcdfc14d355c3a1ea53a1f453a492d1562573de6e53d6b4e981e182d2",
+      "lines": 15,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/linear_s4d_20261017/train.py",
+      "sha256": "3ed1adf778c3f46eb42db26488680d1e0d9256f74302acd6b65ebd5212a1c4a6",
+      "lines": 177,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "ssm_experiment",
+        "ssm_models",
+        "sys",
+        "time",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "configs",
+        "features",
+        "normalize",
+        "folds",
+        "prepare",
+        "QuantileSSM",
+        "folder_data",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/aggregate_baselines.py",
+      "sha256": "394b0b8f230b3aa9b22eb15cc85aac3f70ce51af6c96f0870b4c65f143509023",
+      "lines": 68,
+      "imports": [
+        "csv",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        "read",
+        "write",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/audit.py",
+      "sha256": "ef2aca526652040e998b3fea3a478e94d91956113f60e35d8fe5dbef78145a04",
+      "lines": 180,
+      "imports": [
+        "argparse",
+        "audit_selection",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "close",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/audit_selection.py",
+      "sha256": "d8d90ee167dfbd340d318382204eab6fcf56f7c4e246d881acd27d76501ba35a",
+      "lines": 117,
+      "imports": [
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "audit_selection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/finalize_local.py",
+      "sha256": "ae3c72be7d48a38b2251be293e9f9623e22e963cc4d2432725b063ece7328952",
+      "lines": 105,
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "shlex",
+        "subprocess",
+        "time"
+      ],
+      "definitions": [
+        "ssh",
+        "digest",
+        "copy",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/run.py",
+      "sha256": "fb9b87df6f23433286788ed75aa23a90d0cbed90ac5aac4f569b689836b0fe1b",
+      "lines": 58,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/summarize_verified.py",
+      "sha256": "8f46fbe4957d4235dbc2856b235f8a836f70f6918c1091c4a9f582dd23798d70",
+      "lines": 122,
+      "imports": [
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/minimize_expanding_20261017/train.py",
+      "sha256": "effb9221877d592d65bf3d1e7f0a7ecb95d610031443c0fc662880dbdd51c506",
+      "lines": 207,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "configs",
+        "prepare",
+        "folder_data",
+        "save_recipe",
+        "blend_menu",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly/catboost_models.py",
+      "sha256": "3cba0288dda5fb6b18c49f2cdb5be2b3117ffe165d2a919595d54b4b37c8e587",
+      "lines": 51,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction",
+        "constrain_residual",
+        "learn_projection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly/predict.py",
+      "sha256": "b1cf39ca024e8881a0101a12498b1f6693376c9e634ec15814685205e5f6ca48",
+      "lines": 50,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly/train_catboost.py",
+      "sha256": "18d3d5ae2a544c1e799db542bdc97836fe1904d2f246e53e2e44d6e456fa283b",
+      "lines": 152,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly/train_search.py",
+      "sha256": "80d5811dfc9f9051bf698c2ad1a7256b7664381a780fa07673222f59eed66b45",
+      "lines": 179,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sklearn",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "main",
+        "pd_hourly"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly_quantiles_20261017/analyze_ensemble.py",
+      "sha256": "8b48fbf48bd769aa72c15dc3ad8edb8a714e313e9c17b08a3907487fd2f01e90",
+      "lines": 153,
+      "imports": [
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly_quantiles_20261017/auditq.py",
+      "sha256": "18ea399c4ee5746c2024d675e93a726a770087816a07b85e618ab9e26ca0abd7",
+      "lines": 168,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "close",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly_quantiles_20261017/run.py",
+      "sha256": "dcdc9877ec69c803ac7254b606bd6d97c5364c54fbe94e7258118a3655d2a231",
+      "lines": 20,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly_quantiles_20261017/trainq.py",
+      "sha256": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+      "lines": 332,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "experiment",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "prepare",
+        "Quantiles",
+        "physical",
+        "fit",
+        "train",
+        "select",
+        "intervals",
+        "percentile",
+        "evaluate",
+        "summarize",
+        "run"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/audit.py",
+      "sha256": "21f6b9df3c0e7b97837a06ea4b74b23b064be16a1b9bd92bef672240ae75a661",
+      "lines": 174,
+      "imports": [
+        "argparse",
+        "experiment",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "close",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/experiment.py",
+      "sha256": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+      "lines": 410,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "simple_search",
+        "sys",
+        "time",
+        "torch",
+        "tune_parallel_cnn"
+      ],
+      "definitions": [
+        "write",
+        "setup",
+        "configs",
+        "folds",
+        "weights_for",
+        "weighting_test",
+        "features",
+        "prepare",
+        "fold_data",
+        "Global2D",
+        "network",
+        "predict",
+        "fit",
+        "pool",
+        "controls",
+        "selections",
+        "score",
+        "summarize",
+        "run"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/run.py",
+      "sha256": "214135bdc4377b89a7909cffde51c051026a25810eb13d338e3a2fc1ceedd7ca",
+      "lines": 32,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/sources/interpolation_history.py",
+      "sha256": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+      "lines": 34,
+      "imports": [
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "interpolation_history"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/sources/interpretable_models.py",
+      "sha256": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+      "lines": 65,
+      "imports": [
+        "interpolation_history",
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "compact_features",
+        "design",
+        "infer"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py",
+      "sha256": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+      "lines": 103,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "build_inputs",
+        "ParallelCNN",
+        "smoke",
+        "export_filters"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/sources/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/sources/simple_search.py",
+      "sha256": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+      "lines": 175,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "matplotlib",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "feature_modes",
+        "configs",
+        "prepare",
+        "model",
+        "trial",
+        "pool_run",
+        "finalize",
+        "main"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py",
+      "sha256": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+      "lines": 177,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "joint_zone_cnn",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "parallel_zone_cnn",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "make_features",
+        "dimensions",
+        "Small2D",
+        "prepare",
+        "trial",
+        "pool",
+        "finalize",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/normalization_20261017/audit.py",
+      "sha256": "e93ee998ec5024e84492fb694b445f42944274c4f9dcb120eedbdf9afd1fac54",
+      "lines": 176,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "reference_inputs",
+        "edge_checks",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/normalization_20261017/finalize_backup.py",
+      "sha256": "647e885d9fbea45061dad592e2754bc7149322016cebca1b0dae261ee49c975e",
+      "lines": 21,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/normalization_20261017/run.py",
+      "sha256": "146c270718476935a082c61decf63fa9762c3b624257484dd7baff7a98bc7baa",
+      "lines": 20,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/normalization_20261017/train.py",
+      "sha256": "c966b6de90fc323965692f2865da050d4ec626970c76519369cfa44a21266aef",
+      "lines": 213,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "importlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "daily_inputs",
+        "transform",
+        "physical",
+        "prepare",
+        "folder_data",
+        "inputs",
+        "predict",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/projection/catboost_models.py",
+      "sha256": "422b2dd96ad6ce7e1e4470a2a3f3c6e4c6348e2edafa428f4cb553b1ff459402",
+      "lines": 51,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction",
+        "constrain_residual",
+        "learn_projection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/projection/predict.py",
+      "sha256": "b1cf39ca024e8881a0101a12498b1f6693376c9e634ec15814685205e5f6ca48",
+      "lines": 50,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/projection/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/projection/train_catboost.py",
+      "sha256": "38e9812be18cc7e2c362a05c32b07e8c07dfc43dfda90f7c658c32dea83cded6",
+      "lines": 143,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin/catboost_models.py",
+      "sha256": "3cba0288dda5fb6b18c49f2cdb5be2b3117ffe165d2a919595d54b4b37c8e587",
+      "lines": 51,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction",
+        "constrain_residual",
+        "learn_projection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin/graph_models.py",
+      "sha256": "95038763ba6f9f49ba52ae359a82b11357da72b1269a6494830a728772c43c4b",
+      "lines": 38,
+      "imports": [
+        "torch"
+      ],
+      "definitions": [
+        "ZoneBlock",
+        "GraphNet"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin/predict.py",
+      "sha256": "9084c350b20275b1daae907211d75524a6f251c531c05e1e564fed56b0f6c392",
+      "lines": 60,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "graph_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "revin_models",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin/revin_models.py",
+      "sha256": "cdc55f4f286983ae6fe384d29239067ffca31e8e6f1accc2d5f9b4a869d0cbef",
+      "lines": 26,
+      "imports": [
+        "graph_models",
+        "torch"
+      ],
+      "definitions": [
+        "RevINGraph"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin/train_revin.py",
+      "sha256": "b45d9490162374d572233fe278fe94aa8f4ffc8e4b35ce24ca6e16d4cd4017e7",
+      "lines": 122,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "revin_models",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "blend",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin_quantiles_20261017/audit.py",
+      "sha256": "7424ad9840d6a8aa57aac626cc50c00b15bfd51a006c04ff2f059dfd6bc18e10",
+      "lines": 199,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "reference_inputs",
+        "edge_checks",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin_quantiles_20261017/chainsaw.py",
+      "sha256": "0ea1c10c675afc4809f8e80e054b3ac796e6218c7a3667598a0e45596fa97c7a",
+      "lines": 62,
+      "imports": [
+        "argparse",
+        "csv",
+        "hashlib",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "time"
+      ],
+      "definitions": [
+        "roughness",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin_quantiles_20261017/diagnostics.py",
+      "sha256": "7add0a4ca5d093e5bb15a033e00b6a4addccc69f1960d58f68b7f27381b25a8d",
+      "lines": 62,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "train"
+      ],
+      "definitions": [
+        "corr",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin_quantiles_20261017/run.py",
+      "sha256": "be85993517d5d6dc8bd70d6a855245eb60614e39747dfd42cf371342ff070ebd",
+      "lines": 20,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/revin_quantiles_20261017/train.py",
+      "sha256": "47280f51688d691db2daee6b909b7a4e043357d9514f566bac1e6a7eaca6ca72",
+      "lines": 245,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "importlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "QuantileSSM",
+        "configs",
+        "daily_inputs",
+        "transform",
+        "physical",
+        "prepare",
+        "folder_data",
+        "inputs",
+        "predict",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/riccardo_comparison_20261017/upstream/scripts/feature_ablation_per_zone.py",
+      "sha256": "410a7aef22cc2b6758424a25b8838ccf48c288a9136642c73f6317e6879ec191",
+      "lines": 296,
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "json",
+        "numpy",
+        "pathlib",
+        "random",
+        "time",
+        "torch",
+        "validate_aug_sep"
+      ],
+      "definitions": [
+        "ZonalAblationCNN",
+        "read_rows",
+        "write_rows",
+        "qweighted_mae",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/riccardo_comparison_20261017/upstream/scripts/refit_month_difficulty_no_month_embedding.py",
+      "sha256": "b095fb86304495992130b5b267a7eaa0be02115b8740ecfb17ba9e9c1970575f",
+      "lines": 525,
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "feature_ablation_per_zone",
+        "json",
+        "numpy",
+        "pathlib",
+        "random",
+        "time",
+        "torch",
+        "validate_aug_sep"
+      ],
+      "definitions": [
+        "NoMonthScorerCNN",
+        "read_rows",
+        "write_rows",
+        "month_of",
+        "qweighted_mae",
+        "metrics",
+        "seed_everything",
+        "assert_no_month_embedding",
+        "fit_scorer",
+        "fit_selected",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/riccardo_comparison_20261017/upstream/scripts/train_raw_hourly_only_zonal_cnn.py",
+      "sha256": "4ad8c20d471b3d3434b89000c0eb59e5e19dcbecacbe93deb4baca0b2f006129",
+      "lines": 258,
+      "imports": [
+        "__future__",
+        "argparse",
+        "csv",
+        "feature_ablation_per_zone",
+        "json",
+        "numpy",
+        "pathlib",
+        "random",
+        "time",
+        "torch",
+        "validate_aug_sep"
+      ],
+      "definitions": [
+        "read_rows",
+        "write_rows",
+        "metrics",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/riccardo_comparison_20261017/upstream/scripts/validate_aug_sep.py",
+      "sha256": "985ffcea00982a7a9acb07be16081723bd38f0f554af84461ac0e885287d9fbd",
+      "lines": 277,
+      "imports": [
+        "__future__",
+        "collections",
+        "csv",
+        "itertools",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "random",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "read_profiles",
+        "calendar",
+        "profile_features",
+        "PerZoneNet",
+        "center",
+        "metrics",
+        "trial",
+        "search_configs",
+        "linear_baseline",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/rich/predict.py",
+      "sha256": "23186c18ffca6843b5d259c780700df786be57ff9e39812e8d6d37aa241e778b",
+      "lines": 39,
+      "imports": [
+        "argparse",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/rich/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/rich/train_search.py",
+      "sha256": "32ab084dc5cb4c123bce91c3f5e54cb46fa5291c3b5552201e1638863a3e7a49",
+      "lines": 149,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sklearn",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "main",
+        "pd_hourly"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ssm_monthly_20261017/audit.py",
+      "sha256": "3f258fdec129526f8d5597bb64d7c310dd8771c70ba94bdca6636a4a0b554bc7",
+      "lines": 86,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ssm_monthly_20261017/run.py",
+      "sha256": "029c2fe57df29d12e4bfbfd84b3ae86fe030265acb417e645069162e2109f6c8",
+      "lines": 14,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/ssm_monthly_20261017/train.py",
+      "sha256": "033d431f85565e81cf66fa34d2e6e678b700ab07bb566d593d039182c00cb1e6",
+      "lines": 143,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "ssm_experiment",
+        "ssm_models",
+        "sys",
+        "time",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "configs",
+        "folds",
+        "prepare",
+        "QuantileSSM",
+        "folder_data",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/submission_champion_20261017/refit.py",
+      "sha256": "fec7730ff7eb1910c004b2d904b3e3e41090fa24f856ff0c879f7a5721afd495",
+      "lines": 179,
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "sha",
+        "run"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/submission_champion_20261017/runtime.py",
+      "sha256": "802f2e7a134d696351c6d9f90c81ced250c4ea5dbc8c2590f3f5546f56b0a20b",
+      "lines": 99,
+      "imports": [
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "sys",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "feature_data",
+        "predict_arrays",
+        "predict"
+      ],
+      "needed_by_final": true
+    },
+    {
+      "path": "campaigns/submission_materials_20261017/build_report.py",
+      "sha256": "595400a55e30f0c1ef981da36300ecd874961ee79cd0da66e1931fff3e733971",
+      "lines": 149,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "pathlib",
+        "pypdf",
+        "re",
+        "reportlab",
+        "xml"
+      ],
+      "definitions": [
+        "digest",
+        "inline",
+        "monthly_chart",
+        "footer",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/zonal/predict.py",
+      "sha256": "af7f9f86a5d8964521e46902c87f2ebdd617f29e5871e97fa5643669f8d82fd0",
+      "lines": 43,
+      "imports": [
+        "argparse",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "predict"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/zonal/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/zonal/train_search.py",
+      "sha256": "4755de1e938f8be8621ae227a30a069ad2676e0c1ef2ccbcadaf195990eaaf42",
+      "lines": 170,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sklearn",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "main",
+        "pd_hourly"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/zone_weights_20261017/audit.py",
+      "sha256": "6c64004911fa346c06c324997bd85538b96fc78535c6015c6c9fdb9ae3ed1370",
+      "lines": 145,
+      "imports": [
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "zone_blend"
+      ],
+      "definitions": [
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/zone_weights_20261017/run.py",
+      "sha256": "e3f67be95e8bd73dd0ac7bdc105a04af4a6db813f514dcce62df202cec291738",
+      "lines": 26,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "campaigns/zone_weights_20261017/zone_blend.py",
+      "sha256": "2e2c2b40227a5f392f5a823f9032296e2e9ab054cb1dd02f41d71331fcad85d2",
+      "lines": 339,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "scipy",
+        "sys",
+        "time",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "write",
+        "sha",
+        "project_simplex",
+        "fit_gpu",
+        "weight_fit",
+        "interpolate_weights",
+        "mix_quantiles",
+        "tune",
+        "exact_lp",
+        "metrics_and_save",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/add_conformal_50.py",
+      "sha256": "e0b05c39ded6121a87495cf41dc3003efbd2c6f755b4bbfc1092624ed8909e09",
+      "lines": 53,
+      "imports": [
+        "argparse",
+        "hierarchical_models",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/analyze_cnn_confidence.py",
+      "sha256": "7297c737a702aa6bf13d0fef8c0b360698785f24ddb5358aedc7e759a91c5f68",
+      "lines": 83,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "quantile_cnn",
+        "scipy"
+      ],
+      "definitions": [
+        "association",
+        "verify_confidence",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/analyze_feature_importance.py",
+      "sha256": "b257e7008022c702c380ca0580a515758cb35851a2bbf46a8258218a7f3f265e",
+      "lines": 88,
+      "imports": [
+        "argparse",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "simple_search",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/analyze_quantile_cnn.py",
+      "sha256": "afa1c20a0a07658b4f614016b89d68a779327a45c1247c4c6d069b46cfedf471",
+      "lines": 283,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "quantile_cnn",
+        "scipy",
+        "torch"
+      ],
+      "definitions": [
+        "quantile_analysis",
+        "risk_features",
+        "fit_logistic",
+        "logits",
+        "probability_metrics",
+        "risk_analysis",
+        "cam",
+        "explanations",
+        "report"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/analyze_revin.py",
+      "sha256": "7b4c72a17be6bd9ddaf1b1f3e2b70f6e1a52cdafe31224051185bafcf49a60e4",
+      "lines": 20,
+      "imports": [
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_deployment.py",
+      "sha256": "b58c8c521511d3eaad6607d7d90abc347cf8a3f272505a1addf921dbedc06947",
+      "lines": 64,
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "inspect"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_expanding_simple.py",
+      "sha256": "eb64d87706e5f73a149849ca83440f9329d96cf097546d6464164b8d5cbc6214",
+      "lines": 46,
+      "imports": [
+        "argparse",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_frequency_experiment.py",
+      "sha256": "b7e20826f01990ee929609d6f9b2bdef11c1cf598c7840b1d10b3f3a04627de4",
+      "lines": 44,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "reconstruction"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_joint_zone_cnn.py",
+      "sha256": "6870c09424b5271b8b3fd00d65ce2ca5c591ee03b00a4c2e8572a1760ee25857",
+      "lines": 34,
+      "imports": [
+        "joint_zone_cnn",
+        "json",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_monthly_model.py",
+      "sha256": "33a359f089ddb8c8069fda8f450cc8c60b15b94939dce30ec9935f5c3461d9e6",
+      "lines": 81,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "sys"
+      ],
+      "definitions": [
+        "inspect"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_quantile_cnn.py",
+      "sha256": "fab7fc39df6f316c244ab24e787c292011a2ee9662887a17e77c37d7182394b3",
+      "lines": 134,
+      "imports": [
+        "analyze_cnn_confidence",
+        "analyze_quantile_cnn",
+        "hashlib",
+        "json",
+        "numpy",
+        "quantile_cnn",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_quantile_results.py",
+      "sha256": "d9c786ecbefdcace7781d6804c6c39591fd31d8baa2c982467f95c47bdbeaea2",
+      "lines": 32,
+      "imports": [
+        "json",
+        "numpy",
+        "pathlib",
+        "reconstruction"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_riccardo_comparison.py",
+      "sha256": "1276f584a77dacfc2551b5593e7d74ac13b2f7914a29f56e0ceddbedad843f78",
+      "lines": 213,
+      "imports": [
+        "argparse",
+        "csv",
+        "feature_ablation_per_zone",
+        "hashlib",
+        "json",
+        "math",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "statistics",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "readcsv",
+        "csvwrite",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_segmented_frequency.py",
+      "sha256": "96c8b6275a78dc3657357ed74572d20bc1d3a5dc4e975ffe0b31a9df459cae8c",
+      "lines": 44,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "reconstruction",
+        "segmented_frequency"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_simple_search.py",
+      "sha256": "ff38dd7b317758ddd515f2d0f1ef2e2b4a1935a0d8bc89016b49a37e7833f7a0",
+      "lines": 24,
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_simplicity.py",
+      "sha256": "6fb702ae6d06584e6bb6cc4f28a04cdf3278b3a646efc0ed7f1b27cc6b2094cf",
+      "lines": 38,
+      "imports": [
+        "argparse",
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_ssm_experiment.py",
+      "sha256": "17fb294a14c81029eee27f2101fae2d33167474022b475bfa2befb5fe5a93a25",
+      "lines": 85,
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "ssm_experiment",
+        "ssm_models",
+        "torch"
+      ],
+      "definitions": [
+        "replay",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/audit_tuned_parallel_cnn.py",
+      "sha256": "4ca3bea663e6583012789a0ef6201dcd4c5942590eef495b41e8af5e483ae98d",
+      "lines": 43,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "reconstruction",
+        "torch",
+        "tune_parallel_cnn"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/build_submission.py",
+      "sha256": "8fd55d7836442d66265e9305ada61ca9248cdbefc45aadec2da65c3c954834e4",
+      "lines": 55,
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "shutil"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/catboost_models.py",
+      "sha256": "3cba0288dda5fb6b18c49f2cdb5be2b3117ffe165d2a919595d54b4b37c8e587",
+      "lines": 51,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction",
+        "constrain_residual",
+        "learn_projection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/check_submission.py",
+      "sha256": "b9a6aea01c79e43da5ef0e54dc4da6fc20825e27e47d07d0ac26edb661a49988",
+      "lines": 109,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        "local_file",
+        "sha256",
+        "audit",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/compare_riccardo.py",
+      "sha256": "9b89f247b340270b9795a43be671dfdfbba71893e7157ab1742fb361e236cb88",
+      "lines": 245,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "csv",
+        "feature_ablation_per_zone",
+        "hashlib",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pathlib",
+        "refit_month_difficulty_no_month_embedding",
+        "sys",
+        "time",
+        "torch",
+        "validate_aug_sep"
+      ],
+      "definitions": [
+        "dump",
+        "csvwrite",
+        "load",
+        "fold_specs",
+        "fit_final",
+        "predict",
+        "task",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/diagnose_graph_precision.py",
+      "sha256": "b1664a3890b9d007cb8a109008ca639c888904b19f9a6aa468a2c63bc7c53642",
+      "lines": 28,
+      "imports": [
+        "graph_models",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "pickle",
+        "reconstruction",
+        "sys",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/evaluate_baselines.py",
+      "sha256": "d6f6f961de63793880ae1c4c383e68863dad9201bed00a4c8a0b718f274a06a6",
+      "lines": 59,
+      "imports": [
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/evaluate_normalized_validation.py",
+      "sha256": "ca58eaed744d43c33d45419ed47943545fcef821ee15fec829016cccd76803fe",
+      "lines": 256,
+      "imports": [
+        "collections",
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib",
+        "statistics"
+      ],
+      "definitions": [
+        "read_csv",
+        "read_json",
+        "close",
+        "write_csv",
+        "official_baselines",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/evaluate_september_baselines.py",
+      "sha256": "2dd5346487b1446bb67e9a7eeaf0d46ecc1f6f6ae390a551bbf7213c14007c8c",
+      "lines": 33,
+      "imports": [
+        "collections",
+        "csv",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/expanding_simple.py",
+      "sha256": "c86f99cacb91e61ac8e7ccff4afbab6bb11dc319af42761cdccc866c6dfa50c5",
+      "lines": 146,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "interpretable_models",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "shutil",
+        "simple_conformal",
+        "simple_search",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "definitions": [
+        "folds",
+        "load_raw",
+        "prepare",
+        "train",
+        "worker",
+        "summarize",
+        "plot",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/export_best_research_recipe.py",
+      "sha256": "08659afde5cfad08517b0836c445a108ac3ea486b7218443e833e226c4a09730",
+      "lines": 48,
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/export_frozen_recipe.py",
+      "sha256": "3bc6e51319d3c78de776cbd6a918d318f73a4bca663c716ca01df02940aec73b",
+      "lines": 23,
+      "imports": [
+        "json",
+        "numpy",
+        "pathlib",
+        "pickle",
+        "sys"
+      ],
+      "definitions": [
+        "walk"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/export_rolling_plan.py",
+      "sha256": "7e1cc54784f39e83b31b521c607f1473d7d15956f0fa0a2840dc938a5c365ed9",
+      "lines": 22,
+      "imports": [
+        "json",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/finalize_deployment.py",
+      "sha256": "b15d3cf580ca5b539dcc7439debfb88eb9bdb8362aaef612e071da84bf5e2b0a",
+      "lines": 22,
+      "imports": [
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/frequency_experiment.py",
+      "sha256": "ebb03ccb81417095d82bb0424ce1c5c15839bf437e02683c29abca7cb923d72e",
+      "lines": 217,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "reconstruction",
+        "scipy",
+        "torch"
+      ],
+      "definitions": [
+        "project",
+        "make_bases",
+        "oracle_l1",
+        "score",
+        "train_model",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/graph_models.py",
+      "sha256": "95038763ba6f9f49ba52ae359a82b11357da72b1269a6494830a728772c43c4b",
+      "lines": 38,
+      "imports": [
+        "torch"
+      ],
+      "definitions": [
+        "ZoneBlock",
+        "GraphNet"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/hierarchical_features.py",
+      "sha256": "eb537b0e932e373e9f4715ac73ae4f9958141e3d2b1828b88b8ca71f042cf384",
+      "lines": 28,
+      "imports": [
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "lagged_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/hierarchical_models.py",
+      "sha256": "6c65e73041d26244e649b1487b719d4a44abae7ec6b279b842e6a9f0ee48a099",
+      "lines": 44,
+      "imports": [
+        "graph_models",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "HierarchicalNet",
+        "conformal_quantile"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/inspect_interpolation_difficulty.py",
+      "sha256": "333dce7f34a2915bc3ad33a95265db786809d7fc28657b18727b4d6a0658a9e2",
+      "lines": 22,
+      "imports": [
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/inspect_runs.py",
+      "sha256": "8e8354c8ef7360406d8b57a423074c95dd66e2db0f91d19e87e38836a4d54f92",
+      "lines": 8,
+      "imports": [
+        "json",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/inspect_validation_risk.py",
+      "sha256": "65c8b16bd6f2c947a2278346720d74caa8c7882e3b42f98da51b2136fd28b7e4",
+      "lines": 36,
+      "imports": [
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/interpolation_history.py",
+      "sha256": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+      "lines": 34,
+      "imports": [
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "interpolation_history"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/interpretable_models.py",
+      "sha256": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+      "lines": 65,
+      "imports": [
+        "interpolation_history",
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "compact_features",
+        "design",
+        "infer"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/joint_zone_cnn.py",
+      "sha256": "dcf4b1583f2772aaeb1991597a4edfe8a8d68d0a6fac5958e84743352ab07ecd",
+      "lines": 192,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "parallel_zone_cnn",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "inputs",
+        "JointCNN",
+        "configs",
+        "prepare",
+        "trial",
+        "pool",
+        "finalize",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/linear_quantile_model.py",
+      "sha256": "576773aa6ccca7c5f4d42a2e993a5a8b31152225d3acb89d0accc973a88bb2b2",
+      "lines": 69,
+      "imports": [
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "LinearQuantiles",
+        "joint_loss",
+        "physical_quantiles",
+        "feature_names",
+        "numpy_forward"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/parallel_zone_cnn.py",
+      "sha256": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+      "lines": 103,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "build_inputs",
+        "ParallelCNN",
+        "smoke",
+        "export_filters"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_error_hotspots.py",
+      "sha256": "c1a308bd7361a09c56586501777ea82d287512165cb82a7ce45d43a89288a0f0",
+      "lines": 114,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [
+        "save"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_expanding.py",
+      "sha256": "1da5ef5f445fb73b694f7e36643c344ff41d7ef2612ff8889b5cdc92cd9804c9",
+      "lines": 51,
+      "imports": [
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        "plot"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_linear_quantiles.py",
+      "sha256": "6ef130c88d184b7c1eee7c26c80ca5d8eaa4095d2ef8c0b955f4ab9bcd42f671",
+      "lines": 41,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ],
+      "definitions": [
+        "plot"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_monthly_baselines.py",
+      "sha256": "d951bc81a0f5484e102ab4745a5099955a01073d8d488a18ca65a913298ce219",
+      "lines": 43,
+      "imports": [
+        "collections",
+        "csv",
+        "json",
+        "matplotlib",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_monthly_baselines_by_zone.py",
+      "sha256": "5b40e212b59cf6abd31c045c786b66a9252b73b5e208c111d4091670ccd77974",
+      "lines": 55,
+      "imports": [
+        "collections",
+        "csv",
+        "matplotlib",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_problem_main.py",
+      "sha256": "d3a5ae087eca6eea48eca755d47e5f059117f38c538e411d29b1c8a02e6e41ba",
+      "lines": 44,
+      "imports": [
+        "csv",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        "text",
+        "line",
+        "panel",
+        "curve",
+        "band"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_quantile_examples.py",
+      "sha256": "0297401bfa4b6b23a91ca05735b332c4fcb8c8409d3dfc4334747fa4944b44ae",
+      "lines": 40,
+      "imports": [
+        "csv",
+        "io",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/plot_revin_examples.py",
+      "sha256": "c515742df9c5cc86b8362fe1969260b41a720db64de0e511d62925670c1a5721",
+      "lines": 32,
+      "imports": [
+        "collections",
+        "csv",
+        "json",
+        "matplotlib",
+        "numpy",
+        "os",
+        "pathlib"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/predict.py",
+      "sha256": "9084c350b20275b1daae907211d75524a6f251c531c05e1e564fed56b0f6c392",
+      "lines": 60,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "graph_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "revin_models",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/predict_best.py",
+      "sha256": "57537162cebcc6c2936a66daab77302843392b6e35884d35e0a99d0e45914c19",
+      "lines": 15,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib",
+        "predict",
+        "select_best"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/predict_hierarchical.py",
+      "sha256": "01c890505e71267a109ca197dabe5e4cf7a4bd789a02281bcee90e079abc0a48",
+      "lines": 70,
+      "imports": [
+        "argparse",
+        "hierarchical_features",
+        "hierarchical_models",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/quantile_cnn.py",
+      "sha256": "4c3d0da42c3bfc2afbe67b1dec6429d82ed92727ec90dcd820c7525d1be3006c",
+      "lines": 316,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch",
+        "tune_parallel_cnn"
+      ],
+      "definitions": [
+        "configure",
+        "write_json",
+        "configs",
+        "layout",
+        "make_features",
+        "normalize",
+        "QuantileCNN",
+        "objective",
+        "prepare",
+        "fit",
+        "run_trial",
+        "load_model",
+        "predict",
+        "train_all",
+        "oof_one",
+        "oof",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/rank_models.py",
+      "sha256": "1d7cad0b9365f13edc9b629c8e13da28efe24ece4631d9a6714444193b67254f",
+      "lines": 507,
+      "imports": [
+        "csv",
+        "hashlib",
+        "json",
+        "math",
+        "pathlib"
+      ],
+      "definitions": [
+        "read_json",
+        "read_csv",
+        "write_json",
+        "write_csv",
+        "digest",
+        "family",
+        "alias",
+        "collect_primary",
+        "historical_and_catalog",
+        "display_name",
+        "promote",
+        "docs",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/refit_deployment.py",
+      "sha256": "cbd2208244793291c7550a447270c8d2235bbf055b8e6dc27023a39fa4b9dfca",
+      "lines": 118,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "graph_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "revin_models",
+        "sklearn",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/residual_diagnostics.py",
+      "sha256": "b3c5f2e96a0965ae382d47d7f753da5c7c9588bbc2ad96e3d16ae89b8e281c3b",
+      "lines": 26,
+      "imports": [
+        "json",
+        "numpy",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/revin_models.py",
+      "sha256": "cdc55f4f286983ae6fe384d29239067ffca31e8e6f1accc2d5f9b4a869d0cbef",
+      "lines": 26,
+      "imports": [
+        "graph_models",
+        "torch"
+      ],
+      "definitions": [
+        "RevINGraph"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_catboost_after.py",
+      "sha256": "6f9d8b502b2da871a256acb004d3b3928194bbf2a9f396625924bfab0ea28a47",
+      "lines": 24,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_deployment_refit.py",
+      "sha256": "aa234f83a2dcdf4c64ddf9270791800138f04009da876d8accdce81c6485abfa",
+      "lines": 3,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_expanding.py",
+      "sha256": "2b6ea02f5198afa45bb8fdf7208baa922c0d265eb94a0e73acd1b13803b69ced",
+      "lines": 8,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_expanding_simple.py",
+      "sha256": "2563dd6f39a630f374336ffc93ee31248d43f52d7ac917afabb1bf6844bea6a1",
+      "lines": 4,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_frequency_experiment.py",
+      "sha256": "47f88d0cd2193e707cb8eeb5cf521d9a7f4efacfff713305435e7bb0166e9f60",
+      "lines": 7,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_graph_after.py",
+      "sha256": "9408b0ba3681f83fc1b91ca0f496a42e5a100ea5b8a052e932678f8834fd0089",
+      "lines": 25,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_hierarchical_hpo.py",
+      "sha256": "66ff4d370f7f48c1474051875310fb201b2513927cf7585e195c7f45ddca4e7c",
+      "lines": 13,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_hierarchical_vast.py",
+      "sha256": "5ddf348845b0ce9e22b7b10915fd8576d365ea260a0a1e34a10bf2d4afca5bd1",
+      "lines": 14,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_joint_zone_cnn.py",
+      "sha256": "b70451ba66445cd18f131440f516bebe6d0401cbcfdb1bdb896e73c833015c43",
+      "lines": 4,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_linear_quantiles.py",
+      "sha256": "c373fadb68824318b3a367ab30f8b211fc374dc209afc8d8a9a7fb2ac72bc958",
+      "lines": 7,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_monthly.py",
+      "sha256": "ed06b96890f9a6f0d9f03db3e67bb33f2638fa7a3110a721f569083ae43aa6d9",
+      "lines": 25,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_parallel_zone_cnn.py",
+      "sha256": "cbded376a1f399be58ee88c06de709e9004a9bf0b2723f60833c168cb238d8a8",
+      "lines": 7,
+      "imports": [
+        "joint_zone_cnn",
+        "os",
+        "parallel_zone_cnn",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_projection_after.py",
+      "sha256": "4c3bdb5a92d1ebd2a04456a98fd44224382c5bd2c6803fdf656be213ffc0a390",
+      "lines": 23,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_quantile_cnn.py",
+      "sha256": "f1fc93afcf006b9c750077a8c14ad23e8f6b00603c88d95c326169a6dd62ad74",
+      "lines": 14,
+      "imports": [
+        "argparse",
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_revin.py",
+      "sha256": "cf0210672a6cc5a0e4ef293873318c083381c9bf13495f6d3a4880dac0716aa8",
+      "lines": 6,
+      "imports": [
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_riccardo_comparison.py",
+      "sha256": "e3c3faf8bf8187e02fb29f922e7bed39a9f8dd2522b2ec85a82b5a5128fe0a63",
+      "lines": 19,
+      "imports": [
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_rich_after.py",
+      "sha256": "f9246722e770cb972c74fbb1711b5c3ca623dca3a30e710334144cd31d62bb8f",
+      "lines": 32,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "time"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_rolling.py",
+      "sha256": "0639e49b27411874c6a143ab3020dc408bfb919c63d20f1208f05c8d321374f8",
+      "lines": 9,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_segmented_frequency.py",
+      "sha256": "f90277d301e4a7814e8d902c2bd0587b7e017d2052c557a6cab8836c572b5703",
+      "lines": 6,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_simple_joint_zone_cnn.py",
+      "sha256": "891d5102eafbe052b1ad1601219e4e5329f573e02ae58f8ee821889e9a2b556d",
+      "lines": 5,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_simple_search.py",
+      "sha256": "428d711ac15c62dfd07b0a5c3572e49720ea42f026b77f938c97d2e0c95c29be",
+      "lines": 13,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_ssm_experiment.py",
+      "sha256": "9f6baa5b9eaa428d37e475db79df21426897ba30cc86aedaaad627b4b3db6146",
+      "lines": 5,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_tuned_parallel_cnn.py",
+      "sha256": "2b5dfa49a9cd8e174b8c5051ca2f7e68cb199aa625cc0bf368829be375c42d7f",
+      "lines": 4,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/run_zone_search.py",
+      "sha256": "b1a7b4efe2672439b0eefbf284b204116570d4f9868606416c14980fbc137b31",
+      "lines": 16,
+      "imports": [
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/segmented_frequency.py",
+      "sha256": "060399cb1f546e7a49c8546245ca6e8edc86bdb815b5b086bf7a38e521424e2f",
+      "lines": 250,
+      "imports": [
+        "argparse",
+        "datetime",
+        "frequency_experiment",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "seasonal_coordinates",
+        "numpy_basis",
+        "select_modes",
+        "Segmented",
+        "train",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/select_best.py",
+      "sha256": "781d39bf01d9fd7626b7524398d026be53f380aecbda892d9ba910eabbbbd9b0",
+      "lines": 23,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        "select"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/select_monthly.py",
+      "sha256": "6d9e130c3e9df51eb49bd1cc83ce2e149c4c361406e8e8949c96e332244a86a0",
+      "lines": 23,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/simple_conformal.py",
+      "sha256": "b2e094b3a20979e4d50b5420a4f7b9f305f373d870f9322460222f99cfe82703",
+      "lines": 39,
+      "imports": [
+        "math",
+        "numpy"
+      ],
+      "definitions": [
+        "radius",
+        "calibrate",
+        "self_test"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/simple_search.py",
+      "sha256": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+      "lines": 175,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "matplotlib",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "feature_modes",
+        "configs",
+        "prepare",
+        "model",
+        "trial",
+        "pool_run",
+        "finalize",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/ssm_experiment.py",
+      "sha256": "f54173fe014cb46bc9354ed583193b7e0d5cbdd5ee5109d49453679e8f04cf98",
+      "lines": 152,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "ssm_models",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "write",
+        "configs",
+        "features",
+        "normalize",
+        "prepare",
+        "setup",
+        "smoke",
+        "optimizer",
+        "train_trial",
+        "train",
+        "rolling"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/ssm_models.py",
+      "sha256": "02ae6960fb7cfbc00e6697bf5b47a0291e37f90e61817c476dfbaed937d80301",
+      "lines": 114,
+      "imports": [
+        "math",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "scan",
+        "S4D",
+        "S5",
+        "Block",
+        "Model"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/summarize_riccardo_comparison.py",
+      "sha256": "bb1f10b851870ca2dd8ccd01b8f5b0145aa7d58b87e5c4b583c418daf39bbe1c",
+      "lines": 66,
+      "imports": [
+        "csv",
+        "json",
+        "pathlib",
+        "statistics"
+      ],
+      "definitions": [
+        "rows",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_catboost.py",
+      "sha256": "18d3d5ae2a544c1e799db542bdc97836fe1904d2f246e53e2e44d6e456fa283b",
+      "lines": 152,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_expanding.py",
+      "sha256": "6a8744a6199772c2eb53c32308c78e8966361201bcf521dd8e2a6b57f20c4c05",
+      "lines": 162,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "hierarchical_models",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "plot_expanding",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "make_folds",
+        "masks",
+        "scores",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_frozen.py",
+      "sha256": "1bcce529119f7a7d1ed1e3201ce1bf2d2f916c1bce82f61f55c9934832744cb4",
+      "lines": 124,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "graph_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "revin_models",
+        "sklearn",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_graph.py",
+      "sha256": "7a008fac4439dfbf427861b59ec7677871bc0c7f942d215d185341b1407062cc",
+      "lines": 114,
+      "imports": [
+        "argparse",
+        "graph_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "blend",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_hierarchical.py",
+      "sha256": "adb538ac4f18e9031ccb05c3396b04517ac98cee755e45c36575309eda665591",
+      "lines": 199,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "hierarchical_features",
+        "hierarchical_models",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "shutil",
+        "subprocess",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_interpretable.py",
+      "sha256": "b5c2675ad24ebd94dc8c7459abe2588c2a33a1c7853bf1fe9b903f490a94fc02",
+      "lines": 90,
+      "imports": [
+        "hashlib",
+        "hierarchical_models",
+        "interpretable_models",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "time"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_joint_blend.py",
+      "sha256": "6ca26a840a062c851d72ee036eab1a1c4bf139d0aba44859255611d28156aaeb",
+      "lines": 68,
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sys"
+      ],
+      "definitions": [
+        "unpack"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_linear_quantiles.py",
+      "sha256": "0bb3dbb1f0687fd47fddcd4935f04c7d4243a1f95876685cb5cd92530a4900e1",
+      "lines": 121,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "hierarchical_models",
+        "json",
+        "linear_quantile_model",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "plot_linear_quantiles",
+        "reconstruction",
+        "time",
+        "torch",
+        "train_expanding"
+      ],
+      "definitions": [
+        "pinball",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_revin.py",
+      "sha256": "b45d9490162374d572233fe278fe94aa8f4ffc8e4b35ce24ca6e16d4cd4017e7",
+      "lines": 122,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "revin_models",
+        "scipy",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "blend",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_rolling.py",
+      "sha256": "160193c36f65a87c744601aaddcec6fc5356b7733552cb45667ea4962ec42dfd",
+      "lines": 161,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sklearn",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "blend",
+        "weights_fit",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/train_search.py",
+      "sha256": "80d5811dfc9f9051bf698c2ad1a7256b7664381a780fa07673222f59eed66b45",
+      "lines": 179,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "scipy",
+        "sklearn",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "main",
+        "pd_hourly"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/tune_parallel_cnn.py",
+      "sha256": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+      "lines": 177,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "joint_zone_cnn",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "parallel_zone_cnn",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "make_features",
+        "dimensions",
+        "Small2D",
+        "prepare",
+        "trial",
+        "pool",
+        "finalize",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_graph.py",
+      "sha256": "524f37887da6f7377140b4a7939cc419a5267ee33b4bf967034a6ae7c78b5a89",
+      "lines": 22,
+      "imports": [
+        "graph_models",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_hierarchical.py",
+      "sha256": "6227022bf52b44c024e31b8e1d04a03d535003caf45e758b358d0175bb54c65d",
+      "lines": 47,
+      "imports": [
+        "hierarchical_features",
+        "hierarchical_models",
+        "numpy",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_interpolation_history.py",
+      "sha256": "c872590839d9da26c37b9d00b92a10e29d30a0991b8f48ac660dbea6a5ee019b",
+      "lines": 53,
+      "imports": [
+        "interpolation_history",
+        "interpretable_models",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "reconstruction",
+        "simple_search",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_linear_quantiles.py",
+      "sha256": "c33837abde13fc15a4c055b36b5439e0bb731ae7567c3540bbabd467bd754aca",
+      "lines": 20,
+      "imports": [
+        "linear_quantile_model",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_projection.py",
+      "sha256": "fd585dc329b9a81da7d163ab87ce081b198f2d97a0f03d7b67f991befcdbbe5f",
+      "lines": 19,
+      "imports": [
+        "catboost_models",
+        "numpy"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_revin.py",
+      "sha256": "6366cf9a261be22a7728b94514df7856540077a89ff0068c2d10207251b14103",
+      "lines": 20,
+      "imports": [
+        "revin_models",
+        "torch"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/verify_rich_features.py",
+      "sha256": "92beb4d1d7ac5be78be34beed56dfd67db4fa9fd91a7d3f216e7928f17e534ab",
+      "lines": 20,
+      "imports": [
+        "numpy",
+        "reconstruction"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "code/write_experiments_html.py",
+      "sha256": "e28ef52dca4889c038b05e2bf57c4cb7f28fd254efcfb1381bf643146a9cf6b0",
+      "lines": 77,
+      "imports": [
+        "datetime",
+        "html",
+        "json",
+        "pathlib",
+        "zoneinfo"
+      ],
+      "definitions": [
+        "read"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_quantiles_20261017/trainq.py",
+      "sha256": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+      "lines": 332,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "experiment",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "prepare",
+        "Quantiles",
+        "physical",
+        "fit",
+        "train",
+        "select",
+        "intervals",
+        "percentile",
+        "evaluate",
+        "summarize",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/audit.py",
+      "sha256": "21f6b9df3c0e7b97837a06ea4b74b23b064be16a1b9bd92bef672240ae75a661",
+      "lines": 174,
+      "imports": [
+        "argparse",
+        "experiment",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "close",
+        "audit"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/experiment.py",
+      "sha256": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+      "lines": 410,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "simple_search",
+        "sys",
+        "time",
+        "torch",
+        "tune_parallel_cnn"
+      ],
+      "definitions": [
+        "write",
+        "setup",
+        "configs",
+        "folds",
+        "weights_for",
+        "weighting_test",
+        "features",
+        "prepare",
+        "fold_data",
+        "Global2D",
+        "network",
+        "predict",
+        "fit",
+        "pool",
+        "controls",
+        "selections",
+        "score",
+        "summarize",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/run.py",
+      "sha256": "214135bdc4377b89a7909cffde51c051026a25810eb13d338e3a2fc1ceedd7ca",
+      "lines": 32,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/sources/interpolation_history.py",
+      "sha256": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+      "lines": 34,
+      "imports": [
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "interpolation_history"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/sources/interpretable_models.py",
+      "sha256": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+      "lines": 65,
+      "imports": [
+        "interpolation_history",
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "compact_features",
+        "design",
+        "infer"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py",
+      "sha256": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+      "lines": 103,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "build_inputs",
+        "ParallelCNN",
+        "smoke",
+        "export_filters"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/sources/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/sources/simple_search.py",
+      "sha256": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+      "lines": 175,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "matplotlib",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "feature_modes",
+        "configs",
+        "prepare",
+        "model",
+        "trial",
+        "pool_run",
+        "finalize",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py",
+      "sha256": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+      "lines": 177,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "joint_zone_cnn",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "parallel_zone_cnn",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "make_features",
+        "dimensions",
+        "Small2D",
+        "prepare",
+        "trial",
+        "pool",
+        "finalize",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/normalization_20261017/audit.py",
+      "sha256": "e93ee998ec5024e84492fb694b445f42944274c4f9dcb120eedbdf9afd1fac54",
+      "lines": 176,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "reference_inputs",
+        "edge_checks",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/normalization_20261017/run.py",
+      "sha256": "146c270718476935a082c61decf63fa9762c3b624257484dd7baff7a98bc7baa",
+      "lines": 20,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/normalization_20261017/train.py",
+      "sha256": "c966b6de90fc323965692f2865da050d4ec626970c76519369cfa44a21266aef",
+      "lines": 213,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "importlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "daily_inputs",
+        "transform",
+        "physical",
+        "prepare",
+        "folder_data",
+        "inputs",
+        "predict",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/ssm_monthly_20261017/audit.py",
+      "sha256": "3f258fdec129526f8d5597bb64d7c310dd8771c70ba94bdca6636a4a0b554bc7",
+      "lines": 86,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys",
+        "torch",
+        "train"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/ssm_monthly_20261017/run.py",
+      "sha256": "029c2fe57df29d12e4bfbfd84b3ae86fe030265acb417e645069162e2109f6c8",
+      "lines": 14,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tarfile"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/campaigns/ssm_monthly_20261017/train.py",
+      "sha256": "033d431f85565e81cf66fa34d2e6e678b700ab07bb566d593d039182c00cb1e6",
+      "lines": 143,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "ssm_experiment",
+        "ssm_models",
+        "sys",
+        "time",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "configs",
+        "folds",
+        "prepare",
+        "QuantileSSM",
+        "folder_data",
+        "fit",
+        "select",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/interpretable_models.py",
+      "sha256": "1e5b56c85011fe4c33817595650f68895181824d5b3991a385360f9ec4243ed1",
+      "lines": 60,
+      "imports": [
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "compact_features",
+        "design",
+        "infer"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/ssm_experiment.py",
+      "sha256": "f54173fe014cb46bc9354ed583193b7e0d5cbdd5ee5109d49453679e8f04cf98",
+      "lines": 152,
+      "imports": [
+        "argparse",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "ssm_models",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "write",
+        "configs",
+        "features",
+        "normalize",
+        "prepare",
+        "setup",
+        "smoke",
+        "optimizer",
+        "train_trial",
+        "train",
+        "rolling"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/normalization_20261017/execution_sources/ssm_models.py",
+      "sha256": "02ae6960fb7cfbc00e6697bf5b47a0291e37f90e61817c476dfbaed937d80301",
+      "lines": 114,
+      "imports": [
+        "math",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "scan",
+        "S4D",
+        "S5",
+        "Block",
+        "Model"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/finalization_sources/analyze_cnn_confidence.py",
+      "sha256": "7297c737a702aa6bf13d0fef8c0b360698785f24ddb5358aedc7e759a91c5f68",
+      "lines": 83,
+      "imports": [
+        "json",
+        "matplotlib",
+        "numpy",
+        "quantile_cnn",
+        "scipy"
+      ],
+      "definitions": [
+        "association",
+        "verify_confidence",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/finalization_sources/analyze_quantile_cnn.py",
+      "sha256": "afa1c20a0a07658b4f614016b89d68a779327a45c1247c4c6d069b46cfedf471",
+      "lines": 283,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "quantile_cnn",
+        "scipy",
+        "torch"
+      ],
+      "definitions": [
+        "quantile_analysis",
+        "risk_features",
+        "fit_logistic",
+        "logits",
+        "probability_metrics",
+        "risk_analysis",
+        "cam",
+        "explanations",
+        "report"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/finalization_sources/audit_quantile_cnn.py",
+      "sha256": "fab7fc39df6f316c244ab24e787c292011a2ee9662887a17e77c37d7182394b3",
+      "lines": 134,
+      "imports": [
+        "analyze_cnn_confidence",
+        "analyze_quantile_cnn",
+        "hashlib",
+        "json",
+        "numpy",
+        "quantile_cnn",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/finalization_sources/run_quantile_cnn.py",
+      "sha256": "fd593492dedd3794d44b860ea7aab42cdf422a4ecf7759dea763e75b6ba9597f",
+      "lines": 14,
+      "imports": [
+        "argparse",
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/analyze_quantile_cnn.py",
+      "sha256": "13100bca03824bab91fc324a425defd6d80e6f14502789e842498b298ea7f725",
+      "lines": 283,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "pathlib",
+        "quantile_cnn",
+        "scipy",
+        "torch"
+      ],
+      "definitions": [
+        "quantile_analysis",
+        "risk_features",
+        "fit_logistic",
+        "logits",
+        "probability_metrics",
+        "risk_analysis",
+        "cam",
+        "explanations",
+        "report"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/audit_quantile_cnn.py",
+      "sha256": "8168557245e6e127d25a6ce7906b25f20753d78433eb3ca17fdd67af39b420a3",
+      "lines": 130,
+      "imports": [
+        "analyze_quantile_cnn",
+        "hashlib",
+        "json",
+        "numpy",
+        "quantile_cnn",
+        "reconstruction",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/parallel_zone_cnn.py",
+      "sha256": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+      "lines": 103,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "build_inputs",
+        "ParallelCNN",
+        "smoke",
+        "export_filters"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/quantile_cnn.py",
+      "sha256": "4c3d0da42c3bfc2afbe67b1dec6429d82ed92727ec90dcd820c7525d1be3006c",
+      "lines": 316,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch",
+        "tune_parallel_cnn"
+      ],
+      "definitions": [
+        "configure",
+        "write_json",
+        "configs",
+        "layout",
+        "make_features",
+        "normalize",
+        "QuantileCNN",
+        "objective",
+        "prepare",
+        "fit",
+        "run_trial",
+        "load_model",
+        "predict",
+        "train_all",
+        "oof_one",
+        "oof",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/run_quantile_cnn.py",
+      "sha256": "2b7b0bcfb1f40e3d1403fef8769f51dfc6b123cef113de9a5e0e15cb28d55ba6",
+      "lines": 10,
+      "imports": [
+        "os",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/quantile_2d_cnn_20261017/sources/tune_parallel_cnn.py",
+      "sha256": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+      "lines": 177,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "joint_zone_cnn",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "parallel_zone_cnn",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "make_features",
+        "dimensions",
+        "Small2D",
+        "prepare",
+        "trial",
+        "pool",
+        "finalize",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/run.py",
+      "sha256": "802f2e7a134d696351c6d9f90c81ced250c4ea5dbc8c2590f3f5546f56b0a20b",
+      "lines": 99,
+      "imports": [
+        "argparse",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "sys",
+        "torch",
+        "trainq"
+      ],
+      "definitions": [
+        "feature_data",
+        "predict_arrays",
+        "predict"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/experiment.py",
+      "sha256": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+      "lines": 410,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "simple_search",
+        "sys",
+        "time",
+        "torch",
+        "tune_parallel_cnn"
+      ],
+      "definitions": [
+        "write",
+        "setup",
+        "configs",
+        "folds",
+        "weights_for",
+        "weighting_test",
+        "features",
+        "prepare",
+        "fold_data",
+        "Global2D",
+        "network",
+        "predict",
+        "fit",
+        "pool",
+        "controls",
+        "selections",
+        "score",
+        "summarize",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/interpolation_history.py",
+      "sha256": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+      "lines": 34,
+      "imports": [
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "interpolation_history"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/interpretable_models.py",
+      "sha256": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+      "lines": 65,
+      "imports": [
+        "interpolation_history",
+        "numpy",
+        "pandas",
+        "reconstruction"
+      ],
+      "definitions": [
+        "compact_features",
+        "design",
+        "infer"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/parallel_zone_cnn.py",
+      "sha256": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+      "lines": 103,
+      "imports": [
+        "datetime",
+        "json",
+        "matplotlib",
+        "numpy",
+        "torch"
+      ],
+      "definitions": [
+        "build_inputs",
+        "ParallelCNN",
+        "smoke",
+        "export_filters"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/simple_search.py",
+      "sha256": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+      "lines": 175,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "hashlib",
+        "interpretable_models",
+        "itertools",
+        "json",
+        "matplotlib",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "feature_modes",
+        "configs",
+        "prepare",
+        "model",
+        "trial",
+        "pool_run",
+        "finalize",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/trainq.py",
+      "sha256": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+      "lines": 332,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "experiment",
+        "hashlib",
+        "itertools",
+        "json",
+        "math",
+        "multiprocessing",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "shutil",
+        "sys",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "prepare",
+        "Quantiles",
+        "physical",
+        "fit",
+        "train",
+        "select",
+        "intervals",
+        "percentile",
+        "evaluate",
+        "summarize",
+        "run"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "results/submission_champion_20261017/champion_submission/sources/tune_parallel_cnn.py",
+      "sha256": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+      "lines": 177,
+      "imports": [
+        "argparse",
+        "concurrent",
+        "datetime",
+        "hashlib",
+        "itertools",
+        "joint_zone_cnn",
+        "json",
+        "multiprocessing",
+        "numpy",
+        "parallel_zone_cnn",
+        "pathlib",
+        "reconstruction",
+        "time",
+        "torch"
+      ],
+      "definitions": [
+        "configs",
+        "make_features",
+        "dimensions",
+        "Small2D",
+        "prepare",
+        "trial",
+        "pool",
+        "finalize",
+        "smoke",
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "run.py",
+      "sha256": "c76d6c04a81f0ab7751487b09a6a8ddf8a09adfd732328004729e1ae215f7233",
+      "lines": 31,
+      "imports": [
+        "os",
+        "pathlib",
+        "runpy",
+        "sys"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/catboost_models.py",
+      "sha256": "3cba0288dda5fb6b18c49f2cdb5be2b3117ffe165d2a919595d54b4b37c8e587",
+      "lines": 51,
+      "imports": [
+        "numpy",
+        "scipy"
+      ],
+      "definitions": [
+        "quarter_features",
+        "cat_prediction",
+        "constrain_residual",
+        "learn_projection"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/graph_models.py",
+      "sha256": "95038763ba6f9f49ba52ae359a82b11357da72b1269a6494830a728772c43c4b",
+      "lines": 38,
+      "imports": [
+        "torch"
+      ],
+      "definitions": [
+        "ZoneBlock",
+        "GraphNet"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/predict.py",
+      "sha256": "9084c350b20275b1daae907211d75524a6f251c531c05e1e564fed56b0f6c392",
+      "lines": 60,
+      "imports": [
+        "argparse",
+        "catboost_models",
+        "graph_models",
+        "numpy",
+        "pandas",
+        "pickle",
+        "reconstruction",
+        "revin_models",
+        "torch"
+      ],
+      "definitions": [
+        "predict",
+        "bundle_prediction"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/reconstruction.py",
+      "sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "lines": 120,
+      "imports": [
+        "numpy",
+        "pandas",
+        "torch"
+      ],
+      "definitions": [
+        "read_targets",
+        "baseline",
+        "features",
+        "Net",
+        "project",
+        "rich_features"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/revin_models.py",
+      "sha256": "cdc55f4f286983ae6fe384d29239067ffca31e8e6f1accc2d5f9b4a869d0cbef",
+      "lines": 26,
+      "imports": [
+        "graph_models",
+        "torch"
+      ],
+      "definitions": [
+        "RevINGraph"
+      ],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/run.py",
+      "sha256": "742fd02b9b2c2ead92deb6e2133492b4998165d3d7d227858694d02c6909dfca",
+      "lines": 7,
+      "imports": [
+        "argparse",
+        "pathlib",
+        "predict"
+      ],
+      "definitions": [],
+      "needed_by_final": false
+    },
+    {
+      "path": "submission/train_frozen.py",
+      "sha256": "1bcce529119f7a7d1ed1e3201ce1bf2d2f916c1bce82f61f55c9934832744cb4",
+      "lines": 124,
+      "imports": [
+        "argparse",
+        "catboost",
+        "catboost_models",
+        "graph_models",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "predict",
+        "reconstruction",
+        "revin_models",
+        "sklearn",
+        "sys",
+        "torch"
+      ],
+      "definitions": [
+        "main"
+      ],
+      "needed_by_final": false
+    }
+  ]
+}
