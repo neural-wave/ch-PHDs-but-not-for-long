@@ -1,5 +1,11 @@
 # PhDs but not for long — reproducible ensemble
 
+## Final submission materials
+
+- [Final project report](project%20report.pdf)
+- [Final video on YouTube](https://youtu.be/Pwv1QnpLwSQ)
+- [Video link file](VIDEO.md)
+
 Standalone training and offline inference for the final six-network ensemble:
 two compact MLPs, two temporal CNNs and two CNNs over paired historical
 quarter/hour grids. Each network has weight 1/6. Predictions correct
