@@ -1,0 +1,67 @@
+{
+  "target": "Daily MAE of fixed mean-corrected centered linear interpolation, joint four zones",
+  "by_period": {
+    "training": {
+      "days": 302,
+      "mean_baseline_mae": 5.235242971121345,
+      "minimum_day_mae": 1.9759309895833326,
+      "maximum_day_mae": 11.895198567708334,
+      "worst_date": "2025-10-14",
+      "days_above10": 7,
+      "day_mae_quantiles": [
+        3.030512858072917,
+        5.026063639322916,
+        7.792093750000005
+      ],
+      "ramp_pearson": 0.8260694352361603,
+      "curvature_pearson": 0.8366238480738762
+    },
+    "August_selection": {
+      "days": 15,
+      "mean_baseline_mae": 6.732429036458334,
+      "minimum_day_mae": 5.098738606770833,
+      "maximum_day_mae": 10.095250651041669,
+      "worst_date": "2026-08-13",
+      "days_above10": 1,
+      "day_mae_quantiles": [
+        5.294640625,
+        6.451767578125001,
+        8.667991536458334
+      ],
+      "ramp_pearson": 0.7961364374501081,
+      "curvature_pearson": 0.7242316436759112
+    },
+    "August_calibration": {
+      "days": 16,
+      "mean_baseline_mae": 5.774529012044271,
+      "minimum_day_mae": 3.997337239583333,
+      "maximum_day_mae": 7.897433268229167,
+      "worst_date": "2026-08-31",
+      "days_above10": 0,
+      "day_mae_quantiles": [
+        4.347525227864582,
+        5.8376538085937515,
+        7.296027018229167
+      ],
+      "ramp_pearson": 0.7516425642084165,
+      "curvature_pearson": 0.7580846225038798
+    },
+    "September_development": {
+      "days": 30,
+      "mean_baseline_mae": 7.090321234809026,
+      "minimum_day_mae": 4.681539713541665,
+      "maximum_day_mae": 9.871533203125,
+      "worst_date": "2026-09-14",
+      "days_above10": 0,
+      "day_mae_quantiles": [
+        5.730280273437501,
+        6.586289876302082,
+        8.847042805989584
+      ],
+      "ramp_pearson": 0.5830532400856646,
+      "curvature_pearson": 0.6871484616325753
+    }
+  },
+  "hourly_residual_sum_max": 5.684341886080801e-13,
+  "caveat": "Descriptive associations only. No daily interpolation-error predictor fitted, no prediction accuracy established. September already developmental. The existing CNN predicts the signed residual curve, not this scalar absolute-error target."
+}

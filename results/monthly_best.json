@@ -1,0 +1,15 @@
+{
+  "selected_by": "august_validation_mae",
+  "best_directory": "monthly_joint_blend_gpu1",
+  "validation_scores": {
+    "monthly_base_gpu1": 4.255496109814246,
+    "monthly_cat_gpu1": 4.254566191382879,
+    "monthly_graph_gpu1": 4.24743872379048,
+    "monthly_revin_gpu1": 4.246176827199958,
+    "monthly_joint_blend_gpu1": 4.245328588334859
+  },
+  "model_fit_days": 302,
+  "train_end": "2026-07-31",
+  "validation_month": "2026-08",
+  "test_month": "2026-09"
+}

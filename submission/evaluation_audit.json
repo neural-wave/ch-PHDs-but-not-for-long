@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "selected_directory": "monthly_joint_blend_gpu1",
+  "selection_basis": "August MAE only",
+  "days": 30,
+  "rows": 11520,
+  "base_model_fit_days": 302,
+  "normalization_days": 302,
+  "inspected_bundle_levels": 5,
+  "forest_training_root_counts": [
+    28992,
+    28992
+  ],
+  "artifact_sha256": "6615d87e9a07520572f58ffca75f164f8ae021140b700223c6a97df740810dcc",
+  "september_mae": 5.0912092804265825,
+  "reported_september_mae": 5.091208819992601,
+  "max_cached_vs_reloaded_prediction_difference": 0.0018688694295576624,
+  "max_exported_hourly_mean_error": 2.5124791136477143e-11,
+  "history": "Current hourly curves and strictly earlier observed quarter history, sequential per delivery date",
+  "numerical_tolerance_eur_mwh": 0.01,
+  "numerical_reason": "Original GPU graph cache used cuDNN TF32; precision_diagnostics.json isolates the CPU/GPU drift",
+  "caveat": "September was inspected during earlier development; this is not a fresh blind test."
+}

@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 14,
+    "family": "tcn",
+    "width": 32,
+    "state": 32,
+    "lr": 0.003,
+    "seed": 17
+  },
+  "validation_mae": 4.472917571644015,
+  "selection_ratio": 0.7830193047414631,
+  "best_epoch": 9,
+  "parameters": 56844,
+  "seconds": 3.1554139039944857
+}

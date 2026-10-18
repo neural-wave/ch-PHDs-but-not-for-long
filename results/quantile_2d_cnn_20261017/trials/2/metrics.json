@@ -1,0 +1,18 @@
+{
+  "config": {
+    "id": 2,
+    "pack": "raw",
+    "quantile_weight": 0.0,
+    "lr": 0.001,
+    "seed": 71,
+    "width": 16
+  },
+  "fit_end": 302,
+  "val_end": 317,
+  "validation_mae": 4.843870997428894,
+  "best_epoch": 280,
+  "epochs": 340,
+  "seconds": 18.522405841154978,
+  "parameters": 4608,
+  "point_parameters": 3860
+}

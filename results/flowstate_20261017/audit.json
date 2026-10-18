@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "methods": {
+    "conditional_control": {
+      "mae": 5.454209205155623,
+      "by_zone": [
+        4.342062890250133,
+        7.292789372887254,
+        5.4837657627839995,
+        4.698218794701104
+      ]
+    },
+    "conditional_flowstate": {
+      "mae": 5.461773706267895,
+      "by_zone": [
+        4.294175191869234,
+        7.360336402332511,
+        5.562982766187194,
+        4.629600464682639
+      ]
+    },
+    "flowstate_projected_only": {
+      "mae": 7.109677770694097,
+      "by_zone": [
+        6.655464405006833,
+        9.123650775591532,
+        6.5619351111518,
+        6.097660791026221
+      ]
+    },
+    "interpolation": {
+      "mae": 7.090321234809028,
+      "by_zone": [
+        5.990385850694443,
+        9.227021050347224,
+        6.902530164930555,
+        6.241347873263887
+      ]
+    },
+    "hourly_mean": {
+      "mae": 10.695366319444444,
+      "by_zone": [
+        10.577640624999999,
+        13.254723958333335,
+        8.903359374999999,
+        10.045741319444444
+      ]
+    }
+  },
+  "replay_max_error": {
+    "conditional_control": 3.552713678800501e-15,
+    "conditional_flowstate": 7.105427357601002e-15
+  },
+  "sensitivities": {
+    "conditional_control": {
+      "distant_hourly_curve_effect": 0.004193663597106934
+    },
+    "conditional_flowstate": {
+      "distant_hourly_curve_effect": 0.0072975605726242065,
+      "flowstate_feature_effect": 0.6076986789703369
+    }
+  },
+  "checks": [
+    "official CSV hash",
+    "all30 September days/4zones/96quarters",
+    "independent equal-zone MAE",
+    "hourly conservation",
+    "train-only statistics",
+    "August-only choice",
+    "choice persisted before September inference",
+    "query/future target perturbation",
+    "calendar-preserving context",
+    "checkpoint replay",
+    "distant current-hourly curve changes within-hour shape"
+  ]
+}

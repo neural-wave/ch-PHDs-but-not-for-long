@@ -1,0 +1,13 @@
+# HACKATON project memory
+
+Objective: minimize equal-month MAE / mean-corrected-interpolation MAE. Quantiles always: eleven levels .025/.05/.10/.20/.25/.50/.75/.80/.90/.95/.975; calibrated 50/80/90/95% intervals. Conserved q50 supplies point MAE. Width confidence labels are relative uncertainty, not correctness probabilities; catastrophe classifiers remain set aside.
+
+Constraints: official-only anonymized four-zone data; no external/pretrained components or October evaluation prices; strictly prior observed quarters, known current hourly curves, frozen inference parameters, hourly means within 0.0001 EUR/MWh. September developmental. Eight expanding February–September tests; preceding days1–15 selection,16–end calibration. VALIDATION_PROTOCOL.md.
+
+Verified 2026-10-17: 384 quantile fits and posthoc zone-weight study completed/audited on Vast RTX5090. Original blend ratio .720494; fitted shared .719311; unrestricted zones .720485. Best observed 75%shared/25%zone blend .718907, pooledMAE4.165801, 90%coverage91.66%, width20.02: only0.22% relative improvement. Pre-test objective/shrinkage selector .719952. Best grid recipe identified posthoc; inner tuning not independently nested. Zone2 improves most; free zone weights hurt zones0/1. No hour-dependent router or measured country transfer.
+
+Nightwatch3b0716f2e5242db0fb5b1e04 completedexit0 at16:48Zurich. Host root@93.91.156.85:55340,/workspace/HACKATON; log /root/.local/share/nightwatch-hackaton/{ID}.log. New247.8MB archive and prior1.313GB/543MB archives locally SHA256verified.
+
+Evidence: results/zone_weights_20261017/{INTERPRETATION.md,summary.csv,weights.csv,audit.json,backup_verification.json}; prior results/monthly_quantiles_20261017/ensemble_analysis/. Hindsight wins use true scoring targets and never supply routing decisions. Detail/prior startup: memory/records/20261017T145052-vast-gpu-posthoc-zone-quantile-weight-study-completed-small--886381dd.md. Next if requested: longer-history weight calibration or interpretable hour gate. Country reuse needs local labeled history. FlowState exploratory/no gain; offline363-day refit audited/no submission. No deployment replacement.
+
+SSM corrected eight-fold quantile study completed/audited2026-10-17:160fits. Ratios S4D.785554,S5.788695,matchedTCN.778942; pooledMAE4.551869/4.568278/4.512701. CQR90%coverage88.62/89.23/90.16%. Nightwatch f1471cb72fbc1d8ade56973a completedexit0.428.5MBarchive locally SHA256verified. Evidence results/ssm_monthly_20261017/{REPORT.md,audit.json,backup_verification.json}. Old56fit pilot exploratory only. Prior startup preserved: memory/records/20261017_startup_before_ssm_protocol_correction.md. No deployment change.

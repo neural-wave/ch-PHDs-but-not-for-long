@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-03-14",
+    "zone": "ZONE_2",
+    "mean": 142.91604166666664,
+    "scale": 14.133495894738758,
+    "normalized_width90": 0.49802861828257516,
+    "normalized_mae": 0.231967983084787,
+    "normalized_interpolation_mae": 0.21236397101281215,
+    "mae_ratio": 1.092313267540058
+  },
+  {
+    "date": "2026-04-26",
+    "zone": "ZONE_3",
+    "mean": -40.8325,
+    "scale": 140.00820512042023,
+    "normalized_width90": 0.787087406674547,
+    "normalized_mae": 0.0715400726793018,
+    "normalized_interpolation_mae": 0.06936902779778682,
+    "mae_ratio": 1.031297034864661
+  }
+]

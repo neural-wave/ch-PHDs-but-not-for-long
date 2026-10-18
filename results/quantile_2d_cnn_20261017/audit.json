@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "feature_checks": {
+    "raw": true,
+    "analog90": true
+  },
+  "model_checks": {
+    "raw_0": {
+      "selection_mae": 4.735578374969572,
+      "september_mae": 5.462843825384081,
+      "hourly_mean_error": 5.684341886080802e-14
+    },
+    "raw_1": {
+      "selection_mae": 4.733655589859493,
+      "september_mae": 5.427656680603007,
+      "hourly_mean_error": 5.684341886080802e-14
+    },
+    "analog90_0": {
+      "selection_mae": 4.509062459563953,
+      "september_mae": 5.336198180744609,
+      "hourly_mean_error": 5.684341886080802e-14
+    },
+    "analog90_1": {
+      "selection_mae": 4.519094419468415,
+      "september_mae": 5.216650727743593,
+      "hourly_mean_error": 5.684341886080802e-14
+    }
+  },
+  "continuous_confidence_replay": true,
+  "checks": [
+    "official CSV hash and arrays",
+    "24 unique predeclared fits",
+    "train-only normalization",
+    "query quarter masking and known hourly rows",
+    "future-target perturbation",
+    "August1-15 checkpoint/seed/model selection",
+    "saved checkpoint replay",
+    "hourly means",
+    "ordered independent marginal quantiles",
+    "pinball and calibration reconstruction",
+    "182 chronologically held-out risk labels",
+    "risk target causality",
+    "serialized risk replay",
+    "separate August16-31 calibration",
+    "finite explanation artifacts"
+  ]
+}

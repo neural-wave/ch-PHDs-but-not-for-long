@@ -1,0 +1,29 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "train_days": 302,
+  "validation_days": 31,
+  "test_days": 30,
+  "fourier_modes": [
+    {
+      "cycles_per_day": 2,
+      "phase": "sin"
+    },
+    {
+      "cycles_per_day": 1,
+      "phase": "cos"
+    },
+    {
+      "cycles_per_day": 4,
+      "phase": "sin"
+    },
+    {
+      "cycles_per_day": 3,
+      "phase": "sin"
+    }
+  ],
+  "output_budget": "per day and zone; fourier4 and pca4 each four real weights",
+  "basis_fit": "training only, uncentered residual SVD and greedy distinct-frequency SSE",
+  "features": "causal rich features, all 24 hours flattened per zone; train-only scaling; zone one-hot",
+  "selection": "August only; September developmental, previously viewed",
+  "oracle": "exact L1 projection of held-out targets, diagnostic only; never predictor input"
+}

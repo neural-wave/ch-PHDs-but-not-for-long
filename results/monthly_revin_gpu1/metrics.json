@@ -1,0 +1,237 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-07-31"
+    ],
+    "validation": [
+      "2026-08-01",
+      "2026-08-31"
+    ],
+    "test": [
+      "2026-09-01",
+      "2026-09-30"
+    ]
+  },
+  "split_counts": {
+    "train": 302,
+    "validation": 31,
+    "test": 30
+  },
+  "parent": "monthly_graph_gpu1",
+  "calendar_split": true,
+  "model_fit_days": 302,
+  "final_refit_deferred": true,
+  "graph_nodes": 4,
+  "graph_hours": 24,
+  "candidates": [
+    {
+      "name": "parent_ensemble",
+      "config": {}
+    },
+    {
+      "name": "interpolation",
+      "config": {}
+    },
+    {
+      "name": "control_0",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "revin": false,
+        "epochs": 73
+      },
+      "validation_mae": 4.4029412140224595
+    },
+    {
+      "name": "revin_1",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "revin": true,
+        "epochs": 49
+      },
+      "validation_mae": 4.400310773044821
+    },
+    {
+      "name": "control_2",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": false,
+        "epochs": 35
+      },
+      "validation_mae": 4.385855067301929
+    },
+    {
+      "name": "revin_3",
+      "config": {
+        "width": 64,
+        "blocks": 1,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 30
+      },
+      "validation_mae": 4.393326281114586
+    },
+    {
+      "name": "control_4",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "revin": false,
+        "epochs": 51
+      },
+      "validation_mae": 4.389066661650863
+    },
+    {
+      "name": "revin_5",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "revin": true,
+        "epochs": 42
+      },
+      "validation_mae": 4.40486348930775
+    },
+    {
+      "name": "control_6",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": false,
+        "epochs": 39
+      },
+      "validation_mae": 4.396865228974278
+    },
+    {
+      "name": "revin_7",
+      "config": {
+        "width": 64,
+        "blocks": 2,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "revin": true,
+        "epochs": 46
+      },
+      "validation_mae": 4.349658864444875
+    }
+  ],
+  "weights": [
+    [
+      0.9657512824371861,
+      0.8934144101561874,
+      0.8929545888314315,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.034248717562813814,
+      0.10658558984381254,
+      0.10704541116856847,
+      0.0
+    ]
+  ],
+  "validation": {
+    "mae": 4.246176827199958,
+    "mae_by_zone": [
+      2.9660636342657996,
+      4.841400825123436,
+      4.961199016505307,
+      4.216043832905289
+    ]
+  },
+  "test": {
+    "mae": 5.091086248008211,
+    "mae_by_zone": [
+      3.8768808212140535,
+      6.729504476097263,
+      5.3931315611867445,
+      4.364828133534785
+    ]
+  },
+  "test_baseline": {
+    "mae": 7.090321234809027,
+    "mae_by_zone": [
+      5.990385850694443,
+      9.227021050347224,
+      6.902530164930555,
+      6.241347873263887
+    ]
+  },
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "smoke": false,
+  "device": "NVIDIA RTX A5000",
+  "normalization": "Paired reversible input-hourly normalization vs matched fixed-scale control; rich side features retained",
+  "tf32": false,
+  "offline_inference_qa": "passed; ensemble and graph-only exported CSVs preserve finite unique four-quarter hourly means"
+}

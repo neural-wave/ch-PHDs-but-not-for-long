@@ -1,0 +1,22 @@
+{
+  "source_job": "1e1315765ed2bc28e68bec9c",
+  "script_sha256": "0ea1c10c675afc4809f8e80e054b3ac796e6218c7a3667598a0e45596fa97c7a",
+  "prediction_sha256": {
+    "results/revin_quantiles_20261017/folds/2026-02/selected/compact_fixed/predictions.npz": "f3e804e2260d8cf85792fe4fbe5513f1e2cf059b2e33a17b76e97c19fab26c4a",
+    "results/revin_quantiles_20261017/folds/2026-02/selected/compact_day_reversible/predictions.npz": "cdfaca3d1d86c2d783e201cf70ff0a20c59b837af6cf8d8c8ddc3826aef420d6",
+    "results/revin_quantiles_20261017/folds/2026-03/selected/compact_fixed/predictions.npz": "2c40ad30067932573ad4663e1b8d1904861f958a8132aa8390e5915f24b82f33",
+    "results/revin_quantiles_20261017/folds/2026-03/selected/compact_day_reversible/predictions.npz": "e04b1ec1225a1b32a9abf70792c3566bd46d648a3929040c899ef20487cbcf30",
+    "results/revin_quantiles_20261017/folds/2026-04/selected/compact_fixed/predictions.npz": "7a51898d3edfd351c4d2c0871c52398cd0f5cd01d30643cf7b7d3cde93388119",
+    "results/revin_quantiles_20261017/folds/2026-04/selected/compact_day_reversible/predictions.npz": "1d468eb582e7c61ace36628f11326f0b0b36e534a20e01fc76001413492e1199",
+    "results/revin_quantiles_20261017/folds/2026-05/selected/compact_fixed/predictions.npz": "769946903aeb3d253dc7e9f782e835f4779181dd8a852afd4760dcdd4047d268",
+    "results/revin_quantiles_20261017/folds/2026-05/selected/compact_day_reversible/predictions.npz": "5579bf33ff19247d55cb0966061d073848f5c3e244f8c78d9d4f82bae8c5edc8",
+    "results/revin_quantiles_20261017/folds/2026-06/selected/compact_fixed/predictions.npz": "84e3e78602e1e648de2fc0d43210b0c75d82f8833a2899ef193f0d708f7f169e",
+    "results/revin_quantiles_20261017/folds/2026-06/selected/compact_day_reversible/predictions.npz": "a24885771e813e65ef0eefe9aadd439e60b7a2f450e07461bf52adaafd49ceda",
+    "results/revin_quantiles_20261017/folds/2026-07/selected/compact_fixed/predictions.npz": "19e755cd9feba013f053791c6a1e00a33266227bbbc45450f97e6e31208e8942",
+    "results/revin_quantiles_20261017/folds/2026-07/selected/compact_day_reversible/predictions.npz": "7f73cef3f435104f58325c47ff137fe7c16ce5ef7d8d1721144f643b4c16ca98",
+    "results/revin_quantiles_20261017/folds/2026-08/selected/compact_fixed/predictions.npz": "9d5bddc0098df2f62162a669d9a10901ab7286ae38bdcbb0f6ef0c3cbeec8f04",
+    "results/revin_quantiles_20261017/folds/2026-08/selected/compact_day_reversible/predictions.npz": "1c4dd16b3b8d48090bcf8447e04464dac1490f588e2f6f40085852f611fbe305",
+    "results/revin_quantiles_20261017/folds/2026-09/selected/compact_fixed/predictions.npz": "4edbc9b9ffcb9222c2e8887e357b53f6a1a262f3803e52edc22e5a884c1575af",
+    "results/revin_quantiles_20261017/folds/2026-09/selected/compact_day_reversible/predictions.npz": "4a9a55b62b14ecdb8a6c5495026aaa06fe102858481aec68f2a89736f8701ec8"
+  }
+}

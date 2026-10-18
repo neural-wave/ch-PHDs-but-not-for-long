@@ -1,0 +1,627 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-06-02"
+    ],
+    "validation": [
+      "2026-06-03",
+      "2026-08-01"
+    ],
+    "holdout": [
+      "2026-08-02",
+      "2026-09-30"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "interpolation",
+      "validation_mae": 5.5721848687065965,
+      "config": {}
+    },
+    {
+      "name": "flat",
+      "validation_mae": 7.975394097222223,
+      "config": {}
+    },
+    {
+      "name": "ridge_1",
+      "validation_mae": 4.049802805375203,
+      "config": {
+        "alpha": 1
+      }
+    },
+    {
+      "name": "ridge_10",
+      "validation_mae": 4.039519412205599,
+      "config": {
+        "alpha": 10
+      }
+    },
+    {
+      "name": "ridge_100",
+      "validation_mae": 4.003611683278274,
+      "config": {
+        "alpha": 100
+      }
+    },
+    {
+      "name": "ridge_1000",
+      "validation_mae": 3.9558235063346463,
+      "config": {
+        "alpha": 1000
+      }
+    },
+    {
+      "name": "ridge_10000",
+      "validation_mae": 3.963217737296762,
+      "config": {
+        "alpha": 10000
+      }
+    },
+    {
+      "name": "trees_5",
+      "validation_mae": 3.799582050796572,
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "trees_15",
+      "validation_mae": 3.805522570896919,
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 15,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "trees_40",
+      "validation_mae": 3.8379756535502896,
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 40,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "trees_100",
+      "validation_mae": 3.8987729482400875,
+      "config": {
+        "n_estimators": 300,
+        "min_samples_leaf": 100,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "boost_15_10",
+      "validation_mae": 3.783443362565706,
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "boost_31_10",
+      "validation_mae": 3.7505524971344153,
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 10,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "boost_31_100",
+      "validation_mae": 3.76820023554997,
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "boost_63_100",
+      "validation_mae": 3.762514979231677,
+      "config": {
+        "loss": "absolute_error",
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "l2_regularization": 100,
+        "min_samples_leaf": 40,
+        "learning_rate": 0.05,
+        "early_stopping": false,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "net_15",
+      "validation_mae": 3.8303546280502063,
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 17
+      }
+    },
+    {
+      "name": "net_16",
+      "validation_mae": 3.821867767438995,
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 11
+      }
+    },
+    {
+      "name": "net_17",
+      "validation_mae": 3.8248973855605666,
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 14
+      }
+    },
+    {
+      "name": "net_18",
+      "validation_mae": 3.839757610732517,
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 20
+      }
+    },
+    {
+      "name": "net_19",
+      "validation_mae": 3.818593462624886,
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 22
+      }
+    },
+    {
+      "name": "net_20",
+      "validation_mae": 3.7764081057933003,
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 16
+      }
+    },
+    {
+      "name": "net_21",
+      "validation_mae": 3.805978941201901,
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 28
+      }
+    },
+    {
+      "name": "net_22",
+      "validation_mae": 3.803146995359153,
+      "config": {
+        "width": 128,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 22
+      }
+    },
+    {
+      "name": "net_23",
+      "validation_mae": 3.8102917380269,
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 15
+      }
+    },
+    {
+      "name": "net_24",
+      "validation_mae": 3.787395661462564,
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 16
+      }
+    },
+    {
+      "name": "net_25",
+      "validation_mae": 3.7887978685712205,
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 29
+      }
+    },
+    {
+      "name": "net_26",
+      "validation_mae": 3.8137574152075535,
+      "config": {
+        "width": 256,
+        "depth": 2,
+        "dropout": 0.1,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 17
+      }
+    },
+    {
+      "name": "net_27",
+      "validation_mae": 3.7888802103085104,
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 25
+      }
+    },
+    {
+      "name": "net_28",
+      "validation_mae": 3.777274191981517,
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.001,
+        "seed": 43,
+        "epochs": 24
+      }
+    },
+    {
+      "name": "net_29",
+      "validation_mae": 3.792132172954727,
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 17,
+        "epochs": 61
+      }
+    },
+    {
+      "name": "net_30",
+      "validation_mae": 3.7814761428601873,
+      "config": {
+        "width": 128,
+        "depth": 3,
+        "dropout": 0.15,
+        "lr": 0.0003,
+        "seed": 43,
+        "epochs": 44
+      }
+    }
+  ],
+  "weights": [
+    [
+      0.04663963287390494,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.04406266926824075,
+      0.015046860877317122
+    ],
+    [
+      0.03205304884531663,
+      0.005501814408965605,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0549608911883722,
+      0.0
+    ],
+    [
+      0.0,
+      0.006359991040885621,
+      0.12311680673894845,
+      0.0
+    ],
+    [
+      0.23575148457749726,
+      0.2342741798908138,
+      0.12889661202214042,
+      0.15705006265655155
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.026858923434467247,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.09406797234233298
+    ],
+    [
+      0.20576874352813454,
+      0.13941098359890366,
+      0.13837259754832903,
+      0.33444908575577664
+    ],
+    [
+      0.0,
+      0.0,
+      0.03162415308490915,
+      0.05234730357673178
+    ],
+    [
+      0.0,
+      0.0,
+      0.04703283100279411,
+      0.006374786846945819
+    ],
+    [
+      0.0,
+      0.0,
+      0.0480362635093271,
+      0.01792138060488168
+    ],
+    [
+      0.006048651973863144,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.021600746861592354,
+      0.14756593612041013,
+      0.0,
+      0.0
+    ],
+    [
+      0.0662968758962753,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.11614585008334541,
+      0.04633458009150178,
+      0.1262034746520439,
+      0.0
+    ],
+    [
+      0.09723385797328062,
+      0.1396235091950657,
+      0.08707689136950363,
+      0.07996957550457588
+    ],
+    [
+      0.0,
+      0.03236203842182194,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.10224706155950403,
+      0.19352411542776699,
+      0.011811647423249689,
+      0.11639635224034399
+    ],
+    [
+      0.0562724356853767,
+      0.0,
+      0.13194623875767428,
+      0.12637661959454263
+    ],
+    [
+      0.006926899035034376,
+      0.05504285180386463,
+      0.0,
+      0.0
+    ],
+    [
+      0.0070147111068747875,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "validation": {
+    "mae": 3.664742117226953,
+    "mae_by_zone": [
+      2.766254996298705,
+      3.998932798798472,
+      3.8458246428945193,
+      4.047956030916115
+    ]
+  },
+  "holdout": {
+    "mae": 4.781313618982624,
+    "mae_by_zone": [
+      3.5633596783055665,
+      5.943692342179923,
+      5.2293421414792025,
+      4.388860313965805
+    ]
+  },
+  "holdout_baseline": {
+    "mae": 6.682585530598958,
+    "mae_by_zone": [
+      5.580367296006943,
+      8.432777886284724,
+      6.453603081597222,
+      6.263593858506944
+    ]
+  },
+  "holdout_flat": {
+    "mae": 9.753914930555556,
+    "mae_by_zone": [
+      9.497603298611113,
+      11.833809895833335,
+      8.125244791666667,
+      9.559001736111112
+    ]
+  },
+  "max_hourly_mean_error": 2.2737367544323206e-13,
+  "history_policy": "Strictly earlier calendar dates; fixed 1,2,7-day lags and 7,28-day rolling means; no online fitting.",
+  "ensemble_optimizer_success": true,
+  "zone_optimizer_success": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "ensemble_mode": "zone",
+  "global_weights": [
+    0.0,
+    0.013250352971868072,
+    0.022926041842252585,
+    0.0,
+    0.0,
+    0.00501205294197753,
+    0.0,
+    0.21528256064718504,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.2559225589608718,
+    0.0,
+    0.00701502578262303,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0577369435413931,
+    0.0,
+    0.0,
+    0.07873837375111428,
+    0.12432891435773107,
+    0.0,
+    0.0,
+    0.13951697222734927,
+    0.08027020297563409,
+    0.0,
+    0.0
+  ],
+  "device": "NVIDIA RTX A5000",
+  "smoke": false,
+  "feature_mode": "rich",
+  "offline_inference_qa": "passed; 384 unique finite predictions and hourly means within tolerance"
+}

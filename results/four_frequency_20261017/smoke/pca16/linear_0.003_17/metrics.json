@@ -1,0 +1,11 @@
+{
+  "family": "linear",
+  "lr": 0.003,
+  "seed": 17,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "parameters": 149456,
+  "validation_mae": 10.617605992233168,
+  "basis": "pca16",
+  "outputs_per_day_zone": 16
+}

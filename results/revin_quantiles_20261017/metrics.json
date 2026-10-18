@@ -1,0 +1,54 @@
+{
+  "smoke": false,
+  "completed_folds": 8,
+  "summary": [
+    {
+      "recipe": "compact_fixed",
+      "folds": 8,
+      "mean_monthly_ratio": 0.7687257039667237,
+      "pooled_mae": 4.456371609970655,
+      "mean_monthly_pinball_ratio": 0.22655025910724796,
+      "coverage90": 0.8970327627939142,
+      "width90": 20.310997514504006,
+      "worst_ratio": 0.8181718393353765,
+      "pooled_interpolation_mae": 5.814817120774982,
+      "pooled_mae_ratio": 0.7663820748633834
+    },
+    {
+      "recipe": "validation_selector",
+      "folds": 8,
+      "mean_monthly_ratio": 0.7727311898689067,
+      "pooled_mae": 4.482381150051214,
+      "mean_monthly_pinball_ratio": 0.2273545491578865,
+      "coverage90": 0.9066390041493776,
+      "width90": 21.51096604065669,
+      "worst_ratio": 0.8181718393353765,
+      "pooled_interpolation_mae": 5.814817120774982,
+      "pooled_mae_ratio": 0.7708550513199658
+    },
+    {
+      "recipe": "compact_day_reversible",
+      "folds": 8,
+      "mean_monthly_ratio": 0.7875094992719374,
+      "pooled_mae": 4.574789398811584,
+      "mean_monthly_pinball_ratio": 0.23407643562583927,
+      "coverage90": 0.9126901798063622,
+      "width90": 24.1451147075895,
+      "worst_ratio": 0.8326676849651692,
+      "pooled_interpolation_mae": 5.814817120774982,
+      "pooled_mae_ratio": 0.7867469094542855
+    },
+    {
+      "recipe": "interpolation",
+      "folds": 8,
+      "mean_monthly_ratio": 1.0,
+      "pooled_mae": 5.814817120774982,
+      "mean_monthly_pinball_ratio": 0.3097315016443747,
+      "coverage90": 0.8950229080221299,
+      "width90": 27.78363487503242,
+      "worst_ratio": 1.0,
+      "pooled_interpolation_mae": 5.814817120774982,
+      "pooled_mae_ratio": 1.0
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-07-31"
+    ],
+    "validation": [
+      "2026-08-01",
+      "2026-08-31"
+    ],
+    "test": [
+      "2026-09-01",
+      "2026-09-30"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "parent_ensemble",
+      "config": {}
+    },
+    {
+      "name": "interpolation",
+      "config": {}
+    },
+    {
+      "name": "cat_0",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          857
+        ]
+      },
+      "validation_mae": 4.380151764346898
+    },
+    {
+      "name": "cat_1",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          1013
+        ]
+      },
+      "validation_mae": 4.380781997494906
+    },
+    {
+      "name": "cat_2",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          380
+        ]
+      },
+      "validation_mae": 4.411894498421984
+    },
+    {
+      "name": "cat_3",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          378
+        ]
+      },
+      "validation_mae": 4.40730988636286
+    },
+    {
+      "name": "cat_4",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          682
+        ]
+      },
+      "validation_mae": 4.355821572694872
+    },
+    {
+      "name": "cat_5",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          673
+        ]
+      },
+      "validation_mae": 4.396433138448791
+    },
+    {
+      "name": "cat_6",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          189
+        ]
+      },
+      "validation_mae": 4.415678116252776
+    },
+    {
+      "name": "cat_7",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.08,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          146
+        ]
+      },
+      "validation_mae": 4.413079180895184
+    },
+    {
+      "name": "cat_8",
+      "config": {
+        "depth": 10,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 43,
+        "epochs": [
+          553
+        ]
+      },
+      "validation_mae": 4.3965632185865475
+    },
+    {
+      "name": "cat_9",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          867,
+          172,
+          100,
+          798
+        ]
+      },
+      "validation_mae": 4.345424699290502
+    },
+    {
+      "name": "cat_10",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          425,
+          122,
+          106,
+          509
+        ]
+      },
+      "validation_mae": 4.366677383477622
+    }
+  ],
+  "weights": [
+    [
+      0.9152678723096338,
+      0.9834478949771708,
+      0.8974552456088059,
+      0.964856932396424
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0847321276903662,
+      0.01655210502282927,
+      0.10254475439119412,
+      0.03514306760357606
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "validation": {
+    "mae": 4.254566191382879,
+    "mae_by_zone": [
+      2.970612043396961,
+      4.851777027316651,
+      4.975826068862349,
+      4.220049625955556
+    ]
+  },
+  "holdout": {
+    "mae": 5.12279319362997,
+    "mae_by_zone": [
+      3.9184200392660298,
+      6.784261663868103,
+      5.404794288930576,
+      4.383696782455171
+    ]
+  },
+  "holdout_baseline": {
+    "mae": 7.090321234809027,
+    "mae_by_zone": [
+      5.990385850694443,
+      9.227021050347224,
+      6.902530164930555,
+      6.241347873263887
+    ]
+  },
+  "max_hourly_mean_error": 2.2737367544323206e-13,
+  "feature_mode": "rich",
+  "parent": "monthly_base_gpu1",
+  "smoke": false,
+  "split_counts": {
+    "train": 302,
+    "validation": 31,
+    "test": 30
+  },
+  "calendar_split": true,
+  "device": "NVIDIA RTX A5000",
+  "catboost_version": "1.2.8",
+  "projection_refine": false,
+  "test": {
+    "mae": 5.12279319362997,
+    "mae_by_zone": [
+      3.9184200392660298,
+      6.784261663868103,
+      5.404794288930576,
+      4.383696782455171
+    ]
+  },
+  "test_baseline": {
+    "mae": 7.090321234809027,
+    "mae_by_zone": [
+      5.990385850694443,
+      9.227021050347224,
+      6.902530164930555,
+      6.241347873263887
+    ]
+  },
+  "model_fit_days": 302,
+  "final_refit_deferred": true,
+  "offline_inference_qa": "passed; 384 unique finite predictions and hourly means within tolerance"
+}

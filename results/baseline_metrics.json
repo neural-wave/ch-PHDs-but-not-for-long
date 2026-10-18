@@ -1,0 +1,43 @@
+{
+  "rows": 139392,
+  "days": 363,
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "methods": {
+    "hourly_mean": {
+      "mae_eur_mwh": 7.577610443927916,
+      "mae_by_zone": {
+        "ZONE_0": 7.914514319329659,
+        "ZONE_1": 9.42647182047751,
+        "ZONE_2": 5.589959538567489,
+        "ZONE_3": 7.379496097337008
+      },
+      "rmse_eur_mwh": 13.109974174506439,
+      "max_hourly_mean_error": 0.0,
+      "challenge_mean_constraint_pass": true
+    },
+    "linear_interpolation": {
+      "mae_eur_mwh": 5.738218670189106,
+      "mae_by_zone": {
+        "ZONE_0": 5.439445699896688,
+        "ZONE_1": 7.194311438246103,
+        "ZONE_2": 4.551948408086547,
+        "ZONE_3": 5.767169134527089
+      },
+      "rmse_eur_mwh": 9.782214681450819,
+      "max_hourly_mean_error": 58.55281249999996,
+      "challenge_mean_constraint_pass": false
+    },
+    "linear_interpolation_mean_corrected": {
+      "mae_eur_mwh": 5.474192600723139,
+      "mae_by_zone": {
+        "ZONE_0": 5.166681481003214,
+        "ZONE_1": 6.912654653782137,
+        "ZONE_2": 4.324636169938016,
+        "ZONE_3": 5.492798098169189
+      },
+      "rmse_eur_mwh": 9.448923835066594,
+      "max_hourly_mean_error": 1.1368683772161603e-13,
+      "challenge_mean_constraint_pass": true
+    }
+  }
+}

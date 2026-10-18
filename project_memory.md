@@ -1,0 +1,11 @@
+# HACKATON project memory
+
+Objective: minimize equal-month MAE/mean-corrected-interpolation MAE using eight expanding February-September folds. Preceding-month days1-15 select,16-end calibrate. Fresh fits, official-only data, strictly prior quarters, known four-zone hourly curves, frozen test parameters, conserved hourly means within0.0001EUR/MWh, eleven ordered quantiles and calibrated50/80/90/95%intervals. All months developmental; September not blind. Classifier work remains paused.
+
+Verified2026-10-17: research champion `minimize_expanding_20261017/fixed_blend_ratio`, ratio0.707968, pooledMAE4.103184. Ranking115 distinct recipes/154 reported rows/121 historical rows. Older deployment uses a different363-day refit; champion all-history fit/calibration still pending (`docs/SUBMISSION_REFIT_PLAN.md`). No training performed during submission organization.
+
+User rejects RevIN and retains original champion. Champion/linear RevIN worsened point MAE despite wider intervals/higher coverage. Chainsaw width/roughness association occurred in both compact-CNN arms. Illustrative unchanged-band June11ZONE3 plots, including neonSVG/PNG, remain in `results/illustrative_quantile_bands_20261017/`; posthoc examples only. Preserve interpretability studies and unrelated work.
+
+Submission organization2026-10-17: `delivery/README.md`, jury run guide, checklist, three-page visually reviewed report draft, video script, presentation outline, credits/statusJSON. All16 frozen hashes pass; packaging audit `results/submission_organization_20261017/readiness.json`. Team names explicitly deferred. Final model/artifact delivery, clean-environment execution, report review, license, video/SwissTransfer and final handoff remain pending. Working deadline18October11:00Europe/Zurich, subject to organizer updates.
+
+Authorized GitHub `neural-wave/ch-PHDs-but-not-for-long`, branch `el_bicho/hackaton-research`; preparation published2026-10-17 at `30089bc` (remote verified). Remote research pointers remain root@93.91.156.85:55340 `/workspace/HACKATON`; detailed job/log/archive/checksum evidence in completion receipts and memory records. Previous startup preserved verbatim in `memory/records/20261017_startup_before_submission_organization.md`. Next: finish delivery checklist without changing the frozen bundle casually.

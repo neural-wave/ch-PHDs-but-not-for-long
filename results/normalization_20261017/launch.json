@@ -1,0 +1,41 @@
+{
+  "id": "73994759a86ac27184894e2a",
+  "title": "HACKATON normalization: matched fixed/zscore/daily/reversible, 384 quantile fits",
+  "host": "root@93.91.156.85",
+  "port": 55340,
+  "remote_root": "/workspace/HACKATON",
+  "python": "/venv/main/bin/python",
+  "command": "campaigns/normalization_20261017/run.py",
+  "log": "/root/.local/share/nightwatch-hackaton/73994759a86ac27184894e2a.log",
+  "worker_pid": 10712,
+  "started_at": 1792249401.4186554,
+  "due_at": 1792250301.4186554,
+  "heartbeat_at_last_verification": 1792249431.607507,
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "status_at_last_check": "completed",
+  "observed_progress": "All eight folds, full audit and remote recovery archive complete",
+  "folds": 8,
+  "fits": 384,
+  "families": [
+    "compact",
+    "s4d",
+    "s5"
+  ],
+  "arms": [
+    "fixed",
+    "standard",
+    "day_input",
+    "day_reversible"
+  ],
+  "preflight_smoke_checkpoints": 24,
+  "preflight_independent_audit_passed": true,
+  "preflight_max_replay_error": 0.0,
+  "completion_requires": "Full independent audit and recovery archive",
+  "telegram_success_failure_alerts_authorized": true,
+  "exit_code": 0,
+  "ended_at": 1792249891.3776915,
+  "full_audit_passed": true,
+  "full_audit_checkpoints": 384,
+  "completion_time_zurich": "2026-10-17T17:11:31+02:00"
+}

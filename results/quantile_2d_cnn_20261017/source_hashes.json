@@ -1,0 +1,10 @@
+{
+  "quantile_cnn.py": "4c3d0da42c3bfc2afbe67b1dec6429d82ed92727ec90dcd820c7525d1be3006c",
+  "analyze_quantile_cnn.py": "13100bca03824bab91fc324a425defd6d80e6f14502789e842498b298ea7f725",
+  "audit_quantile_cnn.py": "8168557245e6e127d25a6ce7906b25f20753d78433eb3ca17fdd67af39b420a3",
+  "run_quantile_cnn.py": "2b7b0bcfb1f40e3d1403fef8769f51dfc6b123cef113de9a5e0e15cb28d55ba6",
+  "parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+  "tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+  "reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+  "QUANTILE_2D_CNN_PROTOCOL.md": "8dd9e07eb31473e1f8eade539d63b0f7a62b5e0df7789d6d49d02b6d1b7d4898"
+}

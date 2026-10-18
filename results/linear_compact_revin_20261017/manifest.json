@@ -1,0 +1,379 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "source_model": "minimize_expanding_20261017/fixed_linear_compact_ratio",
+  "frozen_components_sha256": "35cec863523bfdaa2a3ae6b3e9a5d585eeede11006c7eeb90f545dc8a9e51d24",
+  "code_hashes": {
+    "campaigns/monthly_ratio_20261017/sources/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "campaigns/monthly_ratio_20261017/sources/interpretable_models.py": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+    "campaigns/monthly_ratio_20261017/sources/interpolation_history.py": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+    "campaigns/monthly_ratio_20261017/sources/simple_search.py": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+    "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+    "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+    "campaigns/monthly_ratio_20261017/experiment.py": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+    "campaigns/monthly_ratio_20261017/audit.py": "21f6b9df3c0e7b97837a06ea4b74b23b064be16a1b9bd92bef672240ae75a661",
+    "campaigns/monthly_ratio_20261017/run.py": "214135bdc4377b89a7909cffde51c051026a25810eb13d338e3a2fc1ceedd7ca",
+    "campaigns/monthly_ratio_20261017/PROTOCOL.md": "3bb6c8b24d2586f20b00093560931f1cd3d0555fef8292bed536f321e1a6f588",
+    "campaigns/monthly_quantiles_20261017/trainq.py": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+    "campaigns/monthly_quantiles_20261017/auditq.py": "18ea399c4ee5746c2024d675e93a726a770087816a07b85e618ab9e26ca0abd7",
+    "campaigns/monthly_quantiles_20261017/run.py": "dcdc9877ec69c803ac7254b606bd6d97c5364c54fbe94e7258118a3655d2a231",
+    "campaigns/monthly_quantiles_20261017/PROTOCOL.md": "1bc9578dc7a5927717724bd4194bfdbb9a822267823ca5a5a7548acfb8bcc5e2",
+    "campaigns/minimize_expanding_20261017/train.py": "effb9221877d592d65bf3d1e7f0a7ecb95d610031443c0fc662880dbdd51c506",
+    "campaigns/minimize_expanding_20261017/audit.py": "ef2aca526652040e998b3fea3a478e94d91956113f60e35d8fe5dbef78145a04",
+    "campaigns/minimize_expanding_20261017/audit_selection.py": "d8d90ee167dfbd340d318382204eab6fcf56f7c4e246d881acd27d76501ba35a",
+    "campaigns/minimize_expanding_20261017/run.py": "fb9b87df6f23433286788ed75aa23a90d0cbed90ac5aac4f569b689836b0fe1b",
+    "campaigns/minimize_expanding_20261017/PROTOCOL.md": "86573368bd53f5a59134fbc4137ad10360e6ccf1b37ee912d3996fe410db45d0",
+    "campaigns/champion_revin_20261017/train.py": "040184419c4748daf5fc1de9520f0cd16084ebd83642fac444a5d2b306ad5a4f",
+    "campaigns/linear_compact_revin_20261017/frozen_components.json": "35cec863523bfdaa2a3ae6b3e9a5d585eeede11006c7eeb90f545dc8a9e51d24",
+    "campaigns/linear_compact_revin_20261017/train.py": "cdef53754f735434afc6570362993fa01f51c4bd2aec55a09252b7bd55d2e765",
+    "campaigns/linear_compact_revin_20261017/audit.py": "f026b934c70db310faf2bb2c32004340fd15d211bc009ebf456f26cc48c33f15",
+    "campaigns/linear_compact_revin_20261017/report.py": "58b64064491e2e350f2224feb7a701e62f7df65e9e9d49cafac4f4850837c334",
+    "campaigns/linear_compact_revin_20261017/run.py": "aa7c5e7eff2a0f1109f0fd155390aa8aabaa8f03481927f2558cd3c85e33dc8e",
+    "campaigns/linear_compact_revin_20261017/PROTOCOL.md": "cb8c9bd8cdb67bc4f17d39bb045c348521ad19f1d3a634e3b01f53a5f8a257bc"
+  },
+  "feature_source_sha256": "87c32edc4c485908c12dcb8e447007b89ce6d6eb62c39a82ad22463254c11671",
+  "source_raw_sha256": "023c5f179c3217f76237ae36395080ad82fbf00aab9dadfc817cad0fe341a33e",
+  "folds": [
+    {
+      "test_month": "2026-02",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "training_days": 91,
+      "selection_month": "2026-01",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-02/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-02/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-03",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "training_days": 122,
+      "selection_month": "2026-02",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-03/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-03/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-04",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "training_days": 150,
+      "selection_month": "2026-03",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-04/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-04/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-05",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "training_days": 180,
+      "selection_month": "2026-04",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-05/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-05/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-06",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "training_days": 210,
+      "selection_month": "2026-05",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-06/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-06/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-07",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "training_days": 241,
+      "selection_month": "2026-06",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-07/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-07/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-08",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "training_days": 271,
+      "selection_month": "2026-07",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        },
+        {
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 0.5
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-08/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-08/selected/fixed_linear_compact_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-09",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "training_days": 302,
+      "selection_month": "2026-08",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_linear_compact_ratio",
+      "family_weights": {
+        "fixed_linear_compact_ratio": 1.0
+      },
+      "leaves": [
+        {
+          "config": {
+            "id": 12,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "weight": 1.0
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-09/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-09/selected/fixed_linear_compact_ratio/predictions.npz"
+    }
+  ],
+  "fresh_fits": 15,
+  "causality_passed": true
+}

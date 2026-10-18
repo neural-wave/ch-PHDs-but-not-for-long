@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "fragment": "/Users/miguelnogales/.codex/visualizations/2026/10/17/01a14a1b-61ed-7000-a5ed-a18641bdccd3/ensemble-specialization.html",
+  "sha256": "8fa0c86da9e7b889e54e9e31ed9bf3b7b2a113c8df0559f0ad9595a873a8522e",
+  "bytes": 361166,
+  "default_ratio": "0.7205",
+  "zone2_analog_ratio": "0.8293",
+  "month_filter_visible_weight_rows": 1,
+  "score_rows": 7,
+  "objective_switch_verified": true,
+  "desktop_and_360px_layout_inspected": true,
+  "browser_console_errors": []
+}

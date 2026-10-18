@@ -1,0 +1,11 @@
+# Verbatim startup before completed optimization results
+
+# HACKATON project memory
+
+Minimize the equal-month q50 MAE ratio against mean-corrected linear interpolation. Use eight expanding February–September developmental tests: October–December 2025 training initially, adding one month through July 2026; preceding-month days 1–15 select, 16–end calibrate. Official four-zone data only, strictly prior quarters, known current hourly curves, frozen parameters, hourly means within 0.0001 EUR/MWh. Retain eleven ordered quantiles and calibrated 50/80/90/95% intervals. VALIDATION_PROTOCOL.md governs. Catastrophe classifiers remain paused.
+
+Active 2026-10-17: 384 fixed-scaling stronger-family fits, seed averaging and validation-selected blends; training continues to expand. Nightwatch 0c174584a3b9236d9f21ffd4 on root@93.91.156.85:55340, /workspace/HACKATON, /venv/main/bin/python. Log: /root/.local/share/nightwatch-hackaton/{ID}.log. Launched 17:25 Zurich; estimated finish 17:45. First/last-fold smoke audit passed: 24 candidate scores, 48 checkpoint replays, zero replay error. First two full folds completed; live processes and heartbeats verified. Results pending; no improvement claimed. Campaign/results: minimize_expanding_20261017. Initial preparation date-type failure was repaired and preserved.
+
+Prior references: original quantile blend 0.720494, selector 0.721285; posthoc zone best 0.718907, pre-test policy 0.719952. Quantile/zone artifacts audited/backed up. Normalization study: fixed physical scaling improved CNN/S4D/S5; stronger ensemble remains better. Nonlinear SSM ratios: TCN 0.778942, S4D 0.785554, S5 0.788695. One-layer S4D job d85b1d1b1b58a45af40c3a57 completed successfully; interpretation/local backup pending. FlowState showed no gain; offline 363-day refit audited. No deployment replacement.
+
+Next: run summarize_verified.py after completion, retrieve audited comparison/archive, compare pre-test selectors and inspect the training-size plot. Detail: memory/records/20261017T152702-expanding-minimization-preflight-audited-full-384-fit-traini-a6d33171.md. Previous context/evidence pointers preserved verbatim in memory/records/20261017_startup_before_minimize_expanding.md.

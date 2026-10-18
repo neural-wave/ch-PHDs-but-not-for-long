@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/offline_entrypoint.py", line 33, in <module>
+    main()
+  File "/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/offline_entrypoint.py", line 29, in main
+    runpy.run_path(str(script), run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/predict_prices.py", line 104, in <module>
+    main()
+  File "/private/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/predict_prices.py", line 100, in main
+    predict(args.model, args.hourly, args.history, args.output, args.quantiles_output, args.allow_trial)
+  File "/private/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/predict_prices.py", line 52, in predict
+    dates, hourly = read_hourly(hourly_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/pipeline_utils.py", line 86, in read_hourly
+    frame = _read_frame(path, HOURLY_COLUMNS)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/standalone_package/src/pipeline_utils.py", line 75, in _read_frame
+    raise ValueError(f'{path}: prices must be finite')
+ValueError: /var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/trial_artifacts/fixture/nonfinite_hourly.csv: prices must be finite

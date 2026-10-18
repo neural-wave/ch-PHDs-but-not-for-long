@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "plot": "expanding_selector_comparison.png",
+  "source": "campaigns/minimize_expanding_20261017/summarize_verified.py",
+  "checks": [
+    "eight training histories 3\u201310 months and 91\u2013302 days visible",
+    "no overlapping tick labels after correction",
+    "original/new selector series match recomputed monthly scores",
+    "interpolation parity line at one",
+    "seven negative differences and June positive difference",
+    "developmental and calendar-confounding note visible"
+  ],
+  "sha256": "8d361d106f135fd8a5622c4e161d4db71b9f460c660693499d2a93e3ec2e9b59"
+}

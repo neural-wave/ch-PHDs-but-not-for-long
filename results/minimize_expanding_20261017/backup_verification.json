@@ -1,0 +1,53 @@
+{
+  "verified": true,
+  "scientific_run_id": "0c174584a3b9236d9f21ffd4",
+  "archive": "/Users/miguelnogales/Documents/ChatGPT/HACKATON/results/minimize_expanding_20261017_completed.tar.gz",
+  "bytes": 2428656306,
+  "sha256": "6263d9223b7bcb7c9b4855ced55a74e4844ea1463d175866a5072d08236701d0",
+  "audit_passed": true,
+  "verified_selector_comparison": {
+    "original_selector_ratio": 0.7212852815039343,
+    "new_selector_ratio": 0.7088921710561056,
+    "relative_ratio_change": -0.017181981617576003,
+    "months_improved": 7,
+    "months_worsened": 1,
+    "months_tied": 0,
+    "original_pooled_mae": 4.181171866093176,
+    "new_pooled_mae": 4.107397336721399,
+    "worst_month_ratio": 0.7598895959510529,
+    "interpolation_error_reduction": 0.2911078289438944,
+    "folds": 8,
+    "expanding_training_months": [
+      3,
+      10
+    ],
+    "target_quarters": 92544,
+    "developmental": true,
+    "interpretation": "Training size and calendar month vary together; this is not an isolated training-size ablation.",
+    "coverage_50": 0.5328492392807747,
+    "width_50": 5.895887512437388,
+    "coverage_80": 0.8130510892116183,
+    "width_80": 13.079072260537002,
+    "coverage_90": 0.9071468706777317,
+    "width_90": 18.840891192457892,
+    "coverage_95": 0.9535031984785616,
+    "width_95": 25.079308284658854
+  },
+  "local_metadata_sha256": {
+    "completion.json": "9ee542898d099cc62c20b403290b5aa8ec0d3cd927ac0dd5a123f1b208d134fa",
+    "manifest.json": "5671920b1b4006b7323b7542be094366cf2031c8c594c1a3b90efc5f3bc7145f",
+    "audit.json": "299a4da6e59d1493055baa5fac2eca316d52f37b6ee3b36ca3da56d6223fe779",
+    "comparison.json": "b2020a3c392704329aa3b99076d53f72cd048bcc1c819baad218e629c718c098",
+    "REPORT.md": "8d07ad7b59258fcf652707e2b5182a8279562fafdd8eee4b815ff7ed70dcacf4",
+    "summary.csv": "bc4f92cebb89189e424f44eae57ba484b6831857765e697db447c4bf31ecc4f4",
+    "monthly_scores.csv": "d039ba44bbff6f1ef5d19bfc7a46a3bffb3b7a238394b7d51851045041eb8b5a",
+    "monthly_zone_scores.csv": "97db1c16ba37b4af0be0ef8b4a9c3cf45672a63bedb5265292c75b6d951530df",
+    "interval_metrics.csv": "ede60ab6087fab10944db313689648196faa2cfe9678995bbe2cc93bf9c2cead",
+    "confidence_bins.csv": "80da498b65324a04538343551d4ac549b20e666750545bee74c010bfc7979f34",
+    "selector_comparison_by_training_size.csv": "28ce7a4e25dc47f85e707c0717dd9c7151594ffcf576842905271b31c03d20ad",
+    "selector_interval_comparison.csv": "c7f2785598c799ca44a9c6f69bdcc0bdca6d14a800b452e3eb5ebd0afabe84eb",
+    "verified_selector_comparison.json": "073f6dd5129451c75c19d8864626badd18824f6034127ca3ea8e7abf41c8fbd9",
+    "expanding_selector_comparison.png": "8d361d106f135fd8a5622c4e161d4db71b9f460c660693499d2a93e3ec2e9b59",
+    "expanding_selector_comparison.svg": "2c222c3f85ee89b1c135a2df1a832143c7dbbd94a55a1cf8ebac20573a0f0361"
+  }
+}

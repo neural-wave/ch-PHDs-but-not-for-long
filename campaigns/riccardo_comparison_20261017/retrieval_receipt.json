@@ -1,0 +1,10 @@
+{
+  "base_archive": "results/riccardo_comparison_20261017_completed.tar.gz",
+  "base_archive_sha256": "26bce09651a8ec3a88f974ef3835bb17eedfc0258e56c1e7437c13a6d7776a4d",
+  "verified_remote_equal": true,
+  "final_report_sources": {
+    "summarize_riccardo_comparison.py": "8aea6d7609938930f44243c5178e85b18d675a6f98a40337c94f5c1dcff8e379",
+    "results/riccardo_comparison_20261017/REPORT.md": "57eb3dc9c3fb271cabc1d07b96befe6e99bd53a019db7aa67e53162c27501598",
+    "results/riccardo_comparison_20261017/september_comparison.csv": "f30ee26616a7c26a1f42840d7476239c2024ce7601c9cbcb948d6e5551b2d29e"
+  }
+}

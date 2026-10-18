@@ -1,0 +1,93 @@
+{
+  "by_month": [
+    {
+      "month": "2026-02",
+      "mixed_weights": {
+        "mlp_compact__fixed": 0.3333333333333333,
+        "cnn_rich__fixed": 0.3333333333333333,
+        "linear_compact__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    },
+    {
+      "month": "2026-03",
+      "mixed_weights": {
+        "mlp_compact__fixed": 0.3333333333333333,
+        "additive_compact__fixed": 0.3333333333333333,
+        "linear_rich__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    },
+    {
+      "month": "2026-04",
+      "mixed_weights": {
+        "mlp_compact__fixed": 0.3333333333333333,
+        "cnn_rich__fixed": 0.3333333333333333,
+        "cnn2d_analog__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    },
+    {
+      "month": "2026-05",
+      "mixed_weights": {
+        "cnn_rich__fixed": 0.3333333333333333,
+        "cnn2d_analog__fixed": 0.3333333333333333,
+        "mlp_compact__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    },
+    {
+      "month": "2026-06",
+      "mixed_weights": {
+        "cnn_rich__fixed": 0.3333333333333333,
+        "cnn2d_analog__standard": 0.3333333333333333,
+        "mlp_compact__fixed": 0.3333333333333333
+      },
+      "selector": "blend__mixed"
+    },
+    {
+      "month": "2026-07",
+      "mixed_weights": {
+        "cnn_rich__fixed": 0.3333333333333333,
+        "mlp_compact__fixed": 0.3333333333333333,
+        "cnn2d_analog__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    },
+    {
+      "month": "2026-08",
+      "mixed_weights": {
+        "cnn_rich__fixed": 0.3333333333333333,
+        "cnn2d_analog__fixed": 0.3333333333333333,
+        "mlp_compact__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    },
+    {
+      "month": "2026-09",
+      "mixed_weights": {
+        "mlp_compact__fixed": 0.3333333333333333,
+        "cnn2d_analog__fixed": 0.3333333333333333,
+        "cnn_rich__fixed": 0.3333333333333333
+      },
+      "selector": "blend__fixed"
+    }
+  ],
+  "sum_weights_over_folds": {
+    "mlp_compact__fixed": 2.6666666666666665,
+    "cnn_rich__fixed": 2.333333333333333,
+    "linear_compact__fixed": 0.3333333333333333,
+    "additive_compact__fixed": 0.3333333333333333,
+    "linear_rich__fixed": 0.3333333333333333,
+    "cnn2d_analog__fixed": 1.6666666666666665,
+    "cnn2d_analog__standard": 0.3333333333333333
+  },
+  "component_mode_count": {
+    "fixed": 23,
+    "standard": 1
+  },
+  "selector_choices": {
+    "blend__fixed": 7,
+    "blend__mixed": 1
+  }
+}

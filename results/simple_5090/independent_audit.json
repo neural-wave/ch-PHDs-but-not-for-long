@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "trials": 224,
+  "score_recomputation": "all August and September scores agree within 1e-10",
+  "hourly_mean_max_error": 5.684341886080802e-14,
+  "selection": "all global/family selections match August argmin",
+  "prediction_shape": [
+    61,
+    4,
+    24,
+    4
+  ],
+  "source_hash": "matches official manifest"
+}

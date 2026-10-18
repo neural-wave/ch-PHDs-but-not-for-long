@@ -1,0 +1,18 @@
+{
+  "config": {
+    "id": 10,
+    "arm": "width16",
+    "lr": 0.003,
+    "seed": 43,
+    "width": 16,
+    "clock": false,
+    "residual": false,
+    "analog": 0,
+    "context": 1
+  },
+  "validation_mae": 4.599606096744537,
+  "best_epoch": 106,
+  "epochs": 166,
+  "parameters": 3796,
+  "seconds": 3.684256663080305
+}

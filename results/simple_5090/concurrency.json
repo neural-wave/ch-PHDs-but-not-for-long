@@ -1,0 +1,21 @@
+{
+  "workers": 8,
+  "criterion": "lowest wall time on identical 16-job five-epoch workload",
+  "profile": [
+    {
+      "workers": 4,
+      "seconds": 8.060602971119806,
+      "jobs": 16
+    },
+    {
+      "workers": 8,
+      "seconds": 6.1541034928523,
+      "jobs": 16
+    },
+    {
+      "workers": 12,
+      "seconds": 6.844896249938756,
+      "jobs": 16
+    }
+  ]
+}

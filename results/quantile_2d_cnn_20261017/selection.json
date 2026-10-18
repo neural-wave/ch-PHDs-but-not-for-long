@@ -1,0 +1,546 @@
+{
+  "overall": {
+    "config": {
+      "id": 13,
+      "pack": "analog90",
+      "quantile_weight": 0.0,
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16
+    },
+    "fit_end": 302,
+    "val_end": 317,
+    "validation_mae": 4.509062469005585,
+    "best_epoch": 205,
+    "epochs": 265,
+    "seconds": 12.594578676857054,
+    "parameters": 5696,
+    "point_parameters": 4948
+  },
+  "quantile": {
+    "config": {
+      "id": 23,
+      "pack": "analog90",
+      "quantile_weight": 1.0,
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16
+    },
+    "fit_end": 302,
+    "val_end": 317,
+    "validation_mae": 4.519094824790955,
+    "best_epoch": 78,
+    "epochs": 138,
+    "seconds": 5.9253217179793864,
+    "parameters": 5696,
+    "point_parameters": 4948
+  },
+  "by_group": {
+    "raw_0": {
+      "config": {
+        "id": 0,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.735578894615173,
+      "best_epoch": 355,
+      "epochs": 415,
+      "seconds": 22.28424810618162,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    "raw_1": {
+      "config": {
+        "id": 9,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.7336554527282715,
+      "best_epoch": 235,
+      "epochs": 295,
+      "seconds": 13.993111565010622,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    "analog90_0": {
+      "config": {
+        "id": 13,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.509062469005585,
+      "best_epoch": 205,
+      "epochs": 265,
+      "seconds": 12.594578676857054,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    "analog90_1": {
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.519094824790955,
+      "best_epoch": 78,
+      "epochs": 138,
+      "seconds": 5.9253217179793864,
+      "parameters": 5696,
+      "point_parameters": 4948
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "id": 3,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.795463681221008,
+      "best_epoch": 117,
+      "epochs": 177,
+      "seconds": 10.890483726048842,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 2,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.843870997428894,
+      "best_epoch": 280,
+      "epochs": 340,
+      "seconds": 18.522405841154978,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 4,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.751635789871216,
+      "best_epoch": 138,
+      "epochs": 198,
+      "seconds": 9.410902222851291,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 0,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.735578894615173,
+      "best_epoch": 355,
+      "epochs": 415,
+      "seconds": 22.28424810618162,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 1,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.768884479999542,
+      "best_epoch": 377,
+      "epochs": 437,
+      "seconds": 23.585000263992697,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 5,
+        "pack": "raw",
+        "quantile_weight": 0.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.744849503040314,
+      "best_epoch": 107,
+      "epochs": 167,
+      "seconds": 7.953131393995136,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 9,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.7336554527282715,
+      "best_epoch": 235,
+      "epochs": 295,
+      "seconds": 13.993111565010622,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 7,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.776496589183807,
+      "best_epoch": 348,
+      "epochs": 408,
+      "seconds": 19.336167569970712,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 6,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.778721928596497,
+      "best_epoch": 394,
+      "epochs": 454,
+      "seconds": 21.75562909990549,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 10,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.789190292358398,
+      "best_epoch": 78,
+      "epochs": 138,
+      "seconds": 6.580807788064703,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 8,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.780285358428955,
+      "best_epoch": 465,
+      "epochs": 525,
+      "seconds": 25.49796301801689,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 11,
+        "pack": "raw",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.804958403110504,
+      "best_epoch": 107,
+      "epochs": 167,
+      "seconds": 7.834758085897192,
+      "parameters": 4608,
+      "point_parameters": 3860
+    },
+    {
+      "config": {
+        "id": 12,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.573596715927124,
+      "best_epoch": 112,
+      "epochs": 172,
+      "seconds": 8.264331682119519,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 15,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.54920619726181,
+      "best_epoch": 72,
+      "epochs": 132,
+      "seconds": 6.318958041025326,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 16,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.579299092292786,
+      "best_epoch": 52,
+      "epochs": 112,
+      "seconds": 5.4125032250303775,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 14,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.54522967338562,
+      "best_epoch": 110,
+      "epochs": 170,
+      "seconds": 8.267305249115452,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 13,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.509062469005585,
+      "best_epoch": 205,
+      "epochs": 265,
+      "seconds": 12.594578676857054,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 17,
+        "pack": "analog90",
+        "quantile_weight": 0.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.521357417106628,
+      "best_epoch": 68,
+      "epochs": 128,
+      "seconds": 6.086325800046325,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 18,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.616757035255432,
+      "best_epoch": 100,
+      "epochs": 160,
+      "seconds": 7.685060703894123,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 21,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.519424140453339,
+      "best_epoch": 80,
+      "epochs": 140,
+      "seconds": 6.603701380081475,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 22,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.553931355476379,
+      "best_epoch": 47,
+      "epochs": 107,
+      "seconds": 5.183091843035072,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 19,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.5956167578697205,
+      "best_epoch": 176,
+      "epochs": 236,
+      "seconds": 11.439398498972878,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 20,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.589142799377441,
+      "best_epoch": 199,
+      "epochs": 259,
+      "seconds": 12.101673200028017,
+      "parameters": 5696,
+      "point_parameters": 4948
+    },
+    {
+      "config": {
+        "id": 23,
+        "pack": "analog90",
+        "quantile_weight": 1.0,
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16
+      },
+      "fit_end": 302,
+      "val_end": 317,
+      "validation_mae": 4.519094824790955,
+      "best_epoch": 78,
+      "epochs": 138,
+      "seconds": 5.9253217179793864,
+      "parameters": 5696,
+      "point_parameters": 4948
+    }
+  ]
+}

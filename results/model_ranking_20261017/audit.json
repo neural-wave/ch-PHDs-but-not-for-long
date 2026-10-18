@@ -1,0 +1,184 @@
+{
+  "passed": true,
+  "source_campaigns": 13,
+  "reported_primary_rows": 154,
+  "ranked_primary_rows": 115,
+  "alias_rows": 39,
+  "monthly_rows": 1232,
+  "historical_rows": 121,
+  "candidate_records": 5197,
+  "campaigns_in_inventory": 50,
+  "oracle_rows": 10,
+  "expected_test_months": [
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "expected_test_days": [
+    28,
+    30,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30
+  ],
+  "targets_per_recipe": 92544,
+  "champion": "minimize_expanding_20261017/fixed_blend_ratio",
+  "best_pre_test_policy": {
+    "model_id": "ensemble_normalization_20261017/validation_selector",
+    "mean_monthly_ratio": 0.7083710434569991,
+    "pooled_mae": 4.106784906028097,
+    "note": "Per-fold choices use prior data; selecting this policy across campaigns is still developmental."
+  },
+  "source_receipts": [
+    {
+      "campaign": "normalized_validation_20261017",
+      "summary": "results/normalized_validation_20261017/summary.csv",
+      "summary_sha256": "77004eab0e3b2199de6ce03db4d22146f9eacee8cd1a5e8677aef228c9eb5fe4",
+      "monthly_sha256": "bcbc94d592a989ab335a69beaf261e972045ee8dcdc8332cc4ed9d174e514ac2",
+      "audit": "results/normalized_validation_20261017/audit.json",
+      "audit_sha256": "a2b7d3cbc765e79d839cf63a8e2b695e868d6bc35bb7276c00c9e3616ad570e1",
+      "rows": 9,
+      "audit_passed": true
+    },
+    {
+      "campaign": "monthly_ratio_20261017",
+      "summary": "results/monthly_ratio_20261017/summary.csv",
+      "summary_sha256": "77348db3cfcdb877b25a3894d87e46562630528f4ff8cbbd159e71759200fc17",
+      "monthly_sha256": "739bdd0c50396a7100b443de391d2694e9a8dda4a04621daa51e43e36bc5560e",
+      "audit": "results/monthly_ratio_20261017/audit.json",
+      "audit_sha256": "eb7e519ae4bc95a0cf6959dea13fad93abe063808b0989c6f192b18d264b786c",
+      "rows": 21,
+      "audit_passed": true
+    },
+    {
+      "campaign": "monthly_quantiles_20261017",
+      "summary": "results/monthly_quantiles_20261017/summary.csv",
+      "summary_sha256": "ea6d3bcfa8e7835c2bada26748c68ab1cfc1549be5de0ba88cb61121f9cb2bd5",
+      "monthly_sha256": "f7347ba51ad48e26a19c336cc2ba51fe34752dd1789efe50ea253029b5bc5226",
+      "audit": "results/monthly_quantiles_20261017/audit.json",
+      "audit_sha256": "f30b541282a4e788395c886147e292d92fc16acdde49b59a99e01fb2d33cdcc8",
+      "rows": 16,
+      "audit_passed": true
+    },
+    {
+      "campaign": "zone_weights_20261017",
+      "summary": "results/zone_weights_20261017/summary.csv",
+      "summary_sha256": "31383759c26448740f1bb5b113aade26ff0beb877fc727d1a4f23762a00646a3",
+      "monthly_sha256": "3ce01e2e34829e4267813895b1c3b572fd4687c6359531044c818682fe0a42e5",
+      "audit": "results/zone_weights_20261017/audit.json",
+      "audit_sha256": "919e2238be68cb2cb574a842f69cec235ef3c9aadca45aa3b9dc442885437cff",
+      "rows": 19,
+      "audit_passed": true
+    },
+    {
+      "campaign": "ssm_monthly_20261017",
+      "summary": "results/ssm_monthly_20261017/summary.csv",
+      "summary_sha256": "d3543f726ceeb6dceacc1604e45320c51c7bec6a8d08e93c2c78c0bf77498147",
+      "monthly_sha256": "acdbbf2f1f6b6bcf7d602729baadf410b1a11bbf189bbcd51f287bcebff5be03",
+      "audit": "results/ssm_monthly_20261017/audit.json",
+      "audit_sha256": "aec65823f37c64bcb56848199a462e00bf736a990fdc398e397cfa0b39f97a91",
+      "rows": 7,
+      "audit_passed": true
+    },
+    {
+      "campaign": "normalization_20261017",
+      "summary": "results/normalization_20261017/summary.csv",
+      "summary_sha256": "7258d671da1196257fae0b0cc00eb921a06874e296be3adfd23030961f192833",
+      "monthly_sha256": "7445db9e66391d3ddd2244cfdd1bbf862bec94b55a1afbad6903c0dc09894d99",
+      "audit": "results/normalization_20261017/audit.json",
+      "audit_sha256": "27086329c1034da4ead03d58adb6115f26c061b4e3ccadf8e9d725e6d35ae99e",
+      "rows": 14,
+      "audit_passed": true
+    },
+    {
+      "campaign": "linear_s4d_20261017",
+      "summary": "results/linear_s4d_20261017/summary.csv",
+      "summary_sha256": "6f65b565db16116f3a8289ae1430d04e5240e937ffc8204dcdae886924d2d645",
+      "monthly_sha256": "13d206758ee0afd4c14dbfd842bfa9ea6485175c7c135ca6563102c41ca64931",
+      "audit": "results/linear_s4d_20261017/audit.json",
+      "audit_sha256": "63059ac255c10cc7bb8d3b3ceaf7666aee154397515762a45b52ad41130be6d6",
+      "rows": 4,
+      "audit_passed": true
+    },
+    {
+      "campaign": "ensemble_normalization_20261017",
+      "summary": "results/ensemble_normalization_20261017/summary.csv",
+      "summary_sha256": "6938ba44a0bca6bdd2910381b1639d61aaa891b28cd504ea21333f14881410db",
+      "monthly_sha256": "40f817771b4d0b729827afe671b31af7229ba647ea5bde00ce7b7de6b874a12d",
+      "audit": "results/ensemble_normalization_20261017/audit.json",
+      "audit_sha256": "95e07199ccee2b5c85937444d9f7793f700a1e0fe78176a6b851a17c734deb32",
+      "rows": 17,
+      "audit_passed": true
+    },
+    {
+      "campaign": "minimize_expanding_20261017",
+      "summary": "results/minimize_expanding_20261017/summary.csv",
+      "summary_sha256": "bc4f92cebb89189e424f44eae57ba484b6831857765e697db447c4bf31ecc4f4",
+      "monthly_sha256": "d039ba44bbff6f1ef5d19bfc7a46a3bffb3b7a238394b7d51851045041eb8b5a",
+      "audit": "results/minimize_expanding_20261017/audit.json",
+      "audit_sha256": "299a4da6e59d1493055baa5fac2eca316d52f37b6ee3b36ca3da56d6223fe779",
+      "rows": 32,
+      "audit_passed": true
+    },
+    {
+      "campaign": "riccardo_comparison_20261017",
+      "summary": "results/riccardo_comparison_20261017/summary.csv",
+      "summary_sha256": "91adfe3b1842f6caec4bb7cac4288f66bb9767e23289be35f2f552467dd3771e",
+      "monthly_sha256": "1b989cac4ef8e8e17e586b7460a6e433f519f00c8eff1047c93df0652b7cf517",
+      "audit": "results/riccardo_comparison_20261017/independent_audit.json",
+      "audit_sha256": "b66048e31e28bd7b481777bbaf81a83de9c3801fab407fc79f96a60287737ca2",
+      "rows": 2,
+      "audit_passed": true
+    },
+    {
+      "campaign": "revin_quantiles_20261017",
+      "summary": "results/revin_quantiles_20261017/summary.csv",
+      "summary_sha256": "e9af1144587ff4a6834517d840f0677a15cb7a7cfdb5eed035e040fa894bcf32",
+      "monthly_sha256": "9e1c11c4ec6d523cece1b4e6f2db28513b591141231b3882e4a03b7e0ae1ce9a",
+      "audit": "results/revin_quantiles_20261017/audit.json",
+      "audit_sha256": "a95b6783046cacd073af8dc8b848e8e58e16a39defd70d62d8826bf5e6179d06",
+      "rows": 4,
+      "audit_passed": true
+    },
+    {
+      "campaign": "champion_revin_20261017",
+      "summary": "results/champion_revin_20261017/summary.csv",
+      "summary_sha256": "713c44705dc48d81c67e12b301e1641025a044e8d9d21c5fd24634890d732cba",
+      "monthly_sha256": "776fbc6f811c6f43cf2576006522364601a6dd0c02ffefff93afe8ec132e5a22",
+      "audit": "results/champion_revin_20261017/audit.json",
+      "audit_sha256": "171613ffbadc05281b90ce7abd50fcd76b3b6e2f11de4378b4c1f3ea333c63c5",
+      "rows": 4,
+      "audit_passed": true
+    },
+    {
+      "campaign": "linear_compact_revin_20261017",
+      "summary": "results/linear_compact_revin_20261017/summary.csv",
+      "summary_sha256": "a6db20674bae1707a97e516cb0d4e8f5ff0fcae3a614871162d082fdec01ff8a",
+      "monthly_sha256": "0c28c0eda9f25a8eea6c55ad9343a233ba2572f9640429f46a084ba12aed665f",
+      "audit": "results/linear_compact_revin_20261017/audit.json",
+      "audit_sha256": "0dc8442047359ad724b868bc3c0b5c4d840987d205c34c9bcbdd9d983afc01e3",
+      "rows": 4,
+      "audit_passed": true
+    }
+  ],
+  "exact_fold_recipes_sha256": "e746e5b6a418b035015b2804f1cc2c72a0e93be1b979cb7353f7fad6871b6b7a",
+  "checks": [
+    "passed owning audits",
+    "eight exact months and day counts",
+    "same corrected interpolation denominators",
+    "recomputed mean monthly ratios and pooled MAE",
+    "declared control alias score identity",
+    "historical/pretrained/oracle/smoke scope separation",
+    "source hashes and verified champion archive",
+    "eight exact champion fold recipes and 51 checkpoint leaf hashes"
+  ],
+  "limitation": "Metadata consolidation over prior audits, not a fresh full-model replay; budgets and inner objectives differ."
+}

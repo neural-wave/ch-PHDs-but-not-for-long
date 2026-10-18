@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "by_arm": {
+    "control": {
+      "validation_mae": 4.544768995914247,
+      "september_mae": 5.458611144857054,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "width16": {
+      "validation_mae": 4.572321673999713,
+      "september_mae": 5.538923184161298,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "clock": {
+      "validation_mae": 4.605312149182785,
+      "september_mae": 5.487314515389402,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "residual": {
+      "validation_mae": 4.554109462295717,
+      "september_mae": 5.536893718544804,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "analog7": {
+      "validation_mae": 4.458322244629888,
+      "september_mae": 5.346014480529921,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "analog90": {
+      "validation_mae": 4.412317887069382,
+      "september_mae": 5.177024160106511,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "context": {
+      "validation_mae": 4.432990687007656,
+      "september_mae": 5.2618853000242956,
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    }
+  },
+  "checks": [
+    "official input equivalence",
+    "42 fits",
+    "August choices",
+    "train-only statistics",
+    "feature reconstruction",
+    "metric reconstruction",
+    "conservation",
+    "checkpoint replay"
+  ]
+}

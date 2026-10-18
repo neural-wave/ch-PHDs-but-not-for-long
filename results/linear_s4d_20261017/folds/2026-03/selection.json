@@ -1,0 +1,300 @@
+{
+  "by_recipe": {
+    "learned_frequencies": {
+      "config": {
+        "id": 7,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 2.8977949027299315,
+      "selection_ratio": 0.8085913190832966,
+      "best_epoch": 297,
+      "parameters": 1264,
+      "seconds": 9.783474324969575
+    },
+    "fixed_frequencies": {
+      "config": {
+        "id": 15,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 2.9400796107882115,
+      "selection_ratio": 0.8203903128409048,
+      "best_epoch": 300,
+      "parameters": 1264,
+      "seconds": 9.653601164929569
+    },
+    "validation_selector": {
+      "config": {
+        "id": 7,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 2.8977949027299315,
+      "selection_ratio": 0.8085913190832966,
+      "best_epoch": 297,
+      "parameters": 1264,
+      "seconds": 9.783474324969575,
+      "chosen_recipe": "learned_frequencies"
+    },
+    "interpolation": {
+      "config": {
+        "id": "interpolation",
+        "family": "interpolation"
+      },
+      "selection_ratio": 1.0,
+      "validation_mae": 3.5837570529513894
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "id": 0,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.1539786546307154,
+      "selection_ratio": 0.8800760039242762,
+      "best_epoch": 25,
+      "parameters": 1104,
+      "seconds": 4.286690046079457
+    },
+    {
+      "config": {
+        "id": 1,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.1664571287219494,
+      "selection_ratio": 0.8835580559288614,
+      "best_epoch": 24,
+      "parameters": 1104,
+      "seconds": 4.4442272880114615
+    },
+    {
+      "config": {
+        "id": 2,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 2.9836969329745044,
+      "selection_ratio": 0.8325611124475887,
+      "best_epoch": 208,
+      "parameters": 1104,
+      "seconds": 10.376791137969121
+    },
+    {
+      "config": {
+        "id": 3,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 2.947467028773959,
+      "selection_ratio": 0.8224517521593434,
+      "best_epoch": 300,
+      "parameters": 1104,
+      "seconds": 12.096191065851599
+    },
+    {
+      "config": {
+        "id": 4,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 2.9460126496309083,
+      "selection_ratio": 0.8220459340999631,
+      "best_epoch": 294,
+      "parameters": 1264,
+      "seconds": 9.80579887307249
+    },
+    {
+      "config": {
+        "id": 5,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 2.9365421534474523,
+      "selection_ratio": 0.8194033766260018,
+      "best_epoch": 298,
+      "parameters": 1264,
+      "seconds": 9.928809198085219
+    },
+    {
+      "config": {
+        "id": 8,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.1414520144266174,
+      "selection_ratio": 0.8765806464095474,
+      "best_epoch": 27,
+      "parameters": 1104,
+      "seconds": 2.1023721790406853
+    },
+    {
+      "config": {
+        "id": 9,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.165375785261372,
+      "selection_ratio": 0.8832562703269164,
+      "best_epoch": 25,
+      "parameters": 1104,
+      "seconds": 1.9928657470736653
+    },
+    {
+      "config": {
+        "id": 6,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 2.9024326767263835,
+      "selection_ratio": 0.8098855294230788,
+      "best_epoch": 208,
+      "parameters": 1264,
+      "seconds": 7.959042696049437
+    },
+    {
+      "config": {
+        "id": 7,
+        "family": "learned_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 2.8977949027299315,
+      "selection_ratio": 0.8085913190832966,
+      "best_epoch": 297,
+      "parameters": 1264,
+      "seconds": 9.783474324969575
+    },
+    {
+      "config": {
+        "id": 11,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.0040821891152816,
+      "selection_ratio": 0.8382493843528628,
+      "best_epoch": 300,
+      "parameters": 1104,
+      "seconds": 9.68720140797086
+    },
+    {
+      "config": {
+        "id": 10,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 8,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 3.029153021574822,
+      "selection_ratio": 0.8452451721080627,
+      "best_epoch": 297,
+      "parameters": 1104,
+      "seconds": 9.932496221037582
+    },
+    {
+      "config": {
+        "id": 12,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 2.971678492979819,
+      "selection_ratio": 0.8292075417753278,
+      "best_epoch": 294,
+      "parameters": 1264,
+      "seconds": 9.716254082042724
+    },
+    {
+      "config": {
+        "id": 13,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 2.976350949935356,
+      "selection_ratio": 0.8305113986099641,
+      "best_epoch": 297,
+      "parameters": 1264,
+      "seconds": 9.688523819902912
+    },
+    {
+      "config": {
+        "id": 14,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 2.9418099730308684,
+      "selection_ratio": 0.8208732196996797,
+      "best_epoch": 208,
+      "parameters": 1264,
+      "seconds": 7.687484144931659
+    },
+    {
+      "config": {
+        "id": 15,
+        "family": "fixed_frequencies",
+        "width": 10,
+        "state": 16,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 2.9400796107882115,
+      "selection_ratio": 0.8203903128409048,
+      "best_epoch": 300,
+      "parameters": 1264,
+      "seconds": 9.653601164929569
+    }
+  ]
+}

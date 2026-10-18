@@ -1,0 +1,41 @@
+{
+  "pairs": [
+    {
+      "width": 32,
+      "seed": 17,
+      "hierarchy_selection": 4.577437483909307,
+      "direct_selection": 4.5980339919266475,
+      "hierarchy_test": 5.296314386123161,
+      "direct_test": 5.3315269857559375
+    },
+    {
+      "width": 32,
+      "seed": 43,
+      "hierarchy_selection": 4.580928829184908,
+      "direct_selection": 4.551559774358954,
+      "hierarchy_test": 5.312734377842787,
+      "direct_test": 5.296911162392673
+    },
+    {
+      "width": 64,
+      "seed": 17,
+      "hierarchy_selection": 4.601052618795048,
+      "direct_selection": 4.556569951232574,
+      "hierarchy_test": 5.431241505967652,
+      "direct_test": 5.3407923001039475
+    },
+    {
+      "width": 64,
+      "seed": 43,
+      "hierarchy_selection": 4.579818821021367,
+      "direct_selection": 4.5505071356103715,
+      "hierarchy_test": 5.29836803825326,
+      "direct_test": 5.352399540946592
+    }
+  ],
+  "hierarchy_test_mean": 5.3346645770467145,
+  "direct_test_mean": 5.330407497299787,
+  "hierarchy_test_wins": 2,
+  "hierarchy_selection_wins": 1,
+  "caveat": "Four seed/width-matched comparisons; hierarchical head also has0.25 half-hour auxiliary loss. Not a pure head-only ablation. HPO18 hierarchy vs6 direct is not a balanced comparison."
+}

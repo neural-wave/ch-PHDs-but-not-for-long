@@ -1,0 +1,20 @@
+{
+  "id": "cbf0b93e1888ddd4d52e0d11",
+  "title": "Champion ensemble with RevIN:51exact leaf refits",
+  "status_at_verification": "completed",
+  "host": "root@93.91.156.85",
+  "port": 55340,
+  "remote_project": "/workspace/HACKATON",
+  "remote_results": "/workspace/HACKATON/results/champion_revin_20261017",
+  "worker_pid": 15184,
+  "log": "/root/.local/share/nightwatch-hackaton/cbf0b93e1888ddd4d52e0d11.log",
+  "eta_seconds": 1200,
+  "edge_checks_passed": true,
+  "fresh_fits": 51,
+  "folds": 8,
+  "source_model": "minimize_expanding_20261017/fixed_blend_ratio",
+  "notification": "Nightwatch existing owner Telegram success/crash",
+  "full_audit_passed": true,
+  "checkpoints": 51,
+  "max_replay_error": 0.0
+}

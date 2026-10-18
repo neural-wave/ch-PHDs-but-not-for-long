@@ -1,0 +1,404 @@
+AET | Neural Wave 2026 
+ 
+HACKATHON 
+CHALLENGE | NEURAL WAVE 2026 
+From Hourly to Quarter-Hourly 
+Reconstruction of 15 -minute electricity price profiles across multiple 
+European markets 
+Challenge objective: transform an already available daily hourly curve into a realistic quarter-
+hourly profile, while maintaining exact consistency with the 24 reference 
+hourly prices. 
+Scope: Time-series reconstruction | Machine Learning | electricity markets 
+Proponent: Azienda Elettrica Ticinese (AET) 
+Project contact: Alex Mossi 
+1. Introduction 
+Azienda Elettrica Ticinese, AET, was established in 1958 with the mission of producing, transmitting 
+and commercializing electricity. T oday, AET is the leading electricity wholesaler in the Canton of 
+Ticino and is  one of the key players in the cantonal energy transition. 
+While the Swiss market remains its main reference market, AET also operates in several European 
+markets and maintains bilateral and over-the counter (OTC) energy and commercial relationships 
+with leading operators. AET is recognized as a reliable and qualified counterparty on the main 
+European power exchanges. 
+Participation in power markets requires a high level of expertise and knowledge  in front -office 
+activities such as  screen trading,  middle -office activities such as analysis, and in back -office 
+activities.  
+However, these capabilities alone are insufficient: to effectively assess market opportunities and 
+positions, analysis and trading activities require price curves  that are aligned with the granularity of 
+traded products and operational processes. 
+This requirement has become particularly relevant with the transition of the European day -ahead 
+market to quarter-hourly granularity. From 1st  October 2025 onwards,  prices that were previously 
+determined mainly on an hourly basis, will be  formed for 15 -minute intervals. However, many 
+forecasts, historical series and long -term curves remain available only at hourly granularity. 
+Therefore, a method is needed to reconstruct, for each hour, a realistic quarter-hourly profile for each 
+hour while preserving the original hourly average price. 
+Why the hourly price is not enough: simply replicating the hourly price over the four quarter-hours is 
+not sufficient because, even though the  average of the values is mathematically equivalent to the 
+hourly price, it does not capture the volatile intra-hour price dynamics. . Observed data often exhibits 
+recurring patterns, such as sawtooth profiles, which are important for position valuation, trading, and 
+the training of 15-minute models. 
+ 
+ 
+
+AET | Neural Wave 2026 
+2. Definitions 
+Definitions Description 
+CET/CEST Central European Time / Central European Summer Time. The Central European 
+time zone, is equal to UTC+1 under standard time (CET) and UTC+2 under daylight 
+saving time (CEST). 
+DST Daylight Saving Time. A seasonal time regime in which clocks are advanced by 
+one hour compared with standard time. In Europe it is in force from the last 
+Sunday in March to the last Sunday in October, with the clock change taking 
+place at 01:00 UTC. 
+ENTSO-E European Network of Transmission System Operators for Electricity. It is a 
+European association of transmission system operators (TSOs), including 
+Swissgrid for Switzerland. Its responsibilities include operating the Transparency 
+Platform, which publishes market and system data such as prices, load, 
+generation, and cross-border flows. 
+MAE Mean Absolute Error. An accuracy indicator equal to the mean of the absolute 
+differences between estimated and observed values: MAE = (1/n) · Σ |pᵢ − p̂ᵢ|. It is 
+expressed in the same unit as the measured quantity ( e.g. EUR/MWh) and, unlike 
+other indicators, it does not amplify the weight of larger errors. 
+OTC Over-the-Counter. Bilateral trading outside of regulated exchanges, concluded 
+directly between counterparties or through brokers. Contracts may be 
+standardized or customized, and their terms are agreed between the parties. 
+SDAC Single Day-Ahead Coupling. European single day-ahead market coupling 
+mechanism that simultaneously determines prices and cross-border electricity 
+exchanges in participating zones simultaneously, taking available transmission 
+capacities into account. Tt has operated at 15-minute granularity since 1 October 
+2025. 
+UTC Coordinated Universal Time. An international reference time scale that has not 
+subject to changes between standard time and daylight saving time. For this 
+reason, it is commonly used for recording and exchanging time series, as it 
+ensures a continuous and unambiguous sequence of intervals. 
+3. Day-ahead market context 
+In the day -ahead market, the spot price of electricity is determined one day before delivery.  This 
+means that electricity is actually bought and sold in advance. Market participants submit buy and 
+sell orders for the various delivery (intervals) periods of the next day in a so-called day-ahead auction 
+. The SDAC algorithm then uses  a single market -clearing process to match supply and demand , 
+taking into account capacity constraints between market areas.  
+This determines a single market price for each market area and each delivery interval. All participants 
+in the same area therefore refer to the same price for that specific interval. The ordered sequence of 
+these prices over the day constitutes the daily price curve. 
+  
+AET | Neural Wave 2026 
+Operational summary of the challenge  
+In short, the challenge involves reconstructing 15-minute intra-hour dynamics from the hourly curve 
+that is already available , subject to the following key requirements: 
+Element Essential rule 
+Daily input 24 hourly prices per zone, provided together. 
+Required output 96 15-minute prices per zone: four values for each hour. 
+Core constraint For each hour, the average of the four predicted quarter-hourly prices 
+must equal the provided hourly price. 
+Permitted data Official training set, hourly curve for the evaluated day, and prior 
+quarter-hourly history provided by the jury. No external sources. 
+Evaluation MAE on 15-minute prices, with equal weight for the four zones, 
+together with a qualitative assessment of robustness, clarity and 
+reproducibility. 
+4. Information available in the challenge 
+The day -ahead auction jointly determines the prices for each delivery interval for the next day. 
+Participants will therefore receive all 24 hourly prices for each zone and evaluation date together, so 
+they do not need to forecast subsequent hourly prices. Participants may process each hour 
+separately or the entire curve, using the method they consider most appropriate. During the training 
+process, only the data included in the official data package provided by organizers may be used. 
+5. Challenge objective 
+Participants must develop a model that, for each market area and day, transforms a curve composed 
+of 24 hourly prices into 96 15-minute prices, i.e. four values for each hour. 
+Daily input Required transformation Daily output 
+24 hourly prices Reconstruction of the four quarter-hours with 
+unchanged average 
+96 15-minute prices 
+ 
+To keep the dataset uniform, only days representable by 24 hours and 96 15-minute intervals will be 
+included. Days affected by the daylight-saving-time transition, which result in 23 or 25 hours, will be 
+excluded from the official dataset. 
+Core constraint: for each hour, the average of the four reconstructed quarter -hourly prices must 
+equal the reference hourly price. The model learns the shape within the hour, not a new hourly level. 
+  
+AET | Neural Wave 2026 
+Illustrative example 
+The following chart shows an actual day for Zone 0. The observed 15-minute price line shows marked 
+intra-hour dynamics; the reference hourly curve is represented as a flat baseline, replicated over the 
+four quarter -hours. The task is to reconstruct the qua rter-hourly profile without changing the 
+average of each hour. 
+ 
+Figure 1. Zone 0, 19 June 2026 — observed 15-minute prices and hourly price replicated over the four quarter-hours. 
+Data source: ENTSO-E Transparency Platform; AET processing. 
+6. Target definition 
+The official target comprises the four observed 15 -minute prices for each hour. The model must 
+produce four values , the average of which equals the provided hourly price. There is n o specific 
+decomposition or parameterization prescribed: teams are free to choose how to represent and 
+estimate the intra-hour profile. 
+Constraint for each hour h:  (1/4) * sum[q=1..4] P_hat(h,q) = H(h) 
+In the formula, H(h) denotes the provided hourly price and P_hat(h,q) the predicted price for quarter-
+hour q. The constraint defines the required output, but not the method used to obtain it. 
+7. Data availability 
+The official training set comprises a single historical file containing 15-minute day-ahead prices for 
+the following four zones, identified as Zone 0, Zone 1, Zone 2 and Zone 3. There are  363 valid days 
+available for each zone, equating to a total of 139,392 quarter-hourly prices. The hourly training curve 
+can be calculated as the arithmetic mean of the four prices within the same hour. 
+Data source and processing: the day-ahead prices used for the challenge originate from the ENTSO-
+E Transparency Platform. AET subsequently selected, processed and reorganized the data for the 
+purposes of the challenge .  In particular, market areas were distributed to participants using 
+anonymized identifiers (ZONE_0, ZONE_1, ZONE_2, ZONE_3). References to ENTSO -E exclusively 
+identify the source of publication of the data and do not imply sponsorship, approval or endorsement 
+of the challenge by ENTSO-E. 
+Time alignment: daily curves group together intervals belonging to the same delivery date. Source 
+timestamps are normalized to CET/CEST market time and observations are not solely aggregated on 
+the basis of the UTC date. 
+  
+
+AET | Neural Wave 2026 
+Dataset specifications 
+Element Specification 
+Official training set The period covers delivery dates from 1 October 2025 to 30 September 2026. 
+Excluding the two days affected by the daylight-saving-time transition (DST), 
+the official training set includes 363 valid delivery dates. For each included 
+zone, one daily curve will be available for each of these dates, always 
+consisting of 24 hours and 96 15-minute intervals. 
+Period excluded from 
+participant use 
+From 1st to 18th October 2026. Before the freeze, participants may not 
+consult or use data from these dates, even if public. After the freeze, the jury 
+may provide the frozen pipeline with 15-minute prices only for dates preceding 
+the evaluated day, for the calculation of lagged variables. This access does not 
+authorize retraining, calibration or changes to the solution. The period may 
+also be used by the organizers for stability and integrity checks. 
+Secret evaluation The secret evaluation will certainly include the delivery date of 19th October 
+2026 and may include additional delivery dates not communicated in 
+advance. The corresponding quarter-hourly targets will not be available to 
+participants at the time the solution is frozen. 
+Unit of measure EUR/MWh. 
+Target granularity Four 15-minute prices for each hour of the daily curve. 
+Reference hourly price Average of the four 15-minute prices within the hour; provided in the test set. 
+The training set contains only the file train_prices_15min.csv (delivery_date, market_id, hour_index, 
+quarter_index, price_eur_mwh). The market_id field takes the values ZONE_0, ZONE_1, ZONE_2 and 
+ZONE_3. For each evaluated date, the jury will provide the pipeline with test_hourly.csv 
+(delivery_date, market_id, hour_index, hourly_price_eur_mwh) and history_15min.csv, with the same 
+schema as the training file but limited to earlier dates. The quarter -hourly prices for the evaluated 
+date will remain hidden. 
+Dataset design choice: a single quarter -hourly file is sufficient for training, from which the hourly 
+average can be calculated. During evaluation, the day to be reconstructed is available only as an 
+hourly curve; the quarter-hourly history contains earlier dates. Only inputs derived from the provided 
+data are allowed. 
+Data design principle 
+Load, generation, and weather forecasts are not provided to the participants. The reason for this is 
+that the solution must also be applicable to various types of forward curve and to long-term horizons 
+for which thesevariables/forecasts are simply  not available. Teams are free to choose variables 
+derived solely from the permitted data and the 15-min the reconstruction method.  
+Use of historical data during inference.  
+During development, participants may only use the official training set for  training, calibration and 
+hyperparameter selection . However, as part of its inference logic, the solution may include the use 
+of lagged variables or other features derived from quarter -hourly history prior to the date to be 
+reconstructed. During evaluation, history_15min.csv may therefore also include observations after 
+the official training period and  before the evaluated delivery date. These observations can only be 
+used as inputs to the frozen pipeline according to rules established before the freezing. They cannot 
+be used to retrain the model, recalibrate parameters, modify hyperparameters or adapt the 
+methodology. 
+For instance, when evaluating the delivery date of 19 October 2026, the pipeline may use the quarter-
+hourly prices of earlier dates ,   including those after 30 September 2026, as lags, provided this  is  
+accounted for  in the submitted pipeline and does not require updating the model. 
+AET | Neural Wave 2026 
+8. Input rules 
+Availability rule 
+For each zone and evaluated date, the pipeline will receive  the 24 hourly prices for the day and a 
+history of 15-minute prices from earlier dates. Teams may use the entire hourly curve and construct 
+lagged variables from the history. Historical data provided after the freeze, even if more recent than 
+the training set, may feed only inference rules already fixed in the submitted code: t hey may not be 
+used to retrain the model, calibrate parameters or modify the rules. External sources and quarter -
+hourly prices for the day being reconstructed are prohibited. 
+Pretrained models and use of external code 
+Pretrained models, external weights, transfer learning, embeddings or components trained on data 
+not included in the official package are not allowed. Standard libraries, statistical methods, 
+traditional Machine Learning  models and code written by participants are allowed, provided that 
+training, validation, calibration and hyperparameter selection depend exclusively on the official 
+challenge training set. 
+Simple, robust, interpretable and easily verifiable solutions will be viewed positively by the jury. 
+Model complexity is not in itself a merit and must be justified by the benefits obtained. 
+9. Pipeline output and execution 
+During the evaluation stage, p articipants will not directly compute predictions themselves for the 
+secret evaluation day(s). The final evaluation will be carried out by the jury by using the code, model 
+and artifacts submitted by the teams. 
+The solution must  therefore include a complete, documented and easily executable inference 
+pipeline that, for each evaluated date, receives test_hourly.csv and history_15min.csv provided by 
+the organizers as input and automatically produces the required quarter -hourly predictions. 
+Execution must be possible without code modifications, without network access and without 
+undocumented manual intervention. Teams must clearly specify the command, script or entry point 
+required to start inference. 
+The pipeline must produce a file containing one price prediction for each delivery_date, market_id, 
+hour_index and quarter_index. 
+Field Description Constraint 
+delivery_date Delivery date (YYYY-MM-DD) Present in the test set 
+market_id Zone: ZONE_0, ZONE_1, ZONE_2 or 
+ZONE_3 
+Present in the test set 
+hour_index Delivery hour from 1 to 24 Chronological order 
+quarter_index Quarter-hour from 1 to 4 Four rows per hour 
+predicted_price_eur_mwh Estimated quarter-hourly price Average of the four values 
+equal to the hourly price 
+Before scoring, the organizers will verify that for each delivery_date, market_id and hour_index there are 
+exactly four finite numerical prices, one for each quarter_index from 1 to 4. The absolute difference between 
+their average and hourly_price_eur_mwh may not exceed 0.0001 EUR/MWh. Incomplete, duplicated or out-
+of-tolerance outputs will be considered non-compliant and will not proceed to official scoring. 
+No automatic correction of invalid outputs is provided. The flat baseline remains a comparison method that 
+teams may implement, not a fallback value inserted by the organizers. 
+The ability of the solution to be reproduced and executed quickly by the jury is an integral part of project 
+evaluation. 
+AET | Neural Wave 2026 
+10. Evaluation 
+Evaluation framework 
+Level What is checked Effect 
+Eligibility Complete and numeric output; four quarter-
+hours per hour; compliance with the hourly-
+average constraint; exclusive use of permitted 
+inputs. 
+A violation results in non-
+compliance or exclusion 
+from official scoring. 
+Quantitative 
+evaluation 
+ 
+MAE of quarter-hourly prices, calculated by day 
+and zone and then averaged with equal weight 
+across the four zones. 
+Determines the 
+quantitative ranking: a 
+lower value is better. 
+Qualitative 
+evaluation 
+ 
+Justified simplicity, robustness, interpretability, 
+methodological clarity and pipeline 
+reproducibility. 
+Contributes to the jury’s 
+final evaluation together 
+with the quantitative 
+score. 
+Quantitative evaluation 
+The quantitative metric is the Mean Absolute Error (MAE), i.e. the mean absolute difference between 
+estimated and observed 15 -minute prices, expressed in EUR/MWh. The MAE is first calculated for 
+each day and zone, then averaged across days for each zone. The official score is the simple average 
+of the MAEs of the four zones: each has a 25% weight and a lower value is better. 
+MAE_day = mean over 96 quarter-hours |P_hat(d,h,q) - P_obs(d,h,q)| 
+MAE_zone = mean over days MAE_day 
+Score = mean over zones MAE_zone 
+The quantitative score will be calculated exclusively by the organizers by running the submitted 
+solution on the secret evaluation dataset. 
+Diagnostics published together with the score: 
+− error by zone and by quarter-hour position within the hour; 
+− error distribution and analysis of the highest-error cases; 
+− compliance with the constraint that keeps the hourly average unchanged; 
+− comparison with the flat baseline, which replicates the hourly price over the four quarter -
+hours. 
+Qualitative evaluation 
+The quantitative ranking based on MAE is one component of the final evaluation and does not alone 
+determine the winner. The jury will also qualitatively  assess the simplicity of the approach, its 
+robustness, its interpretability,the clarity of the methodology and the reproducibility of the pipeline. 
+The extent to which any introduced complexity is actually justified by the results obtained will also 
+be considered. 
+The qualitative evaluation will be performed on the submitted solution, code and methodology 
+document . A simpler approach does not automatically receive a better evaluation, but unnecessary 
+or difficult-to-verify complexity may be penalized relative to a solution with comparable predictive 
+quality that is more transparent. 
+  
+AET | Neural Wave 2026 
+11. Evaluation protocol and reproducibility 
+The rules distinguish between the development stage  prior to the freezing of the pipeline and its 
+subsequent use during testing. All model choices must be reproducible from the official training set. 
+The term “frozen pipeline” refers to the entire submitted solution,  comprising the model, parameters 
+and hyperparameters, feature engineering, rules for  utilising historical data, post -processing and 
+any additional logic that could influence predictions. After the freeze, these components may not be 
+modified or adapted based on evaluation data. 
+ 
+Phase Allowed or required Not allowed 
+Development 
+before the freeze 
+Training from 1st October 2025 to 
+30th September 2026, excluding 
+the two DST days. From these 
+data: validation, model and 
+hyperparameter selection, training 
+and calibration. 
+Consulting or using, even 
+indirectly, prices from 1–18 
+October 2026, external data, 
+online archives or pretrained 
+weights. 
+Submission and 
+freeze 
+Code, configuration, 
+dependencies, seeds and 
+regenerable artifacts. Separate 
+entry points for training and 
+inference; pipeline executable 
+without undocumented manual 
+intervention. 
+Modifying the model, parameters, 
+features, post-processing or other 
+rules after submission based on 
+information relating to the test set. 
+Inference after the 
+freeze 
+Use the 24 hourly prices for the 
+evaluated date and 
+history_15min.csv provided by the 
+jury, including dates after the 
+training period but always before 
+the evaluated date. The history 
+may feed rules already fixed in the 
+code. 
+Using quarter-hourly prices for the 
+evaluated date, retraining, 
+recalibrating, selecting new 
+hyperparameters, or performing 
+external lookups and scraping. 
+The secret evaluation will certainly include the delivery date of 19 October 2026 , and may include 
+additional delivery dates  that are not communicated in advance. For each date, the jury will only 
+provide the pipeline with the hourly prices for that day and quarter -hourly history limited to earlier 
+dates. 
+The confirmed inclusion of 19 October 2026 does not imply that the solution should be optimized 
+specifically for that date: robustness may also be assessed on additional secret delivery dates not 
+communicated in advance. 
+The organizers may use the period from 1 to 18 October 2026 for stability and integrity checks. An 
+anomalous deviation from the results on the secret dates will not by itself constitute evidence of a 
+violation, but may prompt a review of the submitted code and artifacts. 
+The official baseline replicates the hourly price over the four quarter-hours. The jury may retrain the 
+solution from scratch using only the official training set and run inference without network access. A 
+violation of the input rules will result in exclusion from official scoring. 
+  
+AET | Neural Wave 2026 
+12. Expected submission 
+Each team must submit a self-contained solution including: 
+− complete code required for training and inference; 
+− clearly identified entry points to retrain the model from scratch and to run predictions on the 
+test set provided by the organizers; 
+− dependency files and environment configuration required for execution; 
+− any artefacts produced during training and required for inference, provided that they can be 
+regenerated by the submitted training pipeline; 
+− a methodology note describing the approach used and justifying the main design choices, 
+including features, the model, validation and post-processing; 
+This documentation should enable the jury to quickly understand the purpose of the model , the 
+rationale  behind the design choices, how to retrain it, and how to run it on new data. Preference will 
+be given to solutions in which the introduced complexity is proportionate to the benefit obtained and 
+in which training and inference can be executed reliably with a minimum number of manual steps. 
+13. Essential FAQ 
+Does the challenge also involve forecasting hourly prices? 
+No, the hourly curve is an input that is already available. The task is to reconstruct its 15 -minute 
+shape exclusively. 
+Does the model have to process each hour separately? 
+No,  all 24 hourly prices for the same day are provided together , so the team can model individual 
+hours or the entire curve. They may also use the quarter-hourly history made available to the pipeline 
+by the jury, but this is always limited to earlier dates and does not include the 15-minute prices for 
+the day (being predicted) in question. 
+Is it possible to train a single model for all zones? 
+Yes., both a single model for all zones, using “market_id” to distinguish them, and separate models 
+are permitted. The average of the MAEs of the four zones gives each zone the same weight in the 
+official score. 
+Are additional data such as demand, generation or weather provided? 
+No, the official package only includes the 15-minute training prices.  During the evaluation, the jury 
+will provide the hourly prices for the days to be reconstructed , as well as the prior quarter-hourly 
+history. Load, generation and weather data are not provided, and variables may not be obtained from 
+external sources. 
+Are pretrained models allowed? 
+No. To ensure comparability and reproducibility,  particpants must exclusively use the official 
+challenge training set and code that has not been trained on external series   for training, validation, 
+calibration and hyperparameter selection. 

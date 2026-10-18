@@ -1,0 +1,9 @@
+# HACKATON project memory
+
+Objective completed (2026-10-16): experimental reconstruction error minimization and ready-to-run delivery, using Ando GPU1. Only official inputs; no external/pretrained/October prices. All four zones enter jointly. User-requested evaluation: train Oct2025–Jul2026 (302 days), August31 validation, September30 development test; September was previously viewed.
+
+Selected302-day pipeline monthly_joint_blend_gpu1: August4.245329, September5.091209 EUR/MWh, about28.2% below same-period corrected interpolation7.090321. Lowest August score among five QA-passing monthly pipelines; September never selects current configurations/weights. Extensive base/CatBoost/joint-node/RevIN searches and joint reweighting completed. RevIN beats2/4 matched settings and gives a small mixture gain, not broad superiority. See REVIN_PROTOCOL.md. Whole-month evaluation audit passed11,520 finite unique rows and hourly mean error<3e-11; original GPU-cache TF32 drift documented.
+
+Separate all363-day final refit completed with settings/weights frozen; no held-out accuracy claim. Independent audit,22-component from-scratch recipe smoke and packaged inference passed. Nightwatch816b1393f18c891ba8a8de11 and76cb026d6d5a2f3593617af3 completed exit0. No required process remains pending.
+
+Ready delivery: submission/README.md, run.py, train_frozen.py, frozen_recipe.json, model.pkl and FREEZE_MANIFEST.json. All16 local file hashes verified. Delivered flattened model SHA8ccb3b8346b9800d911546cdb6e2476e64fa89c26f7f250dd55f842e11d75805. Remote mirror /home/mnogales/Projects/HACKATON/submission. Not externally submitted. Default root inference remains monthly manifest; explicit deployment manifest supported. Short report results/experiments_summary.html; requirement audit results/COMPLETION_AUDIT.md. Preserve evaluation and deployment distinction; secret-date performance unknown. Next action only upon new user instruction or jury-provided inputs.

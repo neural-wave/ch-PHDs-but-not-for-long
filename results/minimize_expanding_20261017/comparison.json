@@ -1,0 +1,9 @@
+{
+  "original_selector_ratio": 0.7212852815039343,
+  "new_selector_ratio": 0.7088921710561056,
+  "relative_selector_ratio_change": -0.017181981617576003,
+  "original_blend_ratio": 0.7204941118854624,
+  "lowest_reported_recipe": "fixed_blend_ratio",
+  "developmental": true,
+  "expanding_training": true
+}

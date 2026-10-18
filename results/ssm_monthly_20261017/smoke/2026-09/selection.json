@@ -1,0 +1,180 @@
+{
+  "by_recipe": {
+    "s4d": {
+      "config": {
+        "id": 0,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.501538170995781,
+      "selection_ratio": 0.8171699226680726,
+      "best_epoch": 2,
+      "parameters": 31020,
+      "seconds": 3.0428446331061423
+    },
+    "s5": {
+      "config": {
+        "id": 4,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.422978834705537,
+      "selection_ratio": 0.8055011003997671,
+      "best_epoch": 2,
+      "parameters": 31036,
+      "seconds": 3.0817077551037073
+    },
+    "gru": {
+      "config": {
+        "id": 8,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.474078637261494,
+      "selection_ratio": 0.8130911778793317,
+      "best_epoch": 2,
+      "parameters": 35244,
+      "seconds": 2.8656232999637723
+    },
+    "tcn": {
+      "config": {
+        "id": 12,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.417766055146986,
+      "selection_ratio": 0.8047268737191171,
+      "best_epoch": 2,
+      "parameters": 56844,
+      "seconds": 3.012617372907698
+    },
+    "compact": {
+      "config": {
+        "id": 16,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.526282377748206,
+      "selection_ratio": 0.8208453081935728,
+      "best_epoch": 2,
+      "parameters": 19180,
+      "seconds": 0.11699644010514021
+    },
+    "validation_selector": {
+      "config": {
+        "id": 12,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.417766055146986,
+      "selection_ratio": 0.8047268737191171,
+      "best_epoch": 2,
+      "parameters": 56844,
+      "seconds": 3.012617372907698,
+      "chosen_recipe": "tcn"
+    },
+    "interpolation": {
+      "config": {
+        "id": "interpolation",
+        "family": "interpolation"
+      },
+      "selection_ratio": 1.0,
+      "validation_mae": 6.732429036458332
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "id": 8,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.474078637261494,
+      "selection_ratio": 0.8130911778793317,
+      "best_epoch": 2,
+      "parameters": 35244,
+      "seconds": 2.8656232999637723
+    },
+    {
+      "config": {
+        "id": 16,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.526282377748206,
+      "selection_ratio": 0.8208453081935728,
+      "best_epoch": 2,
+      "parameters": 19180,
+      "seconds": 0.11699644010514021
+    },
+    {
+      "config": {
+        "id": 0,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.501538170995781,
+      "selection_ratio": 0.8171699226680726,
+      "best_epoch": 2,
+      "parameters": 31020,
+      "seconds": 3.0428446331061423
+    },
+    {
+      "config": {
+        "id": 12,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.417766055146986,
+      "selection_ratio": 0.8047268737191171,
+      "best_epoch": 2,
+      "parameters": 56844,
+      "seconds": 3.012617372907698
+    },
+    {
+      "config": {
+        "id": 4,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.422978834705537,
+      "selection_ratio": 0.8055011003997671,
+      "best_epoch": 2,
+      "parameters": 31036,
+      "seconds": 3.0817077551037073
+    }
+  ]
+}

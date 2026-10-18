@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 0,
+    "family": "learned_frequencies",
+    "width": 10,
+    "state": 8,
+    "lr": 0.001,
+    "seed": 17
+  },
+  "validation_mae": 4.1315258849309755,
+  "selection_ratio": 0.7934900166197963,
+  "best_epoch": 300,
+  "parameters": 1104,
+  "seconds": 23.67789996904321
+}

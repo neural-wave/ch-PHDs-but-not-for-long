@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "folds": 8,
+  "checkpoints": 15,
+  "max_replay_error": 0.0,
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "frozen_champion_weights": true,
+  "causality": true,
+  "original_linear_compact_identity": true,
+  "calibration_recomputed": true
+}

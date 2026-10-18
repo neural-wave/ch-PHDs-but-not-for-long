@@ -1,0 +1,127 @@
+{
+  "source_repository": "https://github.com/neural-wave/ch-PHDs-but-not-for-long",
+  "source_branch": "el_bicho/hackaton-research",
+  "source_commit": "36c172c604d7f1e9c98b62ba6199f8ca2ee3e1e7",
+  "deployment_id": "champion_348fit_15cal_20261017",
+  "sources": [
+    {
+      "original_path": "campaigns/monthly_ratio_20261017/sources/reconstruction.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/reconstruction.py",
+      "original_sha256": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+      "copied_to": "src/price_data.py",
+      "copied_sha256": "1b9cf0cae911026de7a12fd2af174ff2d9481e545aa8f301c2c9fb506ce6dbf3",
+      "kept_symbols": [
+        "ZONES",
+        "read_targets",
+        "baseline",
+        "features",
+        "rich_features"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    },
+    {
+      "original_path": "campaigns/monthly_ratio_20261017/sources/interpretable_models.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/interpretable_models.py",
+      "original_sha256": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+      "copied_to": "src/compact_features.py",
+      "copied_sha256": "0548ed2a35500f3fd0fa6a691d5b10fe1ca9360c89954c3236010dce7509ecc2",
+      "kept_symbols": [
+        "BASIS",
+        "compact_features"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    },
+    {
+      "original_path": "campaigns/monthly_ratio_20261017/sources/interpolation_history.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/interpolation_history.py",
+      "original_sha256": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+      "copied_to": "src/historical_errors.py",
+      "copied_sha256": "437b4a2f68b5a77fc3c161c0c84c34b681bf421b4ab34785eb037ed79d94be62",
+      "kept_symbols": [
+        "interpolation_history"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    },
+    {
+      "original_path": "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/parallel_zone_cnn.py",
+      "original_sha256": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+      "copied_to": "src/history_grid.py",
+      "copied_sha256": "2d6a9e252931ffa43311840f8a064fb2f0182208c5fd70a4a07e03699cb34b5a",
+      "kept_symbols": [
+        "AUX",
+        "build_inputs"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    },
+    {
+      "original_path": "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/tune_parallel_cnn.py",
+      "original_sha256": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+      "copied_to": "src/analog_cnn.py",
+      "copied_sha256": "81bf27df820f9648ba599b07e212a98913048c16c7c5b53308826eaa914a6e2b",
+      "kept_symbols": [
+        "ARMS",
+        "make_features",
+        "dimensions",
+        "Small2D"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    },
+    {
+      "original_path": "campaigns/monthly_ratio_20261017/experiment.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/experiment.py",
+      "original_sha256": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+      "copied_to": "src/feature_pipeline.py",
+      "copied_sha256": "2b77640ff8b2cb258e76ff9c27c3e8bbae25c63fc4056fb30ba4e2f4f39e7b11",
+      "kept_symbols": [
+        "weights_for",
+        "features",
+        "Global2D"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    },
+    {
+      "original_path": "campaigns/monthly_quantiles_20261017/trainq.py",
+      "frozen_bundle_path": "results/submission_champion_20261017/champion_submission/sources/trainq.py",
+      "original_sha256": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+      "copied_to": "src/quantile_models.py",
+      "copied_sha256": "7fe8db3769d00a9576aa9cec4ee9b1824ac6070dc9685001ea9a0b6c51f3b0bb",
+      "kept_symbols": [
+        "TAUS",
+        "INTERVALS",
+        "Quantiles",
+        "physical",
+        "intervals"
+      ],
+      "changes": "Keep required definitions; rename local imports; remove research runners and repository path injection."
+    }
+  ],
+  "trainer": {
+    "original_path": "campaigns/submission_champion_20261017/refit.py",
+    "original_sha256": "fec7730ff7eb1910c004b2d904b3e3e41090fa24f856ff0c879f7a5721afd495",
+    "adapted_to": "src/train_ensemble.py",
+    "changes": "Regenerate features from official CSV instead of research cache; device argument; separate trial outputs; no auto-install or export side effects."
+  },
+  "predictor": {
+    "original_path": "campaigns/submission_champion_20261017/runtime.py",
+    "original_sha256": "802f2e7a134d696351c6d9f90c81ced250c4ea5dbc8c2590f3f5546f56b0a20b",
+    "adapted_to": "src/predict_prices.py",
+    "changes": "Renamed imports, clear input validation, explicit checkpoint and CSV paths."
+  },
+  "removed_dependency": {
+    "path": "sources/simple_search.py",
+    "reason": "Used only by unselected research candidates, not the six frozen quantile models."
+  },
+  "copied_files": {
+    "data/train_prices_15min.csv": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+    "docs/challenge_rules.pdf": "986040c07a082de1089ed0fa4f0b5488d0a6ccd9c2af3c3b412a816199821d78",
+    "config/final_recipe.json": "fb39e40d5e43e030ab5acbf933de2286cd35be932238f4d06ace55d48ec25dc0",
+    "provenance/original_freeze.json": "015ffd3d03dd52178e69774b9570099c637cc8939bc51ec9fba4935783e460b2",
+    "provenance/original_bundle_manifest.json": "c378cd289139f98f769675889674e3d26b457b1a282a6c3fc12de733468f770c",
+    "provenance/original_environment.json": "b3659a1e2f8a404a9dd7a3cb6bdbcfe16dae9fe579eb3e8c052caf2f26bd92b7",
+    "provenance/original_audit.json": "40901a9f1b3975bbf65ea5d504f6848fd722dea42f2e67ee43e33a678cdcc45f",
+    "provenance/original_calibration.json": "01a4151d6fbb0262732ca75f74b6850ccd9b0065dcfda53159c7a501fbe3be36",
+    "provenance/original_specification.md": "d436a32d021ccb891b8b5520b75ae7b8dcb248a297d1c25f0dd0074a53e79182"
+  }
+}

@@ -1,0 +1,11 @@
+campaign,recipe,mae,source,reason
+four_frequency_20261017,fourier4,5.788495982411144,results/four_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+four_frequency_20261017,fourier4_freephase,4.903183278484447,results/four_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+four_frequency_20261017,pca4,4.989501092655629,results/four_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+four_frequency_20261017,pca8,4.402627337400418,results/four_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+four_frequency_20261017,pca16,3.4873672223524887,results/four_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+four_frequency_20261017,pca72,1.3594071185750746e-13,results/four_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+segmented_frequency_20261017,global8,4.903183278484447,results/segmented_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+segmented_frequency_20261017,noon,5.625718700040886,results/segmented_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+segmented_frequency_20261017,constant,5.2789740482534935,results/segmented_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."
+segmented_frequency_20261017,seasonal,5.287937401901275,results/segmented_frequency_20261017/metrics.json,"Target-derived oracle weights; representation bound, not a deployable predictor."

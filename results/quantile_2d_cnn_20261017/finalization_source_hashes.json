@@ -1,0 +1,7 @@
+{
+  "analyze_quantile_cnn.py": "afa1c20a0a07658b4f614016b89d68a779327a45c1247c4c6d069b46cfedf471",
+  "analyze_cnn_confidence.py": "7297c737a702aa6bf13d0fef8c0b360698785f24ddb5358aedc7e759a91c5f68",
+  "run_quantile_cnn.py": "fd593492dedd3794d44b860ea7aab42cdf422a4ecf7759dea763e75b6ba9597f",
+  "audit_quantile_cnn.py": "fab7fc39df6f316c244ab24e787c292011a2ee9662887a17e77c37d7182394b3",
+  "QUANTILE_2D_CNN_PROTOCOL.md": "b2221e83ea6e14f4731b50771294dd34872e281e7949f6016fb3470b8425d959"
+}

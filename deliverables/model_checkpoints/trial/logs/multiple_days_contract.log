@@ -1,0 +1,1 @@
+{'passed': True, 'dates': ['2025-10-07', '2025-10-08'], 'rows': 768, 'unique_keys': True, 'finite': True, 'max_hourly_mean_error': 2.5011104298755527e-11, 'ordered_quantiles': True, 'quantiles': 11, 'nested_calibrated_intervals': [50, 80, 90, 95]}

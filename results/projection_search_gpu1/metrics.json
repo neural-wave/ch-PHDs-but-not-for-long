@@ -1,0 +1,590 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-06-02"
+    ],
+    "validation": [
+      "2026-06-03",
+      "2026-08-01"
+    ],
+    "holdout": [
+      "2026-08-02",
+      "2026-09-30"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "parent_ensemble",
+      "config": {}
+    },
+    {
+      "name": "interpolation",
+      "config": {}
+    },
+    {
+      "name": "cat_0",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          420,
+          386,
+          132,
+          589
+        ],
+        "fixed_epochs": [
+          420,
+          386,
+          132,
+          589
+        ]
+      },
+      "validation_mae": 3.779546870028259
+    },
+    {
+      "name": "cat_0_projection",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          420,
+          386,
+          132,
+          589
+        ],
+        "fixed_epochs": [
+          420,
+          386,
+          132,
+          589
+        ],
+        "projection_weights": [
+          [
+            0.3143404454798262,
+            0.33173455226972837,
+            0.11398508197103494,
+            0.23993992027941055
+          ],
+          [
+            0.27198213934629584,
+            0.3281324622880041,
+            0.1604830463925178,
+            0.23940235197318244
+          ],
+          [
+            0.30182319207575464,
+            0.27655030419936066,
+            0.15327339453448924,
+            0.2683531091903955
+          ],
+          [
+            0.2973169671568554,
+            0.23821721917213362,
+            0.17178883728965505,
+            0.2926769763813559
+          ]
+        ],
+        "projection_validation": [
+          {
+            "zone": 0,
+            "later_validation_half_uniform": 2.555909530110063,
+            "later_validation_half_weighted": 2.5524585376298905,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 1,
+            "later_validation_half_uniform": 4.27479728185951,
+            "later_validation_half_weighted": 4.274173193346218,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 2,
+            "later_validation_half_uniform": 4.182554956062276,
+            "later_validation_half_weighted": 4.181539127214884,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 3,
+            "later_validation_half_uniform": 3.8100791639805798,
+            "later_validation_half_weighted": 3.809389158417701,
+            "weighted_enabled": true
+          }
+        ]
+      },
+      "validation_mae": 3.7766694254520794
+    },
+    {
+      "name": "cat_1",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          280,
+          192,
+          116,
+          603
+        ],
+        "fixed_epochs": [
+          280,
+          192,
+          116,
+          603
+        ]
+      },
+      "validation_mae": 3.7907106598250735
+    },
+    {
+      "name": "cat_1_projection",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 30,
+        "strategy": "quarter",
+        "seed": 17,
+        "epochs": [
+          280,
+          192,
+          116,
+          603
+        ],
+        "fixed_epochs": [
+          280,
+          192,
+          116,
+          603
+        ],
+        "projection_weights": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.40552444144065414,
+            0.1828725201351673,
+            0.14031041979531503,
+            0.27129261862886356
+          ]
+        ],
+        "projection_validation": [
+          {
+            "zone": 0,
+            "later_validation_half_uniform": 2.555478734627166,
+            "later_validation_half_weighted": 2.558882616886138,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 1,
+            "later_validation_half_uniform": 4.317840853064974,
+            "later_validation_half_weighted": 4.326641772584819,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 2,
+            "later_validation_half_uniform": 4.176769583991295,
+            "later_validation_half_weighted": 4.176880803308862,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 3,
+            "later_validation_half_uniform": 3.786686224037764,
+            "later_validation_half_weighted": 3.779722221731755,
+            "weighted_enabled": true
+          }
+        ]
+      },
+      "validation_mae": 3.7890201691841066
+    },
+    {
+      "name": "cat_2",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          1795
+        ],
+        "fixed_epochs": [
+          1795
+        ]
+      },
+      "validation_mae": 3.781871511432233
+    },
+    {
+      "name": "cat_2_projection",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          1795
+        ],
+        "fixed_epochs": [
+          1795
+        ],
+        "projection_weights": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.4527097996864111,
+            0.1404462781719084,
+            0.18363926551689017,
+            0.22320465662479033
+          ],
+          [
+            0.2348356828834815,
+            0.18566699964547842,
+            0.3427554101023997,
+            0.23674190736864045
+          ],
+          [
+            0.26462118706012794,
+            0.1380311614221987,
+            0.3201359043730558,
+            0.27721174714461766
+          ]
+        ],
+        "projection_validation": [
+          {
+            "zone": 0,
+            "later_validation_half_uniform": 2.5077299323048288,
+            "later_validation_half_weighted": 2.513119578845749,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 1,
+            "later_validation_half_uniform": 4.275928473077216,
+            "later_validation_half_weighted": 4.275302094860754,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 2,
+            "later_validation_half_uniform": 4.185439645613437,
+            "later_validation_half_weighted": 4.184575486113918,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 3,
+            "later_validation_half_uniform": 3.7948864640108533,
+            "later_validation_half_weighted": 3.7925128834813866,
+            "weighted_enabled": true
+          }
+        ]
+      },
+      "validation_mae": 3.778772416596879
+    },
+    {
+      "name": "cat_3",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          687
+        ],
+        "fixed_epochs": [
+          687
+        ]
+      },
+      "validation_mae": 3.8016586546894904
+    },
+    {
+      "name": "cat_3_projection",
+      "config": {
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          687
+        ],
+        "fixed_epochs": [
+          687
+        ],
+        "projection_weights": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.3446827093309697,
+            0.2619205362049844,
+            0.20842343308254996,
+            0.18497332138149594
+          ],
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ]
+        ],
+        "projection_validation": [
+          {
+            "zone": 0,
+            "later_validation_half_uniform": 2.5475885359001165,
+            "later_validation_half_weighted": 2.5532789809768413,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 1,
+            "later_validation_half_uniform": 4.30507519514988,
+            "later_validation_half_weighted": 4.309762769564163,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 2,
+            "later_validation_half_uniform": 4.159458105236781,
+            "later_validation_half_weighted": 4.158365613585712,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 3,
+            "later_validation_half_uniform": 3.8241918544487854,
+            "later_validation_half_weighted": 3.825108693586199,
+            "weighted_enabled": false
+          }
+        ]
+      },
+      "validation_mae": 3.8012333895516246
+    },
+    {
+      "name": "cat_4",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          1498
+        ],
+        "fixed_epochs": [
+          1498
+        ]
+      },
+      "validation_mae": 3.805488988487083
+    },
+    {
+      "name": "cat_4_projection",
+      "config": {
+        "depth": 6,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 30,
+        "strategy": "pooled",
+        "seed": 17,
+        "epochs": [
+          1498
+        ],
+        "fixed_epochs": [
+          1498
+        ],
+        "projection_weights": [
+          [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          [
+            0.4981360911157365,
+            0.22342140766501833,
+            0.09178705605295588,
+            0.18665544516628937
+          ],
+          [
+            0.2742776085657109,
+            0.22508607547000106,
+            0.21497970881568387,
+            0.28565660714860425
+          ],
+          [
+            0.2563602421903723,
+            0.19367836108597783,
+            0.30507636444948744,
+            0.24488503227416256
+          ]
+        ],
+        "projection_validation": [
+          {
+            "zone": 0,
+            "later_validation_half_uniform": 2.5426941162015706,
+            "later_validation_half_weighted": 2.5427734945733196,
+            "weighted_enabled": false
+          },
+          {
+            "zone": 1,
+            "later_validation_half_uniform": 4.3260351716357155,
+            "later_validation_half_weighted": 4.3208746831516205,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 2,
+            "later_validation_half_uniform": 4.178148909557988,
+            "later_validation_half_weighted": 4.178027429311943,
+            "weighted_enabled": true
+          },
+          {
+            "zone": 3,
+            "later_validation_half_uniform": 3.795236965166037,
+            "later_validation_half_weighted": 3.7951539820844045,
+            "weighted_enabled": true
+          }
+        ]
+      },
+      "validation_mae": 3.801859030339446
+    }
+  ],
+  "weights": [
+    [
+      1.0,
+      1.0,
+      0.9531654164048696,
+      0.9476837442228786
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0053788090193426395,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.012759280250540421
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.034444148712875856
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.018107627260543328,
+      0.0051128268137050955
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.023348147315244327,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "validation": {
+    "mae": 3.6644300568675816,
+    "mae_by_zone": [
+      2.766254996298705,
+      3.998932798798472,
+      3.8452557163411982,
+      4.047276716031951
+    ]
+  },
+  "holdout": {
+    "mae": 4.780831326095024,
+    "mae_by_zone": [
+      3.5633596783055665,
+      5.943692342179923,
+      5.228603734133669,
+      4.387669549760935
+    ]
+  },
+  "holdout_baseline": {
+    "mae": 6.682585530598958,
+    "mae_by_zone": [
+      5.580367296006943,
+      8.432777886284724,
+      6.453603081597222,
+      6.263593858506944
+    ]
+  },
+  "max_hourly_mean_error": 2.2737367544323206e-13,
+  "feature_mode": "rich",
+  "parent": "zone_search_gpu1",
+  "smoke": false,
+  "device": "NVIDIA RTX A5000",
+  "catboost_version": "1.2.8",
+  "projection_refine": true,
+  "offline_inference_qa": "passed; 384 unique finite predictions and hourly means within tolerance"
+}

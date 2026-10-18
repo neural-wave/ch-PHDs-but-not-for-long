@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "folds": 8,
+  "checkpoints": 384,
+  "max_replay_error": 0.0,
+  "parameters_by_family": {
+    "compact": 19180,
+    "s4d": 31020,
+    "s5": 31036
+  },
+  "independent_normalization_equations": true,
+  "heldout_preprocessing_invariance": true,
+  "flat_negative_inputs": true,
+  "physical_loss_equivalence": true,
+  "chronology": true,
+  "all_candidate_replay": true,
+  "calibration_rank_recomputed": true,
+  "quantile_order_and_hourly_conservation": true,
+  "mean_monthly_ratio_recomputed": true
+}

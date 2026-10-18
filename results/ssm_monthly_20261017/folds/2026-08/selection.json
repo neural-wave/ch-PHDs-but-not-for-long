@@ -1,0 +1,405 @@
+{
+  "by_recipe": {
+    "s4d": {
+      "config": {
+        "id": 1,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.625557948401437,
+      "selection_ratio": 0.6963151782534719,
+      "best_epoch": 28,
+      "parameters": 31020,
+      "seconds": 7.515996953938156
+    },
+    "s5": {
+      "config": {
+        "id": 4,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.663113647896887,
+      "selection_ratio": 0.7035280838391185,
+      "best_epoch": 29,
+      "parameters": 31036,
+      "seconds": 7.328353640856221
+    },
+    "gru": {
+      "config": {
+        "id": 8,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.614330377475589,
+      "selection_ratio": 0.6941588104218805,
+      "best_epoch": 24,
+      "parameters": 35244,
+      "seconds": 3.943895645905286
+    },
+    "tcn": {
+      "config": {
+        "id": 13,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.6607947771541567,
+      "selection_ratio": 0.7030826611479934,
+      "best_epoch": 19,
+      "parameters": 56844,
+      "seconds": 4.899113513063639
+    },
+    "compact": {
+      "config": {
+        "id": 19,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.667016849626269,
+      "selection_ratio": 0.7042776669235405,
+      "best_epoch": 15,
+      "parameters": 19180,
+      "seconds": 2.171236013993621
+    },
+    "validation_selector": {
+      "config": {
+        "id": 8,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.614330377475589,
+      "selection_ratio": 0.6941588104218805,
+      "best_epoch": 24,
+      "parameters": 35244,
+      "seconds": 3.943895645905286,
+      "chosen_recipe": "gru"
+    },
+    "interpolation": {
+      "config": {
+        "id": "interpolation",
+        "family": "interpolation"
+      },
+      "selection_ratio": 1.0,
+      "validation_mae": 5.206777235243055
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "id": 2,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 3.711147410810524,
+      "selection_ratio": 0.7127533475556533,
+      "best_epoch": 12,
+      "parameters": 31020,
+      "seconds": 6.121841176878661
+    },
+    {
+      "config": {
+        "id": 3,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.6316773136615264,
+      "selection_ratio": 0.6974904943084141,
+      "best_epoch": 14,
+      "parameters": 31020,
+      "seconds": 6.312483953079209
+    },
+    {
+      "config": {
+        "id": 0,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.6639589185511365,
+      "selection_ratio": 0.7036904095589886,
+      "best_epoch": 29,
+      "parameters": 31020,
+      "seconds": 7.466775976121426
+    },
+    {
+      "config": {
+        "id": 1,
+        "family": "s4d",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.625557948401437,
+      "selection_ratio": 0.6963151782534719,
+      "best_epoch": 28,
+      "parameters": 31020,
+      "seconds": 7.515996953938156
+    },
+    {
+      "config": {
+        "id": 6,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 3.665306717383093,
+      "selection_ratio": 0.7039491805672868,
+      "best_epoch": 9,
+      "parameters": 31036,
+      "seconds": 4.997296952875331
+    },
+    {
+      "config": {
+        "id": 7,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.7464390640624403,
+      "selection_ratio": 0.7195313049236363,
+      "best_epoch": 15,
+      "parameters": 31036,
+      "seconds": 5.722373954020441
+    },
+    {
+      "config": {
+        "id": 4,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.663113647896887,
+      "selection_ratio": 0.7035280838391185,
+      "best_epoch": 29,
+      "parameters": 31036,
+      "seconds": 7.328353640856221
+    },
+    {
+      "config": {
+        "id": 5,
+        "family": "s5",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.696194895067407,
+      "selection_ratio": 0.7098815674628989,
+      "best_epoch": 31,
+      "parameters": 31036,
+      "seconds": 7.5281810851302
+    },
+    {
+      "config": {
+        "id": 8,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.614330377475589,
+      "selection_ratio": 0.6941588104218805,
+      "best_epoch": 24,
+      "parameters": 35244,
+      "seconds": 3.943895645905286
+    },
+    {
+      "config": {
+        "id": 10,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 3.6150427798505476,
+      "selection_ratio": 0.6942956654275962,
+      "best_epoch": 16,
+      "parameters": 35244,
+      "seconds": 3.463825853075832
+    },
+    {
+      "config": {
+        "id": 11,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.667131135164948,
+      "selection_ratio": 0.7042996461465414,
+      "best_epoch": 10,
+      "parameters": 35244,
+      "seconds": 3.059427052969113
+    },
+    {
+      "config": {
+        "id": 9,
+        "family": "gru",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.6428874659723633,
+      "selection_ratio": 0.6996434851239716,
+      "best_epoch": 31,
+      "parameters": 35244,
+      "seconds": 4.42169343191199
+    },
+    {
+      "config": {
+        "id": 14,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 3.766529562031475,
+      "selection_ratio": 0.7233898033114696,
+      "best_epoch": 12,
+      "parameters": 56844,
+      "seconds": 4.181001937016845
+    },
+    {
+      "config": {
+        "id": 15,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.713270241147768,
+      "selection_ratio": 0.7131609934572458,
+      "best_epoch": 9,
+      "parameters": 56844,
+      "seconds": 4.021431896137074
+    },
+    {
+      "config": {
+        "id": 12,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.7584449282609462,
+      "selection_ratio": 0.7218371200241208,
+      "best_epoch": 24,
+      "parameters": 56844,
+      "seconds": 5.330743154976517
+    },
+    {
+      "config": {
+        "id": 13,
+        "family": "tcn",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.6607947771541567,
+      "selection_ratio": 0.7030826611479934,
+      "best_epoch": 19,
+      "parameters": 56844,
+      "seconds": 4.899113513063639
+    },
+    {
+      "config": {
+        "id": 18,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 17
+      },
+      "validation_mae": 3.7153515337814724,
+      "selection_ratio": 0.7135606833380125,
+      "best_epoch": 10,
+      "parameters": 19180,
+      "seconds": 2.0156749091111124
+    },
+    {
+      "config": {
+        "id": 19,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.003,
+        "seed": 43
+      },
+      "validation_mae": 3.667016849626269,
+      "selection_ratio": 0.7042776669235405,
+      "best_epoch": 15,
+      "parameters": 19180,
+      "seconds": 2.171236013993621
+    },
+    {
+      "config": {
+        "id": 17,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 3.677111103918046,
+      "selection_ratio": 0.7062163603148405,
+      "best_epoch": 22,
+      "parameters": 19180,
+      "seconds": 2.4552570399828255
+    },
+    {
+      "config": {
+        "id": 16,
+        "family": "compact",
+        "width": 32,
+        "state": 32,
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 3.730158503468875,
+      "selection_ratio": 0.7164044742639769,
+      "best_epoch": 45,
+      "parameters": 19180,
+      "seconds": 3.289971098070964
+    }
+  ]
+}

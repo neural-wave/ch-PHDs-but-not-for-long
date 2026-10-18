@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": 162,
+    "feature": "rich",
+    "anchor": "flat",
+    "family": "cnn",
+    "width": 32,
+    "depth": 3,
+    "lr": 0.003,
+    "seed": 17
+  },
+  "parameters": 40579,
+  "validation_mae": 4.3429247599061025,
+  "best_epoch": 10,
+  "epochs_run": 35,
+  "seconds": 1.0802494541276246,
+  "max_hourly_mean_error": 2.842170943040401e-14,
+  "replay_max_error": 0.0
+}

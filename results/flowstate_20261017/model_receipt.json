@@ -1,0 +1,21 @@
+{
+  "repository": "ibm-research/flowstate",
+  "requested_revision": "r1.1",
+  "checkpoint_sha": "940580f969036cfca514cdff725f7b02c03e1bcf",
+  "code_sha": "640f7c80a21a4e2253b6d6140d067452bb93e7d4",
+  "loading_info": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "parameters": 18524928,
+  "frozen": true,
+  "torch": "2.14.1+cu130",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "scale_factor": 0.25,
+  "horizon": 96,
+  "context_calendar_days": 28,
+  "point": "native median",
+  "note": "Pretrained external weights: exploratory, ineligible for submission"
+}

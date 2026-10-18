@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "by_history": {
+    "0": {
+      "validation_mae": 4.507859354907577,
+      "september_mae": 5.862788211764547,
+      "by_zone": [
+        4.728515446299325,
+        7.756547642222914,
+        5.763036021424044,
+        5.203053737111907
+      ]
+    },
+    "1": {
+      "validation_mae": 4.5657086121306545,
+      "september_mae": 5.485714800686491,
+      "by_zone": [
+        4.37204698193601,
+        7.2445005032714045,
+        5.588164522738998,
+        4.738147194799553
+      ]
+    }
+  },
+  "checks": [
+    "144 fits",
+    "August selection",
+    "train-only normalization",
+    "feature reconstruction",
+    "hourly conservation",
+    "checkpoint replay"
+  ]
+}

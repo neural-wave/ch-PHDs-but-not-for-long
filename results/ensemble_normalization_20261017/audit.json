@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "smoke": false,
+  "folds": 8,
+  "checkpoints_replayed": 384,
+  "reused_controls": 192,
+  "new_fixed_fits": 192,
+  "max_replay_error": 0.0,
+  "parameters_by_family": {
+    "linear_rich": 16770,
+    "linear_compact": 8385,
+    "additive_compact": 33411,
+    "mlp_compact": 8715,
+    "cnn_rich": 33163,
+    "cnn2d_analog": 17356
+  },
+  "train_only_preprocessing": true,
+  "reference_checkpoint_prediction_identity": true,
+  "original_blend_reproduced": true,
+  "selection_blends_calibration_scores_verified": true,
+  "ordered_quantiles_hourly_conservation": true
+}

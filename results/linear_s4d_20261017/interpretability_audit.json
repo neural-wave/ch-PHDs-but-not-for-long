@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "exact_linearity": true,
+  "models": [
+    {
+      "month": "2026-02",
+      "family": "learned_frequencies",
+      "contribution_error": 4.085620730620576e-14,
+      "numpy_convolution_error": 5.3290705182007514e-14,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-02",
+      "family": "fixed_frequencies",
+      "contribution_error": 1.9539925233402755e-14,
+      "numpy_convolution_error": 4.263256414560601e-14,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-03",
+      "family": "learned_frequencies",
+      "contribution_error": 6.039613253960852e-14,
+      "numpy_convolution_error": 1.0658141036401503e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-03",
+      "family": "fixed_frequencies",
+      "contribution_error": 4.3076653355456074e-14,
+      "numpy_convolution_error": 1.1546319456101628e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-04",
+      "family": "learned_frequencies",
+      "contribution_error": 8.260059303211165e-14,
+      "numpy_convolution_error": 1.4210854715202004e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-04",
+      "family": "fixed_frequencies",
+      "contribution_error": 3.019806626980426e-14,
+      "numpy_convolution_error": 1.1546319456101628e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-05",
+      "family": "learned_frequencies",
+      "contribution_error": 1.3855583347321954e-13,
+      "numpy_convolution_error": 1.4210854715202004e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-05",
+      "family": "fixed_frequencies",
+      "contribution_error": 1.5987211554602254e-13,
+      "numpy_convolution_error": 1.4210854715202004e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-06",
+      "family": "learned_frequencies",
+      "contribution_error": 1.0391687510491465e-13,
+      "numpy_convolution_error": 1.7763568394002505e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-06",
+      "family": "fixed_frequencies",
+      "contribution_error": 6.039613253960852e-14,
+      "numpy_convolution_error": 1.7763568394002505e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-07",
+      "family": "learned_frequencies",
+      "contribution_error": 1.1013412404281553e-13,
+      "numpy_convolution_error": 3.375077994860476e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-07",
+      "family": "fixed_frequencies",
+      "contribution_error": 5.1514348342607263e-14,
+      "numpy_convolution_error": 2.1316282072803006e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-08",
+      "family": "learned_frequencies",
+      "contribution_error": 4.973799150320701e-14,
+      "numpy_convolution_error": 1.2434497875801753e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-08",
+      "family": "fixed_frequencies",
+      "contribution_error": 4.618527782440651e-14,
+      "numpy_convolution_error": 1.687538997430238e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    },
+    {
+      "month": "2026-09",
+      "family": "learned_frequencies",
+      "contribution_error": 4.440892098500626e-14,
+      "numpy_convolution_error": 2.1316282072803006e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1254
+    },
+    {
+      "month": "2026-09",
+      "family": "fixed_frequencies",
+      "contribution_error": 3.019806626980426e-14,
+      "numpy_convolution_error": 1.354472090042691e-13,
+      "total_parameters": 1264,
+      "trainable_parameters": 1174
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "8fdc7710e2b4dcb2e26b4158",
+  "title": "HACKATON normalization: local archive backup and SHA256 verification",
+  "host": "local-mac",
+  "status_at_launch": "running",
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "worker_pid": 8794,
+  "transfer_pid": 8474,
+  "log": "/Users/miguelnogales/Documents/Codex/.nightwatch/workers/8fdc7710e2b4dcb2e26b4158.log",
+  "started_at": 1792250252.5261898,
+  "due_at": 1792250492.5261898,
+  "archive": "results/normalization_20261017_completed.tar.gz",
+  "expected_bytes": 1113362255,
+  "expected_sha256": "3a8096ec7bee060296665a478c3a967ad3cc7f4e00ad0a78b2b7a28d30a688ce",
+  "completion_receipt": "results/normalization_20261017/backup_verification.json",
+  "scientific_job_completed": true,
+  "scientific_audit_passed": true,
+  "final_status": "completed",
+  "exit_code": 0,
+  "ended_at": 1792250297.7327948,
+  "local_archive_sha256_verified": true
+}

@@ -1,0 +1,16 @@
+method,mae,ratio,selection,scope
+monthly_joint_blend,5.091208819992601,0.718050515821196,Full August,September-only study; no eight-month estimate
+analog90_CNN,5.177024160106511,0.730153682556803,August 1-15,September-only study; no eight-month estimate
+linear,5.200312772665335,0.7334382463709913,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+quantile_campaign_analog90_1,5.216650727743593,0.7357425079886524,August 1-15; overall/cohort choice,September-only study; no eight-month estimate
+linear_quantile_median,5.2261054787271854,0.7370759808554636,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+hierarchical,5.256047004883381,0.7412988538628531,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+ridge,5.294221569497154,0.746682892660187,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+direct,5.314717258010569,0.7495735499145854,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+quantile_campaign_analog90_0,5.336198180744609,0.752603161976248,August 1-15; overall/cohort choice,September-only study; no eight-month estimate
+additive,5.344595086385559,0.7537874391567693,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+mlp,5.363484080700285,0.7564514925457742,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+riccardo_reduced,5.5430633452991,0.781778873161083,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+riccardo_raw_hourly,5.597739867579726,0.7894903040638463,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+cnn,5.953009787162865,0.8395966261637516,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign
+interpolation,7.090321234809027,0.9999999999999999,August 1–15; campaign budgets/configuration provenance differ,September from eight-fold campaign

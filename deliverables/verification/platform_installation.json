@@ -1,0 +1,129 @@
+{
+  "reference_requirement": "torch==2.14.1",
+  "method": "pip install --dry-run --ignore-installed --only-binary=:all: with explicit target platform and Python 3.12",
+  "installs": [
+    {
+      "target": "manylinux_2_28_x86_64",
+      "python": "3.12",
+      "implementation": "cp",
+      "abi": "cp312",
+      "resolution_passed": true,
+      "index": "https://download.pytorch.org/whl/cpu",
+      "selected_packages": [
+        {
+          "name": "torch",
+          "version": "2.14.1+cpu",
+          "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl"
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.7.0",
+          "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl"
+        },
+        {
+          "name": "networkx",
+          "version": "3.6.1",
+          "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl"
+        },
+        {
+          "name": "setuptools",
+          "version": "78.1.0",
+          "url": "https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl"
+        },
+        {
+          "name": "sympy",
+          "version": "1.14.0",
+          "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl"
+        },
+        {
+          "name": "filelock",
+          "version": "3.32.3",
+          "url": "https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl"
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.6",
+          "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl"
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.3",
+          "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
+        },
+        {
+          "name": "mpmath",
+          "version": "1.3.0",
+          "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl"
+        }
+      ],
+      "runtime_tested": false
+    },
+    {
+      "target": "win_amd64",
+      "python": "3.12",
+      "implementation": "cp",
+      "abi": "cp312",
+      "resolution_passed": true,
+      "index": "https://download.pytorch.org/whl/cpu",
+      "selected_packages": [
+        {
+          "name": "torch",
+          "version": "2.14.1+cpu",
+          "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp312-cp312-win_amd64.whl"
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.7.0",
+          "url": "https://files.pythonhosted.org/packages/fd/3c/6a2bf344106328fd04963664a60b9bb6496fc25df8e962fcdc1367285fb9/fsspec-2026.7.0-py3-none-any.whl"
+        },
+        {
+          "name": "networkx",
+          "version": "3.6.1",
+          "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl"
+        },
+        {
+          "name": "setuptools",
+          "version": "78.1.0",
+          "url": "https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl"
+        },
+        {
+          "name": "sympy",
+          "version": "1.14.0",
+          "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl"
+        },
+        {
+          "name": "filelock",
+          "version": "3.32.3",
+          "url": "https://files.pythonhosted.org/packages/a7/8e/50f46a9c0ce8d2861a394c1347caae037ea0431d2f67d7feb151cbc4649a/filelock-3.32.3-py3-none-any.whl"
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.6",
+          "url": "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl"
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.3",
+          "url": "https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-win_amd64.whl"
+        },
+        {
+          "name": "mpmath",
+          "version": "1.3.0",
+          "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl"
+        }
+      ],
+      "runtime_tested": false
+    }
+  ],
+  "scope": "Wheel selection verified; execution was tested only on macOS arm64 CPU."
+}

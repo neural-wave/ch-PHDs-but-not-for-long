@@ -1,0 +1,112 @@
+{
+  "device": "mps",
+  "architecture": "one CNN per zone",
+  "training_period": [
+    "2025-10-01",
+    "2026-07-31"
+  ],
+  "validation_period": [
+    "2026-08-01",
+    "2026-09-30"
+  ],
+  "input_profile_features": [
+    "day_centered_level",
+    "hourly_slope",
+    "hourly_curvature",
+    "boundary_indicator"
+  ],
+  "calendar_features": [
+    "hour_embedding",
+    "weekday_embedding"
+  ],
+  "normalization_note": "No absolute normalized-level input channel; train-only zone scale is used to scale centered shape, slope and curvature and is reused unchanged on validation.",
+  "loss": "MAE, month weight strength 0.5, quarter weights 1.5,1,1,1.5",
+  "configs": {
+    "ZONE_0": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 64
+    },
+    "ZONE_1": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.0003,
+      "wd": 0.001,
+      "width": 96
+    },
+    "ZONE_2": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.0,
+      "lr": 0.0003,
+      "wd": 0.001,
+      "width": 96
+    },
+    "ZONE_3": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "width": 64
+    }
+  },
+  "models": {
+    "ZONE_0": {
+      "checkpoint": "experiments/selected_reduced_features_per_zone/models/ZONE_0_cnn_reduced_features.pt",
+      "parameter_count": 15536,
+      "best_epoch": 146,
+      "validation_metrics": {
+        "mae": 3.9334320181105547,
+        "qweighted_mae": 4.152027332737123,
+        "q1_mae": 4.925220896534453,
+        "q2_mae": 2.8341999092071095,
+        "q3_mae": 2.8467109807483113,
+        "q4_mae": 5.127596285952343
+      }
+    },
+    "ZONE_1": {
+      "checkpoint": "experiments/selected_reduced_features_per_zone/models/ZONE_1_cnn_reduced_features.pt",
+      "parameter_count": 32432,
+      "best_epoch": 138,
+      "validation_metrics": {
+        "mae": 6.437884493153209,
+        "qweighted_mae": 6.77718509739376,
+        "q1_mae": 8.029282313673214,
+        "q2_mae": 4.791287861085721,
+        "q3_mae": 4.691475082815179,
+        "q4_mae": 8.239492715038724
+      }
+    },
+    "ZONE_2": {
+      "checkpoint": "experiments/selected_reduced_features_per_zone/models/ZONE_2_cnn_reduced_features.pt",
+      "parameter_count": 32432,
+      "best_epoch": 131,
+      "validation_metrics": {
+        "mae": 5.465522422386797,
+        "qweighted_mae": 5.674058272206993,
+        "q1_mae": 6.463837233528812,
+        "q2_mae": 4.371330785740975,
+        "q3_mae": 4.474355560830656,
+        "q4_mae": 6.552566109446744
+      }
+    },
+    "ZONE_3": {
+      "checkpoint": "experiments/selected_reduced_features_per_zone/models/ZONE_3_cnn_reduced_features.pt",
+      "parameter_count": 15536,
+      "best_epoch": 127,
+      "validation_metrics": {
+        "mae": 4.513275982703024,
+        "qweighted_mae": 4.717199223022914,
+        "q1_mae": 5.46252970812713,
+        "q2_mae": 3.481701120929331,
+        "q3_mae": 3.5056184412778015,
+        "q4_mae": 5.60325466047783
+      }
+    }
+  }
+}

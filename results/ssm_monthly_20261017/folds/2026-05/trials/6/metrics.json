@@ -1,0 +1,15 @@
+{
+  "config": {
+    "id": 6,
+    "family": "s5",
+    "width": 32,
+    "state": 32,
+    "lr": 0.003,
+    "seed": 17
+  },
+  "validation_mae": 4.47057369796003,
+  "selection_ratio": 0.7690275110517564,
+  "best_epoch": 16,
+  "parameters": 31036,
+  "seconds": 3.9722600078675896
+}

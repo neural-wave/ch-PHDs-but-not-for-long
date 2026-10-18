@@ -1,0 +1,18 @@
+[
+  {
+    "bundle": "submission",
+    "verified_files": 15,
+    "missing_files": [
+      "model.pkl"
+    ],
+    "all_available_hashes_match": true
+  },
+  {
+    "bundle": "champion_submission",
+    "verified_files": 16,
+    "missing_files": [
+      "model.pt"
+    ],
+    "all_available_hashes_match": true
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "BEST_MODEL.md": "6b76999bbd781bb7e0627c408b7c09d7dd9345b6f983e591c867734eb87642dd",
+  "best_model.json": "349b0fd5558d3f9da7c23ac1a5037a7b658394a1b680e1ba721b9d24f8e9ea4c",
+  "MODEL_RANKING.md": "c3e3b8230c98afb755de4fa5d7e36e6e4e62332bb8639022054568ce97f24d10",
+  "VALIDATION_PROTOCOL.md": "c9ac59f3f0fe688f6da98fd2efd4e28ed73c4cfbc8393e15d7fb30a9773b7358",
+  "RUN_SOLUTION.md": "aae89e17257094ee1d3ecf122f1cb6c5137febfaaf19a989253bf3b6b6fbf98e",
+  "rank_models.py": "b5e92c2a3b16c047981566d4ab79aaf72558d135fa9a38de2343cb326312794a",
+  "export_best_research_recipe.py": "321d404a27eb805c3760f50e7462969e4592a6a4e7ee7b8f127623cd6f2666bc",
+  "results/LEARNED_MODELS.md": "5b72c0c6058e39a79da04946738c6ffbaf3b0ab0b69d1d2055cfa3d110df15fa",
+  "results/model_ranking_20261017/all_reported_models.csv": "ebd51b1d2fdee359fef211fcf2c29fde1376387e7ce20cc6892b9ea9133b90b4",
+  "results/model_ranking_20261017/audit.json": "1abde3806400a51631bdf1020c1f86249af0551e65f9f83ef32187906d0e028c",
+  "results/model_ranking_20261017/campaign_inventory.csv": "c97d82d425b2a4dd863af0a92c3574d5dea10c9d6e382f4b5cc32287bb3a90c0",
+  "results/model_ranking_20261017/candidate_catalog.csv": "f982873cdc0d2b24714e6e95c0e40a45e09806e3ac6357939959c6cffa3f6f0c",
+  "results/model_ranking_20261017/champion_per_fold.json": "e746e5b6a418b035015b2804f1cc2c72a0e93be1b979cb7353f7fad6871b6b7a",
+  "results/model_ranking_20261017/historical_ranking.csv": "0a386e59948493b5e522d87a98e25c92cf6be7a2cc7b188c7de35294449096cb",
+  "results/model_ranking_20261017/monthly_scores.csv": "0d2b8aaa06f0a9114f8c85cf6d652c6d90b085ce8129b19e4a1b1ccfc959d7f0",
+  "results/model_ranking_20261017/oracle_diagnostics.csv": "e507f73144f5e0ce3cdaa8eb27b501ec085be79492bceb2ad38a92f1499bc2d5",
+  "results/model_ranking_20261017/primary_ranking.csv": "1ed9e9e7a3106f93138c08b87ad89c51a9fc74802606296176b061568ae56f43",
+  "results/model_ranking_20261017/ranking.json": "f4f6e7ecae39c799b0ff051f0fbeb219420ee3f57fa9d13098c57102a70aa88c"
+}

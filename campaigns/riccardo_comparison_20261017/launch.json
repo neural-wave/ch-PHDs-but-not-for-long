@@ -1,0 +1,15 @@
+{
+  "nightwatch_id": "74e4190bed4235d2126ac27b",
+  "host": "root@93.91.156.85:55340",
+  "cwd": "/workspace/HACKATON",
+  "command": "/venv/main/bin/python run_riccardo_comparison.py",
+  "worker_pid": 8132,
+  "log": "/root/.local/share/nightwatch-hackaton/74e4190bed4235d2126ac27b.log",
+  "heartbeat_expected": true,
+  "heartbeat_timeout_seconds": 180,
+  "initial_estimate_minutes": 30,
+  "launch_local_time": "2026-10-17 16:00 CEST",
+  "status_at_launch": "running",
+  "smoke_audit_verified": true,
+  "note": "See completion.json and result audit for actual final outcome."
+}

@@ -1,0 +1,13 @@
+# HACKATON project memory
+
+Objective: official-only four-zone quarter-hour reconstruction; hourly means within0.0001EUR/MWh. Strictly prior history; no external/pretrained/October evaluation prices or inference-time refitting/recalibration. September is developmental, not blind. Zones anonymized. User values simple interpretable CNNs; approximately5.2MAE is good enough.
+
+Verified2026-10-17: quantile restart completed24fits/6held-out folds, independent audit passed. Seven-day paired Q/H rows; query24hourly prices repeated4times, queryQ zero and masked. Separate constrained-MAE and11ordered marginal-quantile heads. August1–15 selection,16–31 calibration. Quantile-cohort analog90 winner trial23 achieved SeptemberMAE5.216651,5696parameters; raw-history quantile5.427657. Overall August selector instead narrowly chose analogMAE-only trial13, September5.336198; preserve this distinction. Analog90 adds strictly prior90-day retrieval. No deployment change.
+
+Analog quantile90% bands: raw91.19% coverage; calibrated92.35%, width28.99EUR/MWh. Catastrophe test(dayMAE>10):1/182earlier held-out events,0/31August,0/30September; detector unvalidated. Exploratory continuous-error probe inputs+uncertainty Spearman.364, predictionMAE.789 versus constant1.009; layer summaries did not improve. August worst days ranked2/15 and1/16, but September worst(Sep5,MAE7.243) ranked28/30 and predicted4.808: warning missed. results/quantile_2d_cnn_20261017/validation_risk_diagnostic.json. Kernels/signed maps exported; local gradient maps more localized than standard Grad-CAM.
+
+Evidence: QUANTILE_2D_CNN_PROTOCOL.md; results/quantile_2d_cnn_20261017/{REPORT.md,audit.json,confidence_metrics.json,explanations/}. All checkpoints/predictions locally backed up; archive hash verified. Detailed results and verbatim previous startup: memory/records/20261017T120457-quantile-2d-cnn-completed-audited-mae5-216651-and-confidence-27bc0a19.md.
+
+Remote VastRTX5090 root@93.91.156.85:55340,/workspace/HACKATON,/venv/main/bin/python. Initial Nightwatch74129e6183143d5346163a8b reporting crash repaired without retraining; recovery2859d80fce9e2fbe5ef622a6 completed. Logs/root/.local/share/nightwatch-hackaton/{ID}.log. No active job for this campaign. Next inspect interpretations; no target-driven September search.
+
+Other verified results: prior42fit tuning analog90MAE5.177024, audited/backed up(results/parallel_2d_tuning_20261017); monthly blend5.091209, interpolation7.090321. Offline363-day refit audited/no submission(DEPLOYMENT_REFIT.md; results/COMPLETION_AUDIT.md). Older experiment/job context preserved in linked records. SSM untested.

@@ -1,0 +1,12 @@
+{
+  "execution_host": "root@93.91.156.85:55340",
+  "python": "3.12.15",
+  "numpy": "2.5.4",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "upstream_pinned_numpy": "2.5.3",
+  "upstream_pinned_torch": "2.8.0",
+  "upstream_reported_backend": "Apple MPS",
+  "note": "Optimization numerics may differ from the original MPS campaign; adaptation parity was verified in our common CUDA environment."
+}

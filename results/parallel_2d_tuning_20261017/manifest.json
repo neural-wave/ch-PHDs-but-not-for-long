@@ -1,0 +1,522 @@
+{
+  "sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "arms": {
+    "control": {
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    "width16": {
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    "clock": {
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    "residual": {
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    "analog7": {
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    "analog90": {
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    "context": {
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    }
+  },
+  "configs": [
+    {
+      "id": 0,
+      "arm": "control",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 1,
+      "arm": "control",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 2,
+      "arm": "control",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 3,
+      "arm": "control",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 4,
+      "arm": "control",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 5,
+      "arm": "control",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 8,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 6,
+      "arm": "width16",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 7,
+      "arm": "width16",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 8,
+      "arm": "width16",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 9,
+      "arm": "width16",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 10,
+      "arm": "width16",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 11,
+      "arm": "width16",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": false,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 12,
+      "arm": "clock",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 13,
+      "arm": "clock",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 14,
+      "arm": "clock",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 15,
+      "arm": "clock",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 16,
+      "arm": "clock",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 17,
+      "arm": "clock",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": false,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 18,
+      "arm": "residual",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 19,
+      "arm": "residual",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 20,
+      "arm": "residual",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 21,
+      "arm": "residual",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 22,
+      "arm": "residual",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 23,
+      "arm": "residual",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 0,
+      "context": 1
+    },
+    {
+      "id": 24,
+      "arm": "analog7",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    {
+      "id": 25,
+      "arm": "analog7",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    {
+      "id": 26,
+      "arm": "analog7",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    {
+      "id": 27,
+      "arm": "analog7",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    {
+      "id": 28,
+      "arm": "analog7",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    {
+      "id": 29,
+      "arm": "analog7",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 7,
+      "context": 1
+    },
+    {
+      "id": 30,
+      "arm": "analog90",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    {
+      "id": 31,
+      "arm": "analog90",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    {
+      "id": 32,
+      "arm": "analog90",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    {
+      "id": 33,
+      "arm": "analog90",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    {
+      "id": 34,
+      "arm": "analog90",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    {
+      "id": 35,
+      "arm": "analog90",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    {
+      "id": 36,
+      "arm": "context",
+      "lr": 0.001,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    },
+    {
+      "id": 37,
+      "arm": "context",
+      "lr": 0.001,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    },
+    {
+      "id": 38,
+      "arm": "context",
+      "lr": 0.001,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    },
+    {
+      "id": 39,
+      "arm": "context",
+      "lr": 0.003,
+      "seed": 17,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    },
+    {
+      "id": 40,
+      "arm": "context",
+      "lr": 0.003,
+      "seed": 43,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    },
+    {
+      "id": 41,
+      "arm": "context",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 5
+    }
+  ],
+  "train": 302,
+  "validation": 31,
+  "test": 30,
+  "note": "August only selection; September developmental, no target-based stopping. Grid always 7 days; analog90 uses up to90 strictly prior days."
+}

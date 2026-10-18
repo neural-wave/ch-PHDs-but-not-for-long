@@ -1,0 +1,108 @@
+{
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "split": {
+    "train": [
+      "2025-10-01",
+      "2026-06-02"
+    ],
+    "validation": [
+      "2026-06-03",
+      "2026-08-01"
+    ],
+    "holdout": [
+      "2026-08-02",
+      "2026-09-30"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "interpolation",
+      "validation_mae": 5.5721848687065965,
+      "config": {}
+    },
+    {
+      "name": "flat",
+      "validation_mae": 7.975394097222223,
+      "config": {}
+    },
+    {
+      "name": "ridge_100",
+      "validation_mae": 4.391692661151297,
+      "config": {
+        "alpha": 100
+      }
+    },
+    {
+      "name": "trees_20",
+      "validation_mae": 4.002764491231711,
+      "config": {
+        "n_estimators": 20,
+        "min_samples_leaf": 20,
+        "max_features": 0.8,
+        "n_jobs": 6,
+        "random_state": 42
+      }
+    },
+    {
+      "name": "net_4",
+      "validation_mae": 4.239234285928824,
+      "config": {
+        "width": 64,
+        "depth": 2,
+        "dropout": 0,
+        "lr": 0.001,
+        "seed": 17,
+        "epochs": 2
+      }
+    }
+  ],
+  "weights": [
+    0.14774060252862098,
+    0.0,
+    0.11507649861388432,
+    0.7371828988574948,
+    0.0
+  ],
+  "validation": {
+    "mae": 3.9426197856237146,
+    "mae_by_zone": [
+      3.190299092933274,
+      4.313266440459642,
+      3.950225026197591,
+      4.316688582904352
+    ]
+  },
+  "holdout": {
+    "mae": 5.109000161757156,
+    "mae_by_zone": [
+      4.0772999253963444,
+      6.306063498652161,
+      5.3503442336359575,
+      4.702292989344161
+    ]
+  },
+  "holdout_baseline": {
+    "mae": 6.682585530598958,
+    "mae_by_zone": [
+      5.580367296006943,
+      8.432777886284724,
+      6.453603081597222,
+      6.263593858506944
+    ]
+  },
+  "holdout_flat": {
+    "mae": 9.753914930555556,
+    "mae_by_zone": [
+      9.497603298611113,
+      11.833809895833335,
+      8.125244791666667,
+      9.559001736111112
+    ]
+  },
+  "max_hourly_mean_error": 1.1368683772161603e-13,
+  "history_policy": "Strictly earlier calendar dates; fixed 1,2,7-day lags and 7,28-day rolling means; no online fitting.",
+  "ensemble_optimizer_success": true,
+  "device": "NVIDIA RTX A5000",
+  "smoke": true,
+  "offline_inference_qa": "passed; 384 unique finite predictions and hourly means within tolerance"
+}

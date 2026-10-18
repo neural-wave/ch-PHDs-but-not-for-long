@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "learned_frequencies": {
+      "affine_superposition_error": 5.551115123125783e-17,
+      "recurrence_error": 6.328271240363392e-15,
+      "quarter_tick_hours": 0.25
+    },
+    "fixed_frequencies": {
+      "affine_superposition_error": 7.632783294297951e-17,
+      "recurrence_error": 9.992007221626409e-15,
+      "quarter_tick_hours": 0.25
+    }
+  }
+}

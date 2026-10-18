@@ -1,0 +1,44 @@
+{
+  "model": "minimize_expanding_20261017/fixed_blend_ratio",
+  "selection": "Minimum/maximum mean calibrated 90% width across all 964 held-out day-zone curves; observed errors not used to select",
+  "examples": [
+    {
+      "label": "Narrowest day/zone bands",
+      "date": "2026-03-14",
+      "zone": "ZONE_2",
+      "mean_width90": 7.038885431959192,
+      "mae": 3.2785185366396665,
+      "coverage90": 0.6458333333333334,
+      "mean_raw_q90_q10": 5.162117359610016
+    },
+    {
+      "label": "Widest day/zone bands",
+      "date": "2026-04-26",
+      "zone": "ZONE_3",
+      "mean_width90": 110.19869508138959,
+      "mae": 10.016197170013458,
+      "coverage90": 0.96875,
+      "mean_raw_q90_q10": 77.30716670772786
+    }
+  ],
+  "bins": {
+    "narrow": {
+      "n": 19652,
+      "mae": 2.112636114656273,
+      "mean_width90": 11.639733631136183,
+      "coverage90": 0.9254528801139833
+    },
+    "middle": {
+      "n": 44727,
+      "mae": 3.470473471310207,
+      "mean_width90": 16.099348679940903,
+      "coverage90": 0.9070807342321193
+    },
+    "wide": {
+      "n": 28165,
+      "mae": 6.496846418937044,
+      "mean_width90": 28.201244749131778,
+      "coverage90": 0.8902893662346885
+    }
+  }
+}

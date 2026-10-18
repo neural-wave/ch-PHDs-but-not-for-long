@@ -1,0 +1,128 @@
+{
+  "completed": true,
+  "artifact_kind": "isolated_trial",
+  "mode": "trial",
+  "device": "cpu",
+  "training_dates": [
+    "2025-10-01",
+    "2025-10-02",
+    "2025-10-03",
+    "2025-10-04"
+  ],
+  "calibration_dates": [
+    "2025-10-05",
+    "2025-10-06"
+  ],
+  "official_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "fixed_budget_no_calibration_stopping": true,
+  "original_frozen_weights_supplied": false,
+  "batch_size": 2,
+  "epoch_override": 1,
+  "training_days": 4,
+  "calibration_days": 2,
+  "components": [
+    {
+      "family": "mlp_compact",
+      "seed": 17,
+      "epochs": 1,
+      "parameters": 8715,
+      "weight": 0.16666666666666666,
+      "last_loss": 0.47971516847610474
+    },
+    {
+      "family": "mlp_compact",
+      "seed": 43,
+      "epochs": 1,
+      "parameters": 8715,
+      "weight": 0.16666666666666666,
+      "last_loss": 0.3738871216773987
+    },
+    {
+      "family": "cnn_rich",
+      "seed": 43,
+      "epochs": 1,
+      "parameters": 33163,
+      "weight": 0.16666666666666666,
+      "last_loss": 0.3743242025375366
+    },
+    {
+      "family": "cnn_rich",
+      "seed": 17,
+      "epochs": 1,
+      "parameters": 33163,
+      "weight": 0.16666666666666666,
+      "last_loss": 0.3958900272846222
+    },
+    {
+      "family": "cnn2d_analog",
+      "seed": 17,
+      "epochs": 1,
+      "parameters": 17356,
+      "weight": 0.16666666666666666,
+      "last_loss": 0.3985142111778259
+    },
+    {
+      "family": "cnn2d_analog",
+      "seed": 43,
+      "epochs": 1,
+      "parameters": 17356,
+      "weight": 0.16666666666666666,
+      "last_loss": 0.39938539266586304
+    }
+  ],
+  "source_commit": "36c172c604d7f1e9c98b62ba6199f8ca2ee3e1e7",
+  "feature_shapes": {
+    "rich": [
+      6,
+      4,
+      24,
+      389
+    ],
+    "compact": [
+      6,
+      4,
+      24,
+      194
+    ],
+    "cnn": [
+      6,
+      175,
+      96
+    ],
+    "curve": [
+      6,
+      96
+    ],
+    "rich_knots": [
+      3,
+      389
+    ],
+    "compact_knots": [
+      3,
+      194
+    ]
+  },
+  "causal_probes": [
+    "2025-10-01",
+    "2025-10-04",
+    "2025-10-05",
+    "2025-10-06"
+  ],
+  "cpu_replay_max_error": 0.0,
+  "max_hourly_mean_error": 5.684341886080802e-14,
+  "seconds": 1.3580441669982974,
+  "model_sha256": "92df42701dcacc27a51a2ba5d564df95bcfde20dca542b7aaafc416ff0147e9a",
+  "environment": {
+    "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:11:32) [Clang 20.1.8 ]",
+    "executable": "/Users/ghetti/work/ch-PHDs-but-not-for-long/jury_pipeline/.venv/bin/python",
+    "system": "Darwin",
+    "machine": "arm64",
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "cuda_available": false,
+    "cuda_build": null,
+    "threads": 1
+  },
+  "accuracy_evaluated": false
+}

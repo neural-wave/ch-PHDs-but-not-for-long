@@ -1,0 +1,11 @@
+{
+  "selected_by": "validation_mae_only",
+  "best_directory": "catboost_search_gpu1",
+  "validation_scores": {
+    "search_gpu1": 3.7537877375962414,
+    "rich_search_gpu1": 3.6760608910808994,
+    "zone_search_gpu1": 3.664742117226953,
+    "catboost_search_gpu1": 3.6637283687430515,
+    "projection_search_gpu1": 3.6644300568675816
+  }
+}

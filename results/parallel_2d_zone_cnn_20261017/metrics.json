@@ -1,0 +1,178 @@
+{
+  "by_history": {
+    "0": {
+      "config": {
+        "id": 2,
+        "history": false,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 71
+      },
+      "validation_mae": 4.8938485980033875,
+      "best_epoch": 189,
+      "epochs": 219,
+      "parameters": 940,
+      "seconds": 5.002706469036639,
+      "september_mae": 5.903767083589398,
+      "by_zone": [
+        4.726263625375809,
+        7.739801152950049,
+        5.949668640536464,
+        5.199334915495269
+      ],
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    },
+    "1": {
+      "config": {
+        "id": 3,
+        "history": true,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.605012238025665,
+      "best_epoch": 251,
+      "epochs": 281,
+      "parameters": 1388,
+      "seconds": 6.423018192872405,
+      "september_mae": 5.431126973958367,
+      "by_zone": [
+        4.160495879755432,
+        7.0783723527891125,
+        5.695642433355258,
+        4.789997229933666
+      ],
+      "hourly_mean_error": 5.684341886080802e-14,
+      "replay_max_error": 0.0
+    }
+  },
+  "interpolation_september_mae": 7.090321234809027,
+  "caveat": "August selection only; September developmental; no deployment refit",
+  "candidates": [
+    {
+      "config": {
+        "id": 0,
+        "history": false,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 5.019862055778503,
+      "best_epoch": 197,
+      "epochs": 227,
+      "parameters": 940,
+      "seconds": 10.769036771031097
+    },
+    {
+      "config": {
+        "id": 1,
+        "history": false,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 4.959286153316498,
+      "best_epoch": 218,
+      "epochs": 248,
+      "parameters": 940,
+      "seconds": 10.813525028061122
+    },
+    {
+      "config": {
+        "id": 2,
+        "history": false,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 71
+      },
+      "validation_mae": 4.8938485980033875,
+      "best_epoch": 189,
+      "epochs": 219,
+      "parameters": 940,
+      "seconds": 5.002706469036639
+    },
+    {
+      "config": {
+        "id": 3,
+        "history": true,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 17
+      },
+      "validation_mae": 4.605012238025665,
+      "best_epoch": 251,
+      "epochs": 281,
+      "parameters": 1388,
+      "seconds": 6.423018192872405
+    },
+    {
+      "config": {
+        "id": 5,
+        "history": true,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 71
+      },
+      "validation_mae": 4.6617391705513,
+      "best_epoch": 191,
+      "epochs": 221,
+      "parameters": 1388,
+      "seconds": 5.005602142075077
+    },
+    {
+      "config": {
+        "id": 4,
+        "history": true,
+        "width": 8,
+        "depth": 1,
+        "kernel": [
+          2,
+          8
+        ],
+        "lr": 0.001,
+        "seed": 43
+      },
+      "validation_mae": 4.618000388145447,
+      "best_epoch": 289,
+      "epochs": 300,
+      "parameters": 1388,
+      "seconds": 6.871311247115955
+    }
+  ]
+}

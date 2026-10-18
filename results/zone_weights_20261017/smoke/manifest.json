@@ -1,0 +1,35 @@
+{
+  "source": "results/monthly_quantiles_20261017",
+  "source_manifest_sha256": "e39995a9ed99040475ddfbab786e7e3e806ec104857dd3615e4cc94e0951d274",
+  "source_audit_sha256": "f30b541282a4e788395c886147e292d92fc16acdde49b59a99e01fb2d33cdcc8",
+  "source_data_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "code_hashes": {
+    "campaigns/zone_weights_20261017/zone_blend.py": "2e2c2b40227a5f392f5a823f9032296e2e9ab054cb1dd02f41d71331fcad85d2",
+    "campaigns/zone_weights_20261017/audit.py": "6c64004911fa346c06c324997bd85538b96fc78535c6015c6c9fdb9ae3ed1370",
+    "campaigns/zone_weights_20261017/run.py": "e3f67be95e8bd73dd0ac7bdc105a04af4a6db813f514dcce62df202cec291738",
+    "campaigns/zone_weights_20261017/PROTOCOL.md": "850e95354d993aeee4c701df48b2ab3d7a4fc7d2185e015522af6b2cf7fcc61a"
+  },
+  "quantile_helper_sha256": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch_version": "2.14.1+cu130",
+  "fitting": "preceding days1-15 only",
+  "tuning": "fit1-10/score11-15; refit1-15",
+  "calibration": "preceding16-end",
+  "test": "following full month",
+  "alpha_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "expert_order": [
+    "linear_rich",
+    "linear_compact",
+    "additive_compact",
+    "mlp_compact",
+    "cnn_rich",
+    "cnn2d_analog"
+  ],
+  "smoke": true
+}

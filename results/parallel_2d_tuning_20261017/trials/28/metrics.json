@@ -1,0 +1,18 @@
+{
+  "config": {
+    "id": 28,
+    "arm": "analog7",
+    "lr": 0.003,
+    "seed": 43,
+    "width": 16,
+    "clock": true,
+    "residual": true,
+    "analog": 7,
+    "context": 1
+  },
+  "validation_mae": 4.480719566345215,
+  "best_epoch": 37,
+  "epochs": 97,
+  "parameters": 4948,
+  "seconds": 2.309582724934444
+}

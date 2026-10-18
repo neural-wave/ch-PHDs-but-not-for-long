@@ -1,0 +1,1094 @@
+{
+  "model_id": "minimize_expanding_20261017/fixed_blend_ratio",
+  "source_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "training_code_hashes": {
+    "campaigns/monthly_ratio_20261017/sources/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+    "campaigns/monthly_ratio_20261017/sources/interpretable_models.py": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+    "campaigns/monthly_ratio_20261017/sources/interpolation_history.py": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+    "campaigns/monthly_ratio_20261017/sources/simple_search.py": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+    "campaigns/monthly_ratio_20261017/sources/tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b",
+    "campaigns/monthly_ratio_20261017/sources/parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+    "campaigns/monthly_ratio_20261017/experiment.py": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+    "campaigns/monthly_ratio_20261017/audit.py": "21f6b9df3c0e7b97837a06ea4b74b23b064be16a1b9bd92bef672240ae75a661",
+    "campaigns/monthly_ratio_20261017/run.py": "214135bdc4377b89a7909cffde51c051026a25810eb13d338e3a2fc1ceedd7ca",
+    "campaigns/monthly_ratio_20261017/PROTOCOL.md": "3bb6c8b24d2586f20b00093560931f1cd3d0555fef8292bed536f321e1a6f588",
+    "campaigns/monthly_quantiles_20261017/trainq.py": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+    "campaigns/monthly_quantiles_20261017/auditq.py": "18ea399c4ee5746c2024d675e93a726a770087816a07b85e618ab9e26ca0abd7",
+    "campaigns/monthly_quantiles_20261017/run.py": "dcdc9877ec69c803ac7254b606bd6d97c5364c54fbe94e7258118a3655d2a231",
+    "campaigns/monthly_quantiles_20261017/PROTOCOL.md": "1bc9578dc7a5927717724bd4194bfdbb9a822267823ca5a5a7548acfb8bcc5e2",
+    "campaigns/minimize_expanding_20261017/train.py": "effb9221877d592d65bf3d1e7f0a7ecb95d610031443c0fc662880dbdd51c506",
+    "campaigns/minimize_expanding_20261017/audit.py": "ef2aca526652040e998b3fea3a478e94d91956113f60e35d8fe5dbef78145a04",
+    "campaigns/minimize_expanding_20261017/audit_selection.py": "d8d90ee167dfbd340d318382204eab6fcf56f7c4e246d881acd27d76501ba35a",
+    "campaigns/minimize_expanding_20261017/run.py": "fb9b87df6f23433286788ed75aa23a90d0cbed90ac5aac4f569b689836b0fe1b",
+    "campaigns/minimize_expanding_20261017/PROTOCOL.md": "86573368bd53f5a59134fbc4137ad10360e6ccf1b37ee912d3996fe410db45d0"
+  },
+  "quantiles": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.25,
+    0.5,
+    0.75,
+    0.8,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "folds": [
+    {
+      "test_month": "2026-02",
+      "train_start": "2025-10",
+      "train_end": "2025-12",
+      "training_days": 91,
+      "selection_month": "2026-01",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_linear_rich_ratio": 0.25,
+        "fixed_mlp_compact_ratio": 0.75
+      },
+      "selection_ratio": 0.7584148156351329,
+      "leaves": [
+        {
+          "family": "fixed_linear_rich_ratio",
+          "weight": 0.125,
+          "config": {
+            "id": 5,
+            "family": "linear_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 167,
+          "parameters": 16770,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-02/trials/5/model.pt",
+          "model_sha256": "765d7854181891e7146dde74cb737d4e82b3d8f138c30433114b59ac50565a3a"
+        },
+        {
+          "family": "fixed_linear_rich_ratio",
+          "weight": 0.125,
+          "config": {
+            "id": 4,
+            "family": "linear_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 147,
+          "parameters": 16770,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-02/trials/4/model.pt",
+          "model_sha256": "2838c400d608fa5dfc393ddbf9480284327a8a2ed7a995eab5eb538e6d96a23c"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.375,
+          "config": {
+            "id": 30,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 74,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-02/trials/30/model.pt",
+          "model_sha256": "edfcaf602804e2384f954bfb9858b3e31b35051cb06afc228e891fd10ac218db"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.375,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 67,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-02/trials/31/model.pt",
+          "model_sha256": "08b5d815c19156d504b617b6632af22ceee3cbdb73be71e99c899727f5ad13a3"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-02/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-02/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-03",
+      "train_start": "2025-10",
+      "train_end": "2026-01",
+      "training_days": 122,
+      "selection_month": "2026-02",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_mlp_compact_ratio": 0.16666666666666666,
+        "fixed_additive_compact_ratio": 0.16666666666666666,
+        "fixed_cnn_rich_ratio": 0.16666666666666666,
+        "fixed_linear_compact_ratio": 0.16666666666666666,
+        "fixed_linear_rich_ratio": 0.16666666666666666,
+        "fixed_cnn2d_analog_ratio": 0.16666666666666666
+      },
+      "selection_ratio": 0.7443223524659351,
+      "leaves": [
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 117,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/31/model.pt",
+          "model_sha256": "8ccec5832a8db3b36e14e13e4833038a15f6748dca27717c23d1e7c0e7f4c843"
+        },
+        {
+          "family": "fixed_additive_compact_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 20,
+            "family": "additive_compact",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 76,
+          "parameters": 33411,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/20/model.pt",
+          "model_sha256": "358d4a849d8ebda4c781cf699ee2f6acf728ca2375b0dd60a989c58a68dd8b59"
+        },
+        {
+          "family": "fixed_additive_compact_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 21,
+            "family": "additive_compact",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 74,
+          "parameters": 33411,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/21/model.pt",
+          "model_sha256": "abf2d88341a712db9f9097d921911e7c5e185fcde884d057732f13103f6c2872"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 36,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 68,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/36/model.pt",
+          "model_sha256": "2fc002e2b28f8b6aa092aa7e2435172a900f0a412ed377e7f762d4ba21121afb"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 37,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 74,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/37/model.pt",
+          "model_sha256": "2fc3dfd7492a4c53a6c38bde89e24130593d7324384b233a05663470f838d1bc"
+        },
+        {
+          "family": "fixed_linear_compact_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 14,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 68,
+          "parameters": 8385,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/14/model.pt",
+          "model_sha256": "17997852d43a12c98d17b75079b0d3debab4cb60417f28c3b6fab4f52321c822"
+        },
+        {
+          "family": "fixed_linear_compact_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 15,
+            "family": "linear_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 70,
+          "parameters": 8385,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/15/model.pt",
+          "model_sha256": "5eb8bf6a8bd24783ba979bbbd8c6334b490ef7d54502e101f83099c08f9eb960"
+        },
+        {
+          "family": "fixed_linear_rich_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 6,
+            "family": "linear_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 38,
+          "parameters": 16770,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/6/model.pt",
+          "model_sha256": "89534ad4ee7cd01f9f8fb8d4567fb44edd5cb69884e2c467510b4e1de70b0b34"
+        },
+        {
+          "family": "fixed_linear_rich_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 7,
+            "family": "linear_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 45,
+          "parameters": 16770,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/7/model.pt",
+          "model_sha256": "ff2de00bae5adc8c7d7c2704bbba26505899d9c3e45dc7fa279cfd760170ca04"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 46,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 36,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/46/model.pt",
+          "model_sha256": "a5c0ff9e0c4da005518fbcaca054dd4f89032ea960eb294594b04877899f16d8"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.08333333333333333,
+          "config": {
+            "id": 47,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 21,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-03/trials/47/model.pt",
+          "model_sha256": "1e8abdd325597f42dc8828faa19f1108f11ddef6077711de6771926f5a6532ad"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-03/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-03/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-04",
+      "train_start": "2025-10",
+      "train_end": "2026-02",
+      "training_days": 150,
+      "selection_month": "2026-03",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_mlp_compact_ratio": 0.3333333333333333,
+        "fixed_cnn_rich_ratio": 0.3333333333333333,
+        "fixed_cnn2d_analog_ratio": 0.3333333333333333
+      },
+      "selection_ratio": 0.6810748946929663,
+      "leaves": [
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 28,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 99,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-04/trials/28/model.pt",
+          "model_sha256": "ff93ce816cd2a0a25ccb43bf919eaf85fb6ecf9e9e15c697362b4e441faf570c"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 29,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 170,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-04/trials/29/model.pt",
+          "model_sha256": "23b5eee54cc99a98b92bdfaee02b5c9288bc3ff3033b7206c13488a425ac0d40"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 36,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 84,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-04/trials/36/model.pt",
+          "model_sha256": "e375d91b483e1bc0637734cb6a8d315c6e5146d09b2cdf41bd825160462e1278"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 37,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 85,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-04/trials/37/model.pt",
+          "model_sha256": "7e7dff4d0622fdd86149a47c0d4f85cb2be36b1bbd35f7f5afe43eed45cf85a5"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 47,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 35,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-04/trials/47/model.pt",
+          "model_sha256": "645882114df0f63ed0b2d75a03ebd6ca1cc0631ec95f4dcd1d01cf90e7704e2b"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 46,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 40,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-04/trials/46/model.pt",
+          "model_sha256": "fcc63d84856243ac5984a4ee169e939e03a6246e8fa000b161df829499caa161"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-04/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-04/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-05",
+      "train_start": "2025-10",
+      "train_end": "2026-03",
+      "training_days": 180,
+      "selection_month": "2026-04",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_cnn2d_analog_ratio": 0.3333333333333333,
+        "fixed_cnn_rich_ratio": 0.3333333333333333,
+        "fixed_mlp_compact_ratio": 0.3333333333333333
+      },
+      "selection_ratio": 0.7179612948068422,
+      "leaves": [
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 46,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 27,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-05/trials/46/model.pt",
+          "model_sha256": "5882d760f77e20c0f7d4927b0d71f35211433567cac6b5a4c540933b7acf8306"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 47,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 45,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-05/trials/47/model.pt",
+          "model_sha256": "d475897a77d3513e1b0a790695761f7b2329f2380368eaa1260eeafeff9d3532"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 38,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 33,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-05/trials/38/model.pt",
+          "model_sha256": "59c57744c1057d173f01a05181fd47e10eb0c9a2de457434dd893af431e4f9ee"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 39,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 31,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-05/trials/39/model.pt",
+          "model_sha256": "44a263b68737547e7fd814ae3dec0a2cab8da61e2133cfd994aa43c26b5cb40f"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 30,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 64,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-05/trials/30/model.pt",
+          "model_sha256": "14703b18932c06952fbd23a068042f35b3dc514957a36a09325ea98d43d3a4e2"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 52,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-05/trials/31/model.pt",
+          "model_sha256": "1318f9cbc6cf29fe02087c819c65eaefb7e73b12c4786f7243d0d71e435abbbd"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-05/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-05/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-06",
+      "train_start": "2025-10",
+      "train_end": "2026-04",
+      "training_days": 210,
+      "selection_month": "2026-05",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_cnn_rich_ratio": 0.3333333333333333,
+        "fixed_mlp_compact_ratio": 0.3333333333333333,
+        "fixed_cnn2d_analog_ratio": 0.3333333333333333
+      },
+      "selection_ratio": 0.7330359988368336,
+      "leaves": [
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 37,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 53,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-06/trials/37/model.pt",
+          "model_sha256": "43f7f06c038667213c1bec7aeabf0562aa74690d616a2f9098be9d1041e7bbbb"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 36,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 75,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-06/trials/36/model.pt",
+          "model_sha256": "35e54f6f15afdda17b4f7fc186d34fa7ca1b5882398d0dd4d9a75613bbf2c066"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 25,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-06/trials/31/model.pt",
+          "model_sha256": "dd3ca3a6c1698c42549171133c65ad9d3ee76db15230bf3aa7effab341feecea"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 30,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 41,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-06/trials/30/model.pt",
+          "model_sha256": "15b268fba359fc7bce48078ca3416a3d4be09ca9e9a271afe9d2f883d9df6c36"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 47,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 8,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-06/trials/47/model.pt",
+          "model_sha256": "c561e13a35e1a7a12b4e9ed36e88b058de8563c2897e04b98cdb6e4678281f85"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 46,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 18,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-06/trials/46/model.pt",
+          "model_sha256": "e9c33de6ed0b4c184c32038a2b54890624f05a7c1bd0bfababf4c64292ef500a"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-06/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-06/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-07",
+      "train_start": "2025-10",
+      "train_end": "2026-05",
+      "training_days": 241,
+      "selection_month": "2026-06",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_cnn_rich_ratio": 0.3333333333333333,
+        "fixed_mlp_compact_ratio": 0.3333333333333333,
+        "fixed_cnn2d_analog_ratio": 0.3333333333333333
+      },
+      "selection_ratio": 0.6704108268216443,
+      "leaves": [
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 38,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 26,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-07/trials/38/model.pt",
+          "model_sha256": "da8d889a27069462052bddc272b1cdf19a1335fcbf685d9ef784c6e13772cb40"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 39,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 22,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-07/trials/39/model.pt",
+          "model_sha256": "7c8c5a08b665dbdb783c3729b7bbeb35dfacac0798f9d4b9982a66f578f44b64"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 64,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-07/trials/31/model.pt",
+          "model_sha256": "0cb48e8be7bc0643adb53c87b51d1a3007ebd479a0d61994486b68b340235b68"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 30,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 118,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-07/trials/30/model.pt",
+          "model_sha256": "1872423b2f7ff416f85f7a6407b819bc791af8a9f2450339bcd28aa3ead9ae46"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 46,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 26,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-07/trials/46/model.pt",
+          "model_sha256": "7b3875e6b26e2e18804e1b28ec01c3ff2b813567201a68c6ae5d30b1467b5128"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 47,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 20,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-07/trials/47/model.pt",
+          "model_sha256": "fc6bd0b43035eafd33f94a365391651fe30efb07a7723654f744099008fced7d"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-07/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-07/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-08",
+      "train_start": "2025-10",
+      "train_end": "2026-06",
+      "training_days": 271,
+      "selection_month": "2026-07",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_cnn_rich_ratio": 0.3333333333333333,
+        "fixed_cnn2d_analog_ratio": 0.3333333333333333,
+        "fixed_mlp_compact_ratio": 0.3333333333333333
+      },
+      "selection_ratio": 0.6664952202368463,
+      "leaves": [
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 36,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 64,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-08/trials/36/model.pt",
+          "model_sha256": "b2dd7907c87cb3c1df74618c66d29a074f0b0ced5b997f00d8d014300e74d669"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 37,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 52,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-08/trials/37/model.pt",
+          "model_sha256": "c673a3e3ee7cd05b885cf0a71c2daa3c53273cde7b2687ed16e029ec1707ca7a"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 46,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 26,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-08/trials/46/model.pt",
+          "model_sha256": "001effa42d05053e38172c7c2953181426a389a806f40a03a65a9622ec5cef24"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 47,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 31,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-08/trials/47/model.pt",
+          "model_sha256": "304979f5e8d5648cbe4a32610cd1daf4ab18b73c087b54a365b2ab7240faa5cd"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 27,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-08/trials/31/model.pt",
+          "model_sha256": "0cba255c7ced07a9d3162eb534ed0d012055400fbd39a865fce45956238ad986"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 30,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 93,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-08/trials/30/model.pt",
+          "model_sha256": "bfdcecaf78bf0a05cde2581e4761fdcc8ba42b508a63cf3b7b454acb950bd870"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-08/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-08/selected/fixed_blend_ratio/predictions.npz"
+    },
+    {
+      "test_month": "2026-09",
+      "train_start": "2025-10",
+      "train_end": "2026-07",
+      "training_days": 302,
+      "selection_month": "2026-08",
+      "selection_days": [
+        1,
+        15
+      ],
+      "calibration_days": "16\u2013month-end",
+      "recipe": "fixed_blend_ratio",
+      "family_weights": {
+        "fixed_mlp_compact_ratio": 0.3333333333333333,
+        "fixed_cnn_rich_ratio": 0.3333333333333333,
+        "fixed_cnn2d_analog_ratio": 0.3333333333333333
+      },
+      "selection_ratio": 0.652209129570604,
+      "leaves": [
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 30,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 112,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/30/model.pt",
+          "model_sha256": "b962c6188c00ac94661a36ef84d4fb7b2613da3d4a8e430dcc591641fc06541c"
+        },
+        {
+          "family": "fixed_mlp_compact_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 31,
+            "family": "mlp_compact",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 134,
+          "parameters": 8715,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/31/model.pt",
+          "model_sha256": "02a4ea0c938c2daf60136701f6878a34deea71333dd70265a3bf7516c2d9fc19"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 39,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 33,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/39/model.pt",
+          "model_sha256": "b93679cfe65b6135a167bb5a02bbbba679515ae0c3dc8599989a58f14a0ef540"
+        },
+        {
+          "family": "fixed_cnn_rich_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 38,
+            "family": "cnn_rich",
+            "objective": "ratio",
+            "lr": 0.003,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 54,
+          "parameters": 33163,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/38/model.pt",
+          "model_sha256": "3c698796439aa4d3645d5313ece8eec8bddd6560c4f07e0907012507de7fb638"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 44,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 17,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 199,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/44/model.pt",
+          "model_sha256": "75d3f60726ebecc4511e5db33e2d47002c0dd273b23aa14a52fc5582d793f2cb"
+        },
+        {
+          "family": "fixed_cnn2d_analog_ratio",
+          "weight": 0.16666666666666666,
+          "config": {
+            "id": 45,
+            "family": "cnn2d_analog",
+            "objective": "ratio",
+            "lr": 0.001,
+            "seed": 43,
+            "quantile_weight": 1.0,
+            "preprocessing": "fixed_physical"
+          },
+          "best_epoch": 176,
+          "parameters": 17356,
+          "model_path": "results/minimize_expanding_20261017/folds/2026-09/trials/45/model.pt",
+          "model_sha256": "9ed2721fafc7f322a40ff7bf7a6e4eb571f5b280315075283f9b6190f808c87e"
+        }
+      ],
+      "data_path": "results/minimize_expanding_20261017/folds/2026-09/data.npz",
+      "calibrated_predictions_path": "results/minimize_expanding_20261017/folds/2026-09/selected/fixed_blend_ratio/predictions.npz"
+    }
+  ],
+  "note": "Exact evaluation checkpoints; no new all-history fit or test-driven weight changes."
+}

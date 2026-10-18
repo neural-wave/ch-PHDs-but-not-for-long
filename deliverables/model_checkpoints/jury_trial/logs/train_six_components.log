@@ -1,0 +1,7 @@
+COMPONENT COMPLETE mlp_compact 17 epochs 1
+COMPONENT COMPLETE mlp_compact 43 epochs 1
+COMPONENT COMPLETE cnn_rich 43 epochs 1
+COMPONENT COMPLETE cnn_rich 17 epochs 1
+COMPONENT COMPLETE cnn2d_analog 17 epochs 1
+COMPONENT COMPLETE cnn2d_analog 43 epochs 1
+TRAINING COMPLETE trial checkpoint: /var/folders/q2/sykb2l7d7w33qwfhqqwbb4lm0000gn/T/neural-wave-jury-3gz6oj5r/trial_artifacts/model.pt

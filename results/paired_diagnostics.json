@@ -1,0 +1,29 @@
+{
+  "days": 60,
+  "bootstrap_replicates": 10000,
+  "block_days": 7,
+  "caveat": "Already-viewed development holdout, correlated days and one season; descriptive uncertainty only, no secret-test or model-selection claim.",
+  "comparisons": {
+    "interpolation -> catboost_search_gpu1": {
+      "mean_daily_mae_reduction": 1.9027243816121648,
+      "moving_7day_block_bootstrap_95pct_interval": [
+        1.7428885711144504,
+        2.1163056760988415
+      ]
+    },
+    "rich_search_gpu1 -> zone_search_gpu1": {
+      "mean_daily_mae_reduction": 0.005964403648865006,
+      "moving_7day_block_bootstrap_95pct_interval": [
+        0.0009871186978198756,
+        0.011208161558605129
+      ]
+    },
+    "zone_search_gpu1 -> catboost_search_gpu1": {
+      "mean_daily_mae_reduction": 0.0014524699958312034,
+      "moving_7day_block_bootstrap_95pct_interval": [
+        -0.0008530744192691895,
+        0.003991894531988742
+      ]
+    }
+  }
+}

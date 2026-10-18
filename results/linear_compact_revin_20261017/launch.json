@@ -1,0 +1,23 @@
+{
+  "id": "b451591368201a2ccd5551eb",
+  "status_at_verification": "completed",
+  "host": "root@93.91.156.85",
+  "port": 55340,
+  "remote_project": "/workspace/HACKATON",
+  "remote_results": "/workspace/HACKATON/results/linear_compact_revin_20261017",
+  "worker_pid": 15718,
+  "log": "/root/.local/share/nightwatch-hackaton/b451591368201a2ccd5551eb.log",
+  "eta_seconds": 600,
+  "source_model": "minimize_expanding_20261017/fixed_linear_compact_ratio",
+  "source_ratio": 0.7245525295146528,
+  "fresh_fits": 15,
+  "folds": 8,
+  "edge_checks_passed": true,
+  "normalized_feature_cache_verified": true,
+  "notification": "Nightwatch existing owner Telegram success/crash",
+  "superseded_failed_job": "94e67d8959b330d22189027a",
+  "restart_reason": "Smoke found control artifact must resolve via owning selection.json, not recipe-name path",
+  "full_audit_passed": true,
+  "checkpoints": 15,
+  "max_replay_error": 0.0
+}

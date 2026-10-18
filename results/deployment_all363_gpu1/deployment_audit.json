@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "model_fit_days": 363,
+  "normalization_days": 363,
+  "bundle_levels": 5,
+  "unique_components": {
+    "ridge": 3,
+    "trees": 1,
+    "net": 8,
+    "cat": 1,
+    "graph": 4,
+    "revin": 1,
+    "boost": 4
+  },
+  "frozen_settings_weights_and_recipe_match": true,
+  "artifact_sha256": "2442b10b4fcafb2c0c83cf2337bb05013dab3ba0df4b4bdb79be0dbef4e73a60",
+  "flat_artifact_sha256": "8ccb3b8346b9800d911546cdb6e2476e64fa89c26f7f250dd55f842e11d75805",
+  "synthetic_eligibility_cases": [
+    {
+      "case": "official_last_day",
+      "rows": 384,
+      "hourly_mean_error": 2.5011104298755527e-11,
+      "flattened_max_difference": 1.1368683772161603e-13
+    },
+    {
+      "case": "negative_flat_empty_history",
+      "rows": 384,
+      "hourly_mean_error": 2.5000446157719125e-11,
+      "flattened_max_difference": 1.0658141036401503e-14
+    },
+    {
+      "case": "volatile_supplied_curve",
+      "rows": 384,
+      "hourly_mean_error": 2.5011104298755527e-11,
+      "flattened_max_difference": 2.2737367544323206e-13
+    }
+  ],
+  "accuracy_claim": "No held-out accuracy claim for the all-363-day deployment refit; use the preserved 302-day evaluation model for August/September scores."
+}

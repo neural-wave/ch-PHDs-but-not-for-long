@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-03-14",
+    "zone": "ZONE_2",
+    "interpolation_mae": 3.001445312500001,
+    "model_mae": 3.2785185366396665,
+    "mae_ratio": 1.092313267540058,
+    "width90": 7.038885431959192,
+    "hourly_std": 14.09807455671154,
+    "width_over_hourly_std": 0.4992799125614111,
+    "width_over_interpolation_mae": 2.345165311739855
+  },
+  {
+    "date": "2026-04-26",
+    "zone": "ZONE_3",
+    "interpolation_mae": 9.71223307291667,
+    "model_mae": 10.016197170013458,
+    "mae_ratio": 1.031297034864661,
+    "width90": 110.19869508138959,
+    "hourly_std": 140.00463385560374,
+    "width_over_hourly_std": 0.7871074838497486,
+    "width_over_interpolation_mae": 11.346380822417387
+  }
+]

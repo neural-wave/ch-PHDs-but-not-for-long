@@ -1,0 +1,939 @@
+{
+  "selected_arm": "analog90",
+  "by_arm": {
+    "control": {
+      "config": {
+        "id": 4,
+        "arm": "control",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.544768929481506,
+      "best_epoch": 385,
+      "epochs": 445,
+      "parameters": 1388,
+      "seconds": 10.348317528143525,
+      "september_mae": 5.458611144857054,
+      "by_zone": [
+        4.393761053075134,
+        7.255257798610046,
+        5.554588591700213,
+        4.630837136042822
+      ]
+    },
+    "width16": {
+      "config": {
+        "id": 11,
+        "arm": "width16",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.5723214745521545,
+      "best_epoch": 136,
+      "epochs": 196,
+      "parameters": 3796,
+      "seconds": 4.645021364092827,
+      "september_mae": 5.538923184161298,
+      "by_zone": [
+        4.412572291488036,
+        7.326146546346446,
+        5.544394351434331,
+        4.872579547376379
+      ]
+    },
+    "clock": {
+      "config": {
+        "id": 15,
+        "arm": "clock",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.6053120493888855,
+      "best_epoch": 50,
+      "epochs": 110,
+      "parameters": 3860,
+      "seconds": 2.6579096680507064,
+      "september_mae": 5.487314515389402,
+      "by_zone": [
+        4.3481768738247775,
+        7.29227333187193,
+        5.573582722896503,
+        4.7352251329643975
+      ]
+    },
+    "residual": {
+      "config": {
+        "id": 22,
+        "arm": "residual",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.554109573364258,
+      "best_epoch": 46,
+      "epochs": 106,
+      "parameters": 4884,
+      "seconds": 2.4648720629047602,
+      "september_mae": 5.536893718544804,
+      "by_zone": [
+        4.502904488606585,
+        7.301539380558354,
+        5.580260706777701,
+        4.762870298236583
+      ]
+    },
+    "analog7": {
+      "config": {
+        "id": 27,
+        "arm": "analog7",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.458321928977966,
+      "best_epoch": 38,
+      "epochs": 98,
+      "parameters": 4948,
+      "seconds": 2.358619094127789,
+      "september_mae": 5.346014480529921,
+      "by_zone": [
+        4.210490849527531,
+        7.1416481352369825,
+        5.499677038341089,
+        4.532241899014088
+      ]
+    },
+    "analog90": {
+      "config": {
+        "id": 35,
+        "arm": "analog90",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.412317872047424,
+      "best_epoch": 47,
+      "epochs": 107,
+      "parameters": 4948,
+      "seconds": 2.4685431960970163,
+      "september_mae": 5.177024160106511,
+      "by_zone": [
+        3.999693409329254,
+        6.78016974492428,
+        5.481995538048368,
+        4.446237948124143
+      ]
+    },
+    "context": {
+      "config": {
+        "id": 39,
+        "arm": "context",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.432990849018097,
+      "best_epoch": 22,
+      "epochs": 82,
+      "parameters": 15124,
+      "seconds": 1.9960763200651854,
+      "september_mae": 5.2618853000242956,
+      "by_zone": [
+        4.006646979056299,
+        7.044831833538081,
+        5.465099586072844,
+        4.5309628014299586
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "config": {
+        "id": 3,
+        "arm": "control",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.6009185910224915,
+      "best_epoch": 160,
+      "epochs": 220,
+      "parameters": 1388,
+      "seconds": 7.265525192953646
+    },
+    {
+      "config": {
+        "id": 0,
+        "arm": "control",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.591611921787262,
+      "best_epoch": 277,
+      "epochs": 337,
+      "parameters": 1388,
+      "seconds": 10.291445464128628
+    },
+    {
+      "config": {
+        "id": 2,
+        "arm": "control",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.636923968791962,
+      "best_epoch": 353,
+      "epochs": 413,
+      "parameters": 1388,
+      "seconds": 11.609677985077724
+    },
+    {
+      "config": {
+        "id": 1,
+        "arm": "control",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.611943066120148,
+      "best_epoch": 367,
+      "epochs": 427,
+      "parameters": 1388,
+      "seconds": 12.232448036083952
+    },
+    {
+      "config": {
+        "id": 6,
+        "arm": "width16",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.58956241607666,
+      "best_epoch": 117,
+      "epochs": 177,
+      "parameters": 3796,
+      "seconds": 4.208930717082694
+    },
+    {
+      "config": {
+        "id": 7,
+        "arm": "width16",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.587669670581818,
+      "best_epoch": 141,
+      "epochs": 201,
+      "parameters": 3796,
+      "seconds": 4.811813639011234
+    },
+    {
+      "config": {
+        "id": 4,
+        "arm": "control",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.544768929481506,
+      "best_epoch": 385,
+      "epochs": 445,
+      "parameters": 1388,
+      "seconds": 10.348317528143525
+    },
+    {
+      "config": {
+        "id": 5,
+        "arm": "control",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.582333266735077,
+      "best_epoch": 328,
+      "epochs": 388,
+      "parameters": 1388,
+      "seconds": 8.906210252083838
+    },
+    {
+      "config": {
+        "id": 9,
+        "arm": "width16",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.629342555999756,
+      "best_epoch": 50,
+      "epochs": 110,
+      "parameters": 3796,
+      "seconds": 2.6374647598713636
+    },
+    {
+      "config": {
+        "id": 10,
+        "arm": "width16",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.599606096744537,
+      "best_epoch": 106,
+      "epochs": 166,
+      "parameters": 3796,
+      "seconds": 3.684256663080305
+    },
+    {
+      "config": {
+        "id": 8,
+        "arm": "width16",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.605852365493774,
+      "best_epoch": 235,
+      "epochs": 295,
+      "parameters": 3796,
+      "seconds": 6.70512511394918
+    },
+    {
+      "config": {
+        "id": 11,
+        "arm": "width16",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.5723214745521545,
+      "best_epoch": 136,
+      "epochs": 196,
+      "parameters": 3796,
+      "seconds": 4.645021364092827
+    },
+    {
+      "config": {
+        "id": 13,
+        "arm": "clock",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.634614884853363,
+      "best_epoch": 96,
+      "epochs": 156,
+      "parameters": 3860,
+      "seconds": 3.679345265030861
+    },
+    {
+      "config": {
+        "id": 12,
+        "arm": "clock",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.645566642284393,
+      "best_epoch": 214,
+      "epochs": 274,
+      "parameters": 3860,
+      "seconds": 6.463515307987109
+    },
+    {
+      "config": {
+        "id": 15,
+        "arm": "clock",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.6053120493888855,
+      "best_epoch": 50,
+      "epochs": 110,
+      "parameters": 3860,
+      "seconds": 2.6579096680507064
+    },
+    {
+      "config": {
+        "id": 16,
+        "arm": "clock",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.629955589771271,
+      "best_epoch": 38,
+      "epochs": 98,
+      "parameters": 3860,
+      "seconds": 2.2791327070444822
+    },
+    {
+      "config": {
+        "id": 14,
+        "arm": "clock",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.6169790625572205,
+      "best_epoch": 200,
+      "epochs": 260,
+      "parameters": 3860,
+      "seconds": 6.22215339099057
+    },
+    {
+      "config": {
+        "id": 17,
+        "arm": "clock",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.636733829975128,
+      "best_epoch": 98,
+      "epochs": 158,
+      "parameters": 3860,
+      "seconds": 3.7423913991078734
+    },
+    {
+      "config": {
+        "id": 18,
+        "arm": "residual",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.605821967124939,
+      "best_epoch": 108,
+      "epochs": 168,
+      "parameters": 4884,
+      "seconds": 4.091031875927001
+    },
+    {
+      "config": {
+        "id": 21,
+        "arm": "residual",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.607452750205994,
+      "best_epoch": 38,
+      "epochs": 98,
+      "parameters": 4884,
+      "seconds": 2.199220288079232
+    },
+    {
+      "config": {
+        "id": 22,
+        "arm": "residual",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.554109573364258,
+      "best_epoch": 46,
+      "epochs": 106,
+      "parameters": 4884,
+      "seconds": 2.4648720629047602
+    },
+    {
+      "config": {
+        "id": 20,
+        "arm": "residual",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.5959144830703735,
+      "best_epoch": 126,
+      "epochs": 186,
+      "parameters": 4884,
+      "seconds": 4.583892387105152
+    },
+    {
+      "config": {
+        "id": 19,
+        "arm": "residual",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.554543495178223,
+      "best_epoch": 217,
+      "epochs": 277,
+      "parameters": 4884,
+      "seconds": 6.52605021209456
+    },
+    {
+      "config": {
+        "id": 23,
+        "arm": "residual",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.5878466963768005,
+      "best_epoch": 53,
+      "epochs": 113,
+      "parameters": 4884,
+      "seconds": 2.685324799036607
+    },
+    {
+      "config": {
+        "id": 27,
+        "arm": "analog7",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.458321928977966,
+      "best_epoch": 38,
+      "epochs": 98,
+      "parameters": 4948,
+      "seconds": 2.358619094127789
+    },
+    {
+      "config": {
+        "id": 26,
+        "arm": "analog7",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.4779470562934875,
+      "best_epoch": 111,
+      "epochs": 171,
+      "parameters": 4948,
+      "seconds": 4.047992382198572
+    },
+    {
+      "config": {
+        "id": 24,
+        "arm": "analog7",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.477387964725494,
+      "best_epoch": 180,
+      "epochs": 240,
+      "parameters": 4948,
+      "seconds": 5.7204097169451416
+    },
+    {
+      "config": {
+        "id": 25,
+        "arm": "analog7",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.496770203113556,
+      "best_epoch": 171,
+      "epochs": 231,
+      "parameters": 4948,
+      "seconds": 5.535394817125052
+    },
+    {
+      "config": {
+        "id": 28,
+        "arm": "analog7",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.480719566345215,
+      "best_epoch": 37,
+      "epochs": 97,
+      "parameters": 4948,
+      "seconds": 2.309582724934444
+    },
+    {
+      "config": {
+        "id": 29,
+        "arm": "analog7",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.464612603187561,
+      "best_epoch": 48,
+      "epochs": 108,
+      "parameters": 4948,
+      "seconds": 2.5637585108634084
+    },
+    {
+      "config": {
+        "id": 30,
+        "arm": "analog90",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.447780251502991,
+      "best_epoch": 84,
+      "epochs": 144,
+      "parameters": 4948,
+      "seconds": 3.5218564111273736
+    },
+    {
+      "config": {
+        "id": 31,
+        "arm": "analog90",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.456008672714233,
+      "best_epoch": 93,
+      "epochs": 153,
+      "parameters": 4948,
+      "seconds": 3.629206269979477
+    },
+    {
+      "config": {
+        "id": 33,
+        "arm": "analog90",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.437310099601746,
+      "best_epoch": 40,
+      "epochs": 100,
+      "parameters": 4948,
+      "seconds": 2.380921605974436
+    },
+    {
+      "config": {
+        "id": 32,
+        "arm": "analog90",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.451460540294647,
+      "best_epoch": 122,
+      "epochs": 182,
+      "parameters": 4948,
+      "seconds": 4.276811870979145
+    },
+    {
+      "config": {
+        "id": 34,
+        "arm": "analog90",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.442416727542877,
+      "best_epoch": 37,
+      "epochs": 97,
+      "parameters": 4948,
+      "seconds": 2.278042821213603
+    },
+    {
+      "config": {
+        "id": 35,
+        "arm": "analog90",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.412317872047424,
+      "best_epoch": 47,
+      "epochs": 107,
+      "parameters": 4948,
+      "seconds": 2.4685431960970163
+    },
+    {
+      "config": {
+        "id": 36,
+        "arm": "context",
+        "lr": 0.001,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.482419788837433,
+      "best_epoch": 40,
+      "epochs": 100,
+      "parameters": 15124,
+      "seconds": 2.4058153219521046
+    },
+    {
+      "config": {
+        "id": 37,
+        "arm": "context",
+        "lr": 0.001,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.473946392536163,
+      "best_epoch": 56,
+      "epochs": 116,
+      "parameters": 15124,
+      "seconds": 2.667943998007104
+    },
+    {
+      "config": {
+        "id": 39,
+        "arm": "context",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.432990849018097,
+      "best_epoch": 22,
+      "epochs": 82,
+      "parameters": 15124,
+      "seconds": 1.9960763200651854
+    },
+    {
+      "config": {
+        "id": 38,
+        "arm": "context",
+        "lr": 0.001,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.517561495304108,
+      "best_epoch": 46,
+      "epochs": 106,
+      "parameters": 15124,
+      "seconds": 2.4454440008848906
+    },
+    {
+      "config": {
+        "id": 40,
+        "arm": "context",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.434689879417419,
+      "best_epoch": 21,
+      "epochs": 81,
+      "parameters": 15124,
+      "seconds": 1.9475943399593234
+    },
+    {
+      "config": {
+        "id": 41,
+        "arm": "context",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.479150176048279,
+      "best_epoch": 18,
+      "epochs": 78,
+      "parameters": 15124,
+      "seconds": 1.8207374080084264
+    }
+  ],
+  "note": "All choices frozen using August before September inference. September developmental; target5.1-5.2 not guaranteed."
+}

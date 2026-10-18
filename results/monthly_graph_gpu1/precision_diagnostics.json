@@ -1,0 +1,15 @@
+{
+  "component": "graph_8",
+  "matmul_tf32": false,
+  "device": "NVIDIA RTX A5000",
+  "results": {
+    "cudnn_tf32_True": {
+      "max_cpu_difference": 0.008044242858886719,
+      "mean_cpu_difference": 0.0006105145439505577
+    },
+    "cudnn_tf32_False": {
+      "max_cpu_difference": 1.9073486328125e-05,
+      "mean_cpu_difference": 1.2329193168625352e-06
+    }
+  }
+}

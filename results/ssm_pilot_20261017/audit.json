@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checkpoints": 56,
+  "source_hash": true,
+  "causal_features": true,
+  "train_only_normalization": true,
+  "selection_august_only": true,
+  "history_calendar_verified": true,
+  "max_hourly_mean_error": 1.1368683772161603e-13
+}

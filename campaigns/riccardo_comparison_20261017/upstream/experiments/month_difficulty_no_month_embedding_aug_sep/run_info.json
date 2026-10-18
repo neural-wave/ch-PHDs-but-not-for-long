@@ -1,0 +1,113 @@
+{
+  "device": "mps",
+  "source": "train_prices_15min.csv",
+  "all_12_months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "final_training_period": [
+    "2025-10-01",
+    "2026-07-31"
+  ],
+  "final_validation_period": [
+    "2026-08-01",
+    "2026-09-30"
+  ],
+  "scorer_experiment": "per-zone leave-one-month-out CNN; train on 11 months, score held-out month",
+  "scorer_architecture": {
+    "width": 64,
+    "depth": 2,
+    "dropout": 0.15,
+    "batch": 64,
+    "lr": 0.0003,
+    "wd": 0.0001
+  },
+  "scorer_calendar_features": [
+    "hour_embedding_6",
+    "weekday_embedding_4"
+  ],
+  "scorer_month_embedding": false,
+  "scorer_objectives": [
+    "mae",
+    "mse"
+  ],
+  "difficulty_metric": "Q-weighted held-out MAE with quarter weights 1.5,1,1,1.5",
+  "weight_formula": "within-zone min-max difficulty using October-July scores only; raw=1+0.5*difficulty; normalize to day-weighted mean 1 over October-July",
+  "validation_month_scores_used_for_training_weights": false,
+  "final_architecture": "one selected reduced-feature CNN per zone",
+  "final_profile_features": [
+    "day_centered_level",
+    "hourly_slope",
+    "hourly_curvature",
+    "boundary_indicator"
+  ],
+  "final_calendar_features": [
+    "hour_embedding",
+    "weekday_embedding"
+  ],
+  "final_month_embedding": false,
+  "final_configs": {
+    "ZONE_0": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 64
+    },
+    "ZONE_1": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.0003,
+      "wd": 0.001,
+      "width": 96
+    },
+    "ZONE_2": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.0,
+      "lr": 0.0003,
+      "wd": 0.001,
+      "width": 96
+    },
+    "ZONE_3": {
+      "batch": 64,
+      "depth": 2,
+      "dropout": 0.15,
+      "lr": 0.001,
+      "wd": 0.0001,
+      "width": 64
+    }
+  },
+  "final_seed_offsets": {
+    "ZONE_0": 4,
+    "ZONE_1": 7,
+    "ZONE_2": 6,
+    "ZONE_3": 8
+  },
+  "final_objectives": [
+    "mae",
+    "mse"
+  ],
+  "final_checkpoint_selection_metric": "plain unweighted August-September MAE",
+  "final_quarter_weights": [
+    1.5,
+    1.0,
+    1.0,
+    1.5
+  ],
+  "paired_weight_comparison": "same final model config and seed per objective/zone under prior and refit weights",
+  "historical_old_weight_source": "experiments/month_difficulty_lomo_aug_sep/monthly_training_weights.csv",
+  "existing_selected_baseline_source": "experiments/selected_reduced_features_per_zone/validation_metrics.csv"
+}

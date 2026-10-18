@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": 26,
+    "feature": "compact",
+    "anchor": "flat",
+    "family": "mlp",
+    "width": 64,
+    "depth": 1,
+    "lr": 0.003,
+    "seed": 17
+  },
+  "parameters": 2243,
+  "validation_mae": 4.60180380800227,
+  "best_epoch": 50,
+  "epochs_run": 75,
+  "seconds": 1.4363681450486183,
+  "max_hourly_mean_error": 2.842170943040401e-14,
+  "replay_max_error": 0.0
+}

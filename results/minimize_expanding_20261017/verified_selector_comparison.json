@@ -1,0 +1,28 @@
+{
+  "original_selector_ratio": 0.7212852815039343,
+  "new_selector_ratio": 0.7088921710561056,
+  "relative_ratio_change": -0.017181981617576003,
+  "months_improved": 7,
+  "months_worsened": 1,
+  "months_tied": 0,
+  "original_pooled_mae": 4.181171866093176,
+  "new_pooled_mae": 4.107397336721399,
+  "worst_month_ratio": 0.7598895959510529,
+  "interpolation_error_reduction": 0.2911078289438944,
+  "folds": 8,
+  "expanding_training_months": [
+    3,
+    10
+  ],
+  "target_quarters": 92544,
+  "developmental": true,
+  "interpretation": "Training size and calendar month vary together; this is not an isolated training-size ablation.",
+  "coverage_50": 0.5328492392807747,
+  "width_50": 5.895887512437388,
+  "coverage_80": 0.8130510892116183,
+  "width_80": 13.079072260537002,
+  "coverage_90": 0.9071468706777317,
+  "width_90": 18.840891192457892,
+  "coverage_95": 0.9535031984785616,
+  "width_95": 25.079308284658854
+}

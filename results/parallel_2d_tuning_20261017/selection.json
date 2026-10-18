@@ -1,0 +1,148 @@
+{
+  "selected": {
+    "config": {
+      "id": 35,
+      "arm": "analog90",
+      "lr": 0.003,
+      "seed": 71,
+      "width": 16,
+      "clock": true,
+      "residual": true,
+      "analog": 90,
+      "context": 1
+    },
+    "validation_mae": 4.412317872047424,
+    "best_epoch": 47,
+    "epochs": 107,
+    "parameters": 4948,
+    "seconds": 2.4685431960970163
+  },
+  "by_arm": {
+    "control": {
+      "config": {
+        "id": 4,
+        "arm": "control",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 8,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.544768929481506,
+      "best_epoch": 385,
+      "epochs": 445,
+      "parameters": 1388,
+      "seconds": 10.348317528143525
+    },
+    "width16": {
+      "config": {
+        "id": 11,
+        "arm": "width16",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": false,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.5723214745521545,
+      "best_epoch": 136,
+      "epochs": 196,
+      "parameters": 3796,
+      "seconds": 4.645021364092827
+    },
+    "clock": {
+      "config": {
+        "id": 15,
+        "arm": "clock",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": false,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.6053120493888855,
+      "best_epoch": 50,
+      "epochs": 110,
+      "parameters": 3860,
+      "seconds": 2.6579096680507064
+    },
+    "residual": {
+      "config": {
+        "id": 22,
+        "arm": "residual",
+        "lr": 0.003,
+        "seed": 43,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 0,
+        "context": 1
+      },
+      "validation_mae": 4.554109573364258,
+      "best_epoch": 46,
+      "epochs": 106,
+      "parameters": 4884,
+      "seconds": 2.4648720629047602
+    },
+    "analog7": {
+      "config": {
+        "id": 27,
+        "arm": "analog7",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 7,
+        "context": 1
+      },
+      "validation_mae": 4.458321928977966,
+      "best_epoch": 38,
+      "epochs": 98,
+      "parameters": 4948,
+      "seconds": 2.358619094127789
+    },
+    "analog90": {
+      "config": {
+        "id": 35,
+        "arm": "analog90",
+        "lr": 0.003,
+        "seed": 71,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 1
+      },
+      "validation_mae": 4.412317872047424,
+      "best_epoch": 47,
+      "epochs": 107,
+      "parameters": 4948,
+      "seconds": 2.4685431960970163
+    },
+    "context": {
+      "config": {
+        "id": 39,
+        "arm": "context",
+        "lr": 0.003,
+        "seed": 17,
+        "width": 16,
+        "clock": true,
+        "residual": true,
+        "analog": 90,
+        "context": 5
+      },
+      "validation_mae": 4.432990849018097,
+      "best_epoch": 22,
+      "epochs": 82,
+      "parameters": 15124,
+      "seconds": 1.9960763200651854
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "folds": 8,
+  "checkpoints": 160,
+  "chronology": true,
+  "train_only_preprocessing": true,
+  "all_candidate_replay": true,
+  "calibration_rank_recomputed": true,
+  "mean_monthly_ratio_recomputed": true,
+  "calibrated_intervals": true
+}
