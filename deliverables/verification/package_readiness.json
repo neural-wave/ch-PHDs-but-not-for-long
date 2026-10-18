@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "python_source_files": 15,
+  "syntax_checked": true,
+  "external_imports": [
+    "numpy",
+    "pandas",
+    "torch"
+  ],
+  "copied_source_hashes_match": true,
+  "documentation_links_pass": true,
+  "trial_rejected_as_final_archive": true,
+  "original_frozen_checkpoint_available": false,
+  "full_retrain_executed": false,
+  "isolated_trial_passed": true
+}

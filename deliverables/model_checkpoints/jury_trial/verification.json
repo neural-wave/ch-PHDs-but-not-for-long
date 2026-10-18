@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "artifact_kind": "isolated_trial",
+  "scope": "Execution and data-contract check only; no final accuracy claim or full-budget retrain.",
+  "standalone_copy_outside_repository": true,
+  "unrelated_working_directory": true,
+  "isolated_python_flag": true,
+  "socket_networking_disabled": true,
+  "checkpoint_unchanged_by_inference": true,
+  "model_sha256": "92df42701dcacc27a51a2ba5d564df95bcfde20dca542b7aaafc416ff0147e9a",
+  "training_days": 4,
+  "calibration_days": 2,
+  "components": 6,
+  "epochs_per_component": 1,
+  "environment": {
+    "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:11:32) [Clang 20.1.8 ]",
+    "executable": "/Users/ghetti/work/ch-PHDs-but-not-for-long/jury_pipeline/.venv/bin/python",
+    "system": "Darwin",
+    "machine": "arm64",
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "cuda_available": false,
+    "cuda_build": null,
+    "threads": 1
+  },
+  "checks": [
+    {
+      "check": "train_six_components",
+      "script": "train_ensemble.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "replay_causality_and_isolation",
+      "script": "verify_invariants.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "single_day",
+      "script": "predict_prices.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "single_day_contract",
+      "script": "check_predictions.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "multiple_days",
+      "script": "predict_prices.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "multiple_days_contract",
+      "script": "check_predictions.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "empty_history",
+      "script": "predict_prices.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "empty_history_contract",
+      "script": "check_predictions.py",
+      "returncode": 0,
+      "expected_failure": false
+    },
+    {
+      "check": "requires_explicit_trial_flag",
+      "script": "predict_prices.py",
+      "returncode": 1,
+      "expected_failure": true
+    },
+    {
+      "check": "reject_duplicate_hour",
+      "script": "predict_prices.py",
+      "returncode": 1,
+      "expected_failure": true
+    },
+    {
+      "check": "reject_missing_hour",
+      "script": "predict_prices.py",
+      "returncode": 1,
+      "expected_failure": true
+    },
+    {
+      "check": "reject_nonfinite_hour",
+      "script": "predict_prices.py",
+      "returncode": 1,
+      "expected_failure": true
+    },
+    {
+      "check": "reject_nonprior_history",
+      "script": "predict_prices.py",
+      "returncode": 1,
+      "expected_failure": true
+    },
+    {
+      "check": "reject_duplicate_history",
+      "script": "predict_prices.py",
+      "returncode": 1,
+      "expected_failure": true
+    }
+  ],
+  "csv_contracts": {
+    "single_day": {
+      "passed": true,
+      "dates": [
+        "2025-10-07"
+      ],
+      "rows": 384,
+      "unique_keys": true,
+      "finite": true,
+      "max_hourly_mean_error": 2.5011104298755527e-11,
+      "ordered_quantiles": true,
+      "quantiles": 11,
+      "nested_calibrated_intervals": [
+        50,
+        80,
+        90,
+        95
+      ]
+    },
+    "multiple_days": {
+      "passed": true,
+      "dates": [
+        "2025-10-07",
+        "2025-10-08"
+      ],
+      "rows": 768,
+      "unique_keys": true,
+      "finite": true,
+      "max_hourly_mean_error": 2.5011104298755527e-11,
+      "ordered_quantiles": true,
+      "quantiles": 11,
+      "nested_calibrated_intervals": [
+        50,
+        80,
+        90,
+        95
+      ]
+    },
+    "empty_history": {
+      "passed": true,
+      "dates": [
+        "2025-10-07"
+      ],
+      "rows": 384,
+      "unique_keys": true,
+      "finite": true,
+      "max_hourly_mean_error": 2.5011104298755527e-11
+    }
+  },
+  "seconds": 16.061339457999566
+}

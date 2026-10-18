@@ -1,0 +1,3 @@
+# Optional reference release, without an OS, architecture or +cpu/+cu suffix.
+# Choose the wheel index for your machine as explained in README.md.
+torch==2.14.1

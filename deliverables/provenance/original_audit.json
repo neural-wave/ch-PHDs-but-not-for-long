@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "training_days": 348,
+  "calibration_days": 15,
+  "fixed_budget_no_calibration_stopping": true,
+  "official_sha256": "f71ae6dbcca5f04e76e35840e29d064e69ad292f26d8ec7bf013bff2d904f65c",
+  "causal_probes": [
+    "2025-10-01",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-30"
+  ],
+  "isolated_cpu_replay_passed": true,
+  "csv_contract_passed": true,
+  "max_csv_hourly_mean_error": 2.503952600818593e-11,
+  "future_coverage_verified": false,
+  "clean_dependency_install_verified": true
+}

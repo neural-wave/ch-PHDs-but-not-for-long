@@ -1,0 +1,19 @@
+{
+  "README.md": "9f293e32734de643a36f60890fc7837be0df9261e2b9f24670e4acc83864e322",
+  "SPECIFICATION_CARD.md": "d436a32d021ccb891b8b5520b75ae7b8dcb248a297d1c25f0dd0074a53e79182",
+  "audit.json": "40901a9f1b3975bbf65ea5d504f6848fd722dea42f2e67ee43e33a678cdcc45f",
+  "calibration.json": "01a4151d6fbb0262732ca75f74b6850ccd9b0065dcfda53159c7a501fbe3be36",
+  "environment.json": "b3659a1e2f8a404a9dd7a3cb6bdbcfe16dae9fe579eb3e8c052caf2f26bd92b7",
+  "model.pt": "6ee16ba8942f3ad569ceaf1f5f578608801a0d668ea6b4d39398709d2d4e5a5d",
+  "recipe.json": "fb39e40d5e43e030ab5acbf933de2286cd35be932238f4d06ace55d48ec25dc0",
+  "requirements.txt": "f6e16a36f0c9c99781ea59e9b96ee6dfe47af626579bca02dd86ab2ae69a1db9",
+  "run.py": "802f2e7a134d696351c6d9f90c81ced250c4ea5dbc8c2590f3f5546f56b0a20b",
+  "sources/experiment.py": "600bd8d5980579864a26c1c228e2d31fa24b1a80dc6fc9952b5f5a3ed0cf9712",
+  "sources/interpolation_history.py": "0ab0dcc7cebb996bb3b5ae6a3abcbabe106bf35644f3165f197602c0e7469795",
+  "sources/interpretable_models.py": "67c0a3599f9d7379a69570e18b7bea188b2fc0bf2549b4ab8e1ce193f5dddcdf",
+  "sources/parallel_zone_cnn.py": "e4236069b1556426f11d7a5ad49f05149ec58f4dc627ac6f963aa27115634b14",
+  "sources/reconstruction.py": "b68ef2e4afbac47342f4d6430188af8d5836ae8ce3e2779cb8d736b21b733bfd",
+  "sources/simple_search.py": "a63593f3401779b07be904088d659fadce0fe734b550357c119ce7b13fbb9e09",
+  "sources/trainq.py": "bc007740d290b97663c3a59472b3f48c358219fcd54f8a37a3796b90faa31b2f",
+  "sources/tune_parallel_cnn.py": "b99ff2d5b83ab8e317a52b2011826fc9d255c6e00335e93132e44e1779357c6b"
+}

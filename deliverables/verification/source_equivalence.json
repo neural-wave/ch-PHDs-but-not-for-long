@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "source_commit": "36c172c604d7f1e9c98b62ba6199f8ca2ee3e1e7",
+  "exact_retained_AST_comparison": true,
+  "retained_definitions_compared": 22,
+  "definitions": [
+    "src/price_data.py:ZONES",
+    "src/price_data.py:read_targets",
+    "src/price_data.py:baseline",
+    "src/price_data.py:features",
+    "src/price_data.py:rich_features",
+    "src/compact_features.py:BASIS",
+    "src/compact_features.py:compact_features",
+    "src/historical_errors.py:interpolation_history",
+    "src/history_grid.py:AUX",
+    "src/history_grid.py:build_inputs",
+    "src/analog_cnn.py:ARMS",
+    "src/analog_cnn.py:make_features",
+    "src/analog_cnn.py:dimensions",
+    "src/analog_cnn.py:Small2D",
+    "src/feature_pipeline.py:weights_for",
+    "src/feature_pipeline.py:features",
+    "src/feature_pipeline.py:Global2D",
+    "src/quantile_models.py:TAUS",
+    "src/quantile_models.py:INTERVALS",
+    "src/quantile_models.py:Quantiles",
+    "src/quantile_models.py:physical",
+    "src/quantile_models.py:intervals"
+  ],
+  "runtime_parity": [
+    {
+      "case": "prior_observed_days",
+      "feature_max_errors": {
+        "rich": 0.0,
+        "compact": 0.0,
+        "cnn": 0.0,
+        "curve": 0.0,
+        "rich_knots": 0.0,
+        "compact_knots": 0.0
+      },
+      "all_11_ensemble_quantiles_max_error": 0.0
+    },
+    {
+      "case": "empty_history",
+      "feature_max_errors": {
+        "rich": 0.0,
+        "compact": 0.0,
+        "cnn": 0.0,
+        "curve": 0.0,
+        "rich_knots": 0.0,
+        "compact_knots": 0.0
+      },
+      "all_11_ensemble_quantiles_max_error": 0.0
+    },
+    {
+      "case": "missing_calendar_days",
+      "feature_max_errors": {
+        "rich": 0.0,
+        "compact": 0.0,
+        "cnn": 0.0,
+        "curve": 0.0,
+        "rich_knots": 0.0,
+        "compact_knots": 0.0
+      },
+      "all_11_ensemble_quantiles_max_error": 0.0
+    }
+  ],
+  "checkpoint": "model_checkpoints/trial/model.pt",
+  "scope": "Original-versus-renamed CPU prediction equivalence with the same trial weights; not a full-budget training or accuracy check."
+}

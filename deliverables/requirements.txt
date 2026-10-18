@@ -1,0 +1,4 @@
+# Platform-neutral dependencies. Install the appropriate PyTorch build FIRST;
+# see README.md. This file deliberately does not install or replace PyTorch.
+numpy==2.5.4
+pandas==3.0.6
