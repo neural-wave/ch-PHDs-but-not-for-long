@@ -1,0 +1,205 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=18mm,top=19mm,bottom=19mm,headheight=14pt,headsep=7mm,footskip=10mm]{geometry}
+\usepackage{booktabs,microtype,xcolor,fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\definecolor{ink}{HTML}{173B4B}
+\definecolor{muted}{HTML}{52656C}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{PhDs but not for long}}
+\fancyhead[R]{\small Neural Wave 2026\enspace|\enspace AET}
+\fancyfoot[L]{\footnotesize\color{muted}Research report\enspace\textbullet\enspace 18 October 2026}
+\fancyfoot[R]{\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+\newcommand{\reportsection}[2]{\vspace{5pt}{\large\bfseries\color{ink}#1\enspace #2}\par\vspace{2pt}}
+\newcommand{\runin}[1]{\textbf{#1}\enspace}
+\raggedbottom
+\hypersetup{pdftitle={Learning Quarter-Hour Price Corrections},pdfauthor={PhDs but not for long}}
+
+\begin{document}
+{\LARGE\bfseries\color{ink}Learning Quarter-Hour Price Corrections\par}
+\vspace{4pt}
+{\large A joint-zone quantile ensemble\par}
+\vspace{6pt}
+
+We reconstruct quarter-hour prices from the supplied hourly curves while
+preserving each hourly mean. Our approach learns corrections to linear
+interpolation and measures their value through \textbf{MAE / MAE of linear
+interpolation}, the ratio used in our figures.
+
+Only a few data findings are needed to motivate the model: movement is largest
+near hour boundaries, depends strongly on neighboring-hour ramps, and changes
+substantially across months and zones. Negative prices are valid observations.
+These findings favor a local correction model with access to historical
+shapes and the relationships between zones.
+
+\reportsection{1}{Our ansatz space}
+
+\runin{Learn three corrections around interpolation.}
+We begin with linear interpolation between hourly centres and adjust each
+hour's four values to preserve its supplied average. Our ansatz uses three
+independent values to describe an hour's correction: one shifts the early
+half-hour against the late half-hour, and the other two redistribute prices
+within those halves. They produce four quarter-hour corrections with zero
+average. Adding them to interpolation preserves the hourly mean automatically,
+so training can concentrate on the shape that interpolation misses.
+
+We explored different models within this common space. Linear and additive
+models capture simple ramp effects, including different responses to upward
+and downward price changes. An MLP learns interactions, a temporal CNN captures
+neighboring-hour patterns, and a 2D CNN combines those patterns with historical
+quarter-hour observations across all four zones.
+
+\runin{The 2D CNN and cross-border relationships.}
+For each of the previous seven days, we align quarter-hour prices with hourly
+prices repeated at quarter-hour resolution. These form paired rows in a
+two-dimensional input. The current day's known hourly curve is included too;
+its unobserved quarter-hour row is masked. Small convolutional filters read
+the paired representations over short time windows, and a fusion layer
+combines information across days.
+
+All four zones enter jointly as channels. This allows the network to learn
+a zone's within-hour shape in the context of movements and price differences
+across the other zones. Such cross-border relationships are a useful modeling
+assumption: Zones 0 and 1, for example, have strongly correlated deviation
+shapes, with a correlation of 0.84. Cross-border information enters through
+the supplied price curves and their differences; the model can learn when
+a local ramp accompanies a broader movement or a separation between zones.
+The complete current-day curves are available at inference.
+
+The CNN also receives analog corrections retrieved from strictly earlier
+days with similar hourly curves, using up to 90 days of history. These summarize
+how interpolation missed under comparable conditions. This gives the model
+both a view of recent raw history and examples selected by similarity.
+
+\runin{Combine complementary corrections.}
+The final ensemble averages an MLP, a temporal CNN, and the analog 2D CNN,
+with two seeds for each family. Each of the six networks has equal weight.
+The combination can reduce errors when its members miss in different directions;
+its weights remain fixed for all zones and hours. Linear and additive models
+were competitive controls, while the ensemble obtained the lowest observed
+mean monthly ratio. More elaborate sequence models did not improve that result.
+
+\runin{Learn uncertainty alongside the correction.}
+The models predict a central curve and eleven ordered quantiles. Training
+combines absolute error on the central curve with pinball loss on the quantiles.
+The central prediction preserves hourly means; the surrounding marginal
+quantiles describe uncertainty. A separate calibration block sets the
+50/80/90/95\% intervals. Fixed physical scaling worked better than additional
+normalization: adding RevIN increased the champion's ratio from 0.708 to
+0.725 and widened its intervals, so it was excluded from the final model.
+
+{\footnotesize\color{muted}\runin{Implementation and credits.}
+Python scientific libraries and PyTorch, with offline CPU inference. Eligible
+models use only official data. OpenAI Codex assisted with code, analysis,
+and report drafting. Further details and figures:
+\url{https://dnd.dsvr.top/index.html#ens}.}
+
+\newpage
+\reportsection{2}{Results and validation assumptions}
+
+\runin{The primary metric is MAE / MAE of linear interpolation.}
+We compare model and interpolation errors on exactly the same targets.
+The interpolation baseline includes the hourly-mean correction described
+above. A ratio of 1 means equal error; 0.75 means 25\% less error.
+Our figures and comparisons use this ratio so that a difficult, volatile
+month can be compared with a quieter one. The headline score is the simple
+average of the eight monthly ratios, giving each month equal weight.
+
+\runin{Pooled MAE across expanding-window trials.}
+We move forward one month at a time, using larger and larger training windows.
+The first trial trains on October--December 2025, validates on January 2026,
+and tests on February. The next adds January to training, validates on
+February, and tests on March, continuing through September. Training grows,
+while validation and testing each retain a one-month horizon in the future.
+Our pooled MAE is the average error across all test predictions from these
+trials: equivalently, the average of the eight trial MAEs, weighted by the
+number of quarter-hour targets evaluated in each month. Testing several months
+keeps the assessment from depending on a single unusually difficult period
+such as September 2026. Pooled MAE still reflects differences in monthly
+difficulty; the average monthly MAE/interpolation-MAE ratio gives each month
+equal weight in our main comparison.
+
+The best observed ensemble reaches \textbf{0.707968}, corresponding to
+\textbf{29.20\% less error} under this criterion. Its pooled MAE is
+4.10 EUR/MWh, compared with 5.81 EUR/MWh for interpolation. Every evaluated
+month improves on the baseline.
+
+\begin{center}
+\small
+\begin{tabular}{@{}lllr@{}}
+\toprule
+Fitting end & Select/calibrate & Test & MAE ratio \\
+\midrule
+Dec 2025 & Jan 2026 & Feb 2026 & 0.754 \\
+Jan 2026 & Feb 2026 & Mar 2026 & 0.688 \\
+Feb 2026 & Mar 2026 & Apr 2026 & 0.751 \\
+Mar 2026 & Apr 2026 & May 2026 & 0.704 \\
+Apr 2026 & May 2026 & Jun 2026 & 0.661 \\
+May 2026 & Jun 2026 & Jul 2026 & 0.692 \\
+Jun 2026 & Jul 2026 & Aug 2026 & 0.696 \\
+Jul 2026 & Aug 2026 & Sep 2026 & 0.718 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Improvements are largest on rising and falling hours, where interpolation
+leaves a systematic correction to learn. Flat hours already have small errors
+and offer less room for improvement. The calibrated 90\% interval covers
+90.6\% of research targets, with mean width 18.8 EUR/MWh. Wider bands generally
+coincide with larger errors and greater baseline difficulty; their width is
+a relative uncertainty signal, not a probability that a prediction is correct.
+
+\runin{Keep fitting, selection, and calibration chronological.}
+Across these trials, fitting grows from 91 to 302 dates, and each model is
+fitted from scratch. Days 1--15 of the validation month select settings,
+stopping epochs, seed averages, and blend weights; days 16--end calibrate
+intervals. The test month is evaluated with parameters and calibration frozen.
+All observations from a date remain together, and learned preprocessing uses
+fitting data only.
+
+Observed quarter-hour history must strictly precede the reconstructed day.
+Earlier test days may supply history for later test days, matching the
+challenge's information flow, but they do not trigger model updates.
+The daily input still includes all four zones' complete known hourly curves.
+
+\runin{Freeze the delivery recipe separately.}
+The research journal records the final three-family recipe refitted on
+348 dates, from 1 October 2025 to 15 September 2026. The remaining 15 dates,
+16--30 September, are reserved exclusively for interval calibration.
+Architecture, weights, learning rates, and epoch budgets are fixed from the
+research selection evidence. Inference runs offline without fitting or
+recalibration. The scores above belong to the eight research backtests;
+they are not a held-out evaluation of this final refit.
+
+\runin{What our validation assumes.}
+The procedure assumes older history remains useful and that recent selection
+and calibration data are informative about the next month. The dataset
+contains only one annual cycle, and dependence between quarters, zones, and
+folds limits how much independent evidence it provides. Changing test season
+also accompanies increasing training size, so the backtests do not isolate
+the benefit of more data.
+
+All months, including September, were inspected during development, and the
+champion was chosen after aggregate comparisons. A policy selecting recipes
+using only prior data scored 0.7089 in the same campaign. These are
+developmental results; small differences between recipes do not establish
+superiority on unseen dates. Future interval coverage and the final refit's
+accuracy remain assumptions to check on new official observations.
+
+\runin{Conclusion.}
+Learning corrections to interpolation lets us focus on quarter-hour shape
+while preserving the supplied hourly means. Combining the MLP, temporal CNN,
+and cross-border 2D CNN gives a mean monthly MAE/interpolation-MAE ratio of
+0.708 in our expanding-window developmental backtests. These results support
+combining recent history, similar past days, and relationships between zones.
+The frozen ensemble carries these assumptions forward; new official dates
+will show how well its accuracy and calibrated uncertainty transfer to future
+price regimes.
+\end{document}

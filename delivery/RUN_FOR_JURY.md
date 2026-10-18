@@ -1,5 +1,7 @@
 # Running the AET solution
 
+**Final-ensemble entry point:** use the [standalone jury pipeline](../jury_pipeline/README.md) for the final six-network recipe, portable PyTorch installation instructions, separate training/inference commands and the passing isolated execution trial. Copy that folder as a unit. The original champion binary is unavailable here; a full-budget retrain is documented separately from the small trial. The commands below are retained as historical instructions for a different, older deployment.
+
 **Current status:** these commands document the preserved older 363-day deployment bundle. The research champion reported in the draft report has not yet been refitted on all available history. Before final handoff, align this guide with the audited final bundle. A Git clone currently excludes the fitted `submission/model.pkl`.
 
 ## Environment and installation
