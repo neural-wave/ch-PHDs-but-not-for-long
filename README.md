@@ -4,6 +4,9 @@ Reconstruct four quarter-hour prices from each supplied hourly mean, using the o
 
 ## Neural Wave submission
 
+- [Final project report](deliverables/project%20report.pdf)
+- [Final video](https://youtu.be/Pwv1QnpLwSQ)
+
 **Team full names and optional roles: to be completed later.**
 
 The [submission materials](delivery/README.md) collect the [three-page report draft](delivery/report/report.pdf), [two-minute video script](delivery/video/SCRIPT.md), [five-minute presentation outline](delivery/presentation/OUTLINE.md), [credits and AI usage](delivery/CREDITS.md), and [final checklist](delivery/CHECKLIST.md).
